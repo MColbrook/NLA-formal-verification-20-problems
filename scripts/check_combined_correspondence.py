@@ -237,7 +237,7 @@ def main():
   (public/name).write_bytes(data)
   report[role+'_path']=(public/name).relative_to(ROOT).as_posix()
   report[role+'_sha256']=sha(data)
- (ROOT/'verification/combined-correspondence.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+ (ROOT/'verification/combined-correspondence.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(json.dumps(report,indent=2))
  return 0 if passed else 1
 if __name__=='__main__':raise SystemExit(main())

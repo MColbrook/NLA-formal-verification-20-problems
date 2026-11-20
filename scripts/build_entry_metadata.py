@@ -516,7 +516,7 @@ def combined_account_block(accounts):
     technical = technical_supporting_theorems()
     if technical:
         parts.extend(["", "### Technical supporting theorems", "",
-            "These compiler-generated proof declarations support the fixed mathematical definitions.",
+            "These supporting proof declarations have explicit source names in the Challenge and support the fixed mathematical definitions.",
             "Their types are compared explicitly and their genuine Solution proofs are included in",
             "the axiom check. They do not add manuscript headline results."])
         fence = chr(96) * 3

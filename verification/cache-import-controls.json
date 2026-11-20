@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "kind": "verified-cache-import-regression-controls",
+  "status": "pass",
+  "exit_code": 0,
+  "tests_run": 9,
+  "tests": [
+    "test_changed_archived_compiler_is_rejected",
+    "test_changed_consumer_compiler_is_rejected",
+    "test_changed_pinned_external_is_rejected",
+    "test_changed_source_is_rejected",
+    "test_duplicate_artifact_record_is_rejected",
+    "test_later_failed_build_cannot_erase_preserved_origin",
+    "test_stale_import_binding_is_rejected_even_when_resigned",
+    "test_tampered_artifact_is_rejected",
+    "test_valid_cache_allows_only_new_challenge"
+  ],
+  "command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "scripts",
+    "-p",
+    "test_verified_combined_cache.py"
+  ],
+  "output": ".........\n----------------------------------------------------------------------\nRan 9 tests in 1.111s\n\nOK\n",
+  "captured_from_completed_test_run": true,
+  "source_files_unchanged_since_run": true,
+  "source_files": [
+    {
+      "path": "scripts/verified_combined_cache.py",
+      "sha256": "98d122954f310e139aaa48ead8310d74539fc4f4bb3763c29e897f13203f9cdb"
+    },
+    {
+      "path": "scripts/test_verified_combined_cache.py",
+      "sha256": "cec6352828f1e91fb9be1fadba3eec42e2d1237a2a58e64c0b66dffb0929c9ad"
+    }
+  ],
+  "scope": "Cache trust-boundary regression controls; separate from Lean proof compilation and kernel replay."
+}

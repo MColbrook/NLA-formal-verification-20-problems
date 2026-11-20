@@ -50,7 +50,7 @@ def audit_project(*,project_root:Path,lean:Path,lean_path:str,work_dir:Path,expe
  if after_digest!=digest:errors.append('Project source inventory changed during query')
  if changed_artifacts:errors.append('Compiled Solution artifacts changed during query')
  report={'schema_version':1,'kind':'ordinary-compiled-solution-selected-axiom-query','status':'pass' if not errors else 'fail','selected_axioms_checked':not errors,'project_root':str(project),'source_inventory_sha256':digest,'source_stable':after_digest==digest,'solution_module':config['solution_module'],'theorem_names':names,'permitted_axioms':sorted(allowed),'axioms_by_theorem':parsed,'compiler_version':version,'compiler_sha256':sha(compiler.read_bytes()),'solution_artifacts':artifact_records,'query_path':str(query_file),'query_sha256':query_sha,'stdout_path':str(work/'stdout.log'),'stdout_sha256':sha(run.stdout),'stderr_path':str(work/'stderr.log'),'stderr_sha256':sha(run.stderr),'command':command,'exit_code':run.returncode,'elapsed_seconds':time.time()-start,'errors':errors,'kernel_replay_performed':False}
- (work/'selected-axioms.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');return report
+ (work/'selected-axioms.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8',newline='\n');return report
 
 def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--project-root',type=Path,required=True);p.add_argument('--lean',type=Path,required=True);p.add_argument('--lean-path',required=True);p.add_argument('--work-dir',type=Path,required=True);p.add_argument('--expected-source-inventory-sha256',required=True);p.add_argument('--config',type=Path);a=p.parse_args()

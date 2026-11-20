@@ -10,7 +10,7 @@ from audit_selected_axioms import audit_project
 def sha(data):return hashlib.sha256(data).hexdigest()
 def atomic_json(path,value):
  path.parent.mkdir(parents=True,exist_ok=True);tmp=path.with_name(path.name+'.tmp')
- tmp.write_text(json.dumps(value,indent=2)+'\n',encoding='utf-8');tmp.replace(path)
+ tmp.write_text(json.dumps(value,indent=2)+'\n',encoding='utf-8',newline='\n');tmp.replace(path)
 def stage_sources(check=False):
  index=json.loads((ROOT/'submission-index.json').read_text());components=index.get('components',index['entries']);expected={}
  for component in components:
@@ -49,6 +49,8 @@ def main():
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--stage-only',action='store_true');p.add_argument('--check',action='store_true')
  p.add_argument('--lean',type=Path);p.add_argument('--cache-dir',type=Path,default=Path(tempfile.gettempdir())/'nla-palomar-deps-4.35.0')
  p.add_argument('--jobs',type=int,default=1);p.add_argument('--memory-mb',type=int,default=4096);p.add_argument('--module-timeout',type=int,default=3600)
+ p.add_argument('--import-verified-cache',type=Path,help='Opt in to validation of a prior portable component cache manifest')
+ p.add_argument('--cache-origin-archive',type=Path);p.add_argument('--native-cache-receipt',type=Path);p.add_argument('--cache-source-inventory',type=Path)
  a=p.parse_args();staged=stage_sources(a.check);print(json.dumps({'stage':'unified-source','status':'pass','unique_modules':staged['unique_modules']}),flush=True)
  if a.check or a.stage_only:return 0
  if a.lean is None:p.error('--lean is required for compilation')
@@ -77,6 +79,12 @@ def main():
    else:outside[dependency]=external(dependency)
   active.remove(module);nodes[module]={'source':src,'sha256':sha(data),'imports':local,'external':outside};graph[module]=set(local)
  for target in (config['challenge_module'],config['solution_module']):visit(target,set())
+ imported_cache={};cache_validation=None
+ if a.import_verified_cache:
+  if not all((a.cache_origin_archive,a.native_cache_receipt,a.cache_source_inventory)):p.error('Cache import requires origin archive, native receipt and prior source inventory')
+  from verified_combined_cache import load_verified_cache
+  imported_cache,cache_validation=load_verified_cache(root=ROOT,manifest_path=a.import_verified_cache,archive_path=a.cache_origin_archive,native_path=a.native_cache_receipt,inventory_path=a.cache_source_inventory,compiler_sha=compiler_sha,compiler_version=version,nodes=nodes,external=external)
+  print(json.dumps({'stage':'verified-cache-import','status':'pass',**cache_validation}),flush=True)
  print(json.dumps({'stage':'build-plan','modules':len(nodes),'jobs':a.jobs}),flush=True);state={}
  def compile_one(module):
   node=nodes[module];rel=Path(*module.split('.'));out=output_root/rel.with_suffix('.olean');stamp=out.with_suffix('.combined-source.json')
@@ -86,6 +94,12 @@ def main():
   if stamp.is_file():
    prior=json.loads(stamp.read_text())
    if prior.get('signature')==signature and prior.get('status')=='pass' and {row.get('path') for row in prior.get('artifacts',[])}=={str(path) for path in artifacts} and len(prior.get('artifacts',[]))==len(artifacts) and all(Path(row['path']).is_file() and sha(Path(row['path']).read_bytes())==row['sha256'] for row in prior['artifacts']):return {**prior,'reused':True}
+  if module in imported_cache:
+   cached=imported_cache[module]
+   if not all(Path(item['path']).is_file() and sha(Path(item['path']).read_bytes())==item['sha256'] for item in cached['artifacts']):raise ValueError('Imported cache artifact changed after validation: '+module)
+   row={'module':module,'status':'pass','signature':signature,'source_stable':True,'source_sha256':node['sha256'],'exit_code':0,'seconds':0,'reused':True,'artifacts':cached['artifacts'],'cache_import_provenance':cached['cache_import_provenance']}
+   atomic_json(stamp,row)
+   return row
   out.parent.mkdir(parents=True,exist_ok=True);log=logs/rel.with_suffix('.log');log.parent.mkdir(parents=True,exist_ok=True)
   command=[str(lean),'-j1','-M'+str(a.memory_mb),'-o',str(out),str(node['source'])];start=time.time();print(json.dumps({'event':'BUILD','module':module}),flush=True)
   with log.open('wb') as stream:run=subprocess.run(command,cwd=ROOT,env=env,stdout=stream,stderr=subprocess.STDOUT,timeout=a.module_timeout)
@@ -120,6 +134,8 @@ def main():
   except Exception as exc:error=repr(exc)
  selected=bool(axiom and axiom.get('selected_axioms_checked') and not error)
  row={'id':'NLA20','status':'pass' if passed and selected else 'fail','combined_solution_compiled':passed,'combined_challenge_compiled':passed,'source_inventory_sha256':digest,'toolchain':(ROOT/'lean-toolchain').read_text().strip(),'compiler_version':version,'compiler_sha256':compiler_sha,'source_stable':stable,'exit_code':0 if passed and selected else 1,'selected_axioms_checked':selected,'selected_axioms_receipt':'verification/selected-axioms/NLA20/selected-axioms.json' if axiom else None,'selected_axioms_receipt_sha256':sha((public/'selected-axioms.json').read_bytes()) if axiom else None,'selected_axioms_query_sha256':axiom.get('query_sha256') if axiom else None,'selected_axioms_stdout_sha256':axiom.get('stdout_sha256') if axiom else None,'selected_axiom_error':error,'challenge_artifacts':state[config['challenge_module']].get('artifacts',[]),'solution_artifacts':state[config['solution_module']].get('artifacts',[]),'modules_in_combined_closure':len(nodes),'modules_failed':[m for m,r in state.items() if r['status']=='fail'],'elapsed_seconds':time.time()-start,'kernel_replay_performed':False}
+ row['modules_reused']=sum(r.get('reused') is True for r in state.values());row['modules_freshly_compiled']=[m for m,r in state.items() if r.get('reused') is False and r.get('status')=='pass']
+ row['validated_cache_import']=cache_validation
  report={'schema_version':1,'kind':'ordinary-combined-source-compilation','status':row['status'],'projects':[row],'kernel_replay_performed':False}
  atomic_json(ROOT/'verification/combined-build-status.json',report);atomic_json(logs/'module-results.json',{'modules':[state[m] for m in sorted(state)],'source_inventory_sha256':digest});print(json.dumps(report),flush=True)
  return 0 if row['status']=='pass' else 1

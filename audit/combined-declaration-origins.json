@@ -8901,6 +8901,72 @@
       ]
     }
   ],
+  "total_named_statement_declarations": 461,
+  "explicit_supporting_theorems": [
+    {
+      "name": "NLA.MI22.singularValue._proof_1",
+      "source_path": "projects/MI-22/NLA/MI22/Definitions.lean",
+      "owner_declaration": "NLA.MI22.singularValue",
+      "source_line": 46,
+      "challenge_source_line": 987
+    },
+    {
+      "name": "Complexity.NTM.trace._proof_6",
+      "source_path": "projects/IV-04/NLA/IV04/Complexitylib/Models/TuringMachine.lean",
+      "owner_declaration": "Complexity.NTM.trace",
+      "source_line": 676,
+      "challenge_source_line": 860
+    },
+    {
+      "name": "NLA.TR27.Paper.pivotIndex._proof_2",
+      "source_path": "projects/TR-27/NLA/TR27/PaperCoordinateDefinitions.lean",
+      "owner_declaration": "NLA.TR27.Paper.pivotIndex",
+      "source_line": 15,
+      "challenge_source_line": 562
+    },
+    {
+      "name": "NLA.TR27.Paper.recoveryIndex._proof_2",
+      "source_path": "projects/TR-27/NLA/TR27/PaperRationalDefinitions.lean",
+      "owner_declaration": "NLA.TR27.Paper.recoveryIndex",
+      "source_line": 22,
+      "challenge_source_line": 598
+    },
+    {
+      "name": "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+      "source_path": "projects/TR-27/NLA/TR27/PaperRationalGeometryDefinitions.lean",
+      "owner_declaration": "NLA.TR27.Paper.recoveryOpenPoints",
+      "source_line": 15,
+      "challenge_source_line": 605
+    },
+    {
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_5",
+      "source_path": "projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean",
+      "owner_declaration": "Reference.LexTensorCompletion.lexIndex",
+      "source_line": 206,
+      "challenge_source_line": 333
+    },
+    {
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_2",
+      "source_path": "projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean",
+      "owner_declaration": "Reference.LexTensorCompletion.lexIndex",
+      "source_line": 206,
+      "challenge_source_line": 332
+    },
+    {
+      "name": "NLA.IE21.matrixMap._proof_6",
+      "source_path": "projects/IE-21/NLA/IE21/Definitions.lean",
+      "owner_declaration": "NLA.IE21.matrixMap",
+      "source_line": 60,
+      "challenge_source_line": 184
+    },
+    {
+      "name": "NLA.IE21.matrixMap._proof_4",
+      "source_path": "projects/IE-21/NLA/IE21/Definitions.lean",
+      "owner_declaration": "NLA.IE21.matrixMap",
+      "source_line": 60,
+      "challenge_source_line": 185
+    }
+  ],
   "component_statement_inputs": [
     {
       "path": "projects/MF-05/Challenge.lean",

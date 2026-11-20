@@ -1,0 +1,1224 @@
+{
+  "schema_version": 1,
+  "kind": "compiler-backed-challenge-source-anchor-eligibility",
+  "status": "pass",
+  "eligible": true,
+  "exit_code": 0,
+  "scope": "Compiler-backed declaration ranges and explicit source-name tokens; no Verso HTML rendering or publication verification is claimed.",
+  "source_inventory_sha256": "a63c007d729ae247c51b35ae58a14ab65e255f75596c9d7b11627bbc5db4420c",
+  "challenge_source_sha256": "d54a7103cc437135457dd5265ba0698e386da95a2b21943e6780113daa1f6f9b",
+  "comparator_config_sha256": "b854e1b51fa92fb1fd7e5691ea1febbcb293f709d7798b8621926ab8b3272f0f",
+  "challenge_module": "Challenge",
+  "theorem_names": [
+    "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+    "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+    "NLA.MF05.Paper.paper_real_uniform_holder",
+    "NLA.MF12.Paper.paper_main_realization",
+    "NLA.MF12.Paper.paper_rational_realization",
+    "NLA.RA02.Paper.paper_sup_worst_case_constants",
+    "NLA.RA08.Paper.paper_spectral_failure",
+    "NLA.RA08.Paper.verified_paper_nuclear_counterexample",
+    "NLA.RA09.paper_ordered_matrix_norm_relative",
+    "NLA.RA09.paper_ordered_sharpness",
+    "NLA.RA09.paper_unordered_matrix_norm_relative",
+    "NLA.RA09.paper_unordered_sharpness",
+    "NLA.IE21.Paper.paper_random_rows",
+    "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+    "NLA.IE22.Paper.paper_universal_squared_rate",
+    "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+    "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+    "Reference.LexTensorCompletion.lexCard_eq_card",
+    "NLA.TR27.Paper.paper_full_family",
+    "NLA.TR27.Paper.coordinateProjection_surjective",
+    "NLA.TR27.Paper.coordinateProjection_kernel",
+    "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+    "NLA.TR27.Paper.tensor_reps_nonzero",
+    "NLA.IS03.paper_counterexample",
+    "NLA.NM04.Paper.paper_rowland_wu_identity",
+    "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness",
+    "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+    "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty",
+    "IV04.Paper.Computational.actual_paper_iv_det",
+    "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+    "NLA.MI19.Paper.paper_counterexample",
+    "NLA.MI21.Paper.paper_counterexample",
+    "NLA.MI22.Paper.paper_counterexample",
+    "NLA.MI22.Paper.paper_conjecture_false",
+    "NLA.MI22.singularValue._proof_1",
+    "Complexity.NTM.trace._proof_6",
+    "NLA.TR27.Paper.pivotIndex._proof_2",
+    "NLA.TR27.Paper.recoveryIndex._proof_2",
+    "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+    "Reference.LexTensorCompletion.lexIndex._proof_5",
+    "Reference.LexTensorCompletion.lexIndex._proof_2",
+    "NLA.IE21.matrixMap._proof_6",
+    "NLA.IE21.matrixMap._proof_4"
+  ],
+  "compiler_version": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "compiler_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "challenge_artifacts": [
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean",
+      "sha256": "e9223bb1efcde8cd17e83600469eb53354a49b5ec95aec7bcef68dd6cd3d4bea",
+      "bytes": 2387176
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean.private",
+      "sha256": "9b3f49b4fd6e7708ff254e5187c98b25e9e18c65d73819fe3a237a2be8b42ad8",
+      "bytes": 2356896
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean.server",
+      "sha256": "954b991a24d022f14973dc5dfb254817beabfaa5f3fe94d65aaf31dc3944ce6b",
+      "bytes": 142664
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.ir",
+      "sha256": "02779981dca025c49a798bfb55a1bd61e343ecee080cdc30e3687015887c11d8",
+      "bytes": 598416
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.ir.sig",
+      "sha256": "4d58d19313d9b9f9c39bbcf076e6686823655301adb49087748b374bc0983725",
+      "bytes": 176
+    }
+  ],
+  "driver_path": "scripts/check_challenge_anchors.py",
+  "driver_sha256": "ee76e7383961b68d5be55e701a311cfeeef28a13d7cf91e422749ff01ee7c85d",
+  "source_stable": true,
+  "compiled_artifacts_stable": true,
+  "compiler_stable": true,
+  "driver_stable": true,
+  "query_stable": true,
+  "declarations": [
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+      "range": {
+        "end": {
+          "column": 32,
+          "line": 34
+        },
+        "start": {
+          "column": 0,
+          "line": 33
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 49,
+          "line": 33
+        },
+        "start": {
+          "column": 8,
+          "line": 33
+        }
+      },
+      "source_token": "paper_real_bounded_positive_radius_growth"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+      "range": {
+        "end": {
+          "column": 17,
+          "line": 36
+        },
+        "start": {
+          "column": 0,
+          "line": 35
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 48,
+          "line": 35
+        },
+        "start": {
+          "column": 8,
+          "line": 35
+        }
+      },
+      "source_token": "paper_real_bounded_zero_radius_nilpotent"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MF05.Paper.paper_real_uniform_holder",
+      "range": {
+        "end": {
+          "column": 59,
+          "line": 41
+        },
+        "start": {
+          "column": 0,
+          "line": 38
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 33,
+          "line": 38
+        },
+        "start": {
+          "column": 8,
+          "line": 38
+        }
+      },
+      "source_token": "paper_real_uniform_holder"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MF12.Paper.paper_main_realization",
+      "range": {
+        "end": {
+          "column": 196,
+          "line": 57
+        },
+        "start": {
+          "column": 0,
+          "line": 57
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 30,
+          "line": 57
+        },
+        "start": {
+          "column": 8,
+          "line": 57
+        }
+      },
+      "source_token": "paper_main_realization"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MF12.Paper.paper_rational_realization",
+      "range": {
+        "end": {
+          "column": 185,
+          "line": 58
+        },
+        "start": {
+          "column": 0,
+          "line": 58
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 34,
+          "line": 58
+        },
+        "start": {
+          "column": 8,
+          "line": 58
+        }
+      },
+      "source_token": "paper_rational_realization"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.RA02.Paper.paper_sup_worst_case_constants",
+      "range": {
+        "end": {
+          "column": 214,
+          "line": 103
+        },
+        "start": {
+          "column": 0,
+          "line": 103
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 38,
+          "line": 103
+        },
+        "start": {
+          "column": 8,
+          "line": 103
+        }
+      },
+      "source_token": "paper_sup_worst_case_constants"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.RA08.Paper.paper_spectral_failure",
+      "range": {
+        "end": {
+          "column": 158,
+          "line": 131
+        },
+        "start": {
+          "column": 0,
+          "line": 130
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 30,
+          "line": 130
+        },
+        "start": {
+          "column": 8,
+          "line": 130
+        }
+      },
+      "source_token": "paper_spectral_failure"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.RA08.Paper.verified_paper_nuclear_counterexample",
+      "range": {
+        "end": {
+          "column": 117,
+          "line": 138
+        },
+        "start": {
+          "column": 0,
+          "line": 138
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 45,
+          "line": 138
+        },
+        "start": {
+          "column": 8,
+          "line": 138
+        }
+      },
+      "source_token": "verified_paper_nuclear_counterexample"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.RA09.paper_ordered_matrix_norm_relative",
+      "range": {
+        "end": {
+          "column": 157,
+          "line": 167
+        },
+        "start": {
+          "column": 0,
+          "line": 166
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 42,
+          "line": 166
+        },
+        "start": {
+          "column": 8,
+          "line": 166
+        }
+      },
+      "source_token": "paper_ordered_matrix_norm_relative"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.RA09.paper_ordered_sharpness",
+      "range": {
+        "end": {
+          "column": 127,
+          "line": 171
+        },
+        "start": {
+          "column": 0,
+          "line": 170
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 31,
+          "line": 170
+        },
+        "start": {
+          "column": 8,
+          "line": 170
+        }
+      },
+      "source_token": "paper_ordered_sharpness"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.RA09.paper_unordered_matrix_norm_relative",
+      "range": {
+        "end": {
+          "column": 143,
+          "line": 169
+        },
+        "start": {
+          "column": 0,
+          "line": 168
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 44,
+          "line": 168
+        },
+        "start": {
+          "column": 8,
+          "line": 168
+        }
+      },
+      "source_token": "paper_unordered_matrix_norm_relative"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.RA09.paper_unordered_sharpness",
+      "range": {
+        "end": {
+          "column": 90,
+          "line": 172
+        },
+        "start": {
+          "column": 0,
+          "line": 172
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 33,
+          "line": 172
+        },
+        "start": {
+          "column": 8,
+          "line": 172
+        }
+      },
+      "source_token": "paper_unordered_sharpness"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.IE21.Paper.paper_random_rows",
+      "range": {
+        "end": {
+          "column": 29,
+          "line": 201
+        },
+        "start": {
+          "column": 0,
+          "line": 199
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 25,
+          "line": 199
+        },
+        "start": {
+          "column": 8,
+          "line": 199
+        }
+      },
+      "source_token": "paper_random_rows"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+      "range": {
+        "end": {
+          "column": 283,
+          "line": 211
+        },
+        "start": {
+          "column": 0,
+          "line": 211
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 40,
+          "line": 211
+        },
+        "start": {
+          "column": 8,
+          "line": 211
+        }
+      },
+      "source_token": "paper_high_aspect_supremum_limit"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.IE22.Paper.paper_universal_squared_rate",
+      "range": {
+        "end": {
+          "column": 283,
+          "line": 212
+        },
+        "start": {
+          "column": 0,
+          "line": 212
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 36,
+          "line": 212
+        },
+        "start": {
+          "column": 8,
+          "line": 212
+        }
+      },
+      "source_token": "paper_universal_squared_rate"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+      "range": {
+        "end": {
+          "column": 89,
+          "line": 517
+        },
+        "start": {
+          "column": 0,
+          "line": 515
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 44,
+          "line": 515
+        },
+        "start": {
+          "column": 8,
+          "line": 515
+        }
+      },
+      "source_token": "actual_lexicographic_paper_algorithm"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+      "range": {
+        "end": {
+          "column": 66,
+          "line": 252
+        },
+        "start": {
+          "column": 0,
+          "line": 252
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 27,
+          "line": 252
+        },
+        "start": {
+          "column": 8,
+          "line": 252
+        }
+      },
+      "source_token": "product_eq_rowCount"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Reference.LexTensorCompletion.lexCard_eq_card",
+      "range": {
+        "end": {
+          "column": 86,
+          "line": 341
+        },
+        "start": {
+          "column": 0,
+          "line": 341
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 23,
+          "line": 341
+        },
+        "start": {
+          "column": 8,
+          "line": 341
+        }
+      },
+      "source_token": "lexCard_eq_card"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.TR27.Paper.paper_full_family",
+      "range": {
+        "end": {
+          "column": 114,
+          "line": 640
+        },
+        "start": {
+          "column": 0,
+          "line": 616
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 25,
+          "line": 616
+        },
+        "start": {
+          "column": 8,
+          "line": 616
+        }
+      },
+      "source_token": "paper_full_family"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.TR27.Paper.coordinateProjection_surjective",
+      "range": {
+        "end": {
+          "column": 131,
+          "line": 586
+        },
+        "start": {
+          "column": 0,
+          "line": 586
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 39,
+          "line": 586
+        },
+        "start": {
+          "column": 8,
+          "line": 586
+        }
+      },
+      "source_token": "coordinateProjection_surjective"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.TR27.Paper.coordinateProjection_kernel",
+      "range": {
+        "end": {
+          "column": 159,
+          "line": 587
+        },
+        "start": {
+          "column": 0,
+          "line": 587
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 35,
+          "line": 587
+        },
+        "start": {
+          "column": 8,
+          "line": 587
+        }
+      },
+      "source_token": "coordinateProjection_kernel"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+      "range": {
+        "end": {
+          "column": 136,
+          "line": 591
+        },
+        "start": {
+          "column": 0,
+          "line": 591
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 39,
+          "line": 591
+        },
+        "start": {
+          "column": 8,
+          "line": 591
+        }
+      },
+      "source_token": "imageHomogeneousMap_eq_zero_iff"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.TR27.Paper.tensor_reps_nonzero",
+      "range": {
+        "end": {
+          "column": 112,
+          "line": 611
+        },
+        "start": {
+          "column": 0,
+          "line": 611
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 27,
+          "line": 611
+        },
+        "start": {
+          "column": 8,
+          "line": 611
+        }
+      },
+      "source_token": "tensor_reps_nonzero"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.IS03.paper_counterexample",
+      "range": {
+        "end": {
+          "column": 212,
+          "line": 648
+        },
+        "start": {
+          "column": 0,
+          "line": 648
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 28,
+          "line": 648
+        },
+        "start": {
+          "column": 8,
+          "line": 648
+        }
+      },
+      "source_token": "paper_counterexample"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.NM04.Paper.paper_rowland_wu_identity",
+      "range": {
+        "end": {
+          "column": 63,
+          "line": 679
+        },
+        "start": {
+          "column": 0,
+          "line": 678
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 33,
+          "line": 678
+        },
+        "start": {
+          "column": 8,
+          "line": 678
+        }
+      },
+      "source_token": "paper_rowland_wu_identity"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness",
+      "range": {
+        "end": {
+          "column": 251,
+          "line": 691
+        },
+        "start": {
+          "column": 0,
+          "line": 690
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 43,
+          "line": 690
+        },
+        "start": {
+          "column": 8,
+          "line": 690
+        }
+      },
+      "source_token": "paper_all_size_disconnected_witness"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+      "range": {
+        "end": {
+          "column": 262,
+          "line": 720
+        },
+        "start": {
+          "column": 0,
+          "line": 719
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 28,
+          "line": 719
+        },
+        "start": {
+          "column": 8,
+          "line": 719
+        }
+      },
+      "source_token": "actual_paper_md_main"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty",
+      "range": {
+        "end": {
+          "column": 79,
+          "line": 710
+        },
+        "start": {
+          "column": 0,
+          "line": 710
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 36,
+          "line": 710
+        },
+        "start": {
+          "column": 8,
+          "line": 710
+        }
+      },
+      "source_token": "actual_cubic_sample_nonempty"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "IV04.Paper.Computational.actual_paper_iv_det",
+      "range": {
+        "end": {
+          "column": 199,
+          "line": 943
+        },
+        "start": {
+          "column": 0,
+          "line": 943
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 27,
+          "line": 943
+        },
+        "start": {
+          "column": 8,
+          "line": 943
+        }
+      },
+      "source_token": "actual_paper_iv_det"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+      "range": {
+        "end": {
+          "column": 80,
+          "line": 945
+        },
+        "start": {
+          "column": 0,
+          "line": 945
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 31,
+          "line": 945
+        },
+        "start": {
+          "column": 8,
+          "line": 945
+        }
+      },
+      "source_token": "iv_hull_literal_np_hard"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MI19.Paper.paper_counterexample",
+      "range": {
+        "end": {
+          "column": 100,
+          "line": 960
+        },
+        "start": {
+          "column": 0,
+          "line": 959
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 28,
+          "line": 959
+        },
+        "start": {
+          "column": 8,
+          "line": 959
+        }
+      },
+      "source_token": "paper_counterexample"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MI21.Paper.paper_counterexample",
+      "range": {
+        "end": {
+          "column": 50,
+          "line": 980
+        },
+        "start": {
+          "column": 0,
+          "line": 978
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 28,
+          "line": 978
+        },
+        "start": {
+          "column": 8,
+          "line": 978
+        }
+      },
+      "source_token": "paper_counterexample"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MI22.Paper.paper_counterexample",
+      "range": {
+        "end": {
+          "column": 251,
+          "line": 998
+        },
+        "start": {
+          "column": 0,
+          "line": 998
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 28,
+          "line": 998
+        },
+        "start": {
+          "column": 8,
+          "line": 998
+        }
+      },
+      "source_token": "paper_counterexample"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MI22.Paper.paper_conjecture_false",
+      "range": {
+        "end": {
+          "column": 78,
+          "line": 999
+        },
+        "start": {
+          "column": 0,
+          "line": 999
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 30,
+          "line": 999
+        },
+        "start": {
+          "column": 8,
+          "line": 999
+        }
+      },
+      "source_token": "paper_conjecture_false"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.MI22.singularValue._proof_1",
+      "range": {
+        "end": {
+          "column": 945,
+          "line": 987
+        },
+        "start": {
+          "column": 0,
+          "line": 987
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 86,
+          "line": 987
+        },
+        "start": {
+          "column": 64,
+          "line": 987
+        }
+      },
+      "source_token": "singularValue._proof_1"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Complexity.NTM.trace._proof_6",
+      "range": {
+        "end": {
+          "column": 131,
+          "line": 860
+        },
+        "start": {
+          "column": 0,
+          "line": 860
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 87,
+          "line": 860
+        },
+        "start": {
+          "column": 73,
+          "line": 860
+        }
+      },
+      "source_token": "trace._proof_6"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.TR27.Paper.pivotIndex._proof_2",
+      "range": {
+        "end": {
+          "column": 110,
+          "line": 562
+        },
+        "start": {
+          "column": 0,
+          "line": 562
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 74,
+          "line": 562
+        },
+        "start": {
+          "column": 55,
+          "line": 562
+        }
+      },
+      "source_token": "pivotIndex._proof_2"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.TR27.Paper.recoveryIndex._proof_2",
+      "range": {
+        "end": {
+          "column": 123,
+          "line": 598
+        },
+        "start": {
+          "column": 0,
+          "line": 598
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 72,
+          "line": 598
+        },
+        "start": {
+          "column": 50,
+          "line": 598
+        }
+      },
+      "source_token": "recoveryIndex._proof_2"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+      "range": {
+        "end": {
+          "column": 128,
+          "line": 605
+        },
+        "start": {
+          "column": 0,
+          "line": 605
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 92,
+          "line": 605
+        },
+        "start": {
+          "column": 65,
+          "line": 605
+        }
+      },
+      "source_token": "recoveryOpenPoints._proof_2"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_5",
+      "range": {
+        "end": {
+          "column": 239,
+          "line": 333
+        },
+        "start": {
+          "column": 0,
+          "line": 333
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 88,
+          "line": 333
+        },
+        "start": {
+          "column": 71,
+          "line": 333
+        }
+      },
+      "source_token": "lexIndex._proof_5"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_2",
+      "range": {
+        "end": {
+          "column": 112,
+          "line": 332
+        },
+        "start": {
+          "column": 0,
+          "line": 332
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 83,
+          "line": 332
+        },
+        "start": {
+          "column": 66,
+          "line": 332
+        }
+      },
+      "source_token": "lexIndex._proof_2"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.IE21.matrixMap._proof_6",
+      "range": {
+        "end": {
+          "column": 938,
+          "line": 184
+        },
+        "start": {
+          "column": 0,
+          "line": 184
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 94,
+          "line": 184
+        },
+        "start": {
+          "column": 76,
+          "line": 184
+        }
+      },
+      "source_token": "matrixMap._proof_6"
+    },
+    {
+      "kind": "theorem",
+      "module": "Challenge",
+      "name": "NLA.IE21.matrixMap._proof_4",
+      "range": {
+        "end": {
+          "column": 855,
+          "line": 185
+        },
+        "start": {
+          "column": 0,
+          "line": 185
+        }
+      },
+      "selection": {
+        "end": {
+          "column": 96,
+          "line": 185
+        },
+        "start": {
+          "column": 78,
+          "line": 185
+        }
+      },
+      "source_token": "matrixMap._proof_4"
+    }
+  ],
+  "eligible_declarations": 43,
+  "errors": [],
+  "verso_render_performed": false,
+  "kernel_replay_performed": false,
+  "official_palomar_verification": false,
+  "query_path": "verification/challenge-anchors/query.txt",
+  "query_sha256": "92d2884c013d79d87bf190cabb5dce2e8cf8f596217622bb5eeb49d1b7b8f6ce",
+  "stdout_path": "verification/challenge-anchors/stdout.txt",
+  "stdout_sha256": "33e8ab04a272e5cf6f13187c7dbf327f0d552df1f4d391a5fc634aa852109506",
+  "stderr_path": "verification/challenge-anchors/stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -8,7 +8,7 @@
       "status": "pass",
       "combined_solution_compiled": true,
       "combined_challenge_compiled": true,
-      "source_inventory_sha256": "133d0bd119a4a7922ac91684e5775bca03939b2b783e56105f5e061b0665dea6",
+      "source_inventory_sha256": "a63c007d729ae247c51b35ae58a14ab65e255f75596c9d7b11627bbc5db4420c",
       "toolchain": "leanprover/lean4:v4.35.0",
       "compiler_version": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
       "compiler_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
@@ -16,35 +16,30 @@
       "exit_code": 0,
       "selected_axioms_checked": true,
       "selected_axioms_receipt": "verification/selected-axioms/NLA20/selected-axioms.json",
-      "selected_axioms_receipt_sha256": "fd76ae435512efae47860aa4ac5bc6c1447cddae993b3b6813025ed2fe65b475",
+      "selected_axioms_receipt_sha256": "cec13ed3f0163c98517fd5a679646c627dde3e710caf70fe624e7a6ac341d8bd",
       "selected_axioms_query_sha256": "3656dfa1ad50d7ba3ef16394803cc52bafa65d0c6655eaf1a4d71cbcdb579fa7",
-      "selected_axioms_stdout_sha256": "62fe8ca369f431eb5b704ad540fccfaba11bfaf4ad0bae02f27cea05b4977dd3",
+      "selected_axioms_stdout_sha256": "a7d56ca76b5d7bdfec2d590977f332b4c27951022055d62c9efe4c5ae3f475bb",
       "selected_axiom_error": null,
       "challenge_artifacts": [
         {
           "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean",
-          "sha256": "da470c288c3c9d0351c5c44e4d86c524e97a28daffa060ad8a17a22650c898c7",
-          "bytes": 2199368
+          "sha256": "e9223bb1efcde8cd17e83600469eb53354a49b5ec95aec7bcef68dd6cd3d4bea"
         },
         {
           "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean.private",
-          "sha256": "9e9d65baaf952d238d2c8aa305eae6b7ed33dd23cf39af7faa55fd667395f5d0",
-          "bytes": 1798808
+          "sha256": "9b3f49b4fd6e7708ff254e5187c98b25e9e18c65d73819fe3a237a2be8b42ad8"
         },
         {
           "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean.server",
-          "sha256": "17db30a44b561c193621483f77b3d1e8a5f80a3d1d2016bffbf35e2022f9a7ed",
-          "bytes": 125032
+          "sha256": "954b991a24d022f14973dc5dfb254817beabfaa5f3fe94d65aaf31dc3944ce6b"
         },
         {
           "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.ir",
-          "sha256": "ac8fd2ddb20e063265138cc7881e26d8a4f90551d7fb1992092ab8cfdca41d30",
-          "bytes": 415208
+          "sha256": "02779981dca025c49a798bfb55a1bd61e343ecee080cdc30e3687015887c11d8"
         },
         {
           "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.ir.sig",
-          "sha256": "4d58d19313d9b9f9c39bbcf076e6686823655301adb49087748b374bc0983725",
-          "bytes": 176
+          "sha256": "4d58d19313d9b9f9c39bbcf076e6686823655301adb49087748b374bc0983725"
         }
       ],
       "solution_artifacts": [
@@ -75,29 +70,31 @@
         }
       ],
       "modules_in_combined_closure": 1555,
-      "used_verified_cache_modules": 1548,
-      "verified_component_cache_modules": 1897,
-      "freshly_compiled_modules": [
-        "NLA.Collection.IS03PaperSolution",
-        "NLA.Collection.MF05PaperSolution",
-        "NLA.Collection.MF12PaperSolution",
-        "NLA.Collection.MI19PaperSolution",
-        "NLA.Collection.RA08PaperSolution",
-        "NLA.Collection.RA09PaperSolution",
-        "Solution",
+      "modules_failed": [],
+      "elapsed_seconds": 137.69402599334717,
+      "kernel_replay_performed": false,
+      "modules_reused": 1554,
+      "modules_freshly_compiled": [
         "Challenge"
       ],
-      "verified_component_cache_origin_compiler": {
-        "path": "/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
-        "sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
-        "version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
-      },
-      "verified_component_cache_original_receipt_sha256": "daa0259a4f666dfb164ecaf7ffceca1230b35d8c95cc40398b59b7ffcdc07d6a",
-      "verified_pinned_external_imports": 337,
-      "native_format_probe_passed": true,
-      "new_source_upload_performed": false,
-      "elapsed_seconds": 52.6076717376709,
-      "kernel_replay_performed": false
+      "validated_cache_import": {
+        "modules_validated": 1554,
+        "archived_bindings_validated": 1590,
+        "pinned_external_imports_validated": 299,
+        "kind": "validated-prior-source-compilation",
+        "archive_receipt_sha256": "daa0259a4f666dfb164ecaf7ffceca1230b35d8c95cc40398b59b7ffcdc07d6a",
+        "cache_manifest_sha256": "96fc8b4f2d9ce64811359a023d69081aa0d30d85f5f9ed1fd5c22ffefb850b45",
+        "prior_native_receipt_sha256": "1078c8b43b53e3390c3944c60deb68f71f2d5d79a3ab45a2191c03cb708d0669",
+        "prior_combined_receipt_sha256": "ee419b6fc699f6cb067d7b60a3545dd0e91471990b03b2dae7ecc0e6e2addbf9",
+        "prior_source_inventory_sha256": "133d0bd119a4a7922ac91684e5775bca03939b2b783e56105f5e061b0665dea6",
+        "consumer_compiler_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+        "native_format_probe_passed": true,
+        "source_compiler": {
+          "path": "/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+          "sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+          "version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)"
+        }
+      }
     }
   ],
   "kernel_replay_performed": false

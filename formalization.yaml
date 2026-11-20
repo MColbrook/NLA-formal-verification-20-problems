@@ -185,11 +185,21 @@ review:
     Comparator comparison core on compiled statement and ordinary-definition
     closures, without full proof export or kernel replay. These local checks remain
     distinct from official Palomar and NanoDa verification.
-    The combined Challenge resets only the nonpersistent compiler auxiliary-lemma
+    The combined Challenge manages only the nonpersistent compiler auxiliary-lemma
     and matcher caches between original source units, preserving original
-    generated proof and matcher references when those units are combined. The operation changes only cache
-    state and introduces no mathematical assumptions or axioms; all material
-    definition bodies remain subject to comparison.
+    generated proof and matcher references when those units are combined.
+    The nine technical supporting proofs have explicit named theorem declarations
+    in the Challenge so every selected declaration has its own source anchor.
+    Syntax-only local notation factors repeated instance expressions in three
+    helper types without adding mathematical constants; their expanded types
+    and all ordinary definition bodies remain subject to exact comparison.
+    Quotation prechecking is scoped off only while those notation declarations
+    are introduced, to permit explicit parent projections, and restored before
+    theorem elaboration; expanded types retain normal elaboration and checking.
+    The cache operations introduce no mathematical assumptions or axioms; all
+    material definition bodies remain subject to comparison. Source-bound
+    compiler metadata checks establish source-anchor eligibility separately from
+    Palomar's official Verso rendering.
 
 licensing:
   release_authorization: >-

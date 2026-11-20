@@ -1,3 +1,3 @@
 MATERIALIZED Challenge 42519
 MATERIALIZED Solution 42519
-CORRESPONDENCE {"challenge_closure_constants":42519,"challenge_materialized_bytes":166568896,"compared_theorems":43,"definition_body_negative_control":true,"selected_declarations_are_theorems":true,"solution_closure_constants":42519,"solution_materialized_bytes":166577528,"status":"pass","type_negative_control":true}
+CORRESPONDENCE {"challenge_closure_constants":42519,"challenge_materialized_bytes":166573776,"compared_theorems":43,"definition_body_negative_control":true,"selected_declarations_are_theorems":true,"solution_closure_constants":42519,"solution_materialized_bytes":166577528,"status":"pass","type_negative_control":true}

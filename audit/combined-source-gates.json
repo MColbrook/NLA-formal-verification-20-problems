@@ -3,7 +3,7 @@
   "kind": "single-root-source-gates",
   "status": "pass",
   "challenge_lines": 1000,
-  "challenge_bytes": 98991,
+  "challenge_bytes": 101604,
   "challenge_imports": [
     "Lean.Meta.Match.Match",
     "Mathlib"
@@ -16,5 +16,5 @@
     "files_checked": 4498
   },
   "no_compilation_or_replay": true,
-  "challenge_source_sha256": "73fe108ce616ea9d07df51d88c22fd9abfa08763e96cad133203fa613857fc5f"
+  "challenge_source_sha256": "d54a7103cc437135457dd5265ba0698e386da95a2b21943e6780113daa1f6f9b"
 }

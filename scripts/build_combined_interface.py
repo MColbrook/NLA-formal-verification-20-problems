@@ -9,6 +9,20 @@ from stage_sources import source_mask
 CACHE_RESET="reset_proof_cache"
 CACHE_DEFINITION='local macro "reset_proof_cache" : command => `(run_cmd Lean.modifyEnv fun env => Lean.Meta.Match.matcherExt.setState (Lean.Meta.auxLemmasExt.setState env {}) {})\n'
 
+CACHE_EXPLICIT='local macro "cache_proof" n:ident : command => `(run_cmd do let info ← Lean.getConstInfo $(Lean.quote n.getId); Lean.modifyEnv fun env => Lean.Meta.auxLemmasExt.modifyState env fun s => {s with lemmas := s.lemmas.insert {type := info.type,isPrivate := false,defeq := false} (info.name,info.levelParams)})\n'
+EXPLICIT_SUPPORT={
+'NLA.MI22.singularValue': [('_proof_1','{d : ℕ} : @Module.Finite Complex (WithLp (qA) ((Fin d) -> Complex)) (((qJ).toDivisionRing).toRing).toSemiring (@AddCommGroup.toAddCommMonoid (WithLp (qA) ((Fin d) -> Complex)) (@WithLp.instAddCommGroup (qA) ((Fin d) -> Complex) (qG d))) (@WithLp.instModule (qA) Complex ((Fin d) -> Complex) (((qJ).toDivisionRing).toRing).toSemiring (qG d) (@Pi.module (Fin d) (fun (z0 : Fin d) => Complex) Complex (((qJ).toSemifield).toCommSemiring).toSemiring (fun (i : Fin d) => @AddCommGroup.toAddCommMonoid Complex ((qN).toSeminormedAddCommGroup).toAddCommGroup) (fun (i : Fin d) => @NormedSpace.toModule Complex Complex ((Complex.instRCLike).toDenselyNormedField).toNormedField (qN).toSeminormedAddCommGroup (@InnerProductSpace.toNormedSpace Complex Complex Complex.instRCLike (qN).toSeminormedAddCommGroup (@RCLike.innerProductSpace Complex Complex.instRCLike)))))','Complex Euclidean spaces are finite-dimensional.')],
+'Complexity.NTM.trace': [('_proof_6','(T : ℕ) (i : Fin T) : i.val+1 < T+1','The next trace index stays in the enlarged time interval.')],
+'NLA.TR27.Paper.pivotIndex': [('_proof_2','(D : ℕ) : 2 ≤ D → 1 < D+1','The coordinate pivot index is in range.')],
+'NLA.TR27.Paper.recoveryIndex': [('_proof_2','(D : ℕ) : 5 ≤ D → ∀ j : Fin 4, j.val+1 < D','Recovery coordinates are in range.')],
+'NLA.TR27.Paper.recoveryOpenPoints': [('_proof_2','(D r : ℕ) : 5 ≤ D → 2 ≤ D','The recovery dimension permits coordinate pivots.')],
+'Reference.LexTensorCompletion.lexIndex': [('_proof_2',': 0 < lexCard []','The empty tensor mode list has a valid zero index.'),('_proof_5','(j : Fin (lexCard [])) : (fun (_ : ModeIndex []) => (⟨0,lexIndex._proof_2⟩ : Fin (lexCard []))) ((fun (_ : Fin (lexCard [])) => PUnit.unit) j) = j','The empty-mode lexicographic index has a right inverse.')],
+'NLA.IE21.matrixMap': [('_proof_6','{d : ℕ} : @ContinuousSMul Real (qC d) (@SMulZeroClass.toSMul Real (qC d) (@AddZero.toZero (qC d) (@AddZeroClass.toAddZero (qC d) (@AddMonoid.toAddZeroClass (qC d) (qE d)))) (@DistribSMul.toSMulZeroClass Real (qC d) (@AddMonoid.toAddZeroClass (qC d) (qE d)) (@DistribMulAction.toDistribSMul Real (qC d) ((qF).toSemiring).toMonoid (qE d) (@Module.toDistribMulAction Real (qC d) (qF).toSemiring (qH d) (@WithLp.instModule (qA) Real ((Fin d) -> Real) (qF).toSemiring (@Pi.addCommGroup (Fin d) (fun (z0 : Fin d) => Real) (fun (i : Fin d) => Real.instAddCommGroup)) (@Pi.Function.module (Fin d) Real Real (qF).toSemiring ((Real.instRing).toSemiring).toAddCommMonoid ((qF).toSemiring).toModule)))))) ((((((Real.normedField).toNormedCommRing).toSeminormedCommRing).toSeminormedRing).toPseudoMetricSpace).toUniformSpace).toTopologicalSpace (qI d)','Scalar multiplication on the Euclidean domain is continuous.'),('_proof_4','{d : ℕ} : @ContinuousConstSMul Real (qC d) (qI d) (@SMulZeroClass.toSMul Real (qC d) (@AddZero.toZero (qC d) (@AddZeroClass.toAddZero (qC d) (@AddMonoid.toAddZeroClass (qC d) (qL d)))) (@DistribSMul.toSMulZeroClass Real (qC d) (@AddMonoid.toAddZeroClass (qC d) (qL d)) (@DistribMulAction.toDistribSMul Real (qC d) ((qK).toSemiring).toMonoid (qL d) (@Module.toDistribMulAction Real (qC d) (qK).toSemiring (qH d) (@WithLp.instModule (qA) Real ((Fin d) -> Real) (qM).toSemiring (@Pi.addCommGroup (Fin d) (fun (z0 : Fin d) => Real) (fun (i : Fin d) => @Ring.toAddCommGroup Real ((qD).toDivisionRing).toRing)) (@Pi.Function.module (Fin d) Real Real (qM).toSemiring ((((qD).toDivisionRing).toRing).toSemiring).toAddCommMonoid ((qM).toSemiring).toModule))))))','Each fixed scalar acts continuously on the Euclidean codomain.')]
+}
+
+# Syntax aliases preserve exact audited Mathlib instance paths; no mathematical constants are introduced.
+EXACT_TYPE_SETUP='set_option quotPrecheck false local notation "qA" => (@OfNat.ofNat ENNReal (nat_lit 2) (@instOfNatAtLeastTwo ENNReal (nat_lit 2) ((ENNReal.instAddCommMonoidWithOne).toAddMonoidWithOne).toNatCast PiLp.innerProductSpace._proof_1)) local notation "qB" d => (@WithLp.instAddCommGroup (qA) ((Fin d) -> Real) (@Pi.addCommGroup (Fin d) (fun (z0 : Fin d) => Real) (fun (i : Fin d) => Real.instAddCommGroup)))\nlocal notation "qC" d => (EuclideanSpace Real (Fin d)) local notation "qD" => ((((Real.instRCLike).toDenselyNormedField).toNormedField).toField)\nlocal notation "qE" d => (@SubNegMonoid.toAddMonoid (qC d) (@AddGroup.toSubNegMonoid (qC d) (@AddCommGroup.toAddGroup (qC d) (qB d)))) local notation "qF" => ((((Real.normedField).toField).toSemifield).toCommSemiring)\nlocal notation "qG" d => (@Pi.addCommGroup (Fin d) (fun (z0 : Fin d) => Complex) (fun (i : Fin d) => @SeminormedAddCommGroup.toAddCommGroup Complex (Complex.instNormedAddCommGroup).toSeminormedAddCommGroup)) local notation "qH" d => (@AddCommGroup.toAddCommMonoid (qC d) (qB d))\nlocal notation "qI" d => (@PiLp.topologicalSpace (qA) (Fin d) (fun (z0 : Fin d) => Real) (fun (i : Fin d) => @UniformSpace.toTopologicalSpace Real (Real.pseudoMetricSpace).toUniformSpace)) local notation "qJ" => ((((Complex.instRCLike).toDenselyNormedField).toNormedField).toField)\nlocal notation "qK" => ((((((Real.denselyNormedField).toNontriviallyNormedField).toNormedField).toField).toSemifield).toCommSemiring) local notation "qL" d => (@AddCommMonoid.toAddMonoid (qC d) (qH d))\nlocal notation "qM" => (((qD).toSemifield).toCommSemiring) local notation "qN" => (Complex.instNormedAddCommGroup) set_option quotPrecheck true\n'
+
 def strip_comments(text):
     out=[];i=0;depth=0;string=False
     while i<len(text):
@@ -34,6 +48,16 @@ def strip_comments(text):
             i+=1
     if depth or string:raise ValueError("Unclosed comment/string")
     return "".join(out)
+
+def tighten_type_colons(text):
+    """Remove optional colon spacing without touching comments, strings or quoted names."""
+    mask=source_mask(text)
+    for match in re.finditer(r"«[^»]*»",text):
+        mask=mask[:match.start()]+" "*(match.end()-match.start())+mask[match.end():]
+    positions=[match.start() for match in re.finditer(" : ",mask)]
+    for position in reversed(positions):text=text[:position]+":"+text[position+3:]
+    return text
+
 
 def compact(text):
     """Fold only layout-independent terms; preserve records/equation bodies."""
@@ -227,11 +251,11 @@ def generate():
     index=json.loads((ROOT/"submission-index.json").read_text(encoding="utf-8"))
     components=index.get("components",index.get("entries"))
     if len(components)!=17:raise ValueError("Expected seventeen preserved components")
-    pieces=["module\nimport all Lean.Meta.Match.Match\npublic import Mathlib\n@[expose] public section\nset_option autoImplicit false noncomputable section\n",CACHE_DEFINITION,
+    pieces=["module\nimport all Lean.Meta.Match.Match\npublic import Mathlib\n@[expose] public section\nset_option autoImplicit false noncomputable section\n",CACHE_DEFINITION,CACHE_EXPLICIT,EXACT_TYPE_SETUP,
         "/-! Numerical Linear Algebra, Explained: twenty problem resolutions. Unchanged semantic definitions and theorem types from preserved components.\n"
         "Accounts and attribution: README.md, docs/COMBINED-DEFINITIONS.md, formalization.yaml and NOTICE.md.\n"
         "At 92 original source-module boundaries, only Lean's auxiliary-proof and matcher caches are cleared, preserving generated names;\n"
-        "no declarations or assumptions change. -/\n"]
+        "no declarations or assumptions change. Type notation shares exact Mathlib instance expressions. -/\n"]
     imports=[];names=[];seen={};rows=[];duplicates=[]
     for row in components:
         commands,keep,targets,config=component_surface(row)
@@ -257,6 +281,10 @@ def generate():
                     if signature!=seen[c.name]:raise ValueError("Conflicting declaration "+c.name)
                     duplicates.append({"name":c.name,"component":row["id"]});continue
                 seen[c.name]=signature;retained.append(c.name)
+            for suffix,signature,doc in EXPLICIT_SUPPORT.get(c.name,[]):
+                name=c.name+"."+suffix
+                relative=name[len(c.namespace)+1:] if c.namespace and name.startswith(c.namespace+".") else name
+                output.append("/-- "+doc+" -/ theorem "+relative+" "+signature+" := (by sorry) cache_proof "+name+"\n")
             output.append(compact(text))
             if c.index in context_after:output.append(context_after[c.index])
         if row["id"]=="TR-27":output.append("end\n")
@@ -273,7 +301,7 @@ def generate():
                     if all(j in remove or harmless(output[j]) for j in range(start+1,i)):
                         remove.update(range(start,i+1))
             output=[t for i,t in enumerate(output) if i not in remove];changed=len(old)!=len(output)
-        pieces.append("/- "+row["id"]+": "+row.get("title","")+". -/\n"+fold_context(output))
+        pieces.append("/- "+row["id"]+": "+row.get("title","")+". -/ "+fold_context(output))
         # Only primary proof environments are co-imported. Alternative auxiliary
         # libraries remain preserved and independently compiled in the components.
         for target in row["targets"]:
@@ -281,7 +309,7 @@ def generate():
             if module=="PaperSolution":module="NLA.Collection."+row["id"].replace("-","")+"PaperSolution"
             if module not in imports:imports.append(module)
         rows.append({"id":row["id"],"retained_named_declarations":retained,"theorem_names":config["theorem_names"]})
-    challenge="".join(pieces)
+    challenge=tighten_type_colons("".join(pieces))
     lines=len(challenge.splitlines());size=len(challenge.encode())
     if lines>1000 or size>100*1024:raise ValueError(f"Challenge too large: {lines} lines / {size} bytes")
     solution="module\n"+"".join("public import "+x+"\n" for x in imports)+"\n@[expose] public section\n"
@@ -290,6 +318,8 @@ def generate():
     support=json.loads(support_path.read_text(encoding="utf-8")) if support_path.is_file() else {"schema_version":1,"theorems":[]}
     if support.get("schema_version")!=1:raise ValueError("Unsupported auxiliary theorem manifest")
     helpers=[row["name"] for row in support["theorems"]]
+    explicit_names={owner+"."+suffix for owner,rows in EXPLICIT_SUPPORT.items() for suffix,_,_ in rows}
+    if set(helpers)!=explicit_names:raise ValueError("Supporting targets must all have explicit source theorem declarations")
     if len(set(base_names+helpers))!=len(base_names)+len(helpers):raise ValueError("Duplicate auxiliary theorem target")
     if any(name.startswith("_private.") for name in helpers):raise ValueError("Auxiliary targets must be public theorem names")
     config={"challenge_module":"Challenge","solution_module":"Solution","theorem_names":base_names+helpers,
@@ -337,7 +367,13 @@ def definition_index():
                 while fence in raw:fence+=chr(96)
                 text.append("\n"+fence+"lean\n"+raw+"\n"+fence+"\n");doc_count+=1
             count+=1
-    text.insert(2,"\nIndexed declarations: "+str(count)+". Original documentation blocks: "+str(doc_count)+".\n")
+    support=json.loads((ROOT/"audit/combined-supporting-theorems.json").read_text(encoding="utf-8"))["theorems"]
+    statement=generate()[0]["Challenge.lean"].splitlines()
+    text.append("\n## Explicit supporting theorem anchors\n\nThese technical propositions now have explicit public theorem declarations in Challenge. Their original generated names remain unchanged. The compiler cache reuses those declarations in the fixed definitions; it does not add assumptions. Exact normalized types and original proof ownership are recorded in the supporting-theorem manifest.\n")
+    for row in support:
+        line=next(i for i,body in enumerate(statement,1) if "cache_proof "+row["name"] in body)
+        text.append("\n### "+row["name"]+"\n\n[Explicit statement](../Challenge.lean#L"+str(line)+") · [Original proof owner](../"+row["source_path"]+"#L"+str(row["source_line"])+")\n\n"+row["purpose"]+"\n")
+    text.insert(2,"\nIndexed original declarations: "+str(count)+". Original documentation blocks: "+str(doc_count)+". Explicit supporting theorem anchors: "+str(len(support))+".\n")
     return "".join(text)
 
 
@@ -385,11 +421,14 @@ def declaration_origins():
     if any(len(v)>1 for v in module_groups.values()):raise ValueError("An original module is split across statement units")
     source_rows=[{"module":m,"path":Path(*m.split(".")).with_suffix(".lean").as_posix(),"sha256":hashlib.sha256(data).hexdigest()} for m,data in sorted(modules.items())]
     digest=hashlib.sha256(json.dumps(source_rows,sort_keys=True,separators=(",",":")).encode()).hexdigest()
+    statement_lines=generate()[0]["Challenge.lean"].splitlines()
     return {"schema_version":1,"kind":"source-level-declaration-origin-audit","scope":"Static source parser audit of retained named declarations and module/order boundaries; not a Lean or Comparator result.",
         "primary_graph_modules":len(modules),"retained_named_declarations":len(wanted),"all_retained_named_declarations_mapped":True,"within_module_order_preserved":True,
         "mixed_source_units":[],"split_original_modules":[],"unparsed_non_owner_modules":errors,"unparsed_module_scope":"These files own no retained named statement declaration; their proof validation remains covered by compilation.",
         "solution_sha256":hashlib.sha256((ROOT/"Solution.lean").read_bytes()).hexdigest(),"comparator_sha256":hashlib.sha256((ROOT/"comparator.json").read_bytes()).hexdigest(),
         "source_graph_sha256":digest,"source_modules":source_rows,"source_units":group_rows,
+        "total_named_statement_declarations":len(wanted)+sum(len(rows) for rows in EXPLICIT_SUPPORT.values()),
+        "explicit_supporting_theorems":[{"name":row["name"],"source_path":row["source_path"],"owner_declaration":row["owner_declaration"],"source_line":row["source_line"],"challenge_source_line":next(i for i,line in enumerate(statement_lines,1) if "cache_proof "+row["name"] in line)} for row in json.loads((ROOT/"audit/combined-supporting-theorems.json").read_text(encoding="utf-8"))["theorems"]],
         "component_statement_inputs":[{"path":row["project_path"]+"/Challenge.lean","sha256":hashlib.sha256((ROOT/row["project_path"]/"Challenge.lean").read_bytes()).hexdigest()} for row in components],
         "retained_cache_owner":{"name":"Reference.LexTensorCompletion.svdFrame","source":"projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean","reason":"Retains original closed-proof cache ownership before frameRun without changing any selected theorem."},
         "retained_cache_owners":[{"name":name,"source":"projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean","reason":reason} for name,reason in [

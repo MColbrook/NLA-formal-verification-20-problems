@@ -4,7 +4,7 @@
   "status": "pass",
   "selected_axioms_checked": true,
   "project_root": ".",
-  "source_inventory_sha256": "133d0bd119a4a7922ac91684e5775bca03939b2b783e56105f5e061b0665dea6",
+  "source_inventory_sha256": "a63c007d729ae247c51b35ae58a14ab65e255f75596c9d7b11627bbc5db4420c",
   "source_stable": true,
   "solution_module": "Solution",
   "theorem_names": [
@@ -300,17 +300,17 @@
   "query_path": "verification/selected-axioms/NLA20/query.txt",
   "query_sha256": "3656dfa1ad50d7ba3ef16394803cc52bafa65d0c6655eaf1a4d71cbcdb579fa7",
   "stdout_path": "verification/selected-axioms/NLA20/stdout.txt",
-  "stdout_sha256": "62fe8ca369f431eb5b704ad540fccfaba11bfaf4ad0bae02f27cea05b4977dd3",
+  "stdout_sha256": "a7d56ca76b5d7bdfec2d590977f332b4c27951022055d62c9efe4c5ae3f475bb",
   "stderr_path": "verification/selected-axioms/NLA20/stderr.txt",
   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
   "command": [
     "C:\\Users\\MatthewColbrook\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
     "-j1",
     "-M12288",
-    "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla20-combined-selected-axioms\\SelectedAxiomQuery.lean"
+    "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-combined-selected-axioms-4.35.0\\SelectedAxiomQuery.lean"
   ],
   "exit_code": 0,
-  "elapsed_seconds": 44.3633770942688,
+  "elapsed_seconds": 25.64155411720276,
   "errors": [],
   "kernel_replay_performed": false
 }

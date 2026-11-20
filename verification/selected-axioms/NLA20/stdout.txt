@@ -41,38 +41,38 @@
 'NLA.MI22.Paper.paper_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
 'NLA.MI22.Paper.paper_conjecture_false' depends on axioms: [propext, Classical.choice, Quot.sound]
 'NLA.MI22.singularValue._proof_1' depends on axioms: [propext, Classical.choice, Quot.sound]
-C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:39:14: warning: `NLA.MI22.singularValue._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla-palomar-combined-selected-axioms-4.35.0\SelectedAxiomQuery.lean:39:14: warning: `NLA.MI22.singularValue._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
 
 Note: This linter can be disabled with `set_option linter.auxLemma false`
 'Complexity.NTM.trace._proof_6' depends on axioms: [propext, Quot.sound]
-C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:40:14: warning: `Complexity.NTM.trace._proof_6` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla-palomar-combined-selected-axioms-4.35.0\SelectedAxiomQuery.lean:40:14: warning: `Complexity.NTM.trace._proof_6` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
 
 Note: This linter can be disabled with `set_option linter.auxLemma false`
 'NLA.TR27.Paper.pivotIndex._proof_2' depends on axioms: [propext, Quot.sound]
-C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:41:14: warning: `NLA.TR27.Paper.pivotIndex._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla-palomar-combined-selected-axioms-4.35.0\SelectedAxiomQuery.lean:41:14: warning: `NLA.TR27.Paper.pivotIndex._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
 
 Note: This linter can be disabled with `set_option linter.auxLemma false`
 'NLA.TR27.Paper.recoveryIndex._proof_2' depends on axioms: [propext, Quot.sound]
-C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:42:14: warning: `NLA.TR27.Paper.recoveryIndex._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla-palomar-combined-selected-axioms-4.35.0\SelectedAxiomQuery.lean:42:14: warning: `NLA.TR27.Paper.recoveryIndex._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
 
 Note: This linter can be disabled with `set_option linter.auxLemma false`
 'NLA.TR27.Paper.recoveryOpenPoints._proof_2' depends on axioms: [propext, Quot.sound]
-C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:43:14: warning: `NLA.TR27.Paper.recoveryOpenPoints._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla-palomar-combined-selected-axioms-4.35.0\SelectedAxiomQuery.lean:43:14: warning: `NLA.TR27.Paper.recoveryOpenPoints._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
 
 Note: This linter can be disabled with `set_option linter.auxLemma false`
 'Reference.LexTensorCompletion.lexIndex._proof_5' depends on axioms: [propext, Quot.sound]
-C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:44:14: warning: `Reference.LexTensorCompletion.lexIndex._proof_5` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla-palomar-combined-selected-axioms-4.35.0\SelectedAxiomQuery.lean:44:14: warning: `Reference.LexTensorCompletion.lexIndex._proof_5` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
 
 Note: This linter can be disabled with `set_option linter.auxLemma false`
 'Reference.LexTensorCompletion.lexIndex._proof_2' depends on axioms: [propext, Quot.sound]
-C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:45:14: warning: `Reference.LexTensorCompletion.lexIndex._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla-palomar-combined-selected-axioms-4.35.0\SelectedAxiomQuery.lean:45:14: warning: `Reference.LexTensorCompletion.lexIndex._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
 
 Note: This linter can be disabled with `set_option linter.auxLemma false`
 'NLA.IE21.matrixMap._proof_6' depends on axioms: [propext, Classical.choice, Quot.sound]
-C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:46:14: warning: `NLA.IE21.matrixMap._proof_6` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla-palomar-combined-selected-axioms-4.35.0\SelectedAxiomQuery.lean:46:14: warning: `NLA.IE21.matrixMap._proof_6` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
 
 Note: This linter can be disabled with `set_option linter.auxLemma false`
 'NLA.IE21.matrixMap._proof_4' depends on axioms: [propext, Classical.choice, Quot.sound]
-C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:47:14: warning: `NLA.IE21.matrixMap._proof_4` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla-palomar-combined-selected-axioms-4.35.0\SelectedAxiomQuery.lean:47:14: warning: `NLA.IE21.matrixMap._proof_4` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
 
 Note: This linter can be disabled with `set_option linter.auxLemma false`

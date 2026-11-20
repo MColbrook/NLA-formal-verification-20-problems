@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import hashlib
+import importlib.util
 import json
 import os
 import re
@@ -635,6 +636,19 @@ def check(root: Path, index_path: Path, build_report: Path | None = None) -> dic
         report["selected_declarations"] = len(expected)
     except Exception as error:
         report["failures"].append(issue(error, stage="single_submission_scope"))
+    report["challenge_source_anchors_pass"] = False
+    try:
+        anchor_script = root / "scripts/check_challenge_anchors.py"
+        spec = importlib.util.spec_from_file_location("nla_challenge_anchor_check", anchor_script)
+        if spec is None or spec.loader is None:
+            raise ValueError("Cannot load the Challenge source-anchor validator")
+        anchor_module = importlib.util.module_from_spec(spec)
+        sys.modules[spec.name] = anchor_module
+        spec.loader.exec_module(anchor_module)
+        report["challenge_source_anchors"] = anchor_module.validate_evidence(root)
+        report["challenge_source_anchors_pass"] = True
+    except Exception as error:
+        report["failures"].append(issue(error, stage="challenge_source_anchors"))
     report["static_contract_pass"] = not report["failures"]
     report["compatible_build_pass"] = report["combined_build_pass"] and report["component_build_pass"]
     report["statement_correspondence_pass"] = False
@@ -645,13 +659,13 @@ def check(root: Path, index_path: Path, build_report: Path | None = None) -> dic
             report["statement_correspondence_pass"] = True
         except Exception as error:
             report["warnings"].append(issue(error, stage="statement_correspondence"))
-    report["ready_for_submission"] = report["static_contract_pass"] and report["compatible_build_pass"] and report["statement_correspondence_pass"]
+    report["ready_for_submission"] = report["static_contract_pass"] and report["compatible_build_pass"] and report["statement_correspondence_pass"] and report["challenge_source_anchors_pass"]
     report["status"] = "READY" if report["ready_for_submission"] else (
         "FAIL" if not report["static_contract_pass"] else (
             "BUILD_NOT_VERIFIED" if not report["compatible_build_pass"] else "COMPARISON_NOT_VERIFIED"
         )
     )
-    report["limitations"].append("The retained seventeen component receipts do not certify the combined Solution. A separate source-bound combined build, selected-axiom receipt and exact type/fixed-definition comparison-core report are mandatory. The local comparison does not perform full proof export or kernel replay.")
+    report["limitations"].append("The retained seventeen component receipts do not certify the combined Solution. A separate source-bound combined build, selected-axiom receipt, exact type/fixed-definition comparison-core report and compiler-backed source-anchor eligibility receipt are mandatory. The local comparison does not perform full proof export or kernel replay.")
     return report
 
 def self_test() -> None:
@@ -703,7 +717,7 @@ def main() -> int:
         target = args.json if args.json.is_absolute() else root / args.json
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps({key: report[key] for key in ("status", "static_contract_pass", "compatible_build_pass", "statement_correspondence_pass", "ready_for_submission", "palomar_verified", "kernel_replay_performed")}))
+    print(json.dumps({key: report[key] for key in ("status", "static_contract_pass", "compatible_build_pass", "statement_correspondence_pass", "challenge_source_anchors_pass", "ready_for_submission", "palomar_verified", "kernel_replay_performed")}))
     for failure in report["failures"]:
         print("FAIL " + json.dumps(failure, ensure_ascii=False))
     for warning in report["warnings"]:

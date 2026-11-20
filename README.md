@@ -447,7 +447,7 @@ Rational eighth-root certificates and noncommutative error propagation prove ine
 
 ### Technical supporting theorems
 
-These compiler-generated proof declarations support the fixed mathematical definitions.
+These supporting proof declarations have explicit source names in the Challenge and support the fixed mathematical definitions.
 Their types are compared explicitly and their genuine Solution proofs are included in
 the axiom check. They do not add manuscript headline results.
 

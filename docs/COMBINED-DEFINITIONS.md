@@ -2,7 +2,7 @@
 
 This index links every retained declaration to its preserved component source. The source definitions and selected theorem types remain in the root Challenge. Documentation blocks below are copied verbatim from the original component interfaces; no new mathematical interpretation is supplied for undocumented declarations. The component README files provide the informal accounts, hypotheses and limitations.
 
-Indexed declarations: 458. Original documentation blocks: 155.
+Indexed original declarations: 458. Original documentation blocks: 155. Explicit supporting theorem anchors: 9.
 
 ## MF-05
 
@@ -2581,3 +2581,61 @@ entrywise matrix norm. -/
 ### NLA.MI22.Paper.paper_conjecture_false
 
 [theorem in preserved source](../projects/MI-22/Challenge.lean#L188)
+
+## Explicit supporting theorem anchors
+
+These technical propositions now have explicit public theorem declarations in Challenge. Their original generated names remain unchanged. The compiler cache reuses those declarations in the fixed definitions; it does not add assumptions. Exact normalized types and original proof ownership are recorded in the supporting-theorem manifest.
+
+### NLA.MI22.singularValue._proof_1
+
+[Explicit statement](../Challenge.lean#L987) · [Original proof owner](../projects/MI-22/NLA/MI22/Definitions.lean#L46)
+
+Finite-dimensionality of every complex Euclidean coordinate space, required by the fixed singularValue definition.
+
+### Complexity.NTM.trace._proof_6
+
+[Explicit statement](../Challenge.lean#L860) · [Original proof owner](../projects/IV-04/NLA/IV04/Complexitylib/Models/TuringMachine.lean#L676)
+
+For i in Fin T, the bound i.val + 1 < T + 1 needed to advance the finite computation trace.
+
+### NLA.TR27.Paper.pivotIndex._proof_2
+
+[Explicit statement](../Challenge.lean#L562) · [Original proof owner](../projects/TR-27/NLA/TR27/PaperCoordinateDefinitions.lean#L15)
+
+The bound 1 < D + 1 under 2 <= D, required for the coordinate pivot index.
+
+### NLA.TR27.Paper.recoveryIndex._proof_2
+
+[Explicit statement](../Challenge.lean#L598) · [Original proof owner](../projects/TR-27/NLA/TR27/PaperRationalDefinitions.lean#L22)
+
+The bound j.val + 1 < D for j in Fin 4 and 5 <= D, required by recoveryIndex.
+
+### NLA.TR27.Paper.recoveryOpenPoints._proof_2
+
+[Explicit statement](../Challenge.lean#L605) · [Original proof owner](../projects/TR-27/NLA/TR27/PaperRationalGeometryDefinitions.lean#L15)
+
+The implication 5 <= D -> 2 <= D used by the coordinate pivot in recoveryOpenPoints.
+
+### Reference.LexTensorCompletion.lexIndex._proof_5
+
+[Explicit statement](../Challenge.lean#L333) · [Original proof owner](../projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean#L206)
+
+The right inverse law of the lexicographic index equivalence for the empty mode list.
+
+### Reference.LexTensorCompletion.lexIndex._proof_2
+
+[Explicit statement](../Challenge.lean#L332) · [Original proof owner](../projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean#L206)
+
+The bound 0 < lexCard [], making zero a valid finite index for the empty mode list.
+
+### NLA.IE21.matrixMap._proof_6
+
+[Explicit statement](../Challenge.lean#L184) · [Original proof owner](../projects/IE-21/NLA/IE21/Definitions.lean#L60)
+
+Joint continuity of real scalar multiplication on the Euclidean domain required by the fixed matrixMap construction.
+
+### NLA.IE21.matrixMap._proof_4
+
+[Explicit statement](../Challenge.lean#L185) · [Original proof owner](../projects/IE-21/NLA/IE21/Definitions.lean#L60)
+
+Continuity of multiplication by each fixed real scalar on the Euclidean codomain required by matrixMap.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-11-20T13:38:41.741474+00:00",
+  "checked_at_utc": "2026-11-20T22:24:12.817500+00:00",
   "kind": "offline_static_submission_contract",
   "palomar_submission_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
   "static_contract_pass": true,
@@ -37,7 +37,7 @@
         "MI-22"
       ],
       "project_path": ".",
-      "source_inventory_sha256": "133d0bd119a4a7922ac91684e5775bca03939b2b783e56105f5e061b0665dea6",
+      "source_inventory_sha256": "a63c007d729ae247c51b35ae58a14ab65e255f75596c9d7b11627bbc5db4420c",
       "source_inventory_files": 4570,
       "dependencies": [
         {
@@ -159,7 +159,7 @@
       ],
       "definition_holes": 0,
       "challenge_source": "Challenge.lean",
-      "challenge_bytes": 98991,
+      "challenge_bytes": 101604,
       "challenge_lines": 1000,
       "challenge_direct_imports": [
         "Lean.Meta.Match.Match",
@@ -168,7 +168,7 @@
       "solution_source": "Solution.lean",
       "selected_axiom_evidence": {
         "receipt": "verification/selected-axioms/NLA20/selected-axioms.json",
-        "receipt_sha256": "fd76ae435512efae47860aa4ac5bc6c1447cddae993b3b6813025ed2fe65b475",
+        "receipt_sha256": "cec13ed3f0163c98517fd5a679646c627dde3e710caf70fe624e7a6ac341d8bd",
         "public_artifacts_checked": true,
         "native_compiled_artifacts_available": false
       },
@@ -231,7 +231,7 @@
     "Direct Challenge imports and conventional declarative source paths are checked locally; Palomar reconstructs and authenticates the full transitive closure.",
     "Standard Apache text is compared to the pinned reference; Palomar separately runs its own licence detector.",
     "Palomar's future full mechanical verification, editorial review and rendering remain separate requirements.",
-    "The retained seventeen component receipts do not certify the combined Solution. A separate source-bound combined build, selected-axiom receipt and exact type/fixed-definition comparison-core report are mandatory. The local comparison does not perform full proof export or kernel replay."
+    "The retained seventeen component receipts do not certify the combined Solution. A separate source-bound combined build, selected-axiom receipt, exact type/fixed-definition comparison-core report and compiler-backed source-anchor eligibility receipt are mandatory. The local comparison does not perform full proof export or kernel replay."
   ],
   "lean_source_scan": {
     "schema_version": 1,
@@ -239,7 +239,7 @@
     "maximum_lines": 10000,
     "files_checked": 4498
   },
-  "intended_source_bytes": 40830211,
+  "intended_source_bytes": 40930817,
   "license": {
     "path": "LICENSE",
     "spdx": "Apache-2.0",
@@ -2122,10 +2122,19 @@
     }
   ],
   "selected_declarations": 43,
+  "challenge_source_anchors_pass": true,
+  "challenge_source_anchors": {
+    "path": "verification/challenge-anchors.json",
+    "sha256": "2fe534becc43db7f923f417d560c28bfdb4083945142bec5730314705bb8ac44",
+    "selected_declarations": 43,
+    "compiler_backed_source_names": true,
+    "server_artifact_bound": true,
+    "verso_render_performed": false
+  },
   "statement_correspondence_pass": true,
   "statement_correspondence": {
     "path": "verification/combined-correspondence.json",
-    "sha256": "a718efcc508a2830ab03a3a76a9943fdf497edbe1566133612888121be855621",
+    "sha256": "f6671799de0ad1b2fbdd8ed0a59ef598fc809ddbe87e11cd1b2d04c4553743aa",
     "statement_types_and_fixed_definitions_compared": true,
     "kernel_replay_performed": false
   }

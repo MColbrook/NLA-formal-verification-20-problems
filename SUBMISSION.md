@@ -26,6 +26,12 @@ The seventeen independent component builds alone cannot establish one combined
 Solution. Their historical receipts remain in `verification/build-status.json`
 and `verification/selected-axioms/`.
 
+Readiness also requires the source-bound compiler metadata evidence in
+[verification/challenge-anchors.json](verification/challenge-anchors.json).
+Every selected declaration must have an explicit source-name token and its own
+compiler-recorded selection range in the Challenge. This checks source-anchor
+eligibility; Palomar separately performs the full Verso rendering.
+
 After any combined proof input changes, rebuild and refresh the combined
 evidence. The combined build helper's `--help` documents compiler, dependency,
 and working-directory options. Official Palomar verification and NanoDa replay
@@ -123,6 +129,7 @@ Then, in PowerShell:
 ~~~powershell
 $leanCompiler = (elan which lean).Trim()
 python scripts/build_combined_project.py --lean $leanCompiler --jobs 1
+python scripts/check_challenge_anchors.py --lean $leanCompiler
 python scripts/check_combined_correspondence.py --lean $leanCompiler
 ~~~
 

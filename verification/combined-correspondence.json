@@ -4,7 +4,7 @@
   "status": "pass",
   "comparison_passed": true,
   "selected_declarations_are_theorems": true,
-  "source_inventory_sha256": "133d0bd119a4a7922ac91684e5775bca03939b2b783e56105f5e061b0665dea6",
+  "source_inventory_sha256": "a63c007d729ae247c51b35ae58a14ab65e255f75596c9d7b11627bbc5db4420c",
   "source_stable": true,
   "compiled_artifacts_stable": true,
   "driver_stable": true,
@@ -36,7 +36,7 @@
     }
   },
   "native_toolchain_inputs_stable": true,
-  "native_executable_sha256": "18d44b2c1ee3e2f2225cd59effa5e718e6ebc99ffee76a2438c6800d479411a0",
+  "native_executable_sha256": "b4c7914f174ce7eae78f1005a08a719806190beeb6c9a3bc0139806a086f753e",
   "native_executable_stable": true,
   "generated_c_sha256": "f998c37e3527d98bb19107e26b87c6dec3c021bbc9e77048f8e6abfafdd01bc9",
   "generated_c_stable": true,
@@ -53,13 +53,13 @@
   "statement_materializations": [
     {
       "module": "Challenge",
-      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-final-correspondence-4.35.0\\challenge.constants",
-      "sha256": "7e734748f3bb9ecbc4fd77e4687cc207deffb259596fb5551a09b7fb41430212",
-      "bytes": 166568896
+      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-anchor-final-correspondence-4.35.0\\challenge.constants",
+      "sha256": "973e30f8625dccc4f405641c68462c2b98668f347a76d67d0c820684ec4b030d",
+      "bytes": 166573776
     },
     {
       "module": "Solution",
-      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-final-correspondence-4.35.0\\solution.constants",
+      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-anchor-final-correspondence-4.35.0\\solution.constants",
       "sha256": "2dd54a9feb60b7f7f913827f91dd709a1a0b168f3323fd0c10843dae402c1971",
       "bytes": 166577528
     }
@@ -126,7 +126,7 @@
   "comparison_input": "independent compiled type/ordinary-value closures materialized as self-contained Lean CompactedRegions; selected theorem proof values omitted; exact exporter mdata/let-hint normalization; actual compareAt unchanged; native compilation changes execution only",
   "details": {
     "challenge_closure_constants": 42519,
-    "challenge_materialized_bytes": 166568896,
+    "challenge_materialized_bytes": 166573776,
     "compared_theorems": 43,
     "definition_body_negative_control": true,
     "selected_declarations_are_theorems": true,
@@ -139,23 +139,23 @@
   "challenge_artifacts": [
     {
       "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean",
-      "sha256": "da470c288c3c9d0351c5c44e4d86c524e97a28daffa060ad8a17a22650c898c7",
-      "bytes": 2199368
+      "sha256": "e9223bb1efcde8cd17e83600469eb53354a49b5ec95aec7bcef68dd6cd3d4bea",
+      "bytes": 2387176
     },
     {
       "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean.private",
-      "sha256": "9e9d65baaf952d238d2c8aa305eae6b7ed33dd23cf39af7faa55fd667395f5d0",
-      "bytes": 1798808
+      "sha256": "9b3f49b4fd6e7708ff254e5187c98b25e9e18c65d73819fe3a237a2be8b42ad8",
+      "bytes": 2356896
     },
     {
       "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean.server",
-      "sha256": "17db30a44b561c193621483f77b3d1e8a5f80a3d1d2016bffbf35e2022f9a7ed",
-      "bytes": 125032
+      "sha256": "954b991a24d022f14973dc5dfb254817beabfaa5f3fe94d65aaf31dc3944ce6b",
+      "bytes": 142664
     },
     {
       "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.ir",
-      "sha256": "ac8fd2ddb20e063265138cc7881e26d8a4f90551d7fb1992092ab8cfdca41d30",
-      "bytes": 415208
+      "sha256": "02779981dca025c49a798bfb55a1bd61e343ecee080cdc30e3687015887c11d8",
+      "bytes": 598416
     },
     {
       "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.ir.sig",
@@ -207,11 +207,11 @@
   "nanoda_replay_performed": false,
   "official_palomar_verification": false,
   "driver_path": "scripts/check_combined_correspondence.py",
-  "driver_sha256": "e8142322e3a0286bb9c49d22e7c1cfd7693ea40e6637fbedfa4b5460a701025d",
+  "driver_sha256": "d14ca4d979cdde980e82b6a264dbf16d8e806bde8bb467b25e23fb57bf2f6905",
   "query_path": "verification/correspondence/query.txt",
   "query_sha256": "cc4202cbbb2d83db017693f7c01c55a2887e3c9cc59eeb3147d61febde57a3a5",
   "stdout_path": "verification/correspondence/stdout.txt",
-  "stdout_sha256": "8c8ad3c50dd7a8fe469cd72e9fb276f06414a7f83a0d2ee129f8240d06095f7c",
+  "stdout_sha256": "7358c026b285c98c7a4b1f38ee94c1e07717fc88aac1717818a8f9444231f44d",
   "stderr_path": "verification/correspondence/stderr.txt",
   "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 }

@@ -75,6 +75,9 @@ jobs:
       - name: Compile the single submitted environment and query its axioms
         shell: bash
         run: python scripts/build_combined_project.py --lean "$(elan which lean)" --jobs 4 --memory-mb 4096
+      - name: Check explicit source anchors for every selected declaration
+        shell: bash
+        run: python scripts/check_challenge_anchors.py --lean "$(elan which lean)"
       - name: Compare the selected types and fixed definition bodies
         shell: bash
         run: python scripts/check_combined_correspondence.py --lean "$(elan which lean)"
@@ -86,6 +89,8 @@ jobs:
             verification/build-status.json
             verification/combined-build-status.json
             verification/combined-correspondence.json
+            verification/challenge-anchors.json
+            verification/challenge-anchors/
             verification/correspondence/
             verification/selected-axioms/NLA20/
             audit/static-submission-check.json

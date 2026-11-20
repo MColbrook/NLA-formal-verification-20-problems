@@ -1,0 +1,85 @@
+{
+  "source_commit": "166ef2e",
+  "challenge_source_sha256": "73fe108ce616ea9d07df51d88c22fd9abfa08763e96cad133203fa613857fc5f",
+  "challenge_artifacts": [
+    {
+      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-old-anchor-regression-166ef2e\\Challenge.olean",
+      "sha256": "da470c288c3c9d0351c5c44e4d86c524e97a28daffa060ad8a17a22650c898c7",
+      "bytes": 2199368
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-old-anchor-regression-166ef2e\\Challenge.olean.private",
+      "sha256": "9e9d65baaf952d238d2c8aa305eae6b7ed33dd23cf39af7faa55fd667395f5d0",
+      "bytes": 1798808
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-old-anchor-regression-166ef2e\\Challenge.olean.server",
+      "sha256": "17db30a44b561c193621483f77b3d1e8a5f80a3d1d2016bffbf35e2022f9a7ed",
+      "bytes": 125032
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-old-anchor-regression-166ef2e\\Challenge.ir",
+      "sha256": "ac8fd2ddb20e063265138cc7881e26d8a4f90551d7fb1992092ab8cfdca41d30",
+      "bytes": 415208
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-old-anchor-regression-166ef2e\\Challenge.ir.sig",
+      "sha256": "4d58d19313d9b9f9c39bbcf076e6686823655301adb49087748b374bc0983725",
+      "bytes": 176
+    }
+  ],
+  "schema_version": 1,
+  "kind": "compiler-backed-source-anchor-negative-control",
+  "status": "pass",
+  "failed_commit": "166ef2e3720c7cb389ec3ebf7bdfa5f6c26b5292",
+  "compiler_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "driver_sha256": "ee76e7383961b68d5be55e701a311cfeeef28a13d7cf91e422749ff01ee7c85d",
+  "selected_declarations": 43,
+  "eligible_declarations": 34,
+  "rejected_declarations": [
+    {
+      "name": "NLA.MI22.singularValue._proof_1",
+      "message": "Missing compiler-backed declaration range"
+    },
+    {
+      "name": "Complexity.NTM.trace._proof_6",
+      "message": "Missing compiler-backed declaration range"
+    },
+    {
+      "name": "NLA.TR27.Paper.pivotIndex._proof_2",
+      "message": "Missing compiler-backed declaration range"
+    },
+    {
+      "name": "NLA.TR27.Paper.recoveryIndex._proof_2",
+      "message": "Missing compiler-backed declaration range"
+    },
+    {
+      "name": "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+      "message": "Missing compiler-backed declaration range"
+    },
+    {
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_5",
+      "message": "Missing compiler-backed declaration range"
+    },
+    {
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_2",
+      "message": "Missing compiler-backed declaration range"
+    },
+    {
+      "name": "NLA.IE21.matrixMap._proof_6",
+      "message": "Missing compiler-backed declaration range"
+    },
+    {
+      "name": "NLA.IE21.matrixMap._proof_4",
+      "message": "Missing compiler-backed declaration range"
+    }
+  ],
+  "verso_render_performed": false,
+  "kernel_replay_performed": false,
+  "query_path": "verification/challenge-anchors-negative/query.txt",
+  "query_sha256": "92d2884c013d79d87bf190cabb5dce2e8cf8f596217622bb5eeb49d1b7b8f6ce",
+  "stdout_path": "verification/challenge-anchors-negative/stdout.txt",
+  "stdout_sha256": "3b25737957a47d1e97380ebe94783b1c78d424ce3cbc60f514826f4ad201210c",
+  "stderr_path": "verification/challenge-anchors-negative/stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
