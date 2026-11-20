@@ -1,0 +1,25 @@
+module
+
+public import NLA.IV04.PaperExactOutputHardnessPoly
+public import NLA.IV04.PaperExactOutputHardnessSemantics
+public import NLA.IV04.PaperExactOutputHardness
+public import NLA.IV04.PaperFullHullProjection
+
+@[expose] public section
+
+#print axioms IV04.Paper.Computational.polynomial_sat_output_query_mem_fp
+#print axioms IV04.Paper.Computational.polynomial_sat_range_answer_mem_fp
+#print axioms IV04.Paper.Computational.polynomial_sat_hull_answer_mem_fp
+#print axioms IV04.Paper.Computational.one_query_reduction_of_map
+#print axioms IV04.Paper.Computational.rational_parser_success_value_tail
+#print axioms IV04.Paper.Computational.polynomial_partition_output_query_read
+#print axioms IV04.Paper.Computational.polynomial_partition_output_query_identifies
+#print axioms IV04.Paper.Computational.partition_exact_range_output_exists
+#print axioms IV04.Paper.Computational.polynomial_sat_range_answer_correct
+#print axioms IV04.Paper.Computational.exact_determinant_range_output_np_hard
+#print axioms IV04.Paper.Computational.partition_exact_first_hull_output_exists
+#print axioms IV04.Paper.Computational.polynomial_sat_first_hull_answer_correct
+#print axioms IV04.Paper.Computational.exact_first_hull_endpoint_output_np_hard
+#print axioms IV04.Paper.Computational.polynomial_first_hull_projection_mem_fp
+#print axioms IV04.Paper.Computational.exact_full_hull_output_projects
+#print axioms IV04.Paper.Computational.complete_hull_output_contains_np_hard_endpoint

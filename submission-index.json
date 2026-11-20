@@ -1,0 +1,687 @@
+{
+  "schema_version": 2,
+  "manuscript_sha256": "b66976c1efa4f625f3b380fef6e945ddf4d7beea6e1b264e2f87d6790548bba5",
+  "repository_upload_performed": false,
+  "palomar_submission_performed": false,
+  "project_count": 1,
+  "resolved_problem_count": 20,
+  "entries": [
+    {
+      "id": "NLA20",
+      "problem_ids": [
+        "MF-05",
+        "MF-07",
+        "MF-12",
+        "RA-02",
+        "RA-03",
+        "RA-08",
+        "RA-09",
+        "IE-21",
+        "IE-22",
+        "TR-04",
+        "TR-27",
+        "IS-03",
+        "NM-04",
+        "PF-02",
+        "MD-06",
+        "IV-02",
+        "IV-04",
+        "MI-19",
+        "MI-21",
+        "MI-22"
+      ],
+      "project_path": ".",
+      "comparator_config_path": "comparator.json",
+      "formalization_metadata_path": "formalization.yaml",
+      "title": "Numerical Linear Algebra, Explained: Twenty Problem Resolutions",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "selected_theorem_names": [
+        "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_real_uniform_holder",
+        "NLA.MF12.Paper.paper_main_realization",
+        "NLA.MF12.Paper.paper_rational_realization",
+        "NLA.RA02.Paper.paper_sup_worst_case_constants",
+        "NLA.RA08.Paper.paper_spectral_failure",
+        "NLA.RA08.Paper.verified_paper_nuclear_counterexample",
+        "NLA.RA09.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.paper_ordered_sharpness",
+        "NLA.RA09.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.paper_unordered_sharpness",
+        "NLA.IE21.Paper.paper_random_rows",
+        "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+        "NLA.IE22.Paper.paper_universal_squared_rate",
+        "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+        "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+        "Reference.LexTensorCompletion.lexCard_eq_card",
+        "NLA.TR27.Paper.paper_full_family",
+        "NLA.TR27.Paper.coordinateProjection_surjective",
+        "NLA.TR27.Paper.coordinateProjection_kernel",
+        "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+        "NLA.TR27.Paper.tensor_reps_nonzero",
+        "NLA.IS03.paper_counterexample",
+        "NLA.NM04.Paper.paper_rowland_wu_identity",
+        "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness",
+        "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+        "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty",
+        "IV04.Paper.Computational.actual_paper_iv_det",
+        "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+        "NLA.MI19.Paper.paper_counterexample",
+        "NLA.MI21.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_conjecture_false",
+        "NLA.MI22.singularValue._proof_1",
+        "Complexity.NTM.trace._proof_6",
+        "NLA.TR27.Paper.pivotIndex._proof_2",
+        "NLA.TR27.Paper.recoveryIndex._proof_2",
+        "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+        "Reference.LexTensorCompletion.lexIndex._proof_5",
+        "Reference.LexTensorCompletion.lexIndex._proof_2",
+        "NLA.IE21.matrixMap._proof_6",
+        "NLA.IE21.matrixMap._proof_4"
+      ],
+      "readiness": "ready-for-single-submission; local compilation, 43 axiom checks and bundled comparison core passed; official verification pending"
+    }
+  ],
+  "palomar_verified": false,
+  "source_module_count": 2304,
+  "selected_theorem_count": 43,
+  "source_module_scope": "projects/*",
+  "submission_count": 1,
+  "component_project_count": 17,
+  "components": [
+    {
+      "id": "MF-05",
+      "problem_ids": [
+        "MF-05",
+        "MF-07"
+      ],
+      "project_path": "projects/MF-05",
+      "comparator_config_path": "projects/MF-05/comparator.json",
+      "formalization_metadata_path": "projects/MF-05/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "mfu-thm-growth",
+          "source_line": 143,
+          "original_config": "growth-comparator.json",
+          "original_challenge_module": "NLA.MF05.GrowthChallenge",
+          "original_solution_module": "NLA.MF05.GrowthSolution",
+          "theorem_names": [
+            "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+            "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent"
+          ],
+          "old_proof_file": "problems/MF-05/NLA/MF05/GrowthSolution.lean",
+          "historical_evidence": "problems/MF-05/verification/paper-growth-20260926/result.json"
+        },
+        {
+          "manuscript_label": "mfu-thm-holder",
+          "source_line": 170,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "PaperChallenge",
+          "original_solution_module": "PaperSolution",
+          "theorem_names": [
+            "NLA.MF05.Paper.paper_real_uniform_holder"
+          ],
+          "old_proof_file": "problems/MF-05/PaperSolution.lean",
+          "historical_evidence": "problems/MF-05/verification/paper-holder-20260926/result.json"
+        }
+      ],
+      "title": "Uniform matrix-product growth and Hölder continuity of the joint spectral radius",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_real_uniform_holder"
+      ]
+    },
+    {
+      "id": "MF-12",
+      "problem_ids": [
+        "MF-12"
+      ],
+      "project_path": "projects/MF-12",
+      "comparator_config_path": "projects/MF-12/comparator.json",
+      "formalization_metadata_path": "projects/MF-12/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "mfg-thm-main",
+          "source_line": 437,
+          "original_config": "realization-comparator.json",
+          "original_challenge_module": "NLA.MF12.RealizationChallenge",
+          "original_solution_module": "NLA.MF12.RealizationSolution",
+          "theorem_names": [
+            "NLA.MF12.Paper.paper_main_realization",
+            "NLA.MF12.Paper.paper_rational_realization"
+          ],
+          "old_proof_file": "problems/MF-12/NLA/MF12/RealizationSolution.lean",
+          "historical_evidence": "problems/MF-12/verification/paper-realization-20260926/result.json"
+        }
+      ],
+      "title": "Prescribed polynomial growth from two real matrices",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.MF12.Paper.paper_main_realization",
+        "NLA.MF12.Paper.paper_rational_realization"
+      ]
+    },
+    {
+      "id": "RA-02",
+      "problem_ids": [
+        "RA-02",
+        "RA-03"
+      ],
+      "project_path": "projects/RA-02",
+      "comparator_config_path": "projects/RA-02/comparator.json",
+      "formalization_metadata_path": "projects/RA-02/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "rap-cor:sup",
+          "source_line": 777,
+          "original_config": "lu-sup-comparator.json",
+          "original_challenge_module": "NLA.RA02.LUSupChallenge",
+          "original_solution_module": "NLA.RA02.LUSupSolution",
+          "theorem_names": [
+            "NLA.RA02.Paper.paper_sup_worst_case_constants"
+          ],
+          "old_proof_file": "problems/RA-02/NLA/RA02/LUSupSolution.lean",
+          "historical_evidence": "problems/RA-02/verification/paper-lu-sup-20261001/result.json"
+        }
+      ],
+      "title": "Sharp random-pivoting losses for Cholesky and LU",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.RA02.Paper.paper_sup_worst_case_constants"
+      ]
+    },
+    {
+      "id": "RA-08",
+      "problem_ids": [
+        "RA-08"
+      ],
+      "project_path": "projects/RA-08",
+      "comparator_config_path": "projects/RA-08/comparator.json",
+      "formalization_metadata_path": "projects/RA-08/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "rac-thm:spectral",
+          "source_line": 1191,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "PaperChallenge",
+          "original_solution_module": "PaperSolution",
+          "theorem_names": [
+            "NLA.RA08.Paper.paper_spectral_failure"
+          ],
+          "old_proof_file": "problems/RA-08/PaperSolution.lean",
+          "historical_evidence": "problems/RA-08/verification/paper-spectral-20260926/result.json"
+        },
+        {
+          "manuscript_label": "rac-thm:nuclear",
+          "source_line": 1277,
+          "original_config": "nuclear-counterexample-fixed-r2-comparator.json",
+          "original_challenge_module": "NLA.RA08.NuclearCounterexampleChallenge",
+          "original_solution_module": "NLA.RA08.NuclearCounterexampleSolution",
+          "theorem_names": [
+            "NLA.RA08.Paper.verified_paper_nuclear_counterexample"
+          ],
+          "old_proof_file": "problems/RA-08/NLA/RA08/NuclearCounterexampleSolution.lean",
+          "historical_evidence": "problems/RA-08/verification/nuclear-counterexample-legacy-fixed-r2-20261004/result.json"
+        }
+      ],
+      "title": "Counterexamples to concave matrix-function transfer",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.RA08.Paper.paper_spectral_failure",
+        "NLA.RA08.Paper.verified_paper_nuclear_counterexample"
+      ]
+    },
+    {
+      "id": "RA-09",
+      "problem_ids": [
+        "RA-09"
+      ],
+      "project_path": "projects/RA-09",
+      "comparator_config_path": "projects/RA-09/comparator.json",
+      "formalization_metadata_path": "projects/RA-09/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "raf-thm:ordered",
+          "source_line": 1426,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "PaperChallenge",
+          "original_solution_module": "PaperSolution",
+          "theorem_names": [
+            "NLA.RA09.paper_ordered_matrix_norm_relative",
+            "NLA.RA09.paper_ordered_sharpness"
+          ],
+          "old_proof_file": "problems/RA-09/PaperSolution.lean",
+          "historical_evidence": "problems/RA-09/verification/paper-complete-20260926/result.json"
+        },
+        {
+          "manuscript_label": "raf-thm:unordered",
+          "source_line": 1441,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "PaperChallenge",
+          "original_solution_module": "PaperSolution",
+          "theorem_names": [
+            "NLA.RA09.paper_unordered_matrix_norm_relative",
+            "NLA.RA09.paper_unordered_sharpness"
+          ],
+          "old_proof_file": "problems/RA-09/PaperSolution.lean",
+          "historical_evidence": "problems/RA-09/verification/paper-complete-20260926/result.json"
+        }
+      ],
+      "title": "Sharp Frobenius transfer bounds",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.RA09.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.paper_ordered_sharpness",
+        "NLA.RA09.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.paper_unordered_sharpness"
+      ]
+    },
+    {
+      "id": "IE-21",
+      "problem_ids": [
+        "IE-21"
+      ],
+      "project_path": "projects/IE-21",
+      "comparator_config_path": "projects/IE-21/comparator.json",
+      "formalization_metadata_path": "projects/IE-21/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:row-random",
+          "source_line": 1668,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "NLA.IE21.PaperChallenge",
+          "original_solution_module": "NLA.IE21.PaperSolution",
+          "theorem_names": [
+            "NLA.IE21.Paper.paper_random_rows"
+          ],
+          "old_proof_file": "problems/IE-21/NLA/IE21/PaperSolution.lean",
+          "historical_evidence": "problems/IE-21/verification/paper-joint-20260926/result.json"
+        }
+      ],
+      "title": "Limit for random-row deletion",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.IE21.Paper.paper_random_rows"
+      ]
+    },
+    {
+      "id": "IE-22",
+      "problem_ids": [
+        "IE-22"
+      ],
+      "project_path": "projects/IE-22",
+      "comparator_config_path": "projects/IE-22/comparator.json",
+      "formalization_metadata_path": "projects/IE-22/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:row-universal",
+          "source_line": 1675,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "NLA.IE22.PaperChallenge",
+          "original_solution_module": "NLA.IE22.PaperSolution",
+          "theorem_names": [
+            "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+            "NLA.IE22.Paper.paper_universal_squared_rate"
+          ],
+          "old_proof_file": "problems/IE-22/NLA/IE22/PaperSolution.lean",
+          "historical_evidence": "problems/IE-22/verification/paper-universal-20260926/result.json"
+        }
+      ],
+      "title": "The sharp universal row-deletion constant",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+        "NLA.IE22.Paper.paper_universal_squared_rate"
+      ]
+    },
+    {
+      "id": "TR-04",
+      "problem_ids": [
+        "TR-04"
+      ],
+      "project_path": "projects/TR-04",
+      "comparator_config_path": "projects/TR-04/comparator.json",
+      "formalization_metadata_path": "projects/TR-04/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:tr04-main",
+          "source_line": 1802,
+          "original_config": "paper-lexicographic-tensor-fixed-r3-comparator.json",
+          "original_challenge_module": "NLA.TR04.LexicographicTensorChallengeR3",
+          "original_solution_module": "NLA.TR04.LexicographicTensorSolutionR3",
+          "theorem_names": [
+            "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm"
+          ],
+          "old_proof_file": "problems/TR-04/NLA/TR04/LexicographicTensorSolutionR3.lean",
+          "historical_evidence": "problems/TR-04/verification/paper-lexicographic-tensor-shared-fixed-r3-20261005/result.json"
+        }
+      ],
+      "title": "A strict tensor-train approximation bound",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+        "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+        "Reference.LexTensorCompletion.lexCard_eq_card"
+      ]
+    },
+    {
+      "id": "TR-27",
+      "problem_ids": [
+        "TR-27"
+      ],
+      "project_path": "projects/TR-27",
+      "comparator_config_path": "projects/TR-27/comparator.json",
+      "formalization_metadata_path": "projects/TR-27/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:tr27-main",
+          "source_line": 1896,
+          "original_config": "full-family-comparator.json",
+          "original_challenge_module": "NLA.TR27.FullFamilyChallenge",
+          "original_solution_module": "NLA.TR27.FullFamilySolution",
+          "theorem_names": [
+            "NLA.TR27.Paper.paper_full_family"
+          ],
+          "old_proof_file": "problems/TR-27/NLA/TR27/FullFamilySolution.lean",
+          "historical_evidence": "problems/TR-27/verification/paper-full-family-20260927/result.json"
+        }
+      ],
+      "title": "Delayed tensor-power rank savings",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.TR27.Paper.paper_full_family",
+        "NLA.TR27.Paper.coordinateProjection_surjective",
+        "NLA.TR27.Paper.coordinateProjection_kernel",
+        "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+        "NLA.TR27.Paper.tensor_reps_nonzero"
+      ]
+    },
+    {
+      "id": "IS-03",
+      "problem_ids": [
+        "IS-03"
+      ],
+      "project_path": "projects/IS-03",
+      "comparator_config_path": "projects/IS-03/comparator.json",
+      "formalization_metadata_path": "projects/IS-03/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:is03",
+          "source_line": 2037,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "PaperChallenge",
+          "original_solution_module": "PaperSolution",
+          "theorem_names": [
+            "NLA.IS03.paper_counterexample"
+          ],
+          "old_proof_file": "problems/IS-03/PaperSolution.lean",
+          "historical_evidence": "problems/IS-03/verification/paper-20260926/result.json"
+        }
+      ],
+      "title": "Differentiation and nonnegative spectral realizability",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.IS03.paper_counterexample"
+      ]
+    },
+    {
+      "id": "NM-04",
+      "problem_ids": [
+        "NM-04"
+      ],
+      "project_path": "projects/NM-04",
+      "comparator_config_path": "projects/NM-04/comparator.json",
+      "formalization_metadata_path": "projects/NM-04/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:nm04-main",
+          "source_line": 2113,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "NLA.NM04.PaperChallenge",
+          "original_solution_module": "NLA.NM04.PaperSolution",
+          "theorem_names": [
+            "NLA.NM04.Paper.paper_rowland_wu_identity"
+          ],
+          "old_proof_file": "problems/NM-04/NLA/NM04/PaperSolution.lean",
+          "historical_evidence": "problems/NM-04/verification/paper-derivatives-final-20260926/result.json"
+        }
+      ],
+      "title": "The rectangular Rowland–Wu identity",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.NM04.Paper.paper_rowland_wu_identity"
+      ]
+    },
+    {
+      "id": "PF-02",
+      "problem_ids": [
+        "PF-02"
+      ],
+      "project_path": "projects/PF-02",
+      "comparator_config_path": "projects/PF-02/comparator.json",
+      "formalization_metadata_path": "projects/PF-02/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:pf02-all",
+          "source_line": 2310,
+          "original_config": "paper-uniform-positive-psd-fixed-r2-comparator.json",
+          "original_challenge_module": "NLA.PF02.PaperAllSizePSDChallenge",
+          "original_solution_module": "NLA.PF02.PaperAllSizePSDSolution",
+          "theorem_names": [
+            "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness"
+          ],
+          "old_proof_file": "problems/PF-02/NLA/PF02/PaperAllSizePSDSolution.lean",
+          "historical_evidence": "problems/PF-02/verification/paper-uniform-positive-psd-legacy-fixed-r2-20261004/result.json"
+        }
+      ],
+      "title": "Disconnected minimal PSD factorization spaces",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness"
+      ]
+    },
+    {
+      "id": "MD-06",
+      "problem_ids": [
+        "MD-06"
+      ],
+      "project_path": "projects/MD-06",
+      "comparator_config_path": "projects/MD-06/comparator.json",
+      "formalization_metadata_path": "projects/MD-06/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "md-main",
+          "source_line": 2379,
+          "original_config": "paper-main-assembly-comparator.json",
+          "original_challenge_module": "NLA.MD06.MainAssembly.Challenge",
+          "original_solution_module": "NLA.MD06.MainAssembly.Solution",
+          "theorem_names": [
+            "Reference.MD06MainAssembly.Interface.actual_paper_md_main"
+          ],
+          "old_proof_file": "problems/MD-06/NLA/MD06/MainAssembly/Solution.lean",
+          "historical_evidence": "problems/MD-06/verification/paper-main-assembly-fixed-r2-20261005/result.json"
+        }
+      ],
+      "title": "Stable nonsynchronous equilibria on random cubic graphs",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+        "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty"
+      ]
+    },
+    {
+      "id": "IV-04",
+      "problem_ids": [
+        "IV-02",
+        "IV-04"
+      ],
+      "project_path": "projects/IV-04",
+      "comparator_config_path": "projects/IV-04/comparator.json",
+      "formalization_metadata_path": "projects/IV-04/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:iv-det",
+          "source_line": 2606,
+          "original_config": "paper-determinant-headline-comparator.json",
+          "original_challenge_module": "NLA.IV04.DeterminantHeadlineChallenge",
+          "original_solution_module": "NLA.IV04.DeterminantHeadlineSolution",
+          "theorem_names": [
+            "IV04.Paper.Computational.actual_paper_iv_det"
+          ],
+          "old_proof_file": "problems/IV-04/NLA/IV04/DeterminantHeadlineSolution.lean",
+          "historical_evidence": "problems/IV-04/verification/paper-determinant-headline-20261004/result.json"
+        },
+        {
+          "manuscript_label": "thm:iv-hull",
+          "source_line": 2614,
+          "original_config": "paper-full-hull-hardness-comparator.json",
+          "original_challenge_module": "NLA.IV04.FullHullHardnessChallenge",
+          "original_solution_module": "NLA.IV04.FullHullHardnessSolution",
+          "theorem_names": [
+            "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+          ],
+          "old_proof_file": "problems/IV-04/NLA/IV04/FullHullHardnessSolution.lean",
+          "historical_evidence": "problems/IV-04/verification/paper-full-hull-hardness-fixed-r2-20261004/result.json"
+        }
+      ],
+      "title": "Hardness of interval determinant ranges and solution hulls",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "IV04.Paper.Computational.actual_paper_iv_det",
+        "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+      ]
+    },
+    {
+      "id": "MI-19",
+      "problem_ids": [
+        "MI-19"
+      ],
+      "project_path": "projects/MI-19",
+      "comparator_config_path": "projects/MI-19/comparator.json",
+      "formalization_metadata_path": "projects/MI-19/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": null,
+          "source_line": 2656,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "PaperChallenge",
+          "original_solution_module": "PaperSolution",
+          "theorem_names": [
+            "NLA.MI19.Paper.paper_counterexample"
+          ],
+          "old_proof_file": "problems/MI-19/PaperSolution.lean",
+          "historical_evidence": "problems/MI-19/verification/paper-full-20260926/result.json"
+        }
+      ],
+      "title": "A q-permanent subset-inequality counterexample",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.MI19.Paper.paper_counterexample"
+      ]
+    },
+    {
+      "id": "MI-21",
+      "problem_ids": [
+        "MI-21"
+      ],
+      "project_path": "projects/MI-21",
+      "comparator_config_path": "projects/MI-21/comparator.json",
+      "formalization_metadata_path": "projects/MI-21/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:mi21",
+          "source_line": 2711,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "NLA.MI21.PaperChallenge",
+          "original_solution_module": "NLA.MI21.PaperSolution",
+          "theorem_names": [
+            "NLA.MI21.Paper.paper_counterexample"
+          ],
+          "old_proof_file": "problems/MI-21/NLA/MI21/PaperSolution.lean",
+          "historical_evidence": "problems/MI-21/verification/paper-rational-20260926/result.json"
+        }
+      ],
+      "title": "A geometric-mean norm counterexample",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.MI21.Paper.paper_counterexample"
+      ]
+    },
+    {
+      "id": "MI-22",
+      "problem_ids": [
+        "MI-22"
+      ],
+      "project_path": "projects/MI-22",
+      "comparator_config_path": "projects/MI-22/comparator.json",
+      "formalization_metadata_path": "projects/MI-22/formalization.yaml",
+      "targets": [
+        {
+          "manuscript_label": "thm:mi22",
+          "source_line": 2774,
+          "original_config": "paper-comparator.json",
+          "original_challenge_module": "NLA.MI22.PaperChallenge",
+          "original_solution_module": "NLA.MI22.PaperSolution",
+          "theorem_names": [
+            "NLA.MI22.Paper.paper_counterexample",
+            "NLA.MI22.Paper.paper_conjecture_false"
+          ],
+          "old_proof_file": "problems/MI-22/NLA/MI22/PaperSolution.lean",
+          "historical_evidence": "problems/MI-22/verification/paper-full-20260926/result.json"
+        }
+      ],
+      "title": "A weighted log-majorization counterexample",
+      "challenge_module": "Challenge",
+      "solution_module": "Solution",
+      "readiness": "ready-for-upload; official verification pending",
+      "selected_theorem_names": [
+        "NLA.MI22.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_conjecture_false"
+      ]
+    }
+  ],
+  "component_compatible_builds_passed": true,
+  "component_selected_axioms_checked": true,
+  "combined_build_status": "pass",
+  "base_selected_theorem_count": 34,
+  "technical_supporting_theorem_count": 9,
+  "combined_build_passed": true,
+  "combined_selected_axioms_checked": true,
+  "combined_statement_correspondence_passed": true
+}

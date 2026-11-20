@@ -1,0 +1,2 @@
+'NLA.IE22.Paper.paper_high_aspect_supremum_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.IE22.Paper.paper_universal_squared_rate' depends on axioms: [propext, Classical.choice, Quot.sound]

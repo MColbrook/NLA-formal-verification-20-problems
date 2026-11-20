@@ -1,0 +1,2 @@
+# Parser used by the pinned Palomar static metadata validator.
+PyYAML==6.0.3

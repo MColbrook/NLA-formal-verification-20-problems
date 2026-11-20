@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-19",
+  "status": "requirements_snapshot_not_a_Palomar_acceptance",
+  "sources": [
+    {
+      "repository": "PalomarRegistry/PalomarPolicy",
+      "commit": "28bd48b9b71bbb2a82c718ce761d5a4220ef8e60",
+      "url": "https://github.com/PalomarRegistry/PalomarPolicy/tree/28bd48b9b71bbb2a82c718ce761d5a4220ef8e60",
+      "archive_sha256": "5361545dcdb203d0e5cce4268335aedd2c951cc80e1fd0bdd8de4c12fd5d8d53"
+    },
+    {
+      "repository": "PalomarRegistry/PalomarSubmission",
+      "commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+      "url": "https://github.com/PalomarRegistry/PalomarSubmission/tree/14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+      "archive_sha256": "37ef4480a45493d021756d60068591997f13c9c5dd43c5f84a9a58c5da10b52e"
+    },
+    {
+      "repository": "PalomarRegistry/PalomarTemplate",
+      "commit": "2891de4c48955af824969a263d31b25e7a9a1406",
+      "url": "https://github.com/PalomarRegistry/PalomarTemplate/tree/2891de4c48955af824969a263d31b25e7a9a1406",
+      "archive_sha256": "81c384fbf3743ddb49c505023e1519002201e6ca9d1bb582728462f593e5e463"
+    },
+    {
+      "repository": "leanprover/lean4",
+      "commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+      "tag": "v4.35.0-rc2",
+      "url": "https://github.com/leanprover/lean4/tree/11acb17ec6b07a8f9e9173e6845197929540936b/src/lake/Lake/Check"
+    }
+  ],
+  "intake": {
+    "url": "https://submit.palomar-registry.org/",
+    "public_github_required": true,
+    "commit_pattern": "^[0-9a-f]{40}$",
+    "one_entry_per_comparator_configuration": true,
+    "project_path_optional": true,
+    "comparator_config_path_required": true,
+    "formalization_metadata_path_basename": "formalization.yaml",
+    "paths_repository_relative": true,
+    "paths_use_forward_slash": true
+  },
+  "limits": {
+    "repository_bytes": 524288000,
+    "formalization_yaml_bytes": 262144,
+    "challenge_bytes": 102400,
+    "challenge_lines": 1000,
+    "challenge_warning_bytes": 32768,
+    "challenge_warning_lines": 300,
+    "configuration_bytes": 1048576,
+    "lakefile_bytes": 1048576,
+    "root_license_bytes": 1048576,
+    "lean_source_lines": 10000
+  },
+  "toolchain": {
+    "minimum": "leanprover/lean4:v4.35.0-rc2",
+    "mathlib_toolchain_must_match_resolved_mathlib_exactly": true,
+    "all_submitted_lean_sources_require_module": true,
+    "module_header_exempt_basenames": [
+      "lakefile.lean"
+    ],
+    "source_scan_excludes": [
+      ".git",
+      ".lake"
+    ],
+    "symlink_lean_files_forbidden": true
+  },
+  "project": {
+    "lakefile_exactly_one_of": [
+      "lakefile.toml",
+      "lakefile.lean"
+    ],
+    "committed_manifest_required_for_lean_lakefile": true,
+    "committed_manifest_recommended": true,
+    "toml_manifest_exception": "Only direct contained path dependencies whose targets have committed manifests, no further path dependencies and nonoverlapping package names; see policy6.3."
+  },
+  "comparator": {
+    "required_keys": [
+      "challenge_module",
+      "solution_module",
+      "theorem_names",
+      "permitted_axioms"
+    ],
+    "optional_keys": [
+      "definition_names",
+      "enable_nanoda"
+    ],
+    "unknown_keys_rejected": true,
+    "fixed_definition_names_accepted": false,
+    "definition_names_default": [],
+    "theorem_names_nonempty": true,
+    "permitted_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "nanoda_mandatory": true,
+    "submitted_nanoda_switch_authoritative": false,
+    "con_ron": "attempted_after_mandatory_kernels; specified support/capacity declines are advisory, rejection or unknown error blocks",
+    "ordinary_definition_comparison": "For non-target constants transitively reachable from selected theorem types, bundled comparator requires identical ConstantInfo including definition bodies, and traverses used constants. Selected definition_names are intentional definition holes and exempt bodies.",
+    "challenge_solution_modules_distinct": true,
+    "helper_theorem_holes": "Reached non-target theorem proof values are structurally compared. Include deliberately incomplete Challenge helpers in theorem_names; Solution helpers must be genuinely proved. Use stable public names because Palomar aliases the Challenge module."
+  },
+  "dependencies": {
+    "challenge_import_roots": [
+      "Lean core",
+      "canonical Mathlib",
+      "canonical Tau Ceti",
+      "canonical CSLib"
+    ],
+    "challenge_exact_trusted_manifest_closures_allowed": true,
+    "challenge_project_helper_imports_allowed": false,
+    "solution_public_github_git_dependencies_allowed": true,
+    "git_dependency_revision_pattern": "^[0-9a-f]{40}$",
+    "credential_free_https_github_urls_required": true,
+    "contained_path_dependencies_allowed": true,
+    "submitted_submodules_allowed": false,
+    "git_lfs_allowed": false,
+    "submitted_lake_state_discarded": true,
+    "compiled_artifacts_outside_lake_forbidden": true
+  },
+  "metadata": {
+    "version": "v0.4",
+    "required_fields": [
+      "project.name",
+      "project.description",
+      "project.authors",
+      "project.license",
+      "project.responsible_maintainers",
+      "classification.arxiv",
+      "sources",
+      "automation.methods",
+      "review.status"
+    ],
+    "authors_and_maintainers_human_only": true,
+    "project_name_max_chars": 300,
+    "project_description_max_chars": 10000,
+    "arxiv_cardinality": [
+      1,
+      8
+    ],
+    "msc2020_cardinality": [
+      0,
+      8
+    ],
+    "canonical_source_relationships": [
+      "formalizes",
+      "adapts",
+      "independently-proves",
+      "background",
+      "other"
+    ],
+    "canonical_policy_source_types": [
+      "paper",
+      "book",
+      "web discussion",
+      "folklore",
+      "original-proof",
+      "other"
+    ],
+    "source_type_validator_note": "Pinned implementation accepts broader optional nonempty source-type text; use canonical policy values to satisfy both.",
+    "source_origin_modes": [
+      "source-based",
+      "original"
+    ],
+    "unknown_metadata_fields_allowed": true,
+    "duplicate_yaml_keys_forbidden": true,
+    "yaml_merge_keys_forbidden": true
+  },
+  "license": {
+    "root_license_file_exactly_one": true,
+    "basename_pattern_case_insensitive": "^(licen[cs]e|copying|unlicense|ofl)(\\.(md|markdown|txt))?$",
+    "standard_spdx_required": true,
+    "detected_spdx_must_equal_project_license": true,
+    "rights_ownership_not_inferred_by_detector": true
+  },
+  "preflight": {
+    "reusable_workflow": "PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml",
+    "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+    "mode": "full",
+    "execution_profile": "palomar-standard-v1",
+    "request_id_pattern": "^[0-9a-z]{12}$",
+    "predictive_only": true,
+    "includes_kernel_replay": true
+  },
+  "preparation_restrictions": {
+    "no_github_upload": true,
+    "no_submission": true,
+    "no_new_kernel_replay": true
+  }
+}

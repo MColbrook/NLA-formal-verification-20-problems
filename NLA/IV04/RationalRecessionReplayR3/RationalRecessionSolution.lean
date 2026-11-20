@@ -1,0 +1,27 @@
+module
+
+public import NLA.IV04.RationalRecessionReplayR3.PureDefinitions
+public import NLA.IV04.RationalRecessionReplayR3.RationalRecession.Recurrence
+public import NLA.IV04.RationalRecessionReplayR3.RationalRecession.Affine
+public import NLA.IV04.RationalRecessionReplayR3.RationalRecession.Cramer
+public import NLA.IV04.RationalRecessionReplayR3.RationalRecession.Threshold
+public import NLA.IV04.RationalRecessionReplayR3.RationalRecession.MaskSize
+public import NLA.IV04.RationalRecessionReplayR3.RationalRecession.IntegerRay
+public import Mathlib.Tactic
+
+@[expose] public section
+#print axioms Reference.IV04RationalRecessionRay.finite_type_has_unbounded_fiber
+#print axioms Reference.IV04RationalRecessionRay.unbounded_nat_affine_coefficient_nonpositive
+#print axioms Reference.IV04RationalRecessionRay.affine_feasible_points_yield_recession
+#print axioms Reference.IV04RationalRecessionRay.affine_thresholds_yield_positive_objective
+#print axioms Reference.IV04RationalRecessionRay.recession_direction_feasible_ray
+#print axioms Reference.IV04RationalRecessionRay.cramerCandidate_affine
+#print axioms Reference.IV04RationalRecessionRay.originalMaskCandidate_affine
+#print axioms Reference.IV04RationalRecessionRay.realVector_rational_affine
+#print axioms Reference.IV04RationalRecessionRay.thresholdBounds_affine
+#print axioms Reference.IV04RationalRecessionRay.threshold_mulVec_inr
+#print axioms Reference.IV04RationalRecessionRay.feasible_threshold_iff
+#print axioms Reference.IV04RationalRecessionRay.threshold_lineFree
+#print axioms Reference.IV04RationalRecessionRay.unbounded_objective_has_rational_recession_mask
+#print axioms Reference.IV04RationalRecessionRay.integer_mask_candidate_reduced_size
+#print axioms Reference.IV04RationalRecessionRay.integer_unbounded_objective_has_sized_rational_recession

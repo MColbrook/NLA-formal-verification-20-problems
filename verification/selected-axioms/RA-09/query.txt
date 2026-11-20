@@ -1,0 +1,8 @@
+module
+
+import Solution
+
+#print axioms NLA.RA09.paper_ordered_matrix_norm_relative
+#print axioms NLA.RA09.paper_ordered_sharpness
+#print axioms NLA.RA09.paper_unordered_matrix_norm_relative
+#print axioms NLA.RA09.paper_unordered_sharpness

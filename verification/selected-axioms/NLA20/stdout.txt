@@ -1,0 +1,78 @@
+'NLA.MF05.Paper.paper_real_bounded_positive_radius_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF05.Paper.paper_real_uniform_holder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF12.Paper.paper_main_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF12.Paper.paper_rational_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA02.Paper.paper_sup_worst_case_constants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA08.Paper.paper_spectral_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA08.Paper.verified_paper_nuclear_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA09.paper_ordered_matrix_norm_relative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA09.paper_ordered_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA09.paper_unordered_matrix_norm_relative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA09.paper_unordered_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.IE21.Paper.paper_random_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.IE22.Paper.paper_high_aspect_supremum_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.IE22.Paper.paper_universal_squared_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Reference.LexTensorExecution.actual_lexicographic_paper_algorithm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Reference.LexicographicFeasibilityBridge.product_eq_rowCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Reference.LexTensorCompletion.lexCard_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.TR27.Paper.paper_full_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.TR27.Paper.coordinateProjection_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.TR27.Paper.coordinateProjection_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.TR27.Paper.tensor_reps_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.IS03.paper_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.NM04.Paper.paper_rowland_wu_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Reference.MD06MainAssembly.Interface.actual_paper_md_main' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Reference.MD06FiniteProbability.actual_cubic_sample_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'IV04.Paper.Computational.actual_paper_iv_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Reference.IV04FullHullHardness.iv_hull_literal_np_hard' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MI19.Paper.paper_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MI21.Paper.paper_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MI22.Paper.paper_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MI22.Paper.paper_conjecture_false' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MI22.singularValue._proof_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:39:14: warning: `NLA.MI22.singularValue._proof_1` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+'Complexity.NTM.trace._proof_6' depends on axioms: [propext, Quot.sound]
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:40:14: warning: `Complexity.NTM.trace._proof_6` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+'NLA.TR27.Paper.pivotIndex._proof_2' depends on axioms: [propext, Quot.sound]
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:41:14: warning: `NLA.TR27.Paper.pivotIndex._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+'NLA.TR27.Paper.recoveryIndex._proof_2' depends on axioms: [propext, Quot.sound]
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:42:14: warning: `NLA.TR27.Paper.recoveryIndex._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+'NLA.TR27.Paper.recoveryOpenPoints._proof_2' depends on axioms: [propext, Quot.sound]
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:43:14: warning: `NLA.TR27.Paper.recoveryOpenPoints._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+'Reference.LexTensorCompletion.lexIndex._proof_5' depends on axioms: [propext, Quot.sound]
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:44:14: warning: `Reference.LexTensorCompletion.lexIndex._proof_5` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+'Reference.LexTensorCompletion.lexIndex._proof_2' depends on axioms: [propext, Quot.sound]
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:45:14: warning: `Reference.LexTensorCompletion.lexIndex._proof_2` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+'NLA.IE21.matrixMap._proof_6' depends on axioms: [propext, Classical.choice, Quot.sound]
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:46:14: warning: `NLA.IE21.matrixMap._proof_6` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`
+'NLA.IE21.matrixMap._proof_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+C:\Users\MatthewColbrook\AppData\Local\Temp\nla20-combined-selected-axioms\SelectedAxiomQuery.lean:47:14: warning: `NLA.IE21.matrixMap._proof_4` refers to an auto-generated auxiliary declaration. These are not stable across refactors; consider using a different approach.
+
+Note: This linter can be disabled with `set_option linter.auxLemma false`

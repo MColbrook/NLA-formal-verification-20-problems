@@ -1,0 +1,6 @@
+module
+
+import Solution
+
+#print axioms NLA.RA08.Paper.paper_spectral_failure
+#print axioms NLA.RA08.Paper.verified_paper_nuclear_counterexample

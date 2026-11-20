@@ -1,0 +1,49 @@
+module
+
+public import NLA.MD06.CycleProfile.Nonsynchronization
+
+@[expose] public section
+set_option autoImplicit false
+noncomputable section
+namespace Reference.MD06CycleProfile
+open scoped BigOperators
+open Set
+open Reference.MD06Actual Reference.MD06Correction Reference.MD06Spectral
+#print axioms actual_arcsin_lower
+#print axioms actual_arcsin_chord
+#print axioms actual_arcsin_half
+#print axioms actual_geometric_tail_le
+#print axioms actual_delta_nonneg
+#print axioms actual_balance_zero
+#print axioms actual_balance_continuous
+#print axioms actual_balance_strictMono
+#print axioms actual_balance_radius_monotone
+#print axioms actual_balance_one_gt
+#print axioms actual_balance_half_lt
+#print axioms actual_balance_root_unique
+#print axioms actual_root_spec
+#print axioms actual_root_interval
+#print axioms actual_root_radius_antitone
+#print axioms actual_root_cosine_positive
+#print axioms actual_root_uniform_cosine
+#print axioms actual_arcsin_derivative_lower
+#print axioms actual_arcsin_cubic_lower
+#print axioms actual_arcsin_sixteenth_upper
+#print axioms actual_uniform_cosine_gt_sixteenth
+#print axioms actual_delta_argument_bounds
+#print axioms actual_delta_sine
+#print axioms actual_height_step
+#print axioms actual_height_terminal
+#print axioms actual_height_balance
+#print axioms actual_root_height_balance
+#print axioms actual_opposite_root_sine
+#print axioms actual_opposite_root_cosine
+#print axioms actual_binary_tree_force_cancellation
+#print axioms actual_root_force_cancellation
+#print axioms actual_delta_cosine_uniform
+#print axioms actual_profile_tree_cosine_gt_sixteenth
+#print axioms actual_profile_cycle_cosine_gt_sixteenth
+#print axioms actual_small_correction_preserves_nonsynchronization
+#print axioms actual_sorted_gap_nonsynchronized_correction
+#print axioms actual_profile_opposite_root_sine_gt_half
+end Reference.MD06CycleProfile

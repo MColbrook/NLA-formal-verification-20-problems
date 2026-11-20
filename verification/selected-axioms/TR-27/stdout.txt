@@ -1,0 +1,5 @@
+'NLA.TR27.Paper.paper_full_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.TR27.Paper.coordinateProjection_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.TR27.Paper.coordinateProjection_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.TR27.Paper.tensor_reps_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+# Preserve audited source bytes across Git checkouts, including line endings.
+* -text
+*.gz binary

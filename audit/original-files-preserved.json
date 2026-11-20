@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "manuscript_sha256": "b66976c1efa4f625f3b380fef6e945ddf4d7beea6e1b264e2f87d6790548bba5",
+  "manuscript_unchanged": true,
+  "original_lean_inputs_checked": 2325,
+  "changed_original_lean_inputs": [],
+  "note": "Final read-only comparison to the original source snapshot captured before preparing the submission folder."
+}

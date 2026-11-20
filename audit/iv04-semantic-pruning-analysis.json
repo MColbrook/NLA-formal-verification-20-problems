@@ -1,0 +1,2148 @@
+{
+  "module_count": 251,
+  "all_commands": 3794,
+  "declarations": 2730,
+  "selected": [
+    "IV04.Paper.Computational.actual_paper_iv_det",
+    "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+  ],
+  "kept_count": 71,
+  "kept_semantic_count": 69,
+  "kept_theorem_count": 2,
+  "kept_lines": 434,
+  "kept_modules": 21,
+  "ambiguities": [],
+  "kept": [
+    {
+      "module": "NLA.IV04.Complexitylib.Encoding.Delimit",
+      "kind": "def",
+      "name": "Complexity.delimit",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Encoding.Pairing",
+      "kind": "def",
+      "name": "Complexity.pair",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.PaperWordAdderDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.firstBit",
+      "private": false,
+      "lines": 2
+    },
+    {
+      "module": "PaperDefinitions",
+      "kind": "abbrev",
+      "name": "IV04.Paper.Mat",
+      "private": false,
+      "lines": 2
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.naturalCode",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.readUnary",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.readNatural",
+      "private": false,
+      "lines": 6
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.rationalCode",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.readRational",
+      "private": false,
+      "lines": 8
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "inductive",
+      "name": "Complexity.Γ",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "inductive",
+      "name": "Complexity.Γw",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "private": false,
+      "lines": 5
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Γw.toΓ",
+      "private": false,
+      "lines": 5
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Γ.ofBool",
+      "private": false,
+      "lines": 5
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "inductive",
+      "name": "Complexity.Dir3",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "private": false,
+      "lines": 15
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "structure",
+      "name": "Complexity.Tape",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.read",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.write",
+      "private": false,
+      "lines": 5
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.move",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.HasOutput",
+      "private": false,
+      "lines": 6
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.Tape.decidableHasOutput",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.Tape.writeAndMove",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.init",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.Language",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "structure",
+      "name": "Complexity.Cfg",
+      "private": false,
+      "lines": 10
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.Cfg.init",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.Cfg.isHalted",
+      "private": false,
+      "lines": 11
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "structure",
+      "name": "Complexity.TM",
+      "private": false,
+      "lines": 22
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "structure",
+      "name": "Complexity.NTM",
+      "private": false,
+      "lines": 21
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.TM.step",
+      "private": false,
+      "lines": 12
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.TM.initCfg",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.TM.halted",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "inductive",
+      "name": "Complexity.TM.reachesIn",
+      "private": false,
+      "lines": 5
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.TM.ComputesInTime",
+      "private": false,
+      "lines": 5
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.NTM.trace",
+      "private": false,
+      "lines": 17
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.NTM.initCfg",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.NTM.halted",
+      "private": false,
+      "lines": 5
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.NTM.AcceptsInTime",
+      "private": false,
+      "lines": 6
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.NTM.AllPathsHaltIn",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.NTM.DecidesInTime",
+      "private": false,
+      "lines": 6
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Asymptotics",
+      "kind": "def",
+      "name": "Complexity.BigO",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Asymptotics",
+      "kind": "infixl",
+      "name": "Complexity.:50",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.Time",
+      "kind": "def",
+      "name": "Complexity.NTIME",
+      "private": false,
+      "lines": 6
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP",
+      "kind": "def",
+      "name": "Complexity.NP",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.P.Defs",
+      "kind": "def",
+      "name": "Complexity.FP",
+      "private": false,
+      "lines": 6
+    },
+    {
+      "module": "NLA.IV04.PaperRationalListParserDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.readRationals",
+      "private": false,
+      "lines": 7
+    },
+    {
+      "module": "NLA.IV04.PaperMatrixCoefficientInputDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.readMatrixRationals",
+      "private": false,
+      "lines": 5
+    },
+    {
+      "module": "NLA.IV04.PaperMatrixDenseSupportReference",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.rationalDenseEndpointAll",
+      "private": false,
+      "lines": 6
+    },
+    {
+      "module": "NLA.IV04.PaperRealIntervalVertexDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.boxLowerReal",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.PaperRealIntervalVertexDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.boxUpperReal",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.PaperRealIntervalVertexDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.realDenseIntervalBox",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.PaperRealIntervalVertexDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.rationalMatrixDeterminantDecisionLanguage",
+      "private": false,
+      "lines": 6
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP.Reduction",
+      "kind": "def",
+      "name": "Complexity.MapReducesPoly",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP.Reduction",
+      "kind": "infix",
+      "name": "Complexity.:50",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP.Reduction",
+      "kind": "def",
+      "name": "Complexity.NPHard",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP.Reduction",
+      "kind": "def",
+      "name": "Complexity.NPComplete",
+      "private": false,
+      "lines": 9
+    },
+    {
+      "module": "NLA.IV04.PaperConstructedHullDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.positiveCornerRhs",
+      "private": false,
+      "lines": 2
+    },
+    {
+      "module": "NLA.IV04.PaperConstructedHullDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.positiveSolutions",
+      "private": false,
+      "lines": 2
+    },
+    {
+      "module": "NLA.IV04.PaperExactOutputHardnessDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.PolynomialOneQueryReduction",
+      "private": false,
+      "lines": 8
+    },
+    {
+      "module": "NLA.IV04.PaperExactOutputHardnessDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.NPHardOutputTask",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.PaperExactOutputHardnessDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.ExactDeterminantRangeOutput",
+      "private": false,
+      "lines": 11
+    },
+    {
+      "module": "NLA.IV04.PaperFullHullProjectionDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.ExactFullHullOutput",
+      "private": false,
+      "lines": 17
+    },
+    {
+      "module": "NLA.IV04.PaperDeterminantHeadlineDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.RegularUnitMatrixPacket",
+      "private": false,
+      "lines": 9
+    },
+    {
+      "module": "NLA.IV04.PaperDeterminantHeadlineDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.regularUnitMatrixDeterminantDecisionLanguage",
+      "private": false,
+      "lines": 3
+    },
+    {
+      "module": "NLA.IV04.PaperDeterminantHeadlineDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.RegularUnitDeterminantRangeOutput",
+      "private": false,
+      "lines": 2
+    },
+    {
+      "module": "NLA.IV04.DeterminantHeadlineChallenge",
+      "kind": "theorem",
+      "name": "IV04.Paper.Computational.actual_paper_iv_det",
+      "private": false,
+      "lines": 4
+    },
+    {
+      "module": "NLA.IV04.FullHullHardnessChallenge",
+      "kind": "theorem",
+      "name": "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+      "private": false,
+      "lines": 3
+    }
+  ],
+  "dependency_edges": {
+    "Reference.IV04FullHullHardness.iv_hull_literal_np_hard": [
+      {
+        "from": "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+        "reference": "iv_hull_literal_np_hard"
+      }
+    ],
+    "IV04.Paper.Computational.NPHardOutputTask": [
+      {
+        "from": "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+        "reference": "NPHardOutputTask"
+      },
+      {
+        "from": "IV04.Paper.Computational.NPHardOutputTask",
+        "reference": "NPHardOutputTask"
+      },
+      {
+        "from": "IV04.Paper.Computational.actual_paper_iv_det",
+        "reference": "NPHardOutputTask"
+      }
+    ],
+    "IV04.Paper.Computational.ExactFullHullOutput": [
+      {
+        "from": "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+        "reference": "ExactFullHullOutput"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "ExactFullHullOutput"
+      }
+    ],
+    "IV04.Paper.Computational.readMatrixRationals": [
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "readMatrixRationals"
+      },
+      {
+        "from": "IV04.Paper.Computational.readMatrixRationals",
+        "reference": "readMatrixRationals"
+      },
+      {
+        "from": "IV04.Paper.Computational.RegularUnitMatrixPacket",
+        "reference": "readMatrixRationals"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactDeterminantRangeOutput",
+        "reference": "readMatrixRationals"
+      },
+      {
+        "from": "IV04.Paper.Computational.rationalMatrixDeterminantDecisionLanguage",
+        "reference": "readMatrixRationals"
+      }
+    ],
+    "IV04.Paper.Computational.rationalDenseEndpointAll": [
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "rationalDenseEndpointAll"
+      },
+      {
+        "from": "IV04.Paper.Computational.rationalDenseEndpointAll",
+        "reference": "rationalDenseEndpointAll"
+      },
+      {
+        "from": "IV04.Paper.Computational.rationalDenseEndpointAll",
+        "reference": "rationalDenseEndpointAll"
+      },
+      {
+        "from": "IV04.Paper.Computational.RegularUnitMatrixPacket",
+        "reference": "rationalDenseEndpointAll"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactDeterminantRangeOutput",
+        "reference": "rationalDenseEndpointAll"
+      },
+      {
+        "from": "IV04.Paper.Computational.rationalMatrixDeterminantDecisionLanguage",
+        "reference": "rationalDenseEndpointAll"
+      }
+    ],
+    "IV04.Paper.Computational.realDenseIntervalBox": [
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "realDenseIntervalBox"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "realDenseIntervalBox"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "realDenseIntervalBox"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "realDenseIntervalBox"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "realDenseIntervalBox"
+      },
+      {
+        "from": "IV04.Paper.Computational.realDenseIntervalBox",
+        "reference": "realDenseIntervalBox"
+      },
+      {
+        "from": "IV04.Paper.Computational.RegularUnitMatrixPacket",
+        "reference": "realDenseIntervalBox"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactDeterminantRangeOutput",
+        "reference": "realDenseIntervalBox"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactDeterminantRangeOutput",
+        "reference": "realDenseIntervalBox"
+      },
+      {
+        "from": "IV04.Paper.Computational.rationalMatrixDeterminantDecisionLanguage",
+        "reference": "realDenseIntervalBox"
+      }
+    ],
+    "IV04.Paper.positiveSolutions": [
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "IV04.Paper.positiveSolutions"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "IV04.Paper.positiveSolutions"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "IV04.Paper.positiveSolutions"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "IV04.Paper.positiveSolutions"
+      },
+      {
+        "from": "IV04.Paper.positiveSolutions",
+        "reference": "positiveSolutions"
+      }
+    ],
+    "IV04.Paper.rationalCode": [
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "IV04.Paper.rationalCode"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactFullHullOutput",
+        "reference": "IV04.Paper.rationalCode"
+      },
+      {
+        "from": "IV04.Paper.rationalCode",
+        "reference": "rationalCode"
+      }
+    ],
+    "IV04.Paper.Computational.boxLowerReal": [
+      {
+        "from": "IV04.Paper.Computational.realDenseIntervalBox",
+        "reference": "boxLowerReal"
+      },
+      {
+        "from": "IV04.Paper.Computational.boxLowerReal",
+        "reference": "boxLowerReal"
+      }
+    ],
+    "IV04.Paper.Computational.boxUpperReal": [
+      {
+        "from": "IV04.Paper.Computational.realDenseIntervalBox",
+        "reference": "boxUpperReal"
+      },
+      {
+        "from": "IV04.Paper.Computational.boxUpperReal",
+        "reference": "boxUpperReal"
+      }
+    ],
+    "IV04.Paper.Mat": [
+      {
+        "from": "IV04.Paper.positiveSolutions",
+        "reference": "Mat"
+      },
+      {
+        "from": "IV04.Paper.Mat",
+        "reference": "Mat"
+      }
+    ],
+    "IV04.Paper.positiveCornerRhs": [
+      {
+        "from": "IV04.Paper.positiveSolutions",
+        "reference": "positiveCornerRhs"
+      },
+      {
+        "from": "IV04.Paper.positiveCornerRhs",
+        "reference": "positiveCornerRhs"
+      }
+    ],
+    "IV04.Paper.naturalCode": [
+      {
+        "from": "IV04.Paper.rationalCode",
+        "reference": "naturalCode"
+      },
+      {
+        "from": "IV04.Paper.rationalCode",
+        "reference": "naturalCode"
+      },
+      {
+        "from": "IV04.Paper.naturalCode",
+        "reference": "naturalCode"
+      }
+    ],
+    "IV04.Paper.readNatural": [
+      {
+        "from": "IV04.Paper.Computational.readMatrixRationals",
+        "reference": "IV04.Paper.readNatural"
+      },
+      {
+        "from": "IV04.Paper.readRational",
+        "reference": "readNatural"
+      },
+      {
+        "from": "IV04.Paper.readRational",
+        "reference": "readNatural"
+      },
+      {
+        "from": "IV04.Paper.readNatural",
+        "reference": "readNatural"
+      }
+    ],
+    "IV04.Paper.Computational.readRationals": [
+      {
+        "from": "IV04.Paper.Computational.readMatrixRationals",
+        "reference": "readRationals"
+      },
+      {
+        "from": "IV04.Paper.Computational.readRationals",
+        "reference": "readRationals"
+      },
+      {
+        "from": "IV04.Paper.Computational.readRationals",
+        "reference": "readRationals"
+      }
+    ],
+    "IV04.Paper.readRational": [
+      {
+        "from": "IV04.Paper.Computational.readRationals",
+        "reference": "IV04.Paper.readRational"
+      },
+      {
+        "from": "IV04.Paper.readRational",
+        "reference": "readRational"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactDeterminantRangeOutput",
+        "reference": "IV04.Paper.readRational"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactDeterminantRangeOutput",
+        "reference": "IV04.Paper.readRational"
+      }
+    ],
+    "IV04.Paper.readUnary": [
+      {
+        "from": "IV04.Paper.readNatural",
+        "reference": "readUnary"
+      },
+      {
+        "from": "IV04.Paper.readUnary",
+        "reference": "readUnary"
+      },
+      {
+        "from": "IV04.Paper.readUnary",
+        "reference": "readUnary"
+      }
+    ],
+    "Complexity.NP": [
+      {
+        "from": "IV04.Paper.Computational.NPHardOutputTask",
+        "reference": "NP"
+      },
+      {
+        "from": "Complexity.NP",
+        "reference": "NP"
+      },
+      {
+        "from": "Complexity.NPHard",
+        "reference": "NP"
+      },
+      {
+        "from": "Complexity.NPComplete",
+        "reference": "NP"
+      }
+    ],
+    "IV04.Paper.Computational.PolynomialOneQueryReduction": [
+      {
+        "from": "IV04.Paper.Computational.NPHardOutputTask",
+        "reference": "PolynomialOneQueryReduction"
+      },
+      {
+        "from": "IV04.Paper.Computational.PolynomialOneQueryReduction",
+        "reference": "PolynomialOneQueryReduction"
+      }
+    ],
+    "Complexity.FP": [
+      {
+        "from": "IV04.Paper.Computational.PolynomialOneQueryReduction",
+        "reference": "FP"
+      },
+      {
+        "from": "IV04.Paper.Computational.PolynomialOneQueryReduction",
+        "reference": "FP"
+      },
+      {
+        "from": "Complexity.FP",
+        "reference": "FP"
+      },
+      {
+        "from": "Complexity.MapReducesPoly",
+        "reference": "FP"
+      }
+    ],
+    "IV04.Paper.Computational.firstBit": [
+      {
+        "from": "IV04.Paper.Computational.PolynomialOneQueryReduction",
+        "reference": "firstBit"
+      },
+      {
+        "from": "IV04.Paper.Computational.firstBit",
+        "reference": "firstBit"
+      }
+    ],
+    "Complexity.pair": [
+      {
+        "from": "IV04.Paper.Computational.PolynomialOneQueryReduction",
+        "reference": "pair"
+      },
+      {
+        "from": "Complexity.pair",
+        "reference": "pair"
+      }
+    ],
+    "Complexity.delimit": [
+      {
+        "from": "Complexity.pair",
+        "reference": "delimit"
+      },
+      {
+        "from": "Complexity.delimit",
+        "reference": "delimit"
+      }
+    ],
+    "Complexity.TM": [
+      {
+        "from": "Complexity.FP",
+        "reference": "TM"
+      },
+      {
+        "from": "Complexity.TM.ComputesInTime",
+        "reference": "TM"
+      },
+      {
+        "from": "Complexity.TM.halted",
+        "reference": "TM"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "TM"
+      },
+      {
+        "from": "Complexity.TM.initCfg",
+        "reference": "TM"
+      },
+      {
+        "from": "Complexity.TM.reachesIn",
+        "reference": "TM"
+      },
+      {
+        "from": "Complexity.TM.step",
+        "reference": "TM"
+      }
+    ],
+    "Complexity.TM.ComputesInTime": [
+      {
+        "from": "Complexity.FP",
+        "reference": "tm.ComputesInTime"
+      },
+      {
+        "from": "Complexity.TM.ComputesInTime",
+        "reference": "ComputesInTime"
+      }
+    ],
+    "Complexity.TM.reachesIn": [
+      {
+        "from": "Complexity.TM.ComputesInTime",
+        "reference": "tm.reachesIn"
+      },
+      {
+        "from": "Complexity.TM.reachesIn",
+        "reference": "reachesIn"
+      },
+      {
+        "from": "Complexity.TM.reachesIn",
+        "reference": "reachesIn"
+      },
+      {
+        "from": "Complexity.TM.reachesIn",
+        "reference": "reachesIn"
+      },
+      {
+        "from": "Complexity.TM.reachesIn",
+        "reference": "reachesIn"
+      }
+    ],
+    "Complexity.TM.initCfg": [
+      {
+        "from": "Complexity.TM.ComputesInTime",
+        "reference": "tm.initCfg"
+      },
+      {
+        "from": "Complexity.TM.initCfg",
+        "reference": "initCfg"
+      }
+    ],
+    "Complexity.TM.halted": [
+      {
+        "from": "Complexity.TM.ComputesInTime",
+        "reference": "tm.halted"
+      },
+      {
+        "from": "Complexity.TM.halted",
+        "reference": "halted"
+      }
+    ],
+    "Complexity.Tape.HasOutput": [
+      {
+        "from": "Complexity.TM.ComputesInTime",
+        "reference": "c'.output.HasOutput"
+      },
+      {
+        "from": "Complexity.Tape.HasOutput",
+        "reference": "HasOutput"
+      },
+      {
+        "from": "Complexity.Tape.decidableHasOutput",
+        "reference": "t.HasOutput"
+      }
+    ],
+    "Complexity.Tape": [
+      {
+        "from": "Complexity.Tape.HasOutput",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape.decidableHasOutput",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Cfg",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Cfg",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Cfg",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape.init",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape.writeAndMove",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape.writeAndMove",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape.move",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape.move",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape.write",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape.write",
+        "reference": "Tape"
+      },
+      {
+        "from": "Complexity.Tape.read",
+        "reference": "Tape"
+      }
+    ],
+    "Complexity.Γ.ofBool": [
+      {
+        "from": "Complexity.Tape.HasOutput",
+        "reference": "Γ.ofBool"
+      },
+      {
+        "from": "Complexity.Γ.ofBool",
+        "reference": "Γ.ofBool"
+      },
+      {
+        "from": "Complexity.Tape.decidableHasOutput",
+        "reference": "Γ.ofBool"
+      },
+      {
+        "from": "Complexity.Cfg.init",
+        "reference": "Γ.ofBool"
+      }
+    ],
+    "Complexity.Γ": [
+      {
+        "from": "Complexity.Tape.HasOutput",
+        "reference": "Γ.blank"
+      },
+      {
+        "from": "Complexity.Γ",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.:",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.Γw.toΓ",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.:",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.:",
+        "reference": "Γ.blank"
+      },
+      {
+        "from": "Complexity.:",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.Γ.ofBool",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.Tape",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.Tape.decidableHasOutput",
+        "reference": "Γ.blank"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γ.start"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γ.start"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γ.start"
+      },
+      {
+        "from": "Complexity.Tape.init",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.Tape.init",
+        "reference": "Γ.start"
+      },
+      {
+        "from": "Complexity.Tape.init",
+        "reference": "Γ.blank"
+      },
+      {
+        "from": "Complexity.Tape.writeAndMove",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.Tape.write",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.Tape.read",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.NTM.AcceptsInTime",
+        "reference": "Γ.one"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γ"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γ.start"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γ.start"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γ.start"
+      }
+    ],
+    "Complexity.Γw": [
+      {
+        "from": "Complexity.:",
+        "reference": "Γw"
+      },
+      {
+        "from": "Complexity.Γw.toΓ",
+        "reference": "Γw"
+      },
+      {
+        "from": "Complexity.Γw",
+        "reference": "Γw"
+      },
+      {
+        "from": "Complexity.:",
+        "reference": "Γw"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γw"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Γw"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γw"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Γw"
+      }
+    ],
+    "Complexity.Γw.toΓ": [
+      {
+        "from": "Complexity.:",
+        "reference": "Γw.toΓ"
+      },
+      {
+        "from": "Complexity.Γw.toΓ",
+        "reference": "Γw.toΓ"
+      }
+    ],
+    "Complexity.Tape.decidableHasOutput": [
+      {
+        "from": "Complexity.Tape.decidableHasOutput",
+        "reference": "decidableHasOutput"
+      }
+    ],
+    "Complexity.Cfg": [
+      {
+        "from": "Complexity.TM.halted",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.Cfg.isHalted",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.Cfg",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.TM.initCfg",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.Cfg.init",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.TM.reachesIn",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.TM.reachesIn",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.TM.step",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.TM.step",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.NTM.halted",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.NTM.initCfg",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "Cfg"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "Cfg"
+      }
+    ],
+    "Complexity.Cfg.isHalted": [
+      {
+        "from": "Complexity.TM.halted",
+        "reference": "Cfg.isHalted"
+      },
+      {
+        "from": "Complexity.Cfg.isHalted",
+        "reference": "isHalted"
+      },
+      {
+        "from": "Complexity.NTM.halted",
+        "reference": "Cfg.isHalted"
+      }
+    ],
+    "Complexity.Dir3": [
+      {
+        "from": "Complexity.TM",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Dir3.right"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Dir3.right"
+      },
+      {
+        "from": "Complexity.TM",
+        "reference": "Dir3.right"
+      },
+      {
+        "from": "Complexity.Dir3",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.:",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.Tape.writeAndMove",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.Tape.move",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Dir3"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Dir3.right"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Dir3.right"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "Dir3.right"
+      }
+    ],
+    "Complexity.Cfg.init": [
+      {
+        "from": "Complexity.TM.initCfg",
+        "reference": "Cfg.init"
+      },
+      {
+        "from": "Complexity.Cfg.init",
+        "reference": "init"
+      },
+      {
+        "from": "Complexity.NTM.initCfg",
+        "reference": "Cfg.init"
+      }
+    ],
+    "Complexity.Tape.init": [
+      {
+        "from": "Complexity.Cfg.init",
+        "reference": "Tape.init"
+      },
+      {
+        "from": "Complexity.Cfg.init",
+        "reference": "Tape.init"
+      },
+      {
+        "from": "Complexity.Cfg.init",
+        "reference": "Tape.init"
+      },
+      {
+        "from": "Complexity.Tape.init",
+        "reference": "Tape.init"
+      }
+    ],
+    "Complexity.TM.step": [
+      {
+        "from": "Complexity.TM.reachesIn",
+        "reference": "step"
+      },
+      {
+        "from": "Complexity.TM.reachesIn",
+        "reference": "tm.step"
+      },
+      {
+        "from": "Complexity.TM.step",
+        "reference": "step"
+      }
+    ],
+    "Complexity.Tape.read": [
+      {
+        "from": "Complexity.TM.step",
+        "reference": "c.input.read"
+      },
+      {
+        "from": "Complexity.TM.step",
+        "reference": "read"
+      },
+      {
+        "from": "Complexity.TM.step",
+        "reference": "c.output.read"
+      },
+      {
+        "from": "Complexity.Tape.read",
+        "reference": "read"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "c.input.read"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "read"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "c.output.read"
+      }
+    ],
+    "Complexity.Tape.move": [
+      {
+        "from": "Complexity.TM.step",
+        "reference": "c.input.move"
+      },
+      {
+        "from": "Complexity.Tape.writeAndMove",
+        "reference": "move"
+      },
+      {
+        "from": "Complexity.Tape.move",
+        "reference": "move"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "c.input.move"
+      }
+    ],
+    "Complexity.Tape.writeAndMove": [
+      {
+        "from": "Complexity.TM.step",
+        "reference": "writeAndMove"
+      },
+      {
+        "from": "Complexity.TM.step",
+        "reference": "c.output.writeAndMove"
+      },
+      {
+        "from": "Complexity.Tape.writeAndMove",
+        "reference": "writeAndMove"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "writeAndMove"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "c.output.writeAndMove"
+      }
+    ],
+    "Complexity.Tape.write": [
+      {
+        "from": "Complexity.Tape.writeAndMove",
+        "reference": "t.write"
+      },
+      {
+        "from": "Complexity.Tape.write",
+        "reference": "write"
+      }
+    ],
+    "Complexity.BigO": [
+      {
+        "from": "Complexity.:50",
+        "reference": "BigO"
+      },
+      {
+        "from": "Complexity.BigO",
+        "reference": "BigO"
+      }
+    ],
+    "Complexity.Language": [
+      {
+        "from": "Complexity.NP",
+        "reference": "Language"
+      },
+      {
+        "from": "Complexity.NTIME",
+        "reference": "Language"
+      },
+      {
+        "from": "Complexity.NTM.DecidesInTime",
+        "reference": "Language"
+      },
+      {
+        "from": "Complexity.Language",
+        "reference": "Language"
+      },
+      {
+        "from": "Complexity.NPHard",
+        "reference": "Language"
+      },
+      {
+        "from": "Complexity.MapReducesPoly",
+        "reference": "Language"
+      },
+      {
+        "from": "Complexity.NPComplete",
+        "reference": "Language"
+      }
+    ],
+    "Complexity.NTIME": [
+      {
+        "from": "Complexity.NP",
+        "reference": "NTIME"
+      },
+      {
+        "from": "Complexity.NTIME",
+        "reference": "NTIME"
+      }
+    ],
+    "Complexity.NTM": [
+      {
+        "from": "Complexity.NTIME",
+        "reference": "NTM"
+      },
+      {
+        "from": "Complexity.NTM.DecidesInTime",
+        "reference": "NTM"
+      },
+      {
+        "from": "Complexity.NTM.AcceptsInTime",
+        "reference": "NTM"
+      },
+      {
+        "from": "Complexity.NTM.halted",
+        "reference": "NTM"
+      },
+      {
+        "from": "Complexity.NTM",
+        "reference": "NTM"
+      },
+      {
+        "from": "Complexity.NTM.initCfg",
+        "reference": "NTM"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "NTM"
+      },
+      {
+        "from": "Complexity.NTM.AllPathsHaltIn",
+        "reference": "NTM"
+      }
+    ],
+    "Complexity.NTM.DecidesInTime": [
+      {
+        "from": "Complexity.NTIME",
+        "reference": "tm.DecidesInTime"
+      },
+      {
+        "from": "Complexity.NTM.DecidesInTime",
+        "reference": "DecidesInTime"
+      }
+    ],
+    "Complexity.NTM.AllPathsHaltIn": [
+      {
+        "from": "Complexity.NTM.DecidesInTime",
+        "reference": "tm.AllPathsHaltIn"
+      },
+      {
+        "from": "Complexity.NTM.AllPathsHaltIn",
+        "reference": "AllPathsHaltIn"
+      }
+    ],
+    "Complexity.NTM.AcceptsInTime": [
+      {
+        "from": "Complexity.NTM.DecidesInTime",
+        "reference": "tm.AcceptsInTime"
+      },
+      {
+        "from": "Complexity.NTM.AcceptsInTime",
+        "reference": "AcceptsInTime"
+      }
+    ],
+    "Complexity.NTM.trace": [
+      {
+        "from": "Complexity.NTM.AcceptsInTime",
+        "reference": "tm.trace"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "trace"
+      },
+      {
+        "from": "Complexity.NTM.trace",
+        "reference": "tm.trace"
+      },
+      {
+        "from": "Complexity.NTM.AllPathsHaltIn",
+        "reference": "tm.trace"
+      }
+    ],
+    "Complexity.NTM.initCfg": [
+      {
+        "from": "Complexity.NTM.AcceptsInTime",
+        "reference": "tm.initCfg"
+      },
+      {
+        "from": "Complexity.NTM.initCfg",
+        "reference": "initCfg"
+      },
+      {
+        "from": "Complexity.NTM.AllPathsHaltIn",
+        "reference": "tm.initCfg"
+      }
+    ],
+    "Complexity.NTM.halted": [
+      {
+        "from": "Complexity.NTM.AcceptsInTime",
+        "reference": "tm.halted"
+      },
+      {
+        "from": "Complexity.NTM.halted",
+        "reference": "halted"
+      },
+      {
+        "from": "Complexity.NTM.AllPathsHaltIn",
+        "reference": "tm.halted"
+      }
+    ],
+    "IV04.Paper.Computational.actual_paper_iv_det": [
+      {
+        "from": "IV04.Paper.Computational.actual_paper_iv_det",
+        "reference": "actual_paper_iv_det"
+      }
+    ],
+    "Complexity.NPComplete": [
+      {
+        "from": "IV04.Paper.Computational.actual_paper_iv_det",
+        "reference": "NPComplete"
+      },
+      {
+        "from": "Complexity.NPComplete",
+        "reference": "NPComplete"
+      }
+    ],
+    "IV04.Paper.Computational.rationalMatrixDeterminantDecisionLanguage": [
+      {
+        "from": "IV04.Paper.Computational.actual_paper_iv_det",
+        "reference": "rationalMatrixDeterminantDecisionLanguage"
+      },
+      {
+        "from": "IV04.Paper.Computational.regularUnitMatrixDeterminantDecisionLanguage",
+        "reference": "rationalMatrixDeterminantDecisionLanguage"
+      },
+      {
+        "from": "IV04.Paper.Computational.rationalMatrixDeterminantDecisionLanguage",
+        "reference": "rationalMatrixDeterminantDecisionLanguage"
+      }
+    ],
+    "Complexity.NPHard": [
+      {
+        "from": "IV04.Paper.Computational.actual_paper_iv_det",
+        "reference": "NPHard"
+      },
+      {
+        "from": "Complexity.NPHard",
+        "reference": "NPHard"
+      },
+      {
+        "from": "Complexity.NPComplete",
+        "reference": "NPHard"
+      }
+    ],
+    "IV04.Paper.Computational.regularUnitMatrixDeterminantDecisionLanguage": [
+      {
+        "from": "IV04.Paper.Computational.actual_paper_iv_det",
+        "reference": "regularUnitMatrixDeterminantDecisionLanguage"
+      },
+      {
+        "from": "IV04.Paper.Computational.regularUnitMatrixDeterminantDecisionLanguage",
+        "reference": "regularUnitMatrixDeterminantDecisionLanguage"
+      }
+    ],
+    "IV04.Paper.Computational.RegularUnitDeterminantRangeOutput": [
+      {
+        "from": "IV04.Paper.Computational.actual_paper_iv_det",
+        "reference": "RegularUnitDeterminantRangeOutput"
+      },
+      {
+        "from": "IV04.Paper.Computational.RegularUnitDeterminantRangeOutput",
+        "reference": "RegularUnitDeterminantRangeOutput"
+      }
+    ],
+    "IV04.Paper.Computational.ExactDeterminantRangeOutput": [
+      {
+        "from": "IV04.Paper.Computational.RegularUnitDeterminantRangeOutput",
+        "reference": "ExactDeterminantRangeOutput"
+      },
+      {
+        "from": "IV04.Paper.Computational.ExactDeterminantRangeOutput",
+        "reference": "ExactDeterminantRangeOutput"
+      }
+    ],
+    "IV04.Paper.Computational.RegularUnitMatrixPacket": [
+      {
+        "from": "IV04.Paper.Computational.RegularUnitDeterminantRangeOutput",
+        "reference": "RegularUnitMatrixPacket"
+      },
+      {
+        "from": "IV04.Paper.Computational.RegularUnitMatrixPacket",
+        "reference": "RegularUnitMatrixPacket"
+      },
+      {
+        "from": "IV04.Paper.Computational.regularUnitMatrixDeterminantDecisionLanguage",
+        "reference": "RegularUnitMatrixPacket"
+      }
+    ],
+    "Complexity.MapReducesPoly": [
+      {
+        "from": "Complexity.:50",
+        "reference": "MapReducesPoly"
+      },
+      {
+        "from": "Complexity.MapReducesPoly",
+        "reference": "MapReducesPoly"
+      }
+    ]
+  },
+  "module_contexts": {
+    "NLA.IV04.Complexitylib.Encoding.Delimit": [
+      {
+        "kind": "namespace",
+        "text": "namespace Complexity\n\n/-- Frame a binary string as a self-delimiting block: each payload bit is doubled\n    (`false ↦ [false, false]`, `true ↦ [true, true]`) and the block is terminated by the\n    separator `[false, true]`, which no run of doubled bits can produce. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Complexity"
+      }
+    ],
+    "NLA.IV04.Complexitylib.Encoding.Pairing": [
+      {
+        "kind": "namespace",
+        "text": "namespace Complexity\n\n/-- Encode a pair of binary strings as a single binary string.\n    Each bit of `x` is doubled (`false ↦ [false, false]`, `true ↦ [true, true]`),\n    followed by the separator `[false, true]`, followed by `y` verbatim.\n    The output has length `2|x| + 2 + |y|` (`pair_length`) and the encoding is\n    injective (`pair_inj`). Machine-level cost is recorded elsewhere: `pair` of\n    two `FP` functions is in `FP` (`mem_FP_pair`), and `x ↦ pair (f x) x` has\n    an explicit bound (`TM.pairWithInputTM_computesInTime`); no linear-time\n    bound for `pair` itself is stated. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Complexity"
+      }
+    ],
+    "NLA.IV04.PaperWordAdderDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper.Computational"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper.Computational"
+      }
+    ],
+    "PaperDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "section",
+        "text": "noncomputable section"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper"
+      }
+    ],
+    "NLA.IV04.PaperEncodingDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper\n\n/-- Unary length followed by the canonical least-significant-first payload. -/"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IntegerPartition\n\n/-- Row-major dense encoding of both actual endpoints and the actual threshold. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end IntegerPartition"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper"
+      }
+    ],
+    "NLA.IV04.Complexitylib.Models.TuringMachine": [
+      {
+        "kind": "namespace",
+        "text": "namespace Complexity\n\n/-- The tape alphabet Γ = {0, 1, □, ▷}. -/"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace Tape\n\n/-- Read the symbol under the head. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Tape\n\n/-- Initialize a tape: `▷` at cell 0, `contents` at cells 1, 2, ..., `□` elsewhere.\n    Head starts at position 0 (on `▷`). -/"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace Cfg\n\n/-- Two machine configurations are equal when their named components agree. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Cfg\n\n/-- A deterministic Turing machine with `n` work tapes.\n\n    The machine has a read-only input tape, `n` read-write work tapes, and a read-write\n    output tape. The transition function reads `Γ` from all tape heads but writes only\n    `Γw` (excluding `▷`) to work and output tapes. `Q` is finite. -/"
+      },
+      {
+        "kind": "attribute",
+        "text": "attribute [instance] TM.decEq TM.finQ\n\n/-- A nondeterministic Turing machine with two transition functions.\n\n    The same structure is used for probabilistic TMs — only the acceptance\n    criterion differs (existential for NTM, counting for PTM). `Q` is finite. -/"
+      },
+      {
+        "kind": "attribute",
+        "text": "attribute [instance] NTM.decEq NTM.finQ"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace TM"
+      },
+      {
+        "kind": "variable",
+        "text": "variable {n : ℕ}\n\n/-- Step a deterministic TM by one step. Returns `none` if halted. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end TM"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace NTM"
+      },
+      {
+        "kind": "variable",
+        "text": "variable {n : ℕ}\n\n/-- Execute an NTM for `T` steps with a fixed choice sequence.\n    Stops early if the machine reaches `qhalt`. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end NTM\n\n/-- Embed a DTM into an NTM by using the same transition for both choices. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Complexity"
+      }
+    ],
+    "NLA.IV04.Complexitylib.Asymptotics": [
+      {
+        "kind": "open",
+        "text": "open Asymptotics Filter"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace Complexity\n\n-- ════════════════════════════════════════════════════════════════════════\n-- Definitions\n-- ════════════════════════════════════════════════════════════════════════\n\n/-- `f` grows at most as fast as `g` asymptotically: `f(n) = O(g(n))` as `n → ∞`.\n    Lifts Mathlib's `Asymptotics.IsBigO` to `ℕ → ℕ` functions, avoiding\n    repeated `Nat.cast` coercions in complexity class definitions.\n\n    Unfolding: `f =O g ↔ ∃ C, ∀ᶠ n in atTop, ↑(f n) ≤ C * ↑(g n)`. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Complexity"
+      }
+    ],
+    "NLA.IV04.Complexitylib.Classes.Time": [
+      {
+        "kind": "namespace",
+        "text": "namespace Complexity\n\n\n/-- `DTIME(T)` is the class of languages decidable by a deterministic TM in\n    time `O(T(n))` (AB Definition 1.6). The machine may have any number of\n    work tapes. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Complexity"
+      }
+    ],
+    "NLA.IV04.Complexitylib.Classes.NP": [
+      {
+        "kind": "namespace",
+        "text": "namespace Complexity\n\n/-- **NP** is the class of languages decidable by a nondeterministic TM in\n    polynomial time: `NP = ⋃_k NTIME(n^k)`. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Complexity"
+      }
+    ],
+    "NLA.IV04.Complexitylib.Classes.P.Defs": [
+      {
+        "kind": "namespace",
+        "text": "namespace Complexity\n\n\n/-- **P** is the class of languages decidable by a deterministic TM in\n    polynomial time: `P = ⋃_k DTIME(n^k)`. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Complexity"
+      }
+    ],
+    "NLA.IV04.PaperRationalListParserDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper.Computational\n\n/-- Semantic reference; the requested count is a natural value, not a runtime certificate. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper.Computational"
+      }
+    ],
+    "NLA.IV04.PaperMatrixCoefficientInputDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper.Computational\n\n/-- Both dense endpoints contain n² rational fields, followed by one threshold. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper.Computational"
+      }
+    ],
+    "NLA.IV04.PaperMatrixDenseSupportReference": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper.Computational"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper.Computational"
+      }
+    ],
+    "NLA.IV04.PaperRealIntervalVertexDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper.Computational"
+      },
+      {
+        "kind": "section",
+        "text": "noncomputable section"
+      },
+      {
+        "kind": "end",
+        "text": "end"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper.Computational"
+      }
+    ],
+    "NLA.IV04.Complexitylib.Classes.NP.Reduction": [
+      {
+        "kind": "namespace",
+        "text": "namespace Complexity\n\n\n/-- **Polynomial-time many-one reduction.** `MapReducesPoly L L'` (written\n    `L ≤ₚ L'`) holds when there is a polynomial-time computable function `f`\n    (`f ∈ FP`) with `x ∈ L ↔ f x ∈ L'` for every input `x`. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end Complexity"
+      }
+    ],
+    "NLA.IV04.PaperConstructedHullDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "section",
+        "text": "noncomputable section"
+      },
+      {
+        "kind": "open",
+        "text": "open scoped Matrix BigOperators"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IntegerPartition"
+      },
+      {
+        "kind": "end",
+        "text": "end IntegerPartition"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper"
+      }
+    ],
+    "NLA.IV04.PaperExactOutputHardnessDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper.Computational"
+      },
+      {
+        "kind": "open",
+        "text": "open Complexity\n\n/-- The range/hull matrix packet has a fixed zero terminator, with no supplied threshold. -/"
+      },
+      {
+        "kind": "section",
+        "text": "noncomputable section\n/-- Two complete rational fields are the actual minimum and maximum determinants. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper.Computational"
+      }
+    ],
+    "NLA.IV04.PaperFullHullProjectionDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper.Computational"
+      },
+      {
+        "kind": "section",
+        "text": "noncomputable section\n/-- Complete finite solution-hull output: literal lower/upper rational endpoints for every coordinate. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper.Computational"
+      }
+    ],
+    "NLA.IV04.PaperDeterminantHeadlineDefinitions": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper.Computational"
+      },
+      {
+        "kind": "open",
+        "text": "open Complexity"
+      },
+      {
+        "kind": "section",
+        "text": "noncomputable section\n\n/-- A complete rational tridiagonal packet whose entire real interval family is regular\nand has every superdiagonal entry fixed to one. -/"
+      },
+      {
+        "kind": "end",
+        "text": "end"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper.Computational"
+      }
+    ],
+    "NLA.IV04.DeterminantHeadlineChallenge": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace IV04.Paper.Computational"
+      },
+      {
+        "kind": "open",
+        "text": "open Complexity SATReduction"
+      },
+      {
+        "kind": "end",
+        "text": "end IV04.Paper.Computational"
+      }
+    ],
+    "NLA.IV04.FullHullHardnessChallenge": [
+      {
+        "kind": "set_option",
+        "text": "set_option autoImplicit false"
+      },
+      {
+        "kind": "namespace",
+        "text": "namespace Reference.IV04FullHullHardness"
+      },
+      {
+        "kind": "open",
+        "text": "open Complexity IV04.Paper.Computational"
+      },
+      {
+        "kind": "open",
+        "text": "open IV04.Paper.Computational.SATReduction"
+      },
+      {
+        "kind": "end",
+        "text": "end Reference.IV04FullHullHardness"
+      }
+    ]
+  }
+}

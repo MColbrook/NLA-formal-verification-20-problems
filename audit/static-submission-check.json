@@ -1,0 +1,2132 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-11-20T13:38:41.741474+00:00",
+  "kind": "offline_static_submission_contract",
+  "palomar_submission_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "static_contract_pass": true,
+  "compatible_build_pass": true,
+  "ready_for_submission": true,
+  "palomar_verified": false,
+  "kernel_replay_performed": false,
+  "network_used": false,
+  "projects": [
+    {
+      "id": "NLA20",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "MF-05",
+        "MF-07",
+        "MF-12",
+        "RA-02",
+        "RA-03",
+        "RA-08",
+        "RA-09",
+        "IE-21",
+        "IE-22",
+        "TR-04",
+        "TR-27",
+        "IS-03",
+        "NM-04",
+        "PF-02",
+        "MD-06",
+        "IV-02",
+        "IV-04",
+        "MI-19",
+        "MI-21",
+        "MI-22"
+      ],
+      "project_path": ".",
+      "source_inventory_sha256": "133d0bd119a4a7922ac91684e5775bca03939b2b783e56105f5e061b0665dea6",
+      "source_inventory_files": 4570,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 43,
+      "theorem_names": [
+        "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_real_uniform_holder",
+        "NLA.MF12.Paper.paper_main_realization",
+        "NLA.MF12.Paper.paper_rational_realization",
+        "NLA.RA02.Paper.paper_sup_worst_case_constants",
+        "NLA.RA08.Paper.paper_spectral_failure",
+        "NLA.RA08.Paper.verified_paper_nuclear_counterexample",
+        "NLA.RA09.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.paper_ordered_sharpness",
+        "NLA.RA09.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.paper_unordered_sharpness",
+        "NLA.IE21.Paper.paper_random_rows",
+        "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+        "NLA.IE22.Paper.paper_universal_squared_rate",
+        "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+        "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+        "Reference.LexTensorCompletion.lexCard_eq_card",
+        "NLA.TR27.Paper.paper_full_family",
+        "NLA.TR27.Paper.coordinateProjection_surjective",
+        "NLA.TR27.Paper.coordinateProjection_kernel",
+        "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+        "NLA.TR27.Paper.tensor_reps_nonzero",
+        "NLA.IS03.paper_counterexample",
+        "NLA.NM04.Paper.paper_rowland_wu_identity",
+        "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness",
+        "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+        "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty",
+        "IV04.Paper.Computational.actual_paper_iv_det",
+        "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+        "NLA.MI19.Paper.paper_counterexample",
+        "NLA.MI21.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_conjecture_false",
+        "NLA.MI22.singularValue._proof_1",
+        "Complexity.NTM.trace._proof_6",
+        "NLA.TR27.Paper.pivotIndex._proof_2",
+        "NLA.TR27.Paper.recoveryIndex._proof_2",
+        "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+        "Reference.LexTensorCompletion.lexIndex._proof_5",
+        "Reference.LexTensorCompletion.lexIndex._proof_2",
+        "NLA.IE21.matrixMap._proof_6",
+        "NLA.IE21.matrixMap._proof_4"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "Challenge.lean",
+      "challenge_bytes": 98991,
+      "challenge_lines": 1000,
+      "challenge_direct_imports": [
+        "Lean.Meta.Match.Match",
+        "Mathlib"
+      ],
+      "solution_source": "Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/NLA20/selected-axioms.json",
+        "receipt_sha256": "fd76ae435512efae47860aa4ac5bc6c1447cddae993b3b6813025ed2fe65b475",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    }
+  ],
+  "failures": [],
+  "warnings": [
+    {
+      "stage": "challenge_auditability",
+      "message": "Challenge exceeds recommended 32 KiB or 300 lines",
+      "path": "Challenge.lean"
+    },
+    {
+      "scope": "component",
+      "stage": "challenge_auditability",
+      "message": "Challenge exceeds recommended 32 KiB or 300 lines",
+      "path": "projects/MF-05/Challenge.lean"
+    },
+    {
+      "scope": "component",
+      "stage": "challenge_auditability",
+      "message": "Challenge exceeds recommended 32 KiB or 300 lines",
+      "path": "projects/RA-02/Challenge.lean"
+    },
+    {
+      "scope": "component",
+      "stage": "challenge_auditability",
+      "message": "Challenge exceeds recommended 32 KiB or 300 lines",
+      "path": "projects/RA-08/Challenge.lean"
+    },
+    {
+      "scope": "component",
+      "stage": "challenge_auditability",
+      "message": "Challenge exceeds recommended 32 KiB or 300 lines",
+      "path": "projects/TR-04/Challenge.lean"
+    },
+    {
+      "scope": "component",
+      "stage": "challenge_auditability",
+      "message": "Challenge exceeds recommended 32 KiB or 300 lines",
+      "path": "projects/TR-27/Challenge.lean"
+    },
+    {
+      "scope": "component",
+      "stage": "challenge_auditability",
+      "message": "Challenge exceeds recommended 32 KiB or 300 lines",
+      "path": "projects/PF-02/Challenge.lean"
+    },
+    {
+      "scope": "component",
+      "stage": "challenge_auditability",
+      "message": "Challenge exceeds recommended 32 KiB or 300 lines",
+      "path": "projects/IV-04/Challenge.lean"
+    }
+  ],
+  "limitations": [
+    "This checks the intended source snapshot, excluding .git, .lake and Python bytecode directories.",
+    "It does not execute Lake, compile Lean, resolve/fetch dependencies, inspect kernel exports or replay proofs.",
+    "Direct Challenge imports and conventional declarative source paths are checked locally; Palomar reconstructs and authenticates the full transitive closure.",
+    "Standard Apache text is compared to the pinned reference; Palomar separately runs its own licence detector.",
+    "Palomar's future full mechanical verification, editorial review and rendering remain separate requirements.",
+    "The retained seventeen component receipts do not certify the combined Solution. A separate source-bound combined build, selected-axiom receipt and exact type/fixed-definition comparison-core report are mandatory. The local comparison does not perform full proof export or kernel replay."
+  ],
+  "lean_source_scan": {
+    "schema_version": 1,
+    "module_required": true,
+    "maximum_lines": 10000,
+    "files_checked": 4498
+  },
+  "intended_source_bytes": 40830211,
+  "license": {
+    "path": "LICENSE",
+    "spdx": "Apache-2.0",
+    "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+    "method": "pinned_standard_text_comparison"
+  },
+  "build_report": "verification/combined-build-status.json",
+  "status": "READY",
+  "submission_count": 1,
+  "components": [
+    {
+      "id": "MF-05",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "MF-05",
+        "MF-07"
+      ],
+      "project_path": "projects/MF-05",
+      "source_inventory_sha256": "b17ec30852dd7e2769bcb029e086113376ec011a49742900920f6d19c730e0cd",
+      "source_inventory_files": 84,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 3,
+      "theorem_names": [
+        "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_real_uniform_holder"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/MF-05/Challenge.lean",
+      "challenge_bytes": 27377,
+      "challenge_lines": 650,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/MF-05/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/MF-05/selected-axioms.json",
+        "receipt_sha256": "429718f18a776e06ceb17840a96a045c6b104743c10e068480845cce24aaf99e",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "MF-12",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "MF-12"
+      ],
+      "project_path": "projects/MF-12",
+      "source_inventory_sha256": "da20053db5fa1c0d26fe9ffe44c5a12362dc14617e7e1ebbf571933450f89501",
+      "source_inventory_files": 61,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 2,
+      "theorem_names": [
+        "NLA.MF12.Paper.paper_main_realization",
+        "NLA.MF12.Paper.paper_rational_realization"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/MF-12/Challenge.lean",
+      "challenge_bytes": 8023,
+      "challenge_lines": 233,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/MF-12/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/MF-12/selected-axioms.json",
+        "receipt_sha256": "66284aa79edae36e5e89d823dec64896b09f8fcc2e30c7f01d48d039f56b108d",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "RA-02",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "RA-02",
+        "RA-03"
+      ],
+      "project_path": "projects/RA-02",
+      "source_inventory_sha256": "4be6885a1501c1ca8e4c5bbfe0133b3a2a066999a663055797f8c719ff1483a6",
+      "source_inventory_files": 196,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 1,
+      "theorem_names": [
+        "NLA.RA02.Paper.paper_sup_worst_case_constants"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/RA-02/Challenge.lean",
+      "challenge_bytes": 21547,
+      "challenge_lines": 554,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/RA-02/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/RA-02/selected-axioms.json",
+        "receipt_sha256": "25b513356faf023d7a6aa2a9ecfe403c308619a35540951777b0248ae4f07545",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "RA-08",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "RA-08"
+      ],
+      "project_path": "projects/RA-08",
+      "source_inventory_sha256": "5df4b8c95bbee2abcf5cfcc513ed5a3f09b777ef1ca66c07be9a86d4ae0d3a55",
+      "source_inventory_files": 121,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 2,
+      "theorem_names": [
+        "NLA.RA08.Paper.paper_spectral_failure",
+        "NLA.RA08.Paper.verified_paper_nuclear_counterexample"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/RA-08/Challenge.lean",
+      "challenge_bytes": 16490,
+      "challenge_lines": 464,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/RA-08/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/RA-08/selected-axioms.json",
+        "receipt_sha256": "553d5484337fb86d0c73b8961833bf375bb74ec8e0164a1432a391eda1f2ae45",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "RA-09",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "RA-09"
+      ],
+      "project_path": "projects/RA-09",
+      "source_inventory_sha256": "230d6ff7b9d190a6d9592e669ffa4decee191353ac104a78367dec3654ef3c1c",
+      "source_inventory_files": 124,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 4,
+      "theorem_names": [
+        "NLA.RA09.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.paper_ordered_sharpness",
+        "NLA.RA09.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.paper_unordered_sharpness"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/RA-09/Challenge.lean",
+      "challenge_bytes": 9668,
+      "challenge_lines": 240,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/RA-09/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/RA-09/selected-axioms.json",
+        "receipt_sha256": "3f5bfe462edfda39daf948e09d40551b810e13ab11a67f23a21ecd96dd11e346",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "IE-21",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "IE-21"
+      ],
+      "project_path": "projects/IE-21",
+      "source_inventory_sha256": "eaf46343974bfdc2c223bbc4744b3e8224567abd927925b2add736c1f6175c2a",
+      "source_inventory_files": 66,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 1,
+      "theorem_names": [
+        "NLA.IE21.Paper.paper_random_rows"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/IE-21/Challenge.lean",
+      "challenge_bytes": 7277,
+      "challenge_lines": 191,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/IE-21/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/IE-21/selected-axioms.json",
+        "receipt_sha256": "e5f9176e69efd7f603521d9717d57416b06a1cfdc5a6cd4b5f00e17438cf8730",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "IE-22",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "IE-22"
+      ],
+      "project_path": "projects/IE-22",
+      "source_inventory_sha256": "277d5d5709baf4d9c478acb75d2b7d95c13fc8bdd1d0e0a7d1c2cf1a6fb5d07a",
+      "source_inventory_files": 61,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 2,
+      "theorem_names": [
+        "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+        "NLA.IE22.Paper.paper_universal_squared_rate"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/IE-22/Challenge.lean",
+      "challenge_bytes": 10742,
+      "challenge_lines": 277,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/IE-22/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/IE-22/selected-axioms.json",
+        "receipt_sha256": "db205c5012bfac2311b10806ebeea5705353fdbf65e704b6fc6d4fb3fe9699fc",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "TR-04",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "TR-04"
+      ],
+      "project_path": "projects/TR-04",
+      "source_inventory_sha256": "78a0cdee1b9571c29b4bf98768f82afadb12108c5439617d69bd545e68535941",
+      "source_inventory_files": 250,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 3,
+      "theorem_names": [
+        "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+        "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+        "Reference.LexTensorCompletion.lexCard_eq_card"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/TR-04/Challenge.lean",
+      "challenge_bytes": 35386,
+      "challenge_lines": 739,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/TR-04/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/TR-04/selected-axioms.json",
+        "receipt_sha256": "8cb699905a8a470c139387e783fc1190ca49f4995f408e0e8ab6b2369d8f5b6a",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "TR-27",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "TR-27"
+      ],
+      "project_path": "projects/TR-27",
+      "source_inventory_sha256": "d49366cbe902cf9a04757301e224f8774388e2f569272b1413e8a1a54c9cbe4a",
+      "source_inventory_files": 96,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 5,
+      "theorem_names": [
+        "NLA.TR27.Paper.paper_full_family",
+        "NLA.TR27.Paper.coordinateProjection_surjective",
+        "NLA.TR27.Paper.coordinateProjection_kernel",
+        "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+        "NLA.TR27.Paper.tensor_reps_nonzero"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/TR-27/Challenge.lean",
+      "challenge_bytes": 18942,
+      "challenge_lines": 548,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/TR-27/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/TR-27/selected-axioms.json",
+        "receipt_sha256": "6917c7a038e5467e2c44ba63c4fe1e4660e82ba0c97a0f226146af85831ff871",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "IS-03",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "IS-03"
+      ],
+      "project_path": "projects/IS-03",
+      "source_inventory_sha256": "33841782aaf2e14aede3fecc8a187894ef0641b70bf44f2973626269796c4763",
+      "source_inventory_files": 19,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 1,
+      "theorem_names": [
+        "NLA.IS03.paper_counterexample"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/IS-03/Challenge.lean",
+      "challenge_bytes": 3160,
+      "challenge_lines": 99,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/IS-03/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/IS-03/selected-axioms.json",
+        "receipt_sha256": "637ce15c8cf86dac6718b2dd0993d43602427a172d8018d42154ddc63ba66975",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "NM-04",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "NM-04"
+      ],
+      "project_path": "projects/NM-04",
+      "source_inventory_sha256": "2f9436e9effc03f10861661dbef5f3f5aa4b44896f44e0421a2729613775ee82",
+      "source_inventory_files": 50,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 1,
+      "theorem_names": [
+        "NLA.NM04.Paper.paper_rowland_wu_identity"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/NM-04/Challenge.lean",
+      "challenge_bytes": 11195,
+      "challenge_lines": 265,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/NM-04/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/NM-04/selected-axioms.json",
+        "receipt_sha256": "872f9ddb81c0255d5f1e77333d13068f73b7e97c3399d27058b25b8a308c3bd5",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "PF-02",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "PF-02"
+      ],
+      "project_path": "projects/PF-02",
+      "source_inventory_sha256": "9bbf8a107cdf632756be897d9c387396f546ed0511018c60b7b684aa76bab38f",
+      "source_inventory_files": 105,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 1,
+      "theorem_names": [
+        "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/PF-02/Challenge.lean",
+      "challenge_bytes": 22793,
+      "challenge_lines": 623,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/PF-02/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/PF-02/selected-axioms.json",
+        "receipt_sha256": "b528e0e27f5a164287777053943b551af9a63200c975001d368953caebe76fe7",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "MD-06",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "MD-06"
+      ],
+      "project_path": "projects/MD-06",
+      "source_inventory_sha256": "ee3cf7d931f94aa34b55e31a75e0635b203b465d9df1f0067a8e6a6d444e3d1d",
+      "source_inventory_files": 339,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 2,
+      "theorem_names": [
+        "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+        "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/MD-06/Challenge.lean",
+      "challenge_bytes": 3701,
+      "challenge_lines": 128,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/MD-06/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/MD-06/selected-axioms.json",
+        "receipt_sha256": "070a4483c57be72e4b8cb808bbc1888f3402ce911a39c33cea883484b8834256",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "IV-04",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "IV-02",
+        "IV-04"
+      ],
+      "project_path": "projects/IV-04",
+      "source_inventory_sha256": "50fdfce843411e2d5ce6925bfb991f6e3086fdaf68c41419daa09b628bed4496",
+      "source_inventory_files": 726,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 2,
+      "theorem_names": [
+        "IV04.Paper.Computational.actual_paper_iv_det",
+        "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/IV-04/Challenge.lean",
+      "challenge_bytes": 25247,
+      "challenge_lines": 586,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/IV-04/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/IV-04/selected-axioms.json",
+        "receipt_sha256": "a4174509408a4709cd1c2d7f1dcc96d0ae4d5cfb08bdc7bb2832b0a50b23c169",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "MI-19",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "MI-19"
+      ],
+      "project_path": "projects/MI-19",
+      "source_inventory_sha256": "14897ffdb4fb383dd9b0375cfb19bb1409647cb8bc3a70be3fa9e676f7b99a6d",
+      "source_inventory_files": 18,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 1,
+      "theorem_names": [
+        "NLA.MI19.Paper.paper_counterexample"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/MI-19/Challenge.lean",
+      "challenge_bytes": 4464,
+      "challenge_lines": 128,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/MI-19/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/MI-19/selected-axioms.json",
+        "receipt_sha256": "31f53806269383e8294934128d8e2a5a22a8ee09275a2d26ad6c7f0d2caa786b",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "MI-21",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "MI-21"
+      ],
+      "project_path": "projects/MI-21",
+      "source_inventory_sha256": "8bea14c146567517f5f975b021de84cb5f6b22dc83926ef5321c688cacae77b0",
+      "source_inventory_files": 14,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 1,
+      "theorem_names": [
+        "NLA.MI21.Paper.paper_counterexample"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/MI-21/Challenge.lean",
+      "challenge_bytes": 5923,
+      "challenge_lines": 145,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/MI-21/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/MI-21/selected-axioms.json",
+        "receipt_sha256": "b3d366a6cb3cdc20d0b074f0474020723b2e82d256c083c394ecfe4cc3d56ba9",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    },
+    {
+      "id": "MI-22",
+      "status": "pass",
+      "failures": [],
+      "problem_ids": [
+        "MI-22"
+      ],
+      "project_path": "projects/MI-22",
+      "source_inventory_sha256": "d360039951159228a7811d721492ef07ed8f38e782077a8736c617723ef55070",
+      "source_inventory_files": 42,
+      "dependencies": [
+        {
+          "name": "mathlib",
+          "manifest_name": "mathlib",
+          "repository": "leanprover-community/mathlib4",
+          "url": "https://github.com/leanprover-community/mathlib4.git",
+          "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+        },
+        {
+          "name": "plausible",
+          "manifest_name": "plausible",
+          "repository": "leanprover-community/plausible",
+          "url": "https://github.com/leanprover-community/plausible",
+          "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+        },
+        {
+          "name": "LeanSearchClient",
+          "manifest_name": "LeanSearchClient",
+          "repository": "leanprover-community/LeanSearchClient",
+          "url": "https://github.com/leanprover-community/LeanSearchClient",
+          "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+        },
+        {
+          "name": "importGraph",
+          "manifest_name": "importGraph",
+          "repository": "leanprover-community/import-graph",
+          "url": "https://github.com/leanprover-community/import-graph",
+          "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+        },
+        {
+          "name": "proofwidgets",
+          "manifest_name": "proofwidgets",
+          "repository": "leanprover-community/ProofWidgets4",
+          "url": "https://github.com/leanprover-community/ProofWidgets4",
+          "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+        },
+        {
+          "name": "aesop",
+          "manifest_name": "aesop",
+          "repository": "leanprover-community/aesop",
+          "url": "https://github.com/leanprover-community/aesop",
+          "revision": "4a174c490d8707121c4a9290800489f105d85e07"
+        },
+        {
+          "name": "Qq",
+          "manifest_name": "Qq",
+          "repository": "leanprover-community/quote4",
+          "url": "https://github.com/leanprover-community/quote4",
+          "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+        },
+        {
+          "name": "batteries",
+          "manifest_name": "batteries",
+          "repository": "leanprover-community/batteries",
+          "url": "https://github.com/leanprover-community/batteries",
+          "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+        },
+        {
+          "name": "Cli",
+          "manifest_name": "Cli",
+          "repository": "leanprover/lean4-cli",
+          "url": "https://github.com/leanprover/lean4-cli",
+          "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+        }
+      ],
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "theorem_count": 2,
+      "theorem_names": [
+        "NLA.MI22.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_conjecture_false"
+      ],
+      "solution_module": "Solution",
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "definition_holes": 0,
+      "challenge_source": "projects/MI-22/Challenge.lean",
+      "challenge_bytes": 7579,
+      "challenge_lines": 195,
+      "challenge_direct_imports": [
+        "Mathlib"
+      ],
+      "solution_source": "projects/MI-22/Solution.lean",
+      "selected_axiom_evidence": {
+        "receipt": "verification/selected-axioms/MI-22/selected-axioms.json",
+        "receipt_sha256": "d4b1ae118e086396c06cb403b15f26f2d2e84133c7dab514c1d7260652281a65",
+        "public_artifacts_checked": true,
+        "native_compiled_artifacts_available": false
+      },
+      "compatible_build_pass": true
+    }
+  ],
+  "component_count": 17,
+  "component_build_pass": true,
+  "combined_build_pass": true,
+  "component_build_report": "verification/build-status.json",
+  "base_selected_declarations": 34,
+  "technical_supporting_theorems": [
+    {
+      "name": "NLA.MI22.singularValue._proof_1",
+      "type_lean": "forall {n : Nat}, Module.Finite.{0, 0} Complex (WithLp.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Complex)) (Ring.toSemiring.{0} Complex (DivisionRing.toRing.{0} Complex (Field.toDivisionRing.{0} Complex (NormedField.toField.{0} Complex (DenselyNormedField.toNormedField.{0} Complex (RCLike.toDenselyNormedField.{0} Complex Complex.instRCLike)))))) (AddCommGroup.toAddCommMonoid.{0} (WithLp.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Complex)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Complex) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Complex) (fun (i : Fin n) => SeminormedAddCommGroup.toAddCommGroup.{0} Complex (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup))))) (WithLp.instModule.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) Complex ((Fin n) -> Complex) (Ring.toSemiring.{0} Complex (DivisionRing.toRing.{0} Complex (Field.toDivisionRing.{0} Complex (NormedField.toField.{0} Complex (DenselyNormedField.toNormedField.{0} Complex (RCLike.toDenselyNormedField.{0} Complex Complex.instRCLike)))))) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Complex) (fun (i : Fin n) => SeminormedAddCommGroup.toAddCommGroup.{0} Complex (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup))) (Pi.module.{0, 0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Complex) Complex (CommSemiring.toSemiring.{0} Complex (Semifield.toCommSemiring.{0} Complex (Field.toSemifield.{0} Complex (NormedField.toField.{0} Complex (DenselyNormedField.toNormedField.{0} Complex (RCLike.toDenselyNormedField.{0} Complex Complex.instRCLike)))))) (fun (i : Fin n) => AddCommGroup.toAddCommMonoid.{0} Complex (SeminormedAddCommGroup.toAddCommGroup.{0} Complex (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup))) (fun (i : Fin n) => NormedSpace.toModule.{0, 0} Complex Complex (DenselyNormedField.toNormedField.{0} Complex (RCLike.toDenselyNormedField.{0} Complex Complex.instRCLike)) (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup) (InnerProductSpace.toNormedSpace.{0, 0} Complex Complex Complex.instRCLike (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup) (RCLike.innerProductSpace.{0} Complex Complex.instRCLike)))))",
+      "source_path": "projects/MI-22/NLA/MI22/Definitions.lean",
+      "source_module": "NLA.MI22.Definitions",
+      "source_line": 46,
+      "owner_declaration": "NLA.MI22.singularValue",
+      "problem_ids": [
+        "MI-22"
+      ],
+      "purpose": "Finite-dimensionality of every complex Euclidean coordinate space, required by the fixed singularValue definition."
+    },
+    {
+      "name": "Complexity.NTM.trace._proof_6",
+      "type_lean": "forall (T : Nat) (i : Fin T), LT.lt.{0} Nat instLTNat (HAdd.hAdd.{0, 0, 0} Nat Nat Nat (instHAdd.{0} Nat instAddNat) (Fin.val T i) (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1))) (HAdd.hAdd.{0, 0, 0} Nat Nat Nat (instHAdd.{0} Nat instAddNat) T (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1)))",
+      "source_path": "projects/IV-04/NLA/IV04/Complexitylib/Models/TuringMachine.lean",
+      "source_module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "source_line": 676,
+      "owner_declaration": "Complexity.NTM.trace",
+      "problem_ids": [
+        "IV-02",
+        "IV-04"
+      ],
+      "purpose": "For i in Fin T, the bound i.val + 1 < T + 1 needed to advance the finite computation trace."
+    },
+    {
+      "name": "NLA.TR27.Paper.pivotIndex._proof_2",
+      "type_lean": "forall (D : Nat), (LE.le.{0} Nat instLENat (OfNat.ofNat.{0} Nat 2 (instOfNatNat 2)) D) -> (LT.lt.{0} Nat instLTNat (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1)) (HAdd.hAdd.{0, 0, 0} Nat Nat Nat (instHAdd.{0} Nat instAddNat) D (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1))))",
+      "source_path": "projects/TR-27/NLA/TR27/PaperCoordinateDefinitions.lean",
+      "source_module": "NLA.TR27.PaperCoordinateDefinitions",
+      "source_line": 15,
+      "owner_declaration": "NLA.TR27.Paper.pivotIndex",
+      "problem_ids": [
+        "TR-27"
+      ],
+      "purpose": "The bound 1 < D + 1 under 2 <= D, required for the coordinate pivot index."
+    },
+    {
+      "name": "NLA.TR27.Paper.recoveryIndex._proof_2",
+      "type_lean": "forall (D : Nat), (LE.le.{0} Nat instLENat (OfNat.ofNat.{0} Nat 5 (instOfNatNat 5)) D) -> (forall (j : Fin (OfNat.ofNat.{0} Nat 4 (instOfNatNat 4))), LT.lt.{0} Nat instLTNat (HAdd.hAdd.{0, 0, 0} Nat Nat Nat (instHAdd.{0} Nat instAddNat) (Fin.val (OfNat.ofNat.{0} Nat 4 (instOfNatNat 4)) j) (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1))) D)",
+      "source_path": "projects/TR-27/NLA/TR27/PaperRationalDefinitions.lean",
+      "source_module": "NLA.TR27.PaperRationalDefinitions",
+      "source_line": 22,
+      "owner_declaration": "NLA.TR27.Paper.recoveryIndex",
+      "problem_ids": [
+        "TR-27"
+      ],
+      "purpose": "The bound j.val + 1 < D for j in Fin 4 and 5 <= D, required by recoveryIndex."
+    },
+    {
+      "name": "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+      "type_lean": "forall (D : Nat), Nat -> (LE.le.{0} Nat instLENat (OfNat.ofNat.{0} Nat 5 (instOfNatNat 5)) D) -> (LE.le.{0} Nat instLENat (OfNat.ofNat.{0} Nat 2 (instOfNatNat 2)) D)",
+      "source_path": "projects/TR-27/NLA/TR27/PaperRationalGeometryDefinitions.lean",
+      "source_module": "NLA.TR27.PaperRationalGeometryDefinitions",
+      "source_line": 15,
+      "owner_declaration": "NLA.TR27.Paper.recoveryOpenPoints",
+      "problem_ids": [
+        "TR-27"
+      ],
+      "purpose": "The implication 5 <= D -> 2 <= D used by the coordinate pivot in recoveryOpenPoints."
+    },
+    {
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_5",
+      "type_lean": "forall (j : Fin (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat))), Eq.{1} (Fin (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat))) ((fun (x._@.NLA.TR04.LexicographicTensorReplayR3.PureDefinitions.1639430859._hygCtx._hyg.42 : Reference.LexTensorCompletion.ModeIndex (List.nil.{0} Nat)) => Fin.mk (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat)) (OfNat.ofNat.{0} Nat 0 (instOfNatNat 0)) Reference.LexTensorCompletion.lexIndex._proof_2) ((fun (x._@.NLA.TR04.LexicographicTensorReplayR3.PureDefinitions.1639430859._hygCtx._hyg.50 : Fin (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat))) => PUnit.unit.{1}) j)) j",
+      "source_path": "projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean",
+      "source_module": "NLA.TR04.LexicographicTensorReplayR3.PureDefinitions",
+      "source_line": 206,
+      "owner_declaration": "Reference.LexTensorCompletion.lexIndex",
+      "problem_ids": [
+        "TR-04"
+      ],
+      "purpose": "The right inverse law of the lexicographic index equivalence for the empty mode list."
+    },
+    {
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_2",
+      "type_lean": "LT.lt.{0} Nat instLTNat (OfNat.ofNat.{0} Nat 0 (instOfNatNat 0)) (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat))",
+      "source_path": "projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean",
+      "source_module": "NLA.TR04.LexicographicTensorReplayR3.PureDefinitions",
+      "source_line": 206,
+      "owner_declaration": "Reference.LexTensorCompletion.lexIndex",
+      "problem_ids": [
+        "TR-04"
+      ],
+      "purpose": "The bound 0 < lexCard [], making zero a valid finite index for the empty mode list."
+    },
+    {
+      "name": "NLA.IE21.matrixMap._proof_6",
+      "type_lean": "forall {n : Nat}, ContinuousSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (SMulZeroClass.toSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (AddZero.toZero.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddZeroClass.toAddZero.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddMonoid.toAddZeroClass.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (SubNegMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddGroup.toSubNegMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddCommGroup.toAddGroup.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Real) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup))))))))) (DistribSMul.toSMulZeroClass.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (AddMonoid.toAddZeroClass.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (SubNegMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddGroup.toSubNegMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddCommGroup.toAddGroup.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Real) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup))))))) (DistribMulAction.toDistribSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (Semiring.toMonoid.{0} Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField))))) (SubNegMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddGroup.toSubNegMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddCommGroup.toAddGroup.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Real) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup)))))) (Module.toDistribMulAction.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField)))) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Real) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup)))) (WithLp.instModule.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) Real ((Fin n) -> Real) (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField)))) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup)) (Pi.Function.module.{0, 0, 0} (Fin n) Real Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField)))) (Semiring.toAddCommMonoid.{0} Real (Ring.toSemiring.{0} Real Real.instRing)) (Semiring.toModule.{0} Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField))))))))))) (UniformSpace.toTopologicalSpace.{0} Real (PseudoMetricSpace.toUniformSpace.{0} Real (SeminormedRing.toPseudoMetricSpace.{0} Real (SeminormedCommRing.toSeminormedRing.{0} Real (NormedCommRing.toSeminormedCommRing.{0} Real (NormedField.toNormedCommRing.{0} Real Real.normedField)))))) (PiLp.topologicalSpace.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => UniformSpace.toTopologicalSpace.{0} Real (PseudoMetricSpace.toUniformSpace.{0} Real Real.pseudoMetricSpace)))",
+      "source_path": "projects/IE-21/NLA/IE21/Definitions.lean",
+      "source_module": "NLA.IE21.Definitions",
+      "source_line": 60,
+      "owner_declaration": "NLA.IE21.matrixMap",
+      "problem_ids": [
+        "IE-21"
+      ],
+      "purpose": "Joint continuity of real scalar multiplication on the Euclidean domain required by the fixed matrixMap construction."
+    },
+    {
+      "name": "NLA.IE21.matrixMap._proof_4",
+      "type_lean": "forall {m : Nat}, ContinuousConstSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (PiLp.topologicalSpace.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => UniformSpace.toTopologicalSpace.{0} Real (PseudoMetricSpace.toUniformSpace.{0} Real Real.pseudoMetricSpace))) (SMulZeroClass.toSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (AddZero.toZero.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddZeroClass.toAddZero.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddMonoid.toAddZeroClass.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin m) -> Real) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Real.instAddCommGroup)))))))) (DistribSMul.toSMulZeroClass.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (AddMonoid.toAddZeroClass.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin m) -> Real) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Real.instAddCommGroup)))))) (DistribMulAction.toDistribSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (Semiring.toMonoid.{0} Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (NontriviallyNormedField.toNormedField.{0} Real (DenselyNormedField.toNontriviallyNormedField.{0} Real Real.denselyNormedField))))))) (AddCommMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin m) -> Real) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Real.instAddCommGroup))))) (Module.toDistribMulAction.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (NontriviallyNormedField.toNormedField.{0} Real (DenselyNormedField.toNontriviallyNormedField.{0} Real Real.denselyNormedField)))))) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin m) -> Real) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Real.instAddCommGroup)))) (WithLp.instModule.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) Real ((Fin m) -> Real) (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike)))))) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Ring.toAddCommGroup.{0} Real (DivisionRing.toRing.{0} Real (Field.toDivisionRing.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike))))))) (Pi.Function.module.{0, 0, 0} (Fin m) Real Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike)))))) (Semiring.toAddCommMonoid.{0} Real (Ring.toSemiring.{0} Real (DivisionRing.toRing.{0} Real (Field.toDivisionRing.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike))))))) (Semiring.toModule.{0} Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike)))))))))))))",
+      "source_path": "projects/IE-21/NLA/IE21/Definitions.lean",
+      "source_module": "NLA.IE21.Definitions",
+      "source_line": 60,
+      "owner_declaration": "NLA.IE21.matrixMap",
+      "problem_ids": [
+        "IE-21"
+      ],
+      "purpose": "Continuity of multiplication by each fixed real scalar on the Euclidean codomain required by matrixMap."
+    }
+  ],
+  "selected_declarations": 43,
+  "statement_correspondence_pass": true,
+  "statement_correspondence": {
+    "path": "verification/combined-correspondence.json",
+    "sha256": "a718efcc508a2830ab03a3a76a9943fdf497edbe1566133612888121be855621",
+    "statement_types_and_fixed_definitions_compared": true,
+    "kernel_replay_performed": false
+  }
+}

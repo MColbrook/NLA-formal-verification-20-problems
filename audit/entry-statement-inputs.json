@@ -1,0 +1,280 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-11-19",
+  "primary_targets_sha256_at_capture": "49be373904f71dc8c77ef9fd0e5fd4d28c0709d532feeb2e9e303eab7592578b",
+  "archive": "archives/original-primary-entry-statements.tar.gz",
+  "archive_sha256": "0b2410dff7b033a836c732f8d353a86a53a99f64407eeafd598ba3b053e988a4",
+  "archive_bytes": 18522,
+  "inputs": [
+    {
+      "path": "projects/IE-21/NLA/IE21/PaperChallenge.lean",
+      "sha256": "2d97c9c993bae0f6ac220a9bd24b28feefd2db73c48853b6b758fb2982b2f237",
+      "bytes": 1953,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/IE-21/paper-comparator.json",
+      "sha256": "b18d639bdf9056c09ff53fe19884b4c2408a93865fbaa2f5878bb539626ff0a8",
+      "bytes": 408,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/IE-22/NLA/IE22/PaperChallenge.lean",
+      "sha256": "526b7faebc46d5c4f7bae60181fea14a49e3093e86a2499f1cdfe881ab7c1abc",
+      "bytes": 2150,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/IE-22/paper-comparator.json",
+      "sha256": "34ffc40d7eeaa989af823ce5e365780ab27fa232bbf30fba245155ee273ebf1f",
+      "bytes": 532,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/IS-03/PaperChallenge.lean",
+      "sha256": "a8195a5beb78873fffb7b08f24d45fe5f5f81b4e8bd672ab69de8f29f4ec34f7",
+      "bytes": 688,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/IS-03/paper-comparator.json",
+      "sha256": "361299e3d1c98cb54e0bdc44ed83653d23a6765adf20fcae9cc449e76601cde6",
+      "bytes": 307,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/DeterminantHeadlineChallenge.lean",
+      "sha256": "6773d387891917529f0277ec8a17f9e71619181a97ac7778de042cc18eb22ce8",
+      "bytes": 1258,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/FullHullHardnessChallenge.lean",
+      "sha256": "38b9d3be139e08c46253823b389a862e3685c436112cbb1c8be307fee136471f",
+      "bytes": 996,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/IV-04/paper-determinant-headline-comparator.json",
+      "sha256": "c02536aeb2388cdbf7dcc1f928980ba999cd9b30645e6a5e9bd668b25e1d09d5",
+      "bytes": 797,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/IV-04/paper-full-hull-hardness-comparator.json",
+      "sha256": "280b0556d08f2093b049b10e8b84815b14f7acf4288b7411582ea3470f5fb372",
+      "bytes": 859,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/MD-06/NLA/MD06/CleanRadiusProbability/PureDefinitions.lean",
+      "sha256": "e9c16f57727eb4459995e0ccba1565400ff42ac1747e1803017437ccd8fba4f7",
+      "bytes": 503,
+      "kind": "auxiliary-original-statement-source"
+    },
+    {
+      "path": "projects/MD-06/NLA/MD06/MainAssembly/Challenge.lean",
+      "sha256": "0c44a8c8c1cb90967209cfff63e8f1496ca64e4e65ba6cd42bc829e9979b2988",
+      "bytes": 4210,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/MD-06/NLA/MD06/RadiusInterfaceR2/PureBaseDefinitions.lean",
+      "sha256": "cc771db576944cbce0753457dc65b48e6892eeef182e7e49c5bc49c6f614ef9b",
+      "bytes": 3751,
+      "kind": "auxiliary-original-statement-source"
+    },
+    {
+      "path": "projects/MD-06/NLA/MD06/RadiusInterfaceR2/PureCleanDefinitions.lean",
+      "sha256": "823bffa17f328cd8db4e4e253382e2f38498e000a6988254d2f9ff2175a1aff5",
+      "bytes": 360,
+      "kind": "auxiliary-original-statement-source"
+    },
+    {
+      "path": "projects/MD-06/NLA/MD06/RadiusInterfaceR2/PureForestDefinitions.lean",
+      "sha256": "a088a0995df8ef251191f304d9408a5b0599cc7965f3f5ff32d48c163167736e",
+      "bytes": 674,
+      "kind": "auxiliary-original-statement-source"
+    },
+    {
+      "path": "projects/MD-06/paper-main-assembly-comparator.json",
+      "sha256": "160f98981f2f67d6d1af609ba6e591b12022ca1091f2bb45e6284e1287097b33",
+      "bytes": 1767,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/MF-05/NLA/MF05/GrowthChallenge.lean",
+      "sha256": "076e6c47dda8294ec094a964843eab08e5dde35b89db7c514b39687312dee6ee",
+      "bytes": 4208,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/MF-05/PaperChallenge.lean",
+      "sha256": "8437d06c6ff52ab018cd73d820d4ca206ff6e630451a0dd61cbc77a9153f16ca",
+      "bytes": 3202,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/MF-05/growth-comparator.json",
+      "sha256": "2326bff15cc05d837c2e6e38a7f5caf0a24a9f866c53bbd6e4e1acafb1619fa9",
+      "bytes": 1069,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/MF-05/paper-comparator.json",
+      "sha256": "a64a4d3f48a231ec357f1d18170fa63791b9978ea5ef9e83f4eb0e87a0e742cd",
+      "bytes": 837,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/MF-12/NLA/MF12/RealizationChallenge.lean",
+      "sha256": "87ffb7388eb35d9add9a62d88a8868e4a882e8d9c8250194fbf2316bf47a5a93",
+      "bytes": 1183,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/MF-12/realization-comparator.json",
+      "sha256": "c1f187294dbe0289ff1e0a563742ce4ad5d9fcbaaa0a1e2d5df4686373903f37",
+      "bytes": 573,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/MI-19/PaperChallenge.lean",
+      "sha256": "829d27eed05c71b42e20e1794f6644d075e7855faa1aff223d859f645e9eb342",
+      "bytes": 653,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/MI-19/paper-comparator.json",
+      "sha256": "c93fafd61c5e9969806cb33da0afe04e6680092033a41c5013e5e785e2f117f0",
+      "bytes": 300,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/MI-21/NLA/MI21/PaperChallenge.lean",
+      "sha256": "a44d73817ee0632573279140f26d8b0bbafcf57c6dcb8c5bbe22bf8e20d3b7c5",
+      "bytes": 1266,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/MI-21/paper-comparator.json",
+      "sha256": "774712d807f3a519b099a11d0190974a0681b38c3b26cba0e14381a883076122",
+      "bytes": 406,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/MI-22/NLA/MI22/PaperChallenge.lean",
+      "sha256": "1c675fcc0dfcbaedf3be187d0d95a3002dbd344bd3d1eb34643e3810242d4166",
+      "bytes": 741,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/MI-22/paper-comparator.json",
+      "sha256": "313e8500b22e525e95157d2fab8d0003c6a7e6f7e12d17b69b0e1bdd171d5933",
+      "bytes": 408,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/NM-04/NLA/NM04/PaperChallenge.lean",
+      "sha256": "469779368ac86434e401bd969f10b82e07627e5cf7fd8ba55ad2d462bf44e4fa",
+      "bytes": 1937,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/NM-04/paper-comparator.json",
+      "sha256": "44d8494585aa691ec266aaf8ec2e992d827b775c14bac9c405b647dcda8e9853",
+      "bytes": 370,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/PF-02/NLA/PF02/PaperAllSizePSDChallenge.lean",
+      "sha256": "3af8c24b7be9323cf66016fd576e01f04b972abe79c3555d0a86eb719948b6dd",
+      "bytes": 864,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/PF-02/NLA/PF02/UniformPositiveOrientationChallenge.lean",
+      "sha256": "f58c0f391fe6a98d89b34beab8151f1c22df555564c5ba62c410afd2684218a2",
+      "bytes": 10442,
+      "kind": "auxiliary-original-statement-source"
+    },
+    {
+      "path": "projects/PF-02/paper-uniform-positive-psd-fixed-r2-comparator.json",
+      "sha256": "c8de7a17dcbe5c6cbd6e51ef4a03c14cb6139add09914fe7f8ffa2fba5641d57",
+      "bytes": 4599,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/RA-02/NLA/RA02/LUSupChallenge.lean",
+      "sha256": "e75cf2c1e45b189b60daace2e09ebd9a331d79ad91ea39957720c0f2213d9336",
+      "bytes": 2617,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/RA-02/lu-sup-comparator.json",
+      "sha256": "bc19fbdb91ae7adcc8a92ba7578603a44caa109e6a82c7e62b722c5dd90854a1",
+      "bytes": 927,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/RA-08/NLA/RA08/NuclearCounterexampleChallenge.lean",
+      "sha256": "205ed3df591aa58acc76a1f950c01e795d46cd367dff0f7d303d95f22bdba61f",
+      "bytes": 5684,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/RA-08/PaperChallenge.lean",
+      "sha256": "81c5b0a06ac09cc09dd18746cdff4d51ce2e9463e1c42181f766ef45d83ddce3",
+      "bytes": 1944,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/RA-08/nuclear-counterexample-fixed-r2-comparator.json",
+      "sha256": "a0c72a07ce22c12f475b064beafaf7f6125c7f56c01f48f9004c95435ae738c4",
+      "bytes": 1869,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/RA-08/paper-comparator.json",
+      "sha256": "491461028bda3513adbf30e578cf4d10091a2d4680b853da3addb50224c9ba3f",
+      "bytes": 438,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/RA-09/PaperChallenge.lean",
+      "sha256": "0fbe4450055a9ca444e9f8aa01d3856c30f51ef2fbad5462bd232d49551d4043",
+      "bytes": 6560,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/RA-09/paper-comparator.json",
+      "sha256": "6499d67208014dd73de0b2a29aa836e46bc5150fc7ed3fb52d9ce06f0625bba8",
+      "bytes": 1061,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/TR-04/NLA/TR04/LexicographicTensorChallengeR3.lean",
+      "sha256": "97a9888b34ec0243504ff374143bd2304d5b414755270740d516bb660d5ac1e6",
+      "bytes": 12002,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/TR-04/paper-lexicographic-tensor-fixed-r3-comparator.json",
+      "sha256": "f248294a54a7941bcf84c869dccaeab2fc32368bae52dafff16e44e21ab6c875",
+      "bytes": 7473,
+      "kind": "original-comparator-config"
+    },
+    {
+      "path": "projects/TR-27/NLA/TR27/FullFamilyChallenge.lean",
+      "sha256": "2ace113d82ef5ce98235c0edb09ed276eda5c6bc9dc6f5f68884a26e95fc16ed",
+      "bytes": 2499,
+      "kind": "original-challenge"
+    },
+    {
+      "path": "projects/TR-27/full-family-comparator.json",
+      "sha256": "64f8959c456426b42af2887f572422beb7abd9859cc1ffc3fc676265e43c8e2e",
+      "bytes": 374,
+      "kind": "original-comparator-config"
+    }
+  ]
+}

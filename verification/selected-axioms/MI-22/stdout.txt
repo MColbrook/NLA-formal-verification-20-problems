@@ -1,0 +1,2 @@
+'NLA.MI22.Paper.paper_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MI22.Paper.paper_conjecture_false' depends on axioms: [propext, Classical.choice, Quot.sound]

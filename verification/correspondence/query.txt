@@ -1,0 +1,113 @@
+
+module
+public import Lean
+public import Lake.Check.Compare
+public import Lake.Check.Util
+public import Lean.CompactedRegion
+@[expose] public section
+open Lean
+def theoremNames : Array Name := #[`NLA.MF05.Paper.paper_real_bounded_positive_radius_growth, `NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent, `NLA.MF05.Paper.paper_real_uniform_holder, `NLA.MF12.Paper.paper_main_realization, `NLA.MF12.Paper.paper_rational_realization, `NLA.RA02.Paper.paper_sup_worst_case_constants, `NLA.RA08.Paper.paper_spectral_failure, `NLA.RA08.Paper.verified_paper_nuclear_counterexample, `NLA.RA09.paper_ordered_matrix_norm_relative, `NLA.RA09.paper_ordered_sharpness, `NLA.RA09.paper_unordered_matrix_norm_relative, `NLA.RA09.paper_unordered_sharpness, `NLA.IE21.Paper.paper_random_rows, `NLA.IE22.Paper.paper_high_aspect_supremum_limit, `NLA.IE22.Paper.paper_universal_squared_rate, `Reference.LexTensorExecution.actual_lexicographic_paper_algorithm, `Reference.LexicographicFeasibilityBridge.product_eq_rowCount, `Reference.LexTensorCompletion.lexCard_eq_card, `NLA.TR27.Paper.paper_full_family, `NLA.TR27.Paper.coordinateProjection_surjective, `NLA.TR27.Paper.coordinateProjection_kernel, `NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff, `NLA.TR27.Paper.tensor_reps_nonzero, `NLA.IS03.paper_counterexample, `NLA.NM04.Paper.paper_rowland_wu_identity, `Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness, `Reference.MD06MainAssembly.Interface.actual_paper_md_main, `Reference.MD06FiniteProbability.actual_cubic_sample_nonempty, `IV04.Paper.Computational.actual_paper_iv_det, `Reference.IV04FullHullHardness.iv_hull_literal_np_hard, `NLA.MI19.Paper.paper_counterexample, `NLA.MI21.Paper.paper_counterexample, `NLA.MI22.Paper.paper_counterexample, `NLA.MI22.Paper.paper_conjecture_false, `NLA.MI22.singularValue._proof_1, `Complexity.NTM.trace._proof_6, `NLA.TR27.Paper.pivotIndex._proof_2, `NLA.TR27.Paper.recoveryIndex._proof_2, `NLA.TR27.Paper.recoveryOpenPoints._proof_2, `Reference.LexTensorCompletion.lexIndex._proof_5, `Reference.LexTensorCompletion.lexIndex._proof_2, `NLA.IE21.matrixMap._proof_6, `NLA.IE21.matrixMap._proof_4]
+def permittedAxioms : Array Name := #[`propext, `Classical.choice, `Quot.sound]
+def primitiveNames : Array Name := #[`Nat.add, `Nat.sub, `Nat.mul, `Nat.pow, `Nat.gcd, `Nat.div, `Nat.mod, `Nat.beq, `Nat.ble, `Nat.land, `Nat.lor, `Nat.xor, `Nat.shiftLeft, `Nat.shiftRight, `String.ofList, `Char.ofNat, `List, `eagerReduce, `Nat, `String, `String.mk, `Char, `optParam, `autoParam, `semiOutParam, `outParam]
+def referenced (info : ConstantInfo) : Array Name :=
+  let action : StateM (Array Name) Unit :=
+    Lake.Check.runForUsedConsts info fun name => modify fun names => names.push name
+  (action.run #[]).2
+partial def collect (env : Environment) (targets seeds : Array Name) : Except String LeanExport.ExportedEnv := do
+  let targetSet := Std.HashSet.ofArray targets
+  let mut work := seeds
+  let mut result : LeanExport.ExportedEnv := {constMap := {},constOrder := #[]}
+  while !work.isEmpty do
+    let name := work.back!
+    work := work.pop
+    if result.constMap.contains name then continue
+    let some info := env.find? name | throw s!"Missing compiled constant: {name}"
+    let stored := if targetSet.contains name then
+        match info with
+        | .thmInfo value => .thmInfo {value with value := mkConst ``False}
+        | other => other
+      else info
+    result := {constMap := result.constMap.insert name stored,constOrder := result.constOrder.push name}
+    if targetSet.contains name then work := work ++ info.type.getUsedConstants
+    else work := work ++ referenced info
+  return result
+
+/- Expression normalization follows LeanExport.Basic.removeMData.
+Copyright (c) 2025 Lean FRO, LLC. Apache-2.0. -/
+def normalizeExportExprM (e : Expr) : StateM (Std.HashMap Expr Expr) Expr := do
+  if let some cached := (← get)[e]? then return cached
+  let normalized ← match e with
+    | .mdata _ inner => normalizeExportExprM inner
+    | .fvar .. | .mvar .. => unreachable!
+    | .bvar .. | .sort .. | .const .. | .lit _ => pure e
+    | .app f a => pure <| e.updateApp! (← normalizeExportExprM f) (← normalizeExportExprM a)
+    | .lam _ d b _ => pure <| e.updateLambdaE! (← normalizeExportExprM d) (← normalizeExportExprM b)
+    | .letE _ d v b _ => pure <| e.updateLet! (← normalizeExportExprM d) (← normalizeExportExprM v) (← normalizeExportExprM b) false
+    | .forallE _ d b _ => pure <| e.updateForallE! (← normalizeExportExprM d) (← normalizeExportExprM b)
+    | .proj _ _ value => pure <| e.updateProj! (← normalizeExportExprM value)
+  modify fun cache => cache.insert e normalized
+  return normalized
+def normalizeExportExpr (e : Expr) : Expr := (normalizeExportExprM e).run' {}
+def normalizeExportInfo (info : ConstantInfo) : ConstantInfo :=
+  match info with
+  | .axiomInfo value => .axiomInfo {value with type := normalizeExportExpr value.type}
+  | .defnInfo value => .defnInfo {value with type := normalizeExportExpr value.type, value := normalizeExportExpr value.value}
+  | .thmInfo value => .thmInfo {value with type := normalizeExportExpr value.type, value := normalizeExportExpr value.value}
+  | .opaqueInfo value => .opaqueInfo {value with type := normalizeExportExpr value.type, value := normalizeExportExpr value.value}
+  | .quotInfo value => .quotInfo {value with type := normalizeExportExpr value.type}
+  | .inductInfo value => .inductInfo {value with type := normalizeExportExpr value.type}
+  | .ctorInfo value => .ctorInfo {value with type := normalizeExportExpr value.type}
+  | .recInfo value => .recInfo {value with type := normalizeExportExpr value.type, rules := value.rules.map fun rule => {rule with rhs := normalizeExportExpr rule.rhs}}
+def normalizeSnapshot (input : LeanExport.ExportedEnv) : LeanExport.ExportedEnv := Id.run do
+  let mut result := input
+  for (name, info) in input.constMap.toList do
+    result := {result with constMap := result.constMap.insert name (normalizeExportInfo info)}
+  return result
+
+unsafe def main (args : List String) : IO UInt32 := do
+  initSearchPath (← findSysroot)
+  let targets := theoremNames ++ permittedAxioms
+  match args with
+  | ["materialize", moduleName, output] => do
+    let env ← importModules #[{module := moduleName.toName}] {} (loadExts := false)
+    let closure ← IO.ofExcept <| collect env targets (targets ++ primitiveNames)
+    let _ ← CompactedRegion.save (α := LeanExport.ExportedEnv) output
+      (Name.mkSimple ("PalomarComparatorClosure" ++ moduleName)) closure #[] none
+    IO.println <| "MATERIALIZED " ++ moduleName ++ " " ++ toString closure.constMap.size
+    return 0
+  | ["compare", challengeFile, solutionFile] => do
+    let (challenge, challengeRegion) ← CompactedRegion.read (α := LeanExport.ExportedEnv) challengeFile #[]
+    let (solution, solutionRegion) ← CompactedRegion.read (α := LeanExport.ExportedEnv) solutionFile #[]
+    -- Keep strong owners in an IO reference through all comparisons. The maps
+    -- retain region pointers; no region is freed while those references are live.
+    let regionOwners ← IO.mkRef (challengeRegion, solutionRegion)
+    let challenge := normalizeSnapshot challenge
+    let solution := normalizeSnapshot solution
+    for name in theoremNames do
+      match challenge.constMap[name]?, solution.constMap[name]? with
+      | some (.thmInfo _), some (.thmInfo _) => pure ()
+      | _, _ => throw <| IO.userError s!"Configured target is not a theorem on both sides: {name}"
+    IO.ofExcept <| Lake.Check.compareAt challenge solution targets #[] primitiveNames
+    let first := theoremNames[0]!
+    let some (.thmInfo value) := solution.constMap[first]? | throw <| IO.userError "Missing type control"
+    let badType := {solution with constMap := solution.constMap.insert first (.thmInfo {value with type := mkConst ``False})}
+    match Lake.Check.compareAt challenge badType targets #[] primitiveNames with
+    | .error _ => pure ()
+    | .ok _ => throw <| IO.userError "Comparator accepted a changed target type"
+    let fixed := `NLA.MF05.Paper.realSpectralNorm
+    let some (.defnInfo value) := solution.constMap[fixed]? | throw <| IO.userError "Missing definition control"
+    let badValue := {solution with constMap := solution.constMap.insert fixed (.defnInfo {value with value := mkConst ``False})}
+    match Lake.Check.compareAt challenge badValue targets #[] primitiveNames with
+    | .error _ => pure ()
+    | .ok _ => throw <| IO.userError "Comparator accepted a changed ordinary definition"
+    let ownedRegions ← regionOwners.get
+    IO.println <| "CORRESPONDENCE " ++ (Json.mkObj [
+      ("challenge_materialized_bytes",toJson ownedRegions.1.size.toNat),
+      ("solution_materialized_bytes",toJson ownedRegions.2.size.toNat),
+      ("status","pass"),("compared_theorems",toJson theoremNames.size),("selected_declarations_are_theorems",toJson true),
+      ("challenge_closure_constants",toJson challenge.constMap.size),
+      ("solution_closure_constants",toJson solution.constMap.size),
+      ("type_negative_control",toJson true),("definition_body_negative_control",toJson true)]).compress
+    return 0
+  | _ => throw <| IO.userError "Expected materialize MODULE FILE or compare CHALLENGE SOLUTION"
+

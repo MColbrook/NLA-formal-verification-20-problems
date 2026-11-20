@@ -1,0 +1,7 @@
+module
+
+import Solution
+
+#print axioms NLA.MF05.Paper.paper_real_bounded_positive_radius_growth
+#print axioms NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent
+#print axioms NLA.MF05.Paper.paper_real_uniform_holder

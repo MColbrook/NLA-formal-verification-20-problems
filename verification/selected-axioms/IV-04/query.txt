@@ -1,0 +1,6 @@
+module
+
+import Solution
+
+#print axioms IV04.Paper.Computational.actual_paper_iv_det
+#print axioms Reference.IV04FullHullHardness.iv_hull_literal_np_hard

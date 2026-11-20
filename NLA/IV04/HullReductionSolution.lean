@@ -1,0 +1,18 @@
+module
+
+public import NLA.IV04.PaperHullReductionPoly
+public import NLA.IV04.PaperHullReductionSemantics
+public import NLA.IV04.PaperHullReductionHardness
+
+@[expose] public section
+
+#print axioms IV04.Paper.Computational.polynomial_partition_hull_threshold_mem_fp
+#print axioms IV04.Paper.Computational.polynomial_partition_hull_code_mem_fp
+#print axioms IV04.Paper.Computational.polynomial_sat_hull_code_mem_fp
+#print axioms IV04.Paper.Computational.polynomial_partition_hull_threshold_value
+#print axioms IV04.Paper.Computational.polynomial_partition_hull_code_read
+#print axioms IV04.Paper.Computational.polynomial_partition_hull_language_iff
+#print axioms IV04.Paper.Computational.actual_binary_sat_hull_reduction
+#print axioms IV04.Paper.Computational.actual_binary_sat_hull_map_reduction
+#print axioms IV04.Paper.Computational.actual_rational_interval_hull_np_hard
+#print axioms IV04.Paper.Computational.actual_sat_hull_regular_bounded_unit_superdiagonal

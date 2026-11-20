@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "kind": "ordinary-compiled-solution-selected-axiom-query",
+  "status": "pass",
+  "selected_axioms_checked": true,
+  "project_root": "projects/IE-21",
+  "source_inventory_sha256": "eaf46343974bfdc2c223bbc4744b3e8224567abd927925b2add736c1f6175c2a",
+  "source_stable": true,
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.IE21.Paper.paper_random_rows"
+  ],
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axioms_by_theorem": {
+    "NLA.IE21.Paper.paper_random_rows": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "compiler_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "solution_artifacts": [
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/IE-21/lib/lean/Solution.olean",
+      "sha256": "f75842b22e1aaf189990e9a6cb189f7f26e7c64f968b5d310901b4458f2de86b",
+      "bytes": 2768
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/IE-21/lib/lean/Solution.olean.private",
+      "sha256": "89752c90e46fb65eb087e9f1ff848abe8a5354bfb46bd650c07c570706573c9f",
+      "bytes": 96
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/IE-21/lib/lean/Solution.olean.server",
+      "sha256": "ef88b5f06a68207c494457bf15ec7fd4512707f8f4960e25a08764bda1fa275a",
+      "bytes": 96
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/IE-21/lib/lean/Solution.ir",
+      "sha256": "a79e171d6c4133744c2e4cec5685e0614221d503609fc89a38b514be40604517",
+      "bytes": 2920
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/IE-21/lib/lean/Solution.ir.sig",
+      "sha256": "c692d7aa4f9a2277067390249364637a7032f4acf25d03b5121590ebaf154d3b",
+      "bytes": 176
+    }
+  ],
+  "query_path": "verification/selected-axioms/IE-21/query.txt",
+  "query_sha256": "57d69a6906b747eb7287807b1f544226f40c23fd2799ac4e04682ecaea1c3ba8",
+  "stdout_path": "verification/selected-axioms/IE-21/stdout.txt",
+  "stdout_sha256": "b76923ad2f5163cbdc728edd610ae68f218e273e6097935bab71b9ddbbfc68cc",
+  "stderr_path": "verification/selected-axioms/IE-21/stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command": [
+    "/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "-j1",
+    "-M12288",
+    "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/IE-21/SelectedAxiomQuery.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 4.331242799758911,
+  "errors": [],
+  "kernel_replay_performed": false,
+  "native_paths": {
+    "project_root": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/sources/5304cc244cfcf230/projects/IE-21",
+    "query_path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/IE-21/SelectedAxiomQuery.lean",
+    "stdout_path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/IE-21/stdout.log",
+    "stderr_path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/IE-21/stderr.log"
+  }
+}

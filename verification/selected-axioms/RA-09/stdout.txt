@@ -1,0 +1,4 @@
+'NLA.RA09.paper_ordered_matrix_norm_relative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA09.paper_ordered_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA09.paper_unordered_matrix_norm_relative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA09.paper_unordered_sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]

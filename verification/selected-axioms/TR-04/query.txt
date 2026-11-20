@@ -1,0 +1,7 @@
+module
+
+import Solution
+
+#print axioms Reference.LexTensorExecution.actual_lexicographic_paper_algorithm
+#print axioms Reference.LexicographicFeasibilityBridge.product_eq_rowCount
+#print axioms Reference.LexTensorCompletion.lexCard_eq_card

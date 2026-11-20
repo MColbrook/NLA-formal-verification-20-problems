@@ -1,0 +1,473 @@
+#!/usr/bin/env python3
+"""Exercise the production boundary on a fixture shaped like a Git checkout."""
+
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import shutil
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+if __package__ in {None, ""}:
+    sys.path.insert(0, str(ROOT))
+
+from scripts.checker_updates import materialize_checker, verify_release_commits  # noqa: E402
+from scripts.verification_errors import VerificationError  # noqa: E402
+from scripts.verify_submission import (  # noqa: E402
+    EXECUTION_BUDGET_SECONDS,
+    audit_challenge_sources,
+    build_allowlisted_roots,
+    comparator_export_targets,
+    comparator_preflight,
+    comparator_verdict,
+    compile_canonical_challenge,
+    configure_bwrap,
+    export_module,
+    get_mathlib_cache,
+    install_execution_deadline,
+    judge_exports,
+    lake_environment_value,
+    load_comparator_config,
+    manifest_packages,
+    materialize_packages,
+    module_source_suffix,
+    package_allowlist,
+    package_checkout,
+    package_lake_directories,
+    primitive_targets,
+    protected_comparator_config,
+    protected_kernels,
+    protected_lean_path,
+    reject_untrusted_package_artifacts,
+    replay_con_ron,
+    require_protected_paths,
+    resolve_release_commit,
+    run,
+    sandboxed_run,
+    sha256,
+    system_readable_paths,
+    tool_snapshot,
+    toolchain_tools,
+    trusted_lake_directories,
+    validate_protected_comparator_config,
+    verify_export,
+    verify_sandbox_confinement,
+)
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--source", type=Path, required=True)
+    parser.add_argument("--bwrap", type=Path, required=True)
+    parser.add_argument("--work-dir", type=Path, required=True)
+    args = parser.parse_args()
+    install_execution_deadline(
+        os.environ.get("PALOMAR_JOB_STARTED_AT"),
+        int(os.environ.get("PALOMAR_EXECUTION_BUDGET_SECONDS", EXECUTION_BUDGET_SECONDS)),
+    )
+
+    source = args.source.resolve(strict=True)
+    bwrap = configure_bwrap(args.bwrap)
+    work = args.work_dir.resolve()
+    work.mkdir(parents=True, exist_ok=True)
+    environment = os.environ.copy()
+    environment.pop("LAKE_PKG_URL_MAP", None)
+
+    lean_command = shutil.which("lean", path=environment["PATH"])
+    if not lean_command:
+        raise VerificationError("Lean is unavailable")
+    lean_prefix = Path(
+        run([lean_command, "--print-prefix"], cwd=source, env=environment).stdout.strip()
+    ).resolve(strict=True)
+    environment["PATH"] = f"{lean_prefix / 'bin'}:{environment['PATH']}"
+    lean = (lean_prefix / "bin" / "lean").resolve(strict=True)
+    lake = (lean_prefix / "bin" / "lake").resolve(strict=True)
+    python = Path(sys.executable).resolve(strict=True)
+    printenv_command = shutil.which("printenv", path=environment["PATH"])
+    touch_command = shutil.which("touch", path=environment["PATH"])
+    if not printenv_command or not touch_command:
+        raise VerificationError("required system tools are unavailable")
+    printenv = Path(printenv_command).absolute()
+    touch = Path(touch_command).absolute()
+    bundled = toolchain_tools(lean_prefix)
+    verify_release_commits(resolve_release_commit)
+    bundled["con-ron"], checker_provenance = materialize_checker(
+        (source / "lean-toolchain").read_text().strip(), bundled["con-ron"], work / "trusted-checker-update"
+    )
+    leanexport = bundled["leanexport"]
+    kernels = {name: argv for name, argv in protected_kernels(bundled).items() if name != "con-ron"}
+    primitives = primitive_targets(lean_prefix)
+
+    writable_directories = materialize_packages(
+        source, checkout=source, base_env=environment
+    )
+    home = source / ".lake" / "config" / "home"
+    temporary = source / ".lake" / "config" / "tmp"
+    home.mkdir()
+    temporary.mkdir()
+    environment.update(
+        {
+            "GIT_CONFIG_GLOBAL": "/dev/null",
+            "GIT_CONFIG_NOSYSTEM": "1",
+            "GIT_TERMINAL_PROMPT": "0",
+            "HOME": str(home.resolve()),
+            "TMPDIR": str(temporary.resolve()),
+            "LEAN_ABORT_ON_PANIC": "1",
+        }
+    )
+
+    executable_paths = [
+        lean_prefix,
+        python.parent.parent,
+        lean,
+        lake,
+        python,
+        printenv,
+        touch,
+    ]
+    for raw in ("/usr", "/bin", "/lib", "/lib64", "/run/current-system/sw", "/nix/store"):
+        path = Path(raw)
+        if path.exists():
+            executable_paths.append(path.resolve())
+    executable_paths = sorted(set(executable_paths))
+    source_comparator = source / "comparator.json"
+    config = load_comparator_config(source_comparator)
+    challenge_source = source.joinpath(
+        *module_source_suffix(config["challenge_module"]).parts
+    )
+    solution_source = source.joinpath(
+        *module_source_suffix(config["solution_module"]).parts
+    )
+    for path, field in (
+        (challenge_source, "Challenge"),
+        (solution_source, "Solution"),
+    ):
+        if path.is_symlink() or not path.is_file():
+            raise VerificationError(f"cold-build configured {field} source is missing")
+    comparator_config = protected_comparator_config(
+        source_comparator, work / "protected-comparator.json", kernels=kernels
+    )
+    protected_config = validate_protected_comparator_config(comparator_config, kernels=kernels)
+    protected_challenge = protected_config["challenge_module"]
+    environment["PALOMAR_PROTECTED_CHALLENGE_MODULE"] = protected_challenge
+    readable_paths = sorted({source, comparator_config, *system_readable_paths()})
+    tools = tool_snapshot(
+        [
+            Path(__file__).resolve(),
+            *bundled.values(),
+            python,
+            printenv,
+            touch,
+            bwrap,
+            comparator_config,
+        ]
+    )
+
+    verify_sandbox_confinement(
+        work / "initial-write-denied",
+        work / "initial-read-denied",
+        positive_read=challenge_source,
+        python=python,
+        touch=touch,
+        cwd=source,
+        environment=environment,
+        writable_directories=writable_directories,
+        readable_paths=readable_paths,
+        executable_paths=executable_paths,
+        tools=tools,
+    )
+    comparator_preflight(
+        work,
+        lean=lean,
+        leanexport=leanexport,
+        lake=lake,
+        lean_prefix=lean_prefix,
+        bwrap=bwrap,
+        kernels=kernels,
+        con_ron_binary=bundled["con-ron"],
+        primitives=primitives,
+        environment=environment,
+        executable_paths=executable_paths,
+        tools=tools,
+        timeout=7200,
+    )
+
+    packages = manifest_packages(source)
+    allowlist = package_allowlist(
+        source, packages, checkout=source, base_env=environment
+    )
+    reject_untrusted_package_artifacts(
+        source, packages, allowlist, checkout=source
+    )
+    mathlib = next(
+        package
+        for package in packages
+        if package["repository"].lower() == "leanprover-community/mathlib4"
+    )
+    mathlib_dir = package_checkout(source, mathlib, checkout=source)
+    dependency = next(iter(manifest_packages(mathlib_dir)), None)
+    if dependency is None:
+        raise VerificationError("cold-build Mathlib fixture has no closure dependency")
+    by_name = {package["name"]: package for package in packages}
+    dependency = by_name.get(dependency["name"])
+    if dependency is None:
+        raise VerificationError("cold-build Mathlib closure dependency is absent")
+    hostile_cache_states: list[Path] = []
+    hostile_cache_payload = b"#!/bin/sh\nexit 97\n"
+    # Mathlib may legitimately rebuild its cache executable even without the
+    # reset. The otherwise unrelated closure dependency makes survival of the
+    # same payload an unambiguous reset failure.
+    for package in (mathlib, dependency):
+        hostile_cache_state = (
+            package_checkout(source, package, checkout=source)
+            / ".lake"
+            / "build"
+            / "bin"
+            / "cache"
+        )
+        hostile_cache_state.parent.mkdir(parents=True, exist_ok=True)
+        hostile_cache_state.write_bytes(hostile_cache_payload)
+        hostile_cache_state.chmod(0o755)
+        hostile_cache_states.append(hostile_cache_state)
+    get_mathlib_cache(
+        source,
+        checkout=source,
+        base_env=environment,
+        allowlist=allowlist,
+        lake=lake,
+        readable_paths=readable_paths,
+        executable_paths=executable_paths,
+        tools=tools,
+    )
+    if any(
+        os.path.lexists(path)
+        and (
+            path.is_symlink()
+            or not path.is_file()
+            or path.read_bytes() == hostile_cache_payload
+        )
+        for path in hostile_cache_states
+    ):
+        raise VerificationError(
+            "ignored executable Mathlib-closure state survived the trusted cache boundary"
+        )
+    qualified = next(
+        (
+            package
+            for package in packages
+            if allowlist.get(package["name"], ("", ""))[1] == "qualified"
+        ),
+        None,
+    )
+    if qualified is None:
+        raise VerificationError("cold-build fixture has no qualified trusted root")
+    qualified_build = (
+        package_checkout(source, qualified, checkout=source)
+        / ".lake"
+        / "build"
+    )
+    hostile_qualified_states = [
+        qualified_build / "bin" / "palomar-hostile-qualified-root",
+        qualified_build / "lib" / "lean" / "PalomarHostile.olean",
+    ]
+    for path in hostile_qualified_states:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b"candidate compiled or executable output")
+    hostile_qualified_states[0].chmod(0o755)
+    build_allowlisted_roots(
+        source,
+        checkout=source,
+        packages=packages,
+        allowlist=allowlist,
+        base_env=environment,
+        lake=lake,
+        readable_paths=readable_paths,
+        executable_paths=executable_paths,
+        tools=tools,
+    )
+    if any(os.path.lexists(path) for path in hostile_qualified_states):
+        raise VerificationError(
+            "ignored executable or compiled qualified-root state survived the trusted build boundary"
+        )
+
+    trusted = set(trusted_lake_directories(source, allowlist, checkout=source))
+    trusted_builds = {
+        package_lake_directories(source, name, checkout=source)[0]
+        for name in allowlist
+    }
+    candidate_writable = [path for path in writable_directories if path not in trusted]
+    require_protected_paths(
+        [
+            Path(__file__).resolve(),
+            *bundled.values(),
+            python,
+            printenv,
+            touch,
+            bwrap,
+            comparator_config,
+        ],
+        candidate_writable,
+    )
+    executable_paths = sorted({*executable_paths, *trusted_builds})
+    canonical, dependency_sources, trusted_lean_paths = compile_canonical_challenge(
+        work,
+        source,
+        checkout=source,
+        challenge_source=challenge_source,
+        challenge_module=config["challenge_module"],
+        published_module=protected_challenge,
+        lean=lean,
+        lean_prefix=lean_prefix,
+        allowlist=allowlist,
+        environment=environment,
+        readable_paths=readable_paths,
+        executable_paths=executable_paths,
+        tools=tools,
+    )
+    canonical_root = (work / "canonical-challenge").resolve()
+    readable_paths = sorted({*readable_paths, canonical_root})
+    require_protected_paths([canonical_root, canonical], candidate_writable)
+    audit = audit_challenge_sources(
+        source,
+        checkout=source,
+        dependency_sources=dependency_sources,
+        lean_prefix=lean_prefix,
+        allowlist=allowlist,
+        writable_directories=candidate_writable,
+    )
+    if audit["untrusted_sources"]:
+        raise VerificationError(
+            "cold-build fixture has untrusted Challenge sources: "
+            + ", ".join(audit["untrusted_sources"][:10])
+        )
+
+    verify_sandbox_confinement(
+        work / "write-denied",
+        work / "read-denied",
+        positive_read=challenge_source,
+        python=python,
+        touch=touch,
+        cwd=source,
+        environment=environment,
+        writable_directories=candidate_writable,
+        protected_write_directories=sorted(trusted_builds),
+        readable_paths=readable_paths,
+        executable_paths=executable_paths,
+        tools=tools,
+    )
+    environment["LEAN_PATH"] = lake_environment_value(
+        "LEAN_PATH",
+        source=source,
+        lake=lake,
+        printenv=printenv,
+        environment=environment,
+        writable_directories=candidate_writable,
+        readable_paths=readable_paths,
+        executable_paths=executable_paths,
+        tools=tools,
+        allowed_roots=[source, lean_prefix],
+    )
+    environment["LEAN_SRC_PATH"] = lake_environment_value(
+        "LEAN_SRC_PATH",
+        source=source,
+        lake=lake,
+        printenv=printenv,
+        environment=environment,
+        writable_directories=candidate_writable,
+        readable_paths=readable_paths,
+        executable_paths=executable_paths,
+        tools=tools,
+        allowed_roots=[source, lean_prefix],
+    )
+    environment["LEAN_PATH"] = protected_lean_path(
+        canonical,
+        trusted_lean_paths,
+        environment["LEAN_PATH"],
+        protected_root=canonical_root,
+    )
+    # These builds exercise arbitrary proof-dependency compatibility. Lake may
+    # put workspace directories before the inherited path while building; the
+    # protected LEAN_PATH is reapplied above and carried into the exports below.
+    for target in ("Challenge", "Solution"):
+        sandboxed_run(
+            [str(lake), "build", target],
+            cwd=source,
+            environment=environment,
+            writable_directories=candidate_writable,
+            readable_paths=readable_paths,
+            executable_paths=executable_paths,
+            tools=tools,
+            timeout=7200,
+        )
+
+    exports = work / "exports"
+    exports.mkdir()
+    require_protected_paths([exports], candidate_writable)
+    targets = comparator_export_targets(protected_config, primitives)
+    for module, name in ((protected_challenge, "challenge"), (config["solution_module"], "solution")):
+        exported = export_module(
+            module,
+            targets,
+            output=exports / f"{name}.export",
+            leanexport=leanexport,
+            cwd=source,
+            environment=environment,
+            readable_paths=readable_paths,
+            executable_paths=executable_paths,
+            tools=tools,
+            timeout=7200,
+        )
+        if exported.returncode:
+            raise VerificationError(
+                f"cold-build {name} export failed: {exported.stderr.strip()[-4000:]}"
+            )
+        verify_export(exports / f"{name}.export")
+        tools[(exports / f"{name}.export").resolve()] = sha256(exports / f"{name}.export")
+
+    comparison = judge_exports(
+        lake=lake,
+        config=comparator_config,
+        challenge_export=exports / "challenge.export",
+        solution_export=exports / "solution.export",
+        scratch=work / "judge",
+        bwrap=bwrap,
+        lean_prefix=lean_prefix,
+        environment=environment,
+        tools=tools,
+        timeout=7200,
+    )
+    log = (comparison.stdout + "\n" + comparison.stderr).strip()
+    verdict = comparator_verdict(comparison.returncode, log)
+    if verdict is not None or "Your solution is okay!" not in log:
+        raise VerificationError(f"cold-build lake comparator integration failed: {log[-4000:]}")
+    replay = replay_con_ron(
+        binary=bundled["con-ron"], solution_export=exports / "solution.export",
+        scratch=work / "con-ron", lean_prefix=lean_prefix,
+        environment=environment, tools=tools, timeout=1800,
+    )
+    if replay["status"] != "accepted":
+        raise VerificationError(f"cold-build con-ron control was not accepted: {replay['detail']}")
+
+    print(
+        json.dumps(
+            {
+                "status": "pass",
+                "canonical_challenge": str(canonical),
+                "challenge_sources": audit["source_count"],
+                "challenge_dependencies": audit["dependencies"],
+                "project_dependencies": len(packages),
+                "comparator": "pass",
+                "con_ron": "accepted",
+                "con_ron_checker": checker_provenance,
+            },
+            indent=2,
+        )
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

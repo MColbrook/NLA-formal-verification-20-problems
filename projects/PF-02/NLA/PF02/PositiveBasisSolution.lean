@@ -1,0 +1,18 @@
+module
+
+public import NLA.PF02.PositiveBasis.Integer
+
+@[expose] public section
+#print axioms Reference.PF02PositiveBasis.positive_matrix_symmetric
+#print axioms Reference.PF02PositiveBasis.positive_matrix_coordinate
+#print axioms Reference.PF02PositiveBasis.positive_matrix_posDef
+#print axioms Reference.PF02PositiveBasis.diagonal_index_count
+#print axioms Reference.PF02PositiveBasis.positive_matrices_linearIndependent
+#print axioms Reference.PF02PositiveBasis.trace_gram_rank_of_linearIndependent
+#print axioms Reference.PF02PositiveBasis.positive_gram_rank
+#print axioms Reference.PF02PositiveBasis.positive_matrix_entry_nonneg
+#print axioms Reference.PF02PositiveBasis.positive_gram_entry_nonneg
+#print axioms Reference.PF02PositiveBasis.positive_matrix_int_cast
+#print axioms Reference.PF02PositiveBasis.positive_gram_int_cast
+#print axioms Reference.PF02PositiveBasis.positive_gram_int_entry_nonneg
+#print axioms Reference.PF02PositiveBasis.positive_integer_gram_real_rank

@@ -1,0 +1,4 @@
+'Reference.MD06MainAssembly.Interface.actual_paper_md_main' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Reference.MD06FiniteProbability.actual_cubic_sample_nonempty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

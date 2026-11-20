@@ -1,0 +1,32 @@
+module
+
+public import NLA.PF02.Normalization.Compactness
+public import NLA.PF02.Normalization.Process
+
+@[expose] public section
+#print axioms Reference.PF02Normalization.psd_full_rank_posDef
+#print axioms Reference.PF02Normalization.row_sum_rank_eq_of_full_trace_rank
+#print axioms Reference.PF02Normalization.row_sum_posDef_of_full_trace_rank
+#print axioms Reference.PF02Normalization.root_sum_posSemidef
+#print axioms Reference.PF02Normalization.root_sum_sq
+#print axioms Reference.PF02Normalization.root_sum_isUnit
+#print axioms Reference.PF02Normalization.normalized_row_posSemidef
+#print axioms Reference.PF02Normalization.normalized_column_posSemidef
+#print axioms Reference.PF02Normalization.normalized_row_sum
+#print axioms Reference.PF02Normalization.normalized_trace_pairing
+#print axioms Reference.PF02Normalization.normalized_column_trace
+#print axioms Reference.PF02Normalization.continuous_row_sum
+#print axioms Reference.PF02Normalization.continuousOn_root_sum
+#print axioms Reference.PF02Normalization.continuousOn_inverse_root_sum
+#print axioms Reference.PF02Normalization.continuousOn_normalized_row
+#print axioms Reference.PF02Normalization.continuousOn_normalized_column
+#print axioms Reference.PF02Normalization.psd_entry_abs_le_trace
+#print axioms Reference.PF02Normalization.normalized_row_entry_bound
+#print axioms Reference.PF02Normalization.normalized_column_entry_bound
+#print axioms Reference.PF02Normalization.psd_set_isClosed
+#print axioms Reference.PF02Normalization.normalized_factor_set_isClosed
+#print axioms Reference.PF02Normalization.normalized_factor_set_isCompact
+#print axioms Reference.PF02Normalization.normalized_factor_set_nonempty_of_full_rank
+#print axioms Reference.PF02Normalization.psd_family_each_le_sum
+#print axioms Reference.PF02Normalization.normalized_row_le_one
+#print axioms Reference.PF02Normalization.continuousOn_normalization_pair

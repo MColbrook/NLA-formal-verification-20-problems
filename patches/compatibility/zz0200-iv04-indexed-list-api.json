@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "iv04-lean435-indexed-list-api",
+  "purpose": "Use the current option-based List.getD identities in the endpoint-matrix proof bodies.",
+  "mathematical_statement_changes": false,
+  "ordinary_definition_changes": false,
+  "validation_status": "PaperRationalEndpointVertex passed a source-bound ordinary native Lean 4.35.0 partial probe. The three downstream modules remain pending in the next complete project build.",
+  "records": [
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperRationalEndpointVertex.lean",
+      "before_sha256": "8a58347dee7fc9e0a08ebc1cbf5c1baa932494b43a550b8436f721b55c561687",
+      "after_sha256": "ae592197826b73dc594ace98c2acff9486f6b3d0b8beb263a12aa6dbbde3071b",
+      "edits": [
+        {
+          "old": "  have hw := List.getD_map (selectedEndpointWords rows choices) [] (fun word => (signedWordValue word : ℚ)) (n:=i.val*n+j.val)",
+          "new": "  have hmap {α β : Type} (values : List α) (fallback : α) (f : α → β) (index : ℕ) :\r\n      (values.map f).getD index (f fallback) = f (values.getD index fallback) := by\r\n    simp [List.getD]\r\n  have hw := hmap (selectedEndpointWords rows choices) [] (fun word => (signedWordValue word : ℚ)) (i.val*n+j.val)",
+          "occurrences": 1
+        },
+        {
+          "old": "  have hr := List.getD_map (selectedRationalEndpoints pairs choices) 0 (fun value => value*(D : ℚ)) (n:=i.val*n+j.val)",
+          "new": "  have hr := hmap (selectedRationalEndpoints pairs choices) 0 (fun value => value*(D : ℚ)) (i.val*n+j.val)",
+          "occurrences": 1
+        },
+        {
+          "old": "    · rw [List.getD_eq_getElem pairs (0,0) hk]",
+          "new": "    · rw [← List.getElem_eq_getD (l := pairs) (h := hk) (0,0)]",
+          "occurrences": 1
+        },
+        {
+          "old": "    · rw [List.getD_eq_default pairs (0,0) (Nat.le_of_not_gt hk)]",
+          "new": "    · simp [List.getD, hk]",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperRealIntervalVertex.lean",
+      "before_sha256": "4856b048e4a6eacaea347cf91a0990d3eee1b94a7971faf6c770c51e8eb75b0e",
+      "after_sha256": "c2adc2a8df70de09316cd14616685a83a98d8812155dcdfd4f0994a83bf94c98",
+      "edits": [
+        {
+          "old": "    rw [List.getD_eq_getElem _ false hl]",
+          "new": "    rw [← List.getElem_eq_getD (l := boxVertexCertificate n choices) (h := hl) false]",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperPartitionMatrixGeometry.lean",
+      "before_sha256": "385631b114b800364396aec9dc5d5688dde66cb878ccf48e566c4ab3b0e8faa3",
+      "after_sha256": "1117656532b7918a729172d85e71be83ff56537706430a47fe18c7728c961be1",
+      "edits": [
+        {
+          "old": "  rw [partition_endpoint_pairs_ofFn,List.getD_eq_getElem _ _ (by simpa using hk)]\n  simp only [List.getElem_ofFn,he]",
+          "new": "  rw [partition_endpoint_pairs_ofFn]\n  simp only [List.getD, List.getElem?_ofFn, dif_pos hk, Option.getD_some, he]",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/RationalBoxExtrema/FullHullOutput.lean",
+      "before_sha256": "c29928cae79b34305981bcdca166fd851cdbaefdb489eeeadff662fddb4c8e2c",
+      "after_sha256": "e463f6cb6b4cf8cde84705cc2fa37934a1c147ee1f8942fd8294c81b4b21bf5f",
+      "edits": [
+        {
+          "old": "    rw [List.getD_eq_getElem bounds (0,0) (by simp [bounds])]\n    simp [bounds]",
+          "new": "    simp [bounds, List.getD, List.getElem?_ofFn, j.isLt]",
+          "occurrences": 1
+        }
+      ]
+    }
+  ],
+  "validation_records": [
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperRationalEndpointVertex.lean",
+      "source_sha256": "ae592197826b73dc594ace98c2acff9486f6b3d0b8beb263a12aa6dbbde3071b",
+      "receipt": "verification/local-builds/remote/probes/IV-04-NLA_IV04_PaperRationalEndpointVertex-ae592197826b.json"
+    }
+  ]
+}

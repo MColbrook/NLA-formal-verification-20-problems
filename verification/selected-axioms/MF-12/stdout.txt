@@ -1,0 +1,2 @@
+'NLA.MF12.Paper.paper_main_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF12.Paper.paper_rational_realization' depends on axioms: [propext, Classical.choice, Quot.sound]

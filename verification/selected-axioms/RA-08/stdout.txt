@@ -1,0 +1,2 @@
+'NLA.RA08.Paper.paper_spectral_failure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.RA08.Paper.verified_paper_nuclear_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]

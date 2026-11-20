@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "Please cite this formalization and the accompanying paper when using the development."
+type: software
+repository-code: https://github.com/MColbrook/NLA-formal-verification-20-problems
+title: "Formal verification of Numerical Linear Algebra, Explained: Twenty Problem Resolutions"
+authors:
+  - family-names: "Colbrook"
+    given-names: "Matthew J."
+  - family-names: "Stepaniants"
+    given-names: "George"
+license: Apache-2.0
+keywords:
+  - numerical linear algebra
+  - Lean
+  - formal verification
+  - matrix products
+  - tensor approximation
+references:
+  - type: unpublished
+    title: "Numerical Linear Algebra, Explained: Twenty Problem Resolutions"
+    authors:
+      - family-names: "Colbrook"
+        given-names: "Matthew J."
+      - family-names: "Stepaniants"
+        given-names: "George"
+    notes: >-
+      Author-provided manuscript identified by SHA-256
+      b66976c1efa4f625f3b380fef6e945ddf4d7beea6e1b264e2f87d6790548bba5.
+      No DOI, publication date or public paper URL is asserted by this file.

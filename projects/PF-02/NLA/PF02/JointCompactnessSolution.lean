@@ -1,0 +1,11 @@
+module
+
+public import NLA.PF02.JointCompactness.Compactness
+
+@[expose] public section
+#print axioms Reference.PF02JointCompactness.normalized_constraint_set_isClosed
+#print axioms Reference.PF02JointCompactness.joint_normalized_factor_set_isClosed
+#print axioms Reference.PF02JointCompactness.normalized_factor_entries_bound
+#print axioms Reference.PF02JointCompactness.joint_normalized_factor_set_isCompact
+#print axioms Reference.PF02JointCompactness.continuous_perturbed_gram
+#print axioms Reference.PF02JointCompactness.joint_perturbed_gram_isCompact

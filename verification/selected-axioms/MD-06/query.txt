@@ -1,0 +1,6 @@
+module
+
+import Solution
+
+#print axioms Reference.MD06MainAssembly.Interface.actual_paper_md_main
+#print axioms Reference.MD06FiniteProbability.actual_cubic_sample_nonempty

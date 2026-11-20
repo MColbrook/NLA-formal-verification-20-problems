@@ -1,0 +1,27 @@
+module
+
+public import NLA.MD06.LaplacianSpectralGap.Gap
+public import NLA.MD06.LaplacianSpectralGap.MatrixSpectrum
+
+@[expose] public section
+#print axioms Reference.MD06Spectral.actual_laplacian_operator_quadratic
+#print axioms Reference.MD06Spectral.actual_laplacian_eigenvalues_antitone
+#print axioms Reference.MD06Spectral.actual_laplacian_basis_action
+#print axioms Reference.MD06Spectral.actual_laplacian_eigenvalue_quadratic
+#print axioms Reference.MD06Spectral.actual_laplacian_eigenvalues_nonnegative
+#print axioms Reference.MD06Spectral.actual_laplacian_repr_action
+#print axioms Reference.MD06Spectral.actual_laplacian_diagonal_quadratic
+#print axioms Reference.MD06Spectral.actual_laplacian_zero_eigenvalue_exists
+#print axioms Reference.MD06Spectral.actual_laplacian_bottom_eigenvalue_zero
+#print axioms Reference.MD06Spectral.actual_connected_bottom_basis_constant
+#print axioms Reference.MD06Spectral.actual_connected_bottom_basis_coordinate_nonzero
+#print axioms Reference.MD06Spectral.actual_connected_bottom_repr_coordinate_sum
+#print axioms Reference.MD06Spectral.actual_connected_bottom_repr_zero_iff_mean_zero
+#print axioms Reference.MD06Spectral.actual_connected_other_eigenbasis_mean_zero
+#print axioms Reference.MD06Spectral.actual_sorted_laplacian_gap_rayleigh_lower
+#print axioms Reference.MD06Spectral.actual_sorted_laplacian_gap_positive
+#print axioms Reference.MD06Spectral.actual_sorted_laplacian_gap_attained
+#print axioms Reference.MD06Spectral.actual_sorted_gap_bound_implies_true_rayleigh_bound
+#print axioms Reference.MD06Spectral.actual_sorted_gap_rayleigh_bound_iff
+#print axioms Reference.MD06Spectral.actual_sorted_gap_quantitative_correction
+#print axioms Reference.MD06Spectral.actual_laplacian_sorted_eigenvalue_mem_matrix_spectrum

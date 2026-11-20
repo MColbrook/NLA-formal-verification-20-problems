@@ -1,0 +1,500 @@
+{
+  "schema_version": 1,
+  "generator": "scripts/build_entry_metadata.py",
+  "manuscript_sha256": "b66976c1efa4f625f3b380fef6e945ddf4d7beea6e1b264e2f87d6790548bba5",
+  "entries": [
+    {
+      "id": "MF-05",
+      "primary_theorem_names": [
+        "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_real_uniform_holder"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_real_uniform_holder"
+      ],
+      "source_labels": [
+        "mfu-thm-growth",
+        "mfu-thm-holder"
+      ]
+    },
+    {
+      "id": "MF-12",
+      "primary_theorem_names": [
+        "NLA.MF12.Paper.paper_main_realization",
+        "NLA.MF12.Paper.paper_rational_realization"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.MF12.Paper.paper_main_realization",
+        "NLA.MF12.Paper.paper_rational_realization"
+      ],
+      "source_labels": [
+        "mfg-thm-main"
+      ]
+    },
+    {
+      "id": "RA-02",
+      "primary_theorem_names": [
+        "NLA.RA02.Paper.paper_sup_worst_case_constants"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.RA02.Paper.paper_sup_worst_case_constants"
+      ],
+      "source_labels": [
+        "rap-cor:sup"
+      ]
+    },
+    {
+      "id": "RA-08",
+      "primary_theorem_names": [
+        "NLA.RA08.Paper.paper_spectral_failure",
+        "NLA.RA08.Paper.verified_paper_nuclear_counterexample"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.RA08.Paper.paper_spectral_failure",
+        "NLA.RA08.Paper.verified_paper_nuclear_counterexample"
+      ],
+      "source_labels": [
+        "rac-thm:spectral",
+        "rac-thm:nuclear"
+      ]
+    },
+    {
+      "id": "RA-09",
+      "primary_theorem_names": [
+        "NLA.RA09.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.paper_ordered_sharpness",
+        "NLA.RA09.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.paper_unordered_sharpness"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.RA09.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.paper_ordered_sharpness",
+        "NLA.RA09.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.paper_unordered_sharpness"
+      ],
+      "source_labels": [
+        "raf-thm:ordered",
+        "raf-thm:unordered"
+      ]
+    },
+    {
+      "id": "IE-21",
+      "primary_theorem_names": [
+        "NLA.IE21.Paper.paper_random_rows"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.IE21.Paper.paper_random_rows"
+      ],
+      "source_labels": [
+        "thm:row-random"
+      ]
+    },
+    {
+      "id": "IE-22",
+      "primary_theorem_names": [
+        "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+        "NLA.IE22.Paper.paper_universal_squared_rate"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+        "NLA.IE22.Paper.paper_universal_squared_rate"
+      ],
+      "source_labels": [
+        "thm:row-universal"
+      ]
+    },
+    {
+      "id": "TR-04",
+      "primary_theorem_names": [
+        "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm"
+      ],
+      "supporting_theorem_names": [
+        "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+        "Reference.LexTensorCompletion.lexCard_eq_card"
+      ],
+      "selected_theorem_names": [
+        "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+        "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+        "Reference.LexTensorCompletion.lexCard_eq_card"
+      ],
+      "source_labels": [
+        "thm:tr04-main"
+      ]
+    },
+    {
+      "id": "TR-27",
+      "primary_theorem_names": [
+        "NLA.TR27.Paper.paper_full_family"
+      ],
+      "supporting_theorem_names": [
+        "NLA.TR27.Paper.coordinateProjection_surjective",
+        "NLA.TR27.Paper.coordinateProjection_kernel",
+        "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+        "NLA.TR27.Paper.tensor_reps_nonzero"
+      ],
+      "selected_theorem_names": [
+        "NLA.TR27.Paper.paper_full_family",
+        "NLA.TR27.Paper.coordinateProjection_surjective",
+        "NLA.TR27.Paper.coordinateProjection_kernel",
+        "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+        "NLA.TR27.Paper.tensor_reps_nonzero"
+      ],
+      "source_labels": [
+        "thm:tr27-main"
+      ]
+    },
+    {
+      "id": "IS-03",
+      "primary_theorem_names": [
+        "NLA.IS03.paper_counterexample"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.IS03.paper_counterexample"
+      ],
+      "source_labels": [
+        "thm:is03"
+      ]
+    },
+    {
+      "id": "NM-04",
+      "primary_theorem_names": [
+        "NLA.NM04.Paper.paper_rowland_wu_identity"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.NM04.Paper.paper_rowland_wu_identity"
+      ],
+      "source_labels": [
+        "thm:nm04-main"
+      ]
+    },
+    {
+      "id": "PF-02",
+      "primary_theorem_names": [
+        "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness"
+      ],
+      "source_labels": [
+        "thm:pf02-all"
+      ]
+    },
+    {
+      "id": "MD-06",
+      "primary_theorem_names": [
+        "Reference.MD06MainAssembly.Interface.actual_paper_md_main"
+      ],
+      "supporting_theorem_names": [
+        "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty"
+      ],
+      "selected_theorem_names": [
+        "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+        "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty"
+      ],
+      "source_labels": [
+        "md-main"
+      ]
+    },
+    {
+      "id": "IV-04",
+      "primary_theorem_names": [
+        "IV04.Paper.Computational.actual_paper_iv_det",
+        "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "IV04.Paper.Computational.actual_paper_iv_det",
+        "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+      ],
+      "source_labels": [
+        "thm:iv-det",
+        "thm:iv-hull"
+      ]
+    },
+    {
+      "id": "MI-19",
+      "primary_theorem_names": [
+        "NLA.MI19.Paper.paper_counterexample"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.MI19.Paper.paper_counterexample"
+      ],
+      "source_labels": [
+        "Section 15, unnumbered MI-19 theorem"
+      ]
+    },
+    {
+      "id": "MI-21",
+      "primary_theorem_names": [
+        "NLA.MI21.Paper.paper_counterexample"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.MI21.Paper.paper_counterexample"
+      ],
+      "source_labels": [
+        "thm:mi21"
+      ]
+    },
+    {
+      "id": "MI-22",
+      "primary_theorem_names": [
+        "NLA.MI22.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_conjecture_false"
+      ],
+      "supporting_theorem_names": [],
+      "selected_theorem_names": [
+        "NLA.MI22.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_conjecture_false"
+      ],
+      "source_labels": [
+        "thm:mi22"
+      ]
+    }
+  ],
+  "lean_or_kernel_execution": false,
+  "technical_supporting_theorems": [
+    {
+      "name": "NLA.MI22.singularValue._proof_1",
+      "type_lean": "forall {n : Nat}, Module.Finite.{0, 0} Complex (WithLp.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Complex)) (Ring.toSemiring.{0} Complex (DivisionRing.toRing.{0} Complex (Field.toDivisionRing.{0} Complex (NormedField.toField.{0} Complex (DenselyNormedField.toNormedField.{0} Complex (RCLike.toDenselyNormedField.{0} Complex Complex.instRCLike)))))) (AddCommGroup.toAddCommMonoid.{0} (WithLp.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Complex)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Complex) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Complex) (fun (i : Fin n) => SeminormedAddCommGroup.toAddCommGroup.{0} Complex (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup))))) (WithLp.instModule.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) Complex ((Fin n) -> Complex) (Ring.toSemiring.{0} Complex (DivisionRing.toRing.{0} Complex (Field.toDivisionRing.{0} Complex (NormedField.toField.{0} Complex (DenselyNormedField.toNormedField.{0} Complex (RCLike.toDenselyNormedField.{0} Complex Complex.instRCLike)))))) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Complex) (fun (i : Fin n) => SeminormedAddCommGroup.toAddCommGroup.{0} Complex (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup))) (Pi.module.{0, 0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Complex) Complex (CommSemiring.toSemiring.{0} Complex (Semifield.toCommSemiring.{0} Complex (Field.toSemifield.{0} Complex (NormedField.toField.{0} Complex (DenselyNormedField.toNormedField.{0} Complex (RCLike.toDenselyNormedField.{0} Complex Complex.instRCLike)))))) (fun (i : Fin n) => AddCommGroup.toAddCommMonoid.{0} Complex (SeminormedAddCommGroup.toAddCommGroup.{0} Complex (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup))) (fun (i : Fin n) => NormedSpace.toModule.{0, 0} Complex Complex (DenselyNormedField.toNormedField.{0} Complex (RCLike.toDenselyNormedField.{0} Complex Complex.instRCLike)) (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup) (InnerProductSpace.toNormedSpace.{0, 0} Complex Complex Complex.instRCLike (NormedAddCommGroup.toSeminormedAddCommGroup.{0} Complex Complex.instNormedAddCommGroup) (RCLike.innerProductSpace.{0} Complex Complex.instRCLike)))))",
+      "source_path": "projects/MI-22/NLA/MI22/Definitions.lean",
+      "source_module": "NLA.MI22.Definitions",
+      "source_line": 46,
+      "owner_declaration": "NLA.MI22.singularValue",
+      "problem_ids": [
+        "MI-22"
+      ],
+      "purpose": "Finite-dimensionality of every complex Euclidean coordinate space, required by the fixed singularValue definition."
+    },
+    {
+      "name": "Complexity.NTM.trace._proof_6",
+      "type_lean": "forall (T : Nat) (i : Fin T), LT.lt.{0} Nat instLTNat (HAdd.hAdd.{0, 0, 0} Nat Nat Nat (instHAdd.{0} Nat instAddNat) (Fin.val T i) (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1))) (HAdd.hAdd.{0, 0, 0} Nat Nat Nat (instHAdd.{0} Nat instAddNat) T (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1)))",
+      "source_path": "projects/IV-04/NLA/IV04/Complexitylib/Models/TuringMachine.lean",
+      "source_module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "source_line": 676,
+      "owner_declaration": "Complexity.NTM.trace",
+      "problem_ids": [
+        "IV-02",
+        "IV-04"
+      ],
+      "purpose": "For i in Fin T, the bound i.val + 1 < T + 1 needed to advance the finite computation trace."
+    },
+    {
+      "name": "NLA.TR27.Paper.pivotIndex._proof_2",
+      "type_lean": "forall (D : Nat), (LE.le.{0} Nat instLENat (OfNat.ofNat.{0} Nat 2 (instOfNatNat 2)) D) -> (LT.lt.{0} Nat instLTNat (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1)) (HAdd.hAdd.{0, 0, 0} Nat Nat Nat (instHAdd.{0} Nat instAddNat) D (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1))))",
+      "source_path": "projects/TR-27/NLA/TR27/PaperCoordinateDefinitions.lean",
+      "source_module": "NLA.TR27.PaperCoordinateDefinitions",
+      "source_line": 15,
+      "owner_declaration": "NLA.TR27.Paper.pivotIndex",
+      "problem_ids": [
+        "TR-27"
+      ],
+      "purpose": "The bound 1 < D + 1 under 2 <= D, required for the coordinate pivot index."
+    },
+    {
+      "name": "NLA.TR27.Paper.recoveryIndex._proof_2",
+      "type_lean": "forall (D : Nat), (LE.le.{0} Nat instLENat (OfNat.ofNat.{0} Nat 5 (instOfNatNat 5)) D) -> (forall (j : Fin (OfNat.ofNat.{0} Nat 4 (instOfNatNat 4))), LT.lt.{0} Nat instLTNat (HAdd.hAdd.{0, 0, 0} Nat Nat Nat (instHAdd.{0} Nat instAddNat) (Fin.val (OfNat.ofNat.{0} Nat 4 (instOfNatNat 4)) j) (OfNat.ofNat.{0} Nat 1 (instOfNatNat 1))) D)",
+      "source_path": "projects/TR-27/NLA/TR27/PaperRationalDefinitions.lean",
+      "source_module": "NLA.TR27.PaperRationalDefinitions",
+      "source_line": 22,
+      "owner_declaration": "NLA.TR27.Paper.recoveryIndex",
+      "problem_ids": [
+        "TR-27"
+      ],
+      "purpose": "The bound j.val + 1 < D for j in Fin 4 and 5 <= D, required by recoveryIndex."
+    },
+    {
+      "name": "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+      "type_lean": "forall (D : Nat), Nat -> (LE.le.{0} Nat instLENat (OfNat.ofNat.{0} Nat 5 (instOfNatNat 5)) D) -> (LE.le.{0} Nat instLENat (OfNat.ofNat.{0} Nat 2 (instOfNatNat 2)) D)",
+      "source_path": "projects/TR-27/NLA/TR27/PaperRationalGeometryDefinitions.lean",
+      "source_module": "NLA.TR27.PaperRationalGeometryDefinitions",
+      "source_line": 15,
+      "owner_declaration": "NLA.TR27.Paper.recoveryOpenPoints",
+      "problem_ids": [
+        "TR-27"
+      ],
+      "purpose": "The implication 5 <= D -> 2 <= D used by the coordinate pivot in recoveryOpenPoints."
+    },
+    {
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_5",
+      "type_lean": "forall (j : Fin (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat))), Eq.{1} (Fin (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat))) ((fun (x._@.NLA.TR04.LexicographicTensorReplayR3.PureDefinitions.1639430859._hygCtx._hyg.42 : Reference.LexTensorCompletion.ModeIndex (List.nil.{0} Nat)) => Fin.mk (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat)) (OfNat.ofNat.{0} Nat 0 (instOfNatNat 0)) Reference.LexTensorCompletion.lexIndex._proof_2) ((fun (x._@.NLA.TR04.LexicographicTensorReplayR3.PureDefinitions.1639430859._hygCtx._hyg.50 : Fin (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat))) => PUnit.unit.{1}) j)) j",
+      "source_path": "projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean",
+      "source_module": "NLA.TR04.LexicographicTensorReplayR3.PureDefinitions",
+      "source_line": 206,
+      "owner_declaration": "Reference.LexTensorCompletion.lexIndex",
+      "problem_ids": [
+        "TR-04"
+      ],
+      "purpose": "The right inverse law of the lexicographic index equivalence for the empty mode list."
+    },
+    {
+      "name": "Reference.LexTensorCompletion.lexIndex._proof_2",
+      "type_lean": "LT.lt.{0} Nat instLTNat (OfNat.ofNat.{0} Nat 0 (instOfNatNat 0)) (Reference.LexTensorCompletion.lexCard (List.nil.{0} Nat))",
+      "source_path": "projects/TR-04/NLA/TR04/LexicographicTensorReplayR3/PureDefinitions.lean",
+      "source_module": "NLA.TR04.LexicographicTensorReplayR3.PureDefinitions",
+      "source_line": 206,
+      "owner_declaration": "Reference.LexTensorCompletion.lexIndex",
+      "problem_ids": [
+        "TR-04"
+      ],
+      "purpose": "The bound 0 < lexCard [], making zero a valid finite index for the empty mode list."
+    },
+    {
+      "name": "NLA.IE21.matrixMap._proof_6",
+      "type_lean": "forall {n : Nat}, ContinuousSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (SMulZeroClass.toSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (AddZero.toZero.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddZeroClass.toAddZero.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddMonoid.toAddZeroClass.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (SubNegMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddGroup.toSubNegMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddCommGroup.toAddGroup.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Real) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup))))))))) (DistribSMul.toSMulZeroClass.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (AddMonoid.toAddZeroClass.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (SubNegMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddGroup.toSubNegMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddCommGroup.toAddGroup.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Real) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup))))))) (DistribMulAction.toDistribSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (Semiring.toMonoid.{0} Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField))))) (SubNegMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddGroup.toSubNegMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (AddCommGroup.toAddGroup.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Real) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup)))))) (Module.toDistribMulAction.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin n)) (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField)))) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin n)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin n) -> Real) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup)))) (WithLp.instModule.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) Real ((Fin n) -> Real) (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField)))) (Pi.addCommGroup.{0, 0} (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => Real.instAddCommGroup)) (Pi.Function.module.{0, 0, 0} (Fin n) Real Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField)))) (Semiring.toAddCommMonoid.{0} Real (Ring.toSemiring.{0} Real Real.instRing)) (Semiring.toModule.{0} Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real Real.normedField))))))))))) (UniformSpace.toTopologicalSpace.{0} Real (PseudoMetricSpace.toUniformSpace.{0} Real (SeminormedRing.toPseudoMetricSpace.{0} Real (SeminormedCommRing.toSeminormedRing.{0} Real (NormedCommRing.toSeminormedCommRing.{0} Real (NormedField.toNormedCommRing.{0} Real Real.normedField)))))) (PiLp.topologicalSpace.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) (Fin n) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin n) => Real) (fun (i : Fin n) => UniformSpace.toTopologicalSpace.{0} Real (PseudoMetricSpace.toUniformSpace.{0} Real Real.pseudoMetricSpace)))",
+      "source_path": "projects/IE-21/NLA/IE21/Definitions.lean",
+      "source_module": "NLA.IE21.Definitions",
+      "source_line": 60,
+      "owner_declaration": "NLA.IE21.matrixMap",
+      "problem_ids": [
+        "IE-21"
+      ],
+      "purpose": "Joint continuity of real scalar multiplication on the Euclidean domain required by the fixed matrixMap construction."
+    },
+    {
+      "name": "NLA.IE21.matrixMap._proof_4",
+      "type_lean": "forall {m : Nat}, ContinuousConstSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (PiLp.topologicalSpace.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => UniformSpace.toTopologicalSpace.{0} Real (PseudoMetricSpace.toUniformSpace.{0} Real Real.pseudoMetricSpace))) (SMulZeroClass.toSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (AddZero.toZero.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddZeroClass.toAddZero.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddMonoid.toAddZeroClass.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin m) -> Real) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Real.instAddCommGroup)))))))) (DistribSMul.toSMulZeroClass.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (AddMonoid.toAddZeroClass.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin m) -> Real) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Real.instAddCommGroup)))))) (DistribMulAction.toDistribSMul.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (Semiring.toMonoid.{0} Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (NontriviallyNormedField.toNormedField.{0} Real (DenselyNormedField.toNontriviallyNormedField.{0} Real Real.denselyNormedField))))))) (AddCommMonoid.toAddMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin m) -> Real) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Real.instAddCommGroup))))) (Module.toDistribMulAction.{0, 0} Real (EuclideanSpace.{0, 0} Real (Fin m)) (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (NontriviallyNormedField.toNormedField.{0} Real (DenselyNormedField.toNontriviallyNormedField.{0} Real Real.denselyNormedField)))))) (AddCommGroup.toAddCommMonoid.{0} (EuclideanSpace.{0, 0} Real (Fin m)) (WithLp.instAddCommGroup.{0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) ((Fin m) -> Real) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Real.instAddCommGroup)))) (WithLp.instModule.{0, 0} (OfNat.ofNat.{0} ENNReal 2 (instOfNatAtLeastTwo.{0} ENNReal 2 (AddMonoidWithOne.toNatCast.{0} ENNReal (AddCommMonoidWithOne.toAddMonoidWithOne.{0} ENNReal ENNReal.instAddCommMonoidWithOne)) PiLp.innerProductSpace._proof_1)) Real ((Fin m) -> Real) (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike)))))) (Pi.addCommGroup.{0, 0} (Fin m) (fun (x._@.Mathlib.Analysis.InnerProductSpace.PiL2.209079104._hygCtx._hyg.45 : Fin m) => Real) (fun (i : Fin m) => Ring.toAddCommGroup.{0} Real (DivisionRing.toRing.{0} Real (Field.toDivisionRing.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike))))))) (Pi.Function.module.{0, 0, 0} (Fin m) Real Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike)))))) (Semiring.toAddCommMonoid.{0} Real (Ring.toSemiring.{0} Real (DivisionRing.toRing.{0} Real (Field.toDivisionRing.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike))))))) (Semiring.toModule.{0} Real (CommSemiring.toSemiring.{0} Real (Semifield.toCommSemiring.{0} Real (Field.toSemifield.{0} Real (NormedField.toField.{0} Real (DenselyNormedField.toNormedField.{0} Real (RCLike.toDenselyNormedField.{0} Real Real.instRCLike)))))))))))))",
+      "source_path": "projects/IE-21/NLA/IE21/Definitions.lean",
+      "source_module": "NLA.IE21.Definitions",
+      "source_line": 60,
+      "owner_declaration": "NLA.IE21.matrixMap",
+      "problem_ids": [
+        "IE-21"
+      ],
+      "purpose": "Continuity of multiplication by each fixed real scalar on the Euclidean codomain required by matrixMap."
+    }
+  ],
+  "root_mathematical_account": {
+    "path": "README.md",
+    "base_compared_declarations": 34,
+    "technical_supporting_theorems": 9,
+    "compared_declarations": 43,
+    "sha256": "fa8fdd697a76068d08b882adcc5ed1545bb6f881740a5049facd795bc252b150",
+    "bytes": 48263
+  },
+  "metadata_validation": [
+    {
+      "path": "formalization.yaml",
+      "status": "pass",
+      "sha256": "9ee38f6915a7de1d1c4272afb90b52258146f0c168745f1cbf9506f4d1838398",
+      "bytes": 14706
+    },
+    {
+      "path": "projects/MF-05/formalization.yaml",
+      "status": "pass",
+      "sha256": "7f6b20e63ebf49b5ef2bea1f7bbeebecde0324dfed0a61bbe0df502cc322a8f8",
+      "bytes": 15067
+    },
+    {
+      "path": "projects/MF-12/formalization.yaml",
+      "status": "pass",
+      "sha256": "212eed1f79b475d3378a6980a18e2b49bdb79799252e1d9bb55a2e9fadf786f2",
+      "bytes": 13800
+    },
+    {
+      "path": "projects/RA-02/formalization.yaml",
+      "status": "pass",
+      "sha256": "fc75345c5a7e20656da22d536d372f58e8c21f4b21e16b726324a49f1e7719af",
+      "bytes": 13701
+    },
+    {
+      "path": "projects/RA-08/formalization.yaml",
+      "status": "pass",
+      "sha256": "004bff72ff84c932f80131aac5b2a18dc3dc825147a3f6117336ac21f134c3b7",
+      "bytes": 14438
+    },
+    {
+      "path": "projects/RA-09/formalization.yaml",
+      "status": "pass",
+      "sha256": "e0132b7269f500e4ce9700e9aed182017b3152c591aaf0857fe1e10d5c010b6d",
+      "bytes": 14917
+    },
+    {
+      "path": "projects/IE-21/formalization.yaml",
+      "status": "pass",
+      "sha256": "6bc1fef2a1b11e4d046c05cecd36dd85cf7630b6f1775ab068f49d20e5332e19",
+      "bytes": 13559
+    },
+    {
+      "path": "projects/IE-22/formalization.yaml",
+      "status": "pass",
+      "sha256": "441665a5d48b625acce4725df02c764cbdc54ca52d0a9062a8e3a84e827b447b",
+      "bytes": 14356
+    },
+    {
+      "path": "projects/TR-04/formalization.yaml",
+      "status": "pass",
+      "sha256": "26644ac9414ea1f2b917e5bf61c8ad5bf9349ac29931ca27fbf1555408714378",
+      "bytes": 15630
+    },
+    {
+      "path": "projects/TR-27/formalization.yaml",
+      "status": "pass",
+      "sha256": "9aa00a47c9983fc82068ad2e185242d878df912c1b3b48c12922e58b2d9374d3",
+      "bytes": 16526
+    },
+    {
+      "path": "projects/IS-03/formalization.yaml",
+      "status": "pass",
+      "sha256": "abe8d66539ced39dded2b4c88e02dd475fef138e31f7d0550a5f51c63cbbad50",
+      "bytes": 13332
+    },
+    {
+      "path": "projects/NM-04/formalization.yaml",
+      "status": "pass",
+      "sha256": "09e8245646b72da855a1d4417054588869871c995dc86970c34e456ba4af4ecb",
+      "bytes": 13552
+    },
+    {
+      "path": "projects/PF-02/formalization.yaml",
+      "status": "pass",
+      "sha256": "04c6ef154c37328458194d8235d77927db3f57ca12f9c87ae9dac717a875ea44",
+      "bytes": 13521
+    },
+    {
+      "path": "projects/MD-06/formalization.yaml",
+      "status": "pass",
+      "sha256": "0f9e1d8debb37e96597941acbdaf00a7ba014d164cb89a4ed7cedd2de691cdc2",
+      "bytes": 14615
+    },
+    {
+      "path": "projects/IV-04/formalization.yaml",
+      "status": "pass",
+      "sha256": "a091d45d102b61a2c4c51057a9d7aad4ba8cf804401cf58f98fd904b5ed69846",
+      "bytes": 14618
+    },
+    {
+      "path": "projects/MI-19/formalization.yaml",
+      "status": "pass",
+      "sha256": "02f8cb168ecc0515f8639ea1bb76c342236eee1c0b4f71bcee5b9bd72e3760cc",
+      "bytes": 13338
+    },
+    {
+      "path": "projects/MI-21/formalization.yaml",
+      "status": "pass",
+      "sha256": "52fe59325638dc01fd7f0cbdbdf3868918063ca11704afe47cff8e6fa95098de",
+      "bytes": 13426
+    },
+    {
+      "path": "projects/MI-22/formalization.yaml",
+      "status": "pass",
+      "sha256": "47c9f2886389d0049395275ebb274a667ce52479e1dfd652caad6cd86a1c9e5c",
+      "bytes": 13953
+    }
+  ],
+  "status": "pass; generated accounts match exact selected names and official metadata validation passed"
+}

@@ -1,0 +1,9 @@
+.lake/
+**/.lake/
+.build-cache/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+verification/local-builds/
+dist/

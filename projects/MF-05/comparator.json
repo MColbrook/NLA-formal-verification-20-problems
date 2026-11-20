@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+    "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+    "NLA.MF05.Paper.paper_real_uniform_holder"
+  ],
+  "definition_names": [],
+  "enable_nanoda": true,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

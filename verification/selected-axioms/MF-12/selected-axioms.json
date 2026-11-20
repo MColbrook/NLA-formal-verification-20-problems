@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "kind": "ordinary-compiled-solution-selected-axiom-query",
+  "status": "pass",
+  "selected_axioms_checked": true,
+  "project_root": "projects/MF-12",
+  "source_inventory_sha256": "da20053db5fa1c0d26fe9ffe44c5a12362dc14617e7e1ebbf571933450f89501",
+  "source_stable": true,
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.MF12.Paper.paper_main_realization",
+    "NLA.MF12.Paper.paper_rational_realization"
+  ],
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axioms_by_theorem": {
+    "NLA.MF12.Paper.paper_main_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MF12.Paper.paper_rational_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "compiler_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "solution_artifacts": [
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/MF-12/lib/lean/Solution.olean",
+      "sha256": "08edc1d8965e4fb22632864e0235f6075eb840e4dc6fe7d66a9161803e912f50",
+      "bytes": 2384
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/MF-12/lib/lean/Solution.olean.private",
+      "sha256": "5db64b0870c47936fb6b98e8fbb050d0e85c96a4e2f8d9afc6c012ac9a99d05b",
+      "bytes": 96
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/MF-12/lib/lean/Solution.olean.server",
+      "sha256": "423129c0fd59e42c7065c64543586cb9564282eeaba2618206dab3b269efd754",
+      "bytes": 96
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/MF-12/lib/lean/Solution.ir",
+      "sha256": "40d81bec93f5e7e5b73129a4a0999c2c44706b746b3c654ab927258e268b041b",
+      "bytes": 2536
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/MF-12/lib/lean/Solution.ir.sig",
+      "sha256": "c692d7aa4f9a2277067390249364637a7032f4acf25d03b5121590ebaf154d3b",
+      "bytes": 176
+    }
+  ],
+  "query_path": "verification/selected-axioms/MF-12/query.txt",
+  "query_sha256": "4aea4f8c68849e20ff4bbbfd12e7699806a58d353d5b4cba9442556bf4cb8ccb",
+  "stdout_path": "verification/selected-axioms/MF-12/stdout.txt",
+  "stdout_sha256": "ce93f17c55668c7e23fe386207253beaaa6c880d3bd18aa419fa487074564414",
+  "stderr_path": "verification/selected-axioms/MF-12/stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command": [
+    "/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "-j1",
+    "-M12288",
+    "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/MF-12/SelectedAxiomQuery.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 4.1841630935668945,
+  "errors": [],
+  "kernel_replay_performed": false,
+  "native_paths": {
+    "project_root": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/sources/5304cc244cfcf230/projects/MF-12",
+    "query_path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/MF-12/SelectedAxiomQuery.lean",
+    "stdout_path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/MF-12/stdout.log",
+    "stderr_path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/MF-12/stderr.log"
+  }
+}

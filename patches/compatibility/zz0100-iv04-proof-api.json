@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "iv04-lean435-proof-api",
+  "purpose": "Preserve interval-hardness theorem statements while using current finite-product, power-derivative and list-indexing proof APIs and removing a completed tactic tail.",
+  "mathematical_statement_changes": false,
+  "ordinary_definition_changes": false,
+  "proof_or_api_change_description": "Only four proof bodies and one explicit derivative-lemma import change. Current pinned Finset.prod_le_prod has no separate nonnegativity premise; the explicit Deriv.Pow import supplies hasDerivAt_pow, List.getElem_eq_getD and List.getD give the same indexing equality, and congr already closes the Cook-Levin pointwise equality.",
+  "validation_status": "All four current patched modules passed source-bound ordinary native Lean 4.35.0 compilation as isolated partial probes; complete project build pending.",
+  "records": [
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperCommonDenominator.lean",
+      "before_sha256": "1da9aa42148816bcfa952d6d50c11b275d89cd9dfa11236959be81f616adecb1",
+      "after_sha256": "045855398f91b1f4e76c54865bc45a5e2d5cff583ec8f3b5e380e86b26b23af3",
+      "edits": [
+        {
+          "old": "      apply Finset.prod_le_prod\n      · intro i _\n        exact Nat.zero_le _\n      · intro i _\n        exact Nat.le_of_lt (Nat.lt_size_self (q i).den)",
+          "new": "      apply Finset.prod_le_prod\n      intro i _\n      exact Nat.le_of_lt (Nat.lt_size_self (q i).den)",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperPartitionBounds.lean",
+      "before_sha256": "04492f02bc1b1b206362371c0452381f3bef9a6532ee0f9cf603b3184c260112",
+      "after_sha256": "555d74f551f0a0c739cb36f677ab03b4dadb5762ae68d5b6da950c1fe0c2869c",
+      "edits": [
+        {
+          "old": "public import Mathlib.Analysis.Calculus.Deriv.MeanValue",
+          "new": "public import Mathlib.Analysis.Calculus.Deriv.MeanValue\npublic import Mathlib.Analysis.Calculus.Deriv.Pow",
+          "occurrences": 1
+        },
+        {
+          "old": "      simpa using (((hasDerivAt_id x).pow 3).div_const 3)",
+          "new": "      simpa using (HasDerivAt.div_const (hasDerivAt_pow 3 x) 3)",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/Complexitylib/SAT/CookLevin.lean",
+      "before_sha256": "e7b239b6c862229f5e7db8f929b5c9389fd5900db3641b8b58cf839bdfd3f829",
+      "after_sha256": "ecf52e8d310817f707eef8e2aac66fb33d1d6dc13ef8d669844d6cc3555dfbd3",
+      "edits": [
+        {
+          "old": "  simp only [atLeastOne, Clause.eval, List.any_map]\n  congr 1\n  funext v\n  simp [Function.comp_apply,Lit.eval]",
+          "new": "  simp only [atLeastOne, Clause.eval, List.any_map]\n  congr 1",
+          "occurrences": 1
+        }
+      ]
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperDenseContinuantProjectionSemantics.lean",
+      "before_sha256": "e077eabf3576d610016f5c15eff0e32cb1b6aa1698031cf4fed8234ca7f79574",
+      "after_sha256": "bc3124c9e7b586bfbd18ee5ae6ea800ddea1fb8ff94ebae6d96ae2bca48ce20a",
+      "edits": [
+        {
+          "old": "  · rw [payload_lookup_word_code rows index hr,List.getD_eq_getElem rows [] hr]\r\n  · rw [payload_lookup_word_past_end rows index (Nat.le_of_not_gt hr),List.getD_eq_default]\r\n    omega",
+          "new": "  · rw [payload_lookup_word_code rows index hr]\r\n    exact List.getElem_eq_getD (h := hr) []\r\n  · rw [payload_lookup_word_past_end rows index (Nat.le_of_not_gt hr)]\r\n    simp [List.getD, hr]",
+          "occurrences": 1
+        }
+      ]
+    }
+  ],
+  "validation_records": [
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperCommonDenominator.lean",
+      "source_sha256": "045855398f91b1f4e76c54865bc45a5e2d5cff583ec8f3b5e380e86b26b23af3",
+      "receipt": "verification/local-builds/remote/probes/IV-04-NLA_IV04_PaperCommonDenominator-045855398f91.json"
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperPartitionBounds.lean",
+      "source_sha256": "555d74f551f0a0c739cb36f677ab03b4dadb5762ae68d5b6da950c1fe0c2869c",
+      "receipt": "verification/local-builds/remote/probes/IV-04-NLA_IV04_PaperPartitionBounds-555d74f551f0.json"
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/Complexitylib/SAT/CookLevin.lean",
+      "source_sha256": "ecf52e8d310817f707eef8e2aac66fb33d1d6dc13ef8d669844d6cc3555dfbd3",
+      "receipt": "verification/local-builds/remote/probes/IV-04-NLA_IV04_Complexitylib_SAT_CookLevin-ecf52e8d3108.json"
+    },
+    {
+      "path": "projects/IV-04/NLA/IV04/PaperDenseContinuantProjectionSemantics.lean",
+      "source_sha256": "bc3124c9e7b586bfbd18ee5ae6ea800ddea1fb8ff94ebae6d96ae2bca48ce20a",
+      "receipt": "verification/local-builds/remote/probes/IV-04-NLA_IV04_PaperDenseContinuantProjectionSemantics-bc3124c9e7b5.json"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+    "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+    "Reference.LexTensorCompletion.lexCard_eq_card"
+  ],
+  "definition_names": [],
+  "enable_nanoda": true,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

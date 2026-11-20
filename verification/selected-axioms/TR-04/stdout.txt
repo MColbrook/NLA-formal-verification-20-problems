@@ -1,0 +1,7 @@
+'Reference.LexTensorExecution.actual_lexicographic_paper_algorithm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Reference.LexicographicFeasibilityBridge.product_eq_rowCount' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Reference.LexTensorCompletion.lexCard_eq_card' depends on axioms: [propext, Classical.choice, Quot.sound]

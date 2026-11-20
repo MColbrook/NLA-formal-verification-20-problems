@@ -1,0 +1,62 @@
+module
+
+public import NLA.MD06.CleanCycleGraph.LiteralStable
+
+@[expose] public section
+set_option autoImplicit false
+noncomputable section
+namespace Reference.MD06CleanCycle
+open scoped BigOperators
+open Reference.MD06Actual Reference.MD06Correction Reference.MD06CycleProfile Reference.MD06Spectral
+attribute [local instance] Classical.propDecidable
+#print axioms actual_root_sign_square
+#print axioms actual_root_sign_sine
+#print axioms actual_root_sign_cosine
+#print axioms actual_level_node_card
+#print axioms actual_leaf_residual_square
+#print axioms actual_leaf_residual_norm_square
+#print axioms actual_node_profile_terminal
+#print axioms actual_node_profile_step
+#print axioms actual_embedded_profile_at_node
+#print axioms actual_embedded_profile_outside
+#print axioms actual_embedded_leaf_profile_zero
+#print axioms actual_gradient_real_neighbor_sum
+#print axioms actual_embedded_gradient_node_sum
+#print axioms actual_embedded_gradient_outside_zero
+#print axioms actual_next_root_residue
+#print axioms actual_previous_root_residue
+#print axioms actual_cycle_neighbor_signs_opposite
+#print axioms actual_cycle_two_neighbor_force
+#print axioms actual_child_zero_force
+#print axioms actual_child_one_force
+#print axioms actual_parent_force
+#print axioms actual_parent_child_zero_distinct
+#print axioms actual_parent_child_one_distinct
+#print axioms actual_children_distinct
+#print axioms actual_interior_tree_neighbor_force_zero
+#print axioms actual_embedded_interior_gradient_zero
+#print axioms actual_root_node_injective
+#print axioms actual_cycle_next_previous_distinct
+#print axioms actual_root_child_distinct
+#print axioms actual_root_neighbor_force_zero
+#print axioms actual_embedded_root_gradient_zero
+#print axioms actual_embedded_leaf_gradient
+#print axioms actual_node_root_form
+#print axioms actual_embedded_gradient_node_residual
+#print axioms actual_node_residual_norm_square
+#print axioms actual_embedded_gradient_norm_square
+#print axioms actual_profile_margin_le_one
+#print axioms actual_any_root_pair_cosine
+#print axioms actual_child_zero_cosine
+#print axioms actual_child_one_cosine
+#print axioms actual_parent_cosine
+#print axioms actual_tree_neighbor_cosine
+#print axioms actual_inside_outside_edge_profiles_zero
+#print axioms actual_embedded_all_edge_cosines
+#print axioms actual_embedded_residual_below_correction_threshold
+#print axioms actual_embedded_opposite_roots_force
+#print axioms actual_embedded_opposite_roots_distinct
+#print axioms actual_clean_embedding_dimension
+#print axioms actual_clean_embedding_nonsynchronized_local_minimum
+#print axioms actual_clean_embedding_literal_stable_nonsync
+end Reference.MD06CleanCycle

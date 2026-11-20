@@ -1,0 +1,19 @@
+module
+
+public import NLA.PF02.IntrinsicSupport.DimensionSupport
+
+@[expose] public section
+#print axioms Reference.PF02IntrinsicSupport.frame_orthonormal
+#print axioms Reference.PF02IntrinsicSupport.frame_mul_repr
+#print axioms Reference.PF02IntrinsicSupport.frame_range
+#print axioms Reference.PF02IntrinsicSupport.exists_orthonormal_frame
+#print axioms Reference.PF02IntrinsicSupport.rank_eq_image_finrank
+#print axioms Reference.PF02IntrinsicSupport.image_kernel_finrank_sum
+#print axioms Reference.PF02IntrinsicSupport.symmetric_supported_trace_rank_le
+#print axioms Reference.PF02IntrinsicSupport.psd_supported_trace_rank_le
+#print axioms Reference.PF02IntrinsicSupport.psd_image_supported_trace_rank_le
+#print axioms Reference.PF02IntrinsicSupport.psd_kernel_supported_trace_rank_le
+#print axioms Reference.PF02IntrinsicSupport.psd_zero_block_kernel_trace_rank_le
+#print axioms Reference.PF02IntrinsicSupport.psd_family_image_trace_rank_le
+#print axioms Reference.PF02IntrinsicSupport.triangular_rank_dimension_le
+#print axioms Reference.PF02IntrinsicSupport.leading_trailing_support_dimensions

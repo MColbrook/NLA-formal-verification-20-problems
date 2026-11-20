@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "kind": "ordinary-compiled-solution-selected-axiom-query",
+  "status": "pass",
+  "selected_axioms_checked": true,
+  "project_root": "projects/TR-27",
+  "source_inventory_sha256": "d49366cbe902cf9a04757301e224f8774388e2f569272b1413e8a1a54c9cbe4a",
+  "source_stable": true,
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.TR27.Paper.paper_full_family",
+    "NLA.TR27.Paper.coordinateProjection_surjective",
+    "NLA.TR27.Paper.coordinateProjection_kernel",
+    "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+    "NLA.TR27.Paper.tensor_reps_nonzero"
+  ],
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axioms_by_theorem": {
+    "NLA.TR27.Paper.paper_full_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.coordinateProjection_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.coordinateProjection_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.tensor_reps_nonzero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "compiler_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "compiler_sha256": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "solution_artifacts": [
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/TR-27/lib/lean/Solution.olean",
+      "sha256": "319565c45a10f51c9f49efd56bd0543eb05f4a9c4bf1d26de51e3a93c9bf8b3a",
+      "bytes": 2024
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/TR-27/lib/lean/Solution.olean.private",
+      "sha256": "3f162693406e6e7a570104cea7859642a62ea7e66849b10ae24f7e01c5ddc192",
+      "bytes": 96
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/TR-27/lib/lean/Solution.olean.server",
+      "sha256": "4f378d63e975fba72d6bcd7c4ec7067b942a045e0b89957ef9c0e541df5292dd",
+      "bytes": 96
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/TR-27/lib/lean/Solution.ir",
+      "sha256": "67f84b020cf7743dbbef58578cac7c8cec2deb392b324a14c941966b3eef77ef",
+      "bytes": 2176
+    },
+    {
+      "path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/builds/TR-27/lib/lean/Solution.ir.sig",
+      "sha256": "c692d7aa4f9a2277067390249364637a7032f4acf25d03b5121590ebaf154d3b",
+      "bytes": 176
+    }
+  ],
+  "query_path": "verification/selected-axioms/TR-27/query.txt",
+  "query_sha256": "8a808930beb7724624824902118d159110fbf73444293d4152482f0261746be0",
+  "stdout_path": "verification/selected-axioms/TR-27/stdout.txt",
+  "stdout_sha256": "bc7d08210f139d8bca4cab9580a30f5a1a4b7d415fdf62898c5dba8b0df49b24",
+  "stderr_path": "verification/selected-axioms/TR-27/stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command": [
+    "/home/mjc249/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "-j1",
+    "-M12288",
+    "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/TR-27/SelectedAxiomQuery.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 3.637803077697754,
+  "errors": [],
+  "kernel_replay_performed": false,
+  "native_paths": {
+    "project_root": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/sources/5304cc244cfcf230/projects/TR-27",
+    "query_path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/TR-27/SelectedAxiomQuery.lean",
+    "stdout_path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/TR-27/stdout.log",
+    "stderr_path": "/dev/shm/mjc249-palomar-standard-20261119-81e48a12/runs/5304cc244cfcf230/selected-axioms/TR-27/stderr.log"
+  }
+}

@@ -1,0 +1,47 @@
+module
+
+import Solution
+
+#print axioms NLA.MF05.Paper.paper_real_bounded_positive_radius_growth
+#print axioms NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent
+#print axioms NLA.MF05.Paper.paper_real_uniform_holder
+#print axioms NLA.MF12.Paper.paper_main_realization
+#print axioms NLA.MF12.Paper.paper_rational_realization
+#print axioms NLA.RA02.Paper.paper_sup_worst_case_constants
+#print axioms NLA.RA08.Paper.paper_spectral_failure
+#print axioms NLA.RA08.Paper.verified_paper_nuclear_counterexample
+#print axioms NLA.RA09.paper_ordered_matrix_norm_relative
+#print axioms NLA.RA09.paper_ordered_sharpness
+#print axioms NLA.RA09.paper_unordered_matrix_norm_relative
+#print axioms NLA.RA09.paper_unordered_sharpness
+#print axioms NLA.IE21.Paper.paper_random_rows
+#print axioms NLA.IE22.Paper.paper_high_aspect_supremum_limit
+#print axioms NLA.IE22.Paper.paper_universal_squared_rate
+#print axioms Reference.LexTensorExecution.actual_lexicographic_paper_algorithm
+#print axioms Reference.LexicographicFeasibilityBridge.product_eq_rowCount
+#print axioms Reference.LexTensorCompletion.lexCard_eq_card
+#print axioms NLA.TR27.Paper.paper_full_family
+#print axioms NLA.TR27.Paper.coordinateProjection_surjective
+#print axioms NLA.TR27.Paper.coordinateProjection_kernel
+#print axioms NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff
+#print axioms NLA.TR27.Paper.tensor_reps_nonzero
+#print axioms NLA.IS03.paper_counterexample
+#print axioms NLA.NM04.Paper.paper_rowland_wu_identity
+#print axioms Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness
+#print axioms Reference.MD06MainAssembly.Interface.actual_paper_md_main
+#print axioms Reference.MD06FiniteProbability.actual_cubic_sample_nonempty
+#print axioms IV04.Paper.Computational.actual_paper_iv_det
+#print axioms Reference.IV04FullHullHardness.iv_hull_literal_np_hard
+#print axioms NLA.MI19.Paper.paper_counterexample
+#print axioms NLA.MI21.Paper.paper_counterexample
+#print axioms NLA.MI22.Paper.paper_counterexample
+#print axioms NLA.MI22.Paper.paper_conjecture_false
+#print axioms NLA.MI22.singularValue._proof_1
+#print axioms Complexity.NTM.trace._proof_6
+#print axioms NLA.TR27.Paper.pivotIndex._proof_2
+#print axioms NLA.TR27.Paper.recoveryIndex._proof_2
+#print axioms NLA.TR27.Paper.recoveryOpenPoints._proof_2
+#print axioms Reference.LexTensorCompletion.lexIndex._proof_5
+#print axioms Reference.LexTensorCompletion.lexIndex._proof_2
+#print axioms NLA.IE21.matrixMap._proof_6
+#print axioms NLA.IE21.matrixMap._proof_4

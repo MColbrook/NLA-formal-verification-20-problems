@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "kind": "single-root-source-gates",
+  "status": "pass",
+  "challenge_lines": 1000,
+  "challenge_bytes": 98991,
+  "challenge_imports": [
+    "Lean.Meta.Match.Match",
+    "Mathlib"
+  ],
+  "explicit_core_private_access": "import all Lean.Meta.Match.Match",
+  "repository_source_scan": {
+    "schema_version": 1,
+    "module_required": true,
+    "maximum_lines": 10000,
+    "files_checked": 4498
+  },
+  "no_compilation_or_replay": true,
+  "challenge_source_sha256": "73fe108ce616ea9d07df51d88c22fd9abfa08763e96cad133203fa613857fc5f"
+}

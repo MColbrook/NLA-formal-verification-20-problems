@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "kind": "offline-comparison-evidence-negative-controls",
+  "status": "pass",
+  "positive_report_sha256": "a718efcc508a2830ab03a3a76a9943fdf497edbe1566133612888121be855621",
+  "negative_controls_rejected": [
+    "source_digest",
+    "config_digest",
+    "target_list",
+    "theorem_kind",
+    "definition_hole",
+    "type_control",
+    "body_control",
+    "compared_count",
+    "normalization",
+    "phase_exit",
+    "artifact_stability",
+    "native_compile",
+    "generated_c_digest",
+    "materialization_order",
+    "library_binding",
+    "compiled_artifact",
+    "driver_digest",
+    "query_digest"
+  ],
+  "lean_or_kernel_execution": false,
+  "network_used": false
+}

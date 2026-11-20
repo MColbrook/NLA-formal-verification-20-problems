@@ -1,0 +1,10 @@
+module
+
+public import NLA.PF02.BlockSupportRecovery.Recovery
+
+@[expose] public section
+#print axioms Reference.PF02BlockSupportRecovery.finite_psd_supported_trace_rank_le
+#print axioms Reference.PF02BlockSupportRecovery.actual_block_trace
+#print axioms Reference.PF02BlockSupportRecovery.actual_trailing_sum_posSemidef
+#print axioms Reference.PF02BlockSupportRecovery.actual_block_supported
+#print axioms Reference.PF02BlockSupportRecovery.actual_recovered_support_dimensions

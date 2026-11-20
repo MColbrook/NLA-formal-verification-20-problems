@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "kind": "ordinary-compiled-solution-selected-axiom-query",
+  "status": "pass",
+  "selected_axioms_checked": true,
+  "project_root": ".",
+  "source_inventory_sha256": "133d0bd119a4a7922ac91684e5775bca03939b2b783e56105f5e061b0665dea6",
+  "source_stable": true,
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+    "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+    "NLA.MF05.Paper.paper_real_uniform_holder",
+    "NLA.MF12.Paper.paper_main_realization",
+    "NLA.MF12.Paper.paper_rational_realization",
+    "NLA.RA02.Paper.paper_sup_worst_case_constants",
+    "NLA.RA08.Paper.paper_spectral_failure",
+    "NLA.RA08.Paper.verified_paper_nuclear_counterexample",
+    "NLA.RA09.paper_ordered_matrix_norm_relative",
+    "NLA.RA09.paper_ordered_sharpness",
+    "NLA.RA09.paper_unordered_matrix_norm_relative",
+    "NLA.RA09.paper_unordered_sharpness",
+    "NLA.IE21.Paper.paper_random_rows",
+    "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+    "NLA.IE22.Paper.paper_universal_squared_rate",
+    "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+    "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+    "Reference.LexTensorCompletion.lexCard_eq_card",
+    "NLA.TR27.Paper.paper_full_family",
+    "NLA.TR27.Paper.coordinateProjection_surjective",
+    "NLA.TR27.Paper.coordinateProjection_kernel",
+    "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+    "NLA.TR27.Paper.tensor_reps_nonzero",
+    "NLA.IS03.paper_counterexample",
+    "NLA.NM04.Paper.paper_rowland_wu_identity",
+    "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness",
+    "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+    "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty",
+    "IV04.Paper.Computational.actual_paper_iv_det",
+    "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+    "NLA.MI19.Paper.paper_counterexample",
+    "NLA.MI21.Paper.paper_counterexample",
+    "NLA.MI22.Paper.paper_counterexample",
+    "NLA.MI22.Paper.paper_conjecture_false",
+    "NLA.MI22.singularValue._proof_1",
+    "Complexity.NTM.trace._proof_6",
+    "NLA.TR27.Paper.pivotIndex._proof_2",
+    "NLA.TR27.Paper.recoveryIndex._proof_2",
+    "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+    "Reference.LexTensorCompletion.lexIndex._proof_5",
+    "Reference.LexTensorCompletion.lexIndex._proof_2",
+    "NLA.IE21.matrixMap._proof_6",
+    "NLA.IE21.matrixMap._proof_4"
+  ],
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axioms_by_theorem": {
+    "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MF05.Paper.paper_real_uniform_holder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MF12.Paper.paper_main_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MF12.Paper.paper_rational_realization": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.RA02.Paper.paper_sup_worst_case_constants": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.RA08.Paper.paper_spectral_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.RA08.Paper.verified_paper_nuclear_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.RA09.paper_ordered_matrix_norm_relative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.RA09.paper_ordered_sharpness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.RA09.paper_unordered_matrix_norm_relative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.RA09.paper_unordered_sharpness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.IE21.Paper.paper_random_rows": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.IE22.Paper.paper_high_aspect_supremum_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.IE22.Paper.paper_universal_squared_rate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Reference.LexicographicFeasibilityBridge.product_eq_rowCount": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Reference.LexTensorCompletion.lexCard_eq_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.paper_full_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.coordinateProjection_surjective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.coordinateProjection_kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.tensor_reps_nonzero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.IS03.paper_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.NM04.Paper.paper_rowland_wu_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Reference.MD06MainAssembly.Interface.actual_paper_md_main": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IV04.Paper.Computational.actual_paper_iv_det": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Reference.IV04FullHullHardness.iv_hull_literal_np_hard": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI19.Paper.paper_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI21.Paper.paper_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI22.Paper.paper_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI22.Paper.paper_conjecture_false": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.MI22.singularValue._proof_1": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Complexity.NTM.trace._proof_6": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.pivotIndex._proof_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.recoveryIndex._proof_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NLA.TR27.Paper.recoveryOpenPoints._proof_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Reference.LexTensorCompletion.lexIndex._proof_5": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Reference.LexTensorCompletion.lexIndex._proof_2": [
+      "propext",
+      "Quot.sound"
+    ],
+    "NLA.IE21.matrixMap._proof_6": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "NLA.IE21.matrixMap._proof_4": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "compiler_version": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "compiler_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "solution_artifacts": [
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.olean",
+      "sha256": "9c0543ac10db57c47e8bd8435bbcbb8c1e8db01babbb1bee595b596e1aea5be4",
+      "bytes": 4448
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.olean.private",
+      "sha256": "d34a3570f464321fb18b9626f444e5dd6bd3176fa00a34d0e8ec2aa1e22def10",
+      "bytes": 96
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.olean.server",
+      "sha256": "536b71c9b484974f4191c455fd03d8f434bcf9e3ed54114d09e5ba66a04234ab",
+      "bytes": 96
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.ir",
+      "sha256": "8527e6c5df175644abdebf325217af41c03c7b3881808401df0ac19a2bb7960b",
+      "bytes": 4600
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.ir.sig",
+      "sha256": "c692d7aa4f9a2277067390249364637a7032f4acf25d03b5121590ebaf154d3b",
+      "bytes": 176
+    }
+  ],
+  "query_path": "verification/selected-axioms/NLA20/query.txt",
+  "query_sha256": "3656dfa1ad50d7ba3ef16394803cc52bafa65d0c6655eaf1a4d71cbcdb579fa7",
+  "stdout_path": "verification/selected-axioms/NLA20/stdout.txt",
+  "stdout_sha256": "62fe8ca369f431eb5b704ad540fccfaba11bfaf4ad0bae02f27cea05b4977dd3",
+  "stderr_path": "verification/selected-axioms/NLA20/stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "command": [
+    "C:\\Users\\MatthewColbrook\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\lean.exe",
+    "-j1",
+    "-M12288",
+    "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla20-combined-selected-axioms\\SelectedAxiomQuery.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 44.3633770942688,
+  "errors": [],
+  "kernel_replay_performed": false
+}

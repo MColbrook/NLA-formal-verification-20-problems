@@ -1,0 +1,17 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.RA09.paper_ordered_matrix_norm_relative",
+    "NLA.RA09.paper_ordered_sharpness",
+    "NLA.RA09.paper_unordered_matrix_norm_relative",
+    "NLA.RA09.paper_unordered_sharpness"
+  ],
+  "definition_names": [],
+  "enable_nanoda": true,
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

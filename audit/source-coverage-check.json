@@ -1,0 +1,1673 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "scope": "Static reachability in the independently compiled module graph and forbidden-token check; auxiliary alternative proof environments need not share one Solution import closure; no fresh kernel or statement-equivalence claim",
+  "manuscript_sha256": "b66976c1efa4f625f3b380fef6e945ddf4d7beea6e1b264e2f87d6790548bba5",
+  "named_statement_count": 53,
+  "prose_claim_group_count": 57,
+  "problem_count": 20,
+  "projects": 17,
+  "claims": [
+    {
+      "kind": "named",
+      "label": "mfu-thm-growth",
+      "project": "MF-05",
+      "proof_file": "projects/MF-05/NLA/MF05/GrowthSolution.lean",
+      "lean_declarations": [
+        "NLA.MF05.Paper.paper_complex_closure_growth",
+        "NLA.MF05.Paper.paper_complex_closure_radius",
+        "NLA.MF05.Paper.paper_complex_bounded_root_limit",
+        "NLA.MF05.Paper.paper_real_bounded_root_limit",
+        "NLA.MF05.Paper.paper_complex_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_complex_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_theta_one",
+        "NLA.MF05.Paper.paper_theta_of_two_le",
+        "NLA.MF05.Paper.paper_complex_bounded_radius_one_growth",
+        "NLA.MF05.Paper.paper_real_bounded_radius_one_growth",
+        "NLA.MF05.Paper.paper_complex_bounded_comparison",
+        "NLA.MF05.Paper.paper_real_bounded_comparison"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfu-thm-holder",
+      "project": "MF-05",
+      "proof_file": "projects/MF-05/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.MF05.Paper.paper_complexify_spectralNorm",
+        "NLA.MF05.Paper.paper_complexify_growth",
+        "NLA.MF05.Paper.paper_complexify_radius",
+        "NLA.MF05.Paper.paper_complexify_hausdorff",
+        "NLA.MF05.Paper.paper_real_root_limit",
+        "NLA.MF05.Paper.paper_complex_root_limit",
+        "NLA.MF05.Paper.paper_complex_uniform_holder",
+        "NLA.MF05.Paper.paper_complex_scalar_holder",
+        "NLA.MF05.Paper.paper_real_uniform_holder",
+        "NLA.MF05.Paper.paper_real_scalar_holder",
+        "NLA.MF05.Paper.paper_complex_zero_ball",
+        "NLA.MF05.Paper.paper_real_zero_ball"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfu-lem-rounded",
+      "project": "MF-05",
+      "proof_file": "projects/MF-05/NLA/MF05/RoundedSolution.lean",
+      "lean_declarations": [
+        "NLA.MF05.Paper.paper_complex_rounded_extremal_norm",
+        "NLA.MF05.Paper.paper_real_rounded_extremal_norm"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfu-lem-damping",
+      "project": "MF-05",
+      "proof_file": "projects/MF-05/NLA/MF05/AuxSolution.lean",
+      "lean_declarations": [
+        "NLA.MF05.Paper.paper_complex_block_damping",
+        "NLA.MF05.Paper.paper_real_block_damping"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfu-prop-comparison",
+      "project": "MF-05",
+      "proof_file": "projects/MF-05/NLA/MF05/GrowthSolution.lean",
+      "lean_declarations": [
+        "NLA.MF05.Paper.paper_complex_bounded_comparison",
+        "NLA.MF05.Paper.paper_real_bounded_comparison"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfu-cor-ecc",
+      "project": "MF-05",
+      "proof_file": "projects/MF-05/NLA/MF05/AuxSolution.lean",
+      "lean_declarations": [
+        "NLA.MF05.Paper.paper_complex_bounded_comparison_norm",
+        "NLA.MF05.Paper.paper_real_bounded_comparison_norm",
+        "NLA.MF05.Paper.paper_complex_bounded_eccentricity",
+        "NLA.MF05.Paper.paper_real_bounded_eccentricity"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfg-thm-main",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/NLA/MF12/RealizationSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_main_realization",
+        "NLA.MF12.Paper.paper_dimension_integer",
+        "NLA.MF12.Paper.paper_dimension_fractional",
+        "NLA.MF12.Paper.paper_dimension_noninteger",
+        "NLA.MF12.Paper.paper_rational_realization",
+        "NLA.MF12.Paper.paper_two_generators"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfg-lem-compressed",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_compressed_lemma"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfg-lem-budget",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_budget_lemma"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfg-lem-Jordan",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_jordan_lemma"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfg-cor-rational",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/NLA/MF12/RealizationSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_rational_realization",
+        "NLA.MF12.Paper.paper_two_generators"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "mfg-cor-irrational",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/NLA/MF12/IrrationalSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_irrational_exponent",
+        "NLA.MF12.Paper.paper_irrational_rational_pair",
+        "NLA.MF12.Paper.paper_rational_density"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rap-thm:main",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/MainLimitsSolution.lean",
+      "lean_declarations": [
+        "NLA.RA02.Paper.paper_main_sharp_lower_bound_family",
+        "NLA.RA02.Paper.paper_main_sharp_lu_bestApprox_limit",
+        "NLA.RA02.Paper.paper_main_bestRankErrorSquared_eq_tail",
+        "NLA.RA02.Paper.paper_main_best_error_lower",
+        "NLA.RA02.Paper.paper_main_best_error_attained",
+        "NLA.RA02.Paper.paper_main_sharp_histories_eventually_positive",
+        "NLA.RA02.Paper.paper_main_best_error_semantics",
+        "NLA.RA02.Paper.paper_main_rank_tail_semantics"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rap-cor:sup",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/LUSupSolution.lean",
+      "lean_declarations": [
+        "NLA.RA02.Paper.paper_sup_lu_expectedError_best_upper_positive",
+        "NLA.RA02.Paper.paper_sup_rectangular_best_error_attained",
+        "NLA.RA02.Paper.paper_sup_rectangularBest_eq_gramTail",
+        "NLA.RA02.Paper.paper_sup_gramTail_le_lowRankError",
+        "NLA.RA02.Paper.paper_sup_rectangularBest_eq_squareBest",
+        "NLA.RA02.Paper.paper_sup_luRatios_isLUB",
+        "NLA.RA02.Paper.paper_sup_realPositiveLURatios_isLUB",
+        "NLA.RA02.Paper.paper_sup_best_error_semantics",
+        "NLA.RA02.Paper.paper_sup_lu_ratios_semantics",
+        "NLA.RA02.Paper.paper_sup_real_positive_lu_ratios_semantics",
+        "NLA.RA02.Paper.paper_sup_worst_case_constants"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rap-cor:negative",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/NegativeSolution.lean",
+      "lean_declarations": [
+        "NLA.RA02.Paper.paper_negative_cholesky_real_power_counterexample",
+        "NLA.RA02.Paper.paper_negative_lu_polynomial_counterexample",
+        "NLA.RA02.Paper.paper_negative_lu_constant_counterexample",
+        "NLA.RA02.Paper.paper_negative_no_uniform_polynomial_cholesky_factor",
+        "NLA.RA02.Paper.paper_negative_no_uniform_polynomial_lu_factor",
+        "NLA.RA02.Paper.paper_negative_best_family_error_positive",
+        "NLA.RA02.Paper.paper_negative_complexify_posDef",
+        "NLA.RA02.Paper.paper_negative_best_error_semantics",
+        "NLA.RA02.Paper.paper_negative_rank_tail_semantics"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rap-lem:prefix",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/PrefixSolution.lean",
+      "lean_declarations": [
+        "NLA.RA02.Paper.paper_lower_entries",
+        "NLA.RA02.Paper.paper_prefix_semantics",
+        "NLA.RA02.Paper.paper_prefix_asymptotic",
+        "NLA.RA02.Paper.paper_prefix_invertible",
+        "NLA.RA02.Paper.paper_prefix_inverse_norm"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rap-lem:CB",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/SpectralSolution.lean",
+      "lean_declarations": [
+        "NLA.RA02.Paper.paper_sharp_family",
+        "NLA.RA02.Paper.paper_sharp_positive_definite",
+        "NLA.RA02.Paper.paper_sharp_positive_entries",
+        "NLA.RA02.Paper.paper_lower_determinant",
+        "NLA.RA02.Paper.paper_full_determinant",
+        "NLA.RA02.Paper.paper_spectral_minor_ratio",
+        "NLA.RA02.Paper.paper_all_minors_nonzero"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rap-lem:h",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/InterpolationSolution.lean",
+      "lean_declarations": [
+        "NLA.RA02.Paper.paper_interpolation_coefficients",
+        "NLA.RA02.Paper.paper_interpolation_residual",
+        "NLA.RA02.Paper.paper_interpolation_euclidean_norm",
+        "NLA.RA02.Paper.paper_interpolation_selected_rows",
+        "NLA.RA02.Paper.paper_interpolation_indicator_limit",
+        "NLA.RA02.Paper.paper_interpolation_lower_bound"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rap-lem:normalisers",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/NormalizerSolution.lean",
+      "lean_declarations": [
+        "NLA.RA02.Paper.paper_residual_semantics",
+        "NLA.RA02.Paper.paper_trace_semantics",
+        "NLA.RA02.Paper.paper_frobenius_semantics",
+        "NLA.RA02.Paper.paper_trace_asymptotic",
+        "NLA.RA02.Paper.paper_frobenius_asymptotic",
+        "NLA.RA02.Paper.paper_trace_indicator",
+        "NLA.RA02.Paper.paper_frobenius_indicator"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rap-lem:paths",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/ComplexPathsSolution.lean",
+      "lean_declarations": [
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_cholesky_history_identity",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_lu_history_identity",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_choleskyPath_distinct",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_luPath_distinct",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_terminal_trace_det",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_terminal_frobenius_det",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_determinant_real",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_residual_semantics",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_trace_semantics",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_frobenius_semantics",
+        "NLA.RA02.Paper.ComplexHistory.paper_complex_determinant_norm_semantics"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rap-prop:correlation",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/CorrelationSupSolution.lean",
+      "lean_declarations": [
+        "NLA.RA02.Paper.paper_correlation_exists_correlation_cholesky_above",
+        "NLA.RA02.Paper.paper_correlation_exists_correlation_lu_above",
+        "NLA.RA02.Paper.paper_correlation_correlationCholeskyRatios_isLUB",
+        "NLA.RA02.Paper.paper_correlation_correlationLURatios_isLUB",
+        "NLA.RA02.Paper.paper_correlation_sharp_correlation_suprema",
+        "NLA.RA02.Paper.paper_correlation_cholesky_class_semantics",
+        "NLA.RA02.Paper.paper_correlation_lu_class_semantics",
+        "NLA.RA02.Paper.paper_sharpness_for_correlation_matrices"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rac-lem:derivative",
+      "project": "RA-08",
+      "proof_file": "projects/RA-08/NLA/RA08/DerivativeSolution.lean",
+      "lean_declarations": [
+        "NLA.RA08.Paper.paper_matrixAbsolute_frobenius_nonexpansive",
+        "NLA.RA08.Paper.paper_matrixAbsolute_square",
+        "NLA.RA08.Paper.paper_matrix_clipping_absolute",
+        "NLA.RA08.Paper.paper_clippingDividedDifference_absolute",
+        "NLA.RA08.Paper.paper_spectralNorm_frobenius_bound",
+        "NLA.RA08.Paper.paper_functionalCalculus_diagonal",
+        "NLA.RA08.Paper.paper_sylvester_quadratic_remainder_bound",
+        "NLA.RA08.Paper.paper_clippingDerivative_sylvester",
+        "NLA.RA08.Paper.paper_clipping_quadratic_remainder",
+        "NLA.RA08.Paper.paper_threshold_derivative_spectral_bigO",
+        "NLA.RA08.Paper.paper_threshold_derivative"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rac-thm:spectral",
+      "project": "RA-08",
+      "proof_file": "projects/RA-08/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.RA08.Paper.paper_spectral_witness",
+        "NLA.RA08.Paper.paper_spectral_errors",
+        "NLA.RA08.Paper.paper_spectral_failure",
+        "NLA.RA08.Paper.paper_scalar_function"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rac-thm:nuclear",
+      "project": "RA-08",
+      "proof_file": "projects/RA-08/NLA/RA08/NuclearCounterexampleSolution.lean",
+      "lean_declarations": [
+        "NLA.RA08.Paper.verified_paper_nuclear_counterexample"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "rac-lem:divergence",
+      "project": "RA-08",
+      "proof_file": "projects/RA-08/NLA/RA08/NuclearDivergenceSolution.lean",
+      "lean_declarations": [
+        "NLA.RA08.Paper.paper_nuclearDifferenceEigenvalue_pos",
+        "NLA.RA08.Paper.paper_nuclearTriangular_gram_inverse",
+        "NLA.RA08.Paper.paper_nuclearTriangular_sine_eigenvector",
+        "NLA.RA08.Paper.paper_nuclearTriangular_spectrum_permutation",
+        "NLA.RA08.Paper.paper_nuclearTriangular_nuclearNorm",
+        "NLA.RA08.Paper.paper_nuclearTriangular_singular_lower",
+        "NLA.RA08.Paper.paper_nuclearTriangular_nuclearNorm_lower",
+        "NLA.RA08.Paper.paper_nuclearTriangularGram_spectrum_pos",
+        "NLA.RA08.Paper.paper_nuclearTriangularPolar_unitary",
+        "NLA.RA08.Paper.paper_nuclearTriangularPolar_attains",
+        "NLA.RA08.Paper.paper_nuclear_trace_cauchy_squared",
+        "NLA.RA08.Paper.paper_nuclear_unitary_frobenius_squared",
+        "NLA.RA08.Paper.paper_nuclear_unitary_trace_abs",
+        "NLA.RA08.Paper.paper_nuclear_unitary_error_trace",
+        "NLA.RA08.Paper.paper_nuclearKernel_polar_trace_lower",
+        "NLA.RA08.Paper.paper_nuclearBlockUnitary_unitary",
+        "NLA.RA08.Paper.paper_nuclearDerivative_isHermitian",
+        "NLA.RA08.Paper.paper_nuclearDerivative_block_trace",
+        "NLA.RA08.Paper.paper_nuclearDerivative_trace_lower",
+        "NLA.RA08.Paper.paper_nuclearDerivative_lower",
+        "NLA.RA08.Paper.paper_nuclearDerivative_unbounded"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "raf-thm:ordered",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.RA09.paper_ordered_matrix_excess",
+        "NLA.RA09.paper_ordered_matrix_squared_relative",
+        "NLA.RA09.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.paper_ordered_sharpness",
+        "NLA.RA09.paper_identity_admissible"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "raf-thm:unordered",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.RA09.paper_unordered_matrix_excess",
+        "NLA.RA09.paper_unordered_matrix_squared_relative",
+        "NLA.RA09.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.paper_unordered_sharpness",
+        "NLA.RA09.paper_power_admissible",
+        "NLA.RA09.paper_power_operator_monotone"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "raf-lem:orderedscalar",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.RA09.paper_ordered_scalar_certificate"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "raf-lem:harmonic",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.RA09.paper_harmonic_matrix_full"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "raf-lem:unorderedscalar",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.RA09.paper_unordered_scalar"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:row-random",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.IE21.Paper.paper_random_rows",
+        "NLA.IE21.Paper.paper_gaussian_constant",
+        "NLA.IE21.Paper.paper_deletion_minimum"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:row-universal",
+      "project": "IE-22",
+      "proof_file": "projects/IE-22/NLA/IE22/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.IE22.Paper.paper_canonical_sharp_constant",
+        "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+        "NLA.IE22.Paper.paper_supremum_semantics",
+        "NLA.IE22.Paper.paper_constant_semantics",
+        "NLA.IE22.Paper.paper_universal_squared_rate"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:tr04-main",
+      "project": "TR-04",
+      "proof_file": "projects/TR-04/NLA/TR04/LexicographicTensorSolutionR3.lean",
+      "lean_declarations": [
+        "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "lem:tr04-completion",
+      "project": "TR-04",
+      "proof_file": "projects/TR-04/NLA/TR04/RecursiveTensorCompletionSolution.lean",
+      "lean_declarations": [
+        "Reference.RecursiveTensorCompletion.verified_svdFrame_correct",
+        "Reference.RecursiveTensorCompletion.verified_ttSVD_correct",
+        "Reference.RecursiveTensorCompletion.verified_completeFrame_correct"
+      ],
+      "source_reachable": true,
+      "solution_reachable": false
+    },
+    {
+      "kind": "named",
+      "label": "lem:tr04-equality",
+      "project": "TR-04",
+      "proof_file": "projects/TR-04/NLA/TR04/OptimalityEqualitySolution.lean",
+      "lean_declarations": [
+        "Reference.RealOptimalityEquality.verified_leftBasis_gram",
+        "Reference.RealOptimalityEquality.verified_leftVectorMatrix_gram_diagonal",
+        "Reference.RealOptimalityEquality.verified_singularValue_pos_iff_lt_rank",
+        "Reference.RealOptimalityEquality.verified_leftAboveProjector_rank_eq_multiplicity",
+        "Reference.RealOptimalityEquality.verified_leftBoundaryProjector_rank_eq_multiplicity",
+        "Reference.RealOptimalityEquality.verified_actual_best_rank_residual_above_and_full_boundary",
+        "Reference.RealOptimalityEquality.verified_actual_left_spectral_projectors_symmetric_idempotent",
+        "Reference.PaperTensorEquality.verified_actual_tensor_first_unfolding_best_rank_residual"
+      ],
+      "source_reachable": true,
+      "solution_reachable": false
+    },
+    {
+      "kind": "named",
+      "label": "thm:tr27-main",
+      "project": "TR-27",
+      "proof_file": "projects/TR-27/NLA/TR27/FullFamilySolution.lean",
+      "lean_declarations": [
+        "NLA.TR27.Paper.paper_image_smooth_graphs",
+        "NLA.TR27.Paper.paper_full_family"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "lem:tr27-product",
+      "project": "TR-27",
+      "proof_file": "projects/TR-27/NLA/TR27/ProductSolution.lean",
+      "lean_declarations": [
+        "NLA.TR27.Paper.paper_finite_rank_semantics",
+        "NLA.TR27.Paper.paper_product_rank",
+        "NLA.TR27.Paper.paper_product_attained_minimum"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "lem:tr27-tangent",
+      "project": "TR-27",
+      "proof_file": "projects/TR-27/NLA/TR27/TangentSolution.lean",
+      "lean_declarations": [
+        "NLA.TR27.Paper.paper_tangent_rank",
+        "NLA.TR27.Paper.paper_tangent_lower",
+        "NLA.TR27.Paper.paper_tangent_decomposition"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:is03",
+      "project": "IS-03",
+      "proof_file": "projects/IS-03/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.IS03.paper_counterexample"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:nm04-main",
+      "project": "NM-04",
+      "proof_file": "projects/NM-04/NLA/NM04/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.NM04.Paper.paper_rowland_wu_identity"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "lem:nm04-derivatives",
+      "project": "NM-04",
+      "proof_file": "projects/NM-04/NLA/NM04/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.NM04.Paper.paper_minor_derivatives"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:pf02-basic",
+      "project": "PF-02",
+      "proof_file": "projects/PF-02/NLA/PF02/Proof.lean",
+      "lean_declarations": [
+        "NLA.PF02.witness_data",
+        "NLA.PF02.witness_minimal_rank",
+        "NLA.PF02.orbit_semantics",
+        "NLA.PF02.witness_disconnected"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "lem:pf02-congruence",
+      "project": "PF-02",
+      "proof_file": "projects/PF-02/NLA/PF02/CongruenceSolution.lean",
+      "lean_declarations": [
+        "NLA.PF02.Paper.paper_symmetric_space",
+        "NLA.PF02.Paper.paper_congruence_action",
+        "NLA.PF02.Paper.paper_congruence_determinant"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:pf02-all",
+      "project": "PF-02",
+      "proof_file": "projects/PF-02/NLA/PF02/PaperAllSizePSDSolution.lean",
+      "lean_declarations": [
+        "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "md-main",
+      "project": "MD-06",
+      "proof_file": "projects/MD-06/NLA/MD06/MainAssembly/Solution.lean",
+      "lean_declarations": [
+        "Reference.MD06MainAssembly.Interface.actual_paper_md_main"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "md-correction",
+      "project": "MD-06",
+      "proof_file": "projects/MD-06/NLA/MD06/LaplacianSpectralGapSolution.lean",
+      "lean_declarations": [
+        "Reference.MD06Spectral.actual_sorted_gap_quantitative_correction"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "md-obstruction",
+      "project": "MD-06",
+      "proof_file": "projects/MD-06/NLA/MD06/RadiusInterfaceR2/Solution.lean",
+      "lean_declarations": [
+        "Reference.MD06RadiusEmbeddingInterface.actual_paper_md_obstruction"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:iv-det",
+      "project": "IV-04",
+      "proof_file": "projects/IV-04/NLA/IV04/DeterminantHeadlineSolution.lean",
+      "lean_declarations": [
+        "IV04.Paper.Computational.actual_paper_iv_det"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:iv-hull",
+      "project": "IV-04",
+      "proof_file": "projects/IV-04/NLA/IV04/FullHullHardnessSolution.lean",
+      "lean_declarations": [
+        "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": null,
+      "project": "MI-19",
+      "proof_file": "projects/MI-19/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.MI19.Paper.paper_counterexample"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:mi21",
+      "project": "MI-21",
+      "proof_file": "projects/MI-21/NLA/MI21/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.MI21.Paper.paper_counterexample",
+        "NLA.MI21.Paper.paper_rational_inputs",
+        "NLA.MI21.Paper.paper_operator_norm"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "thm:mi22",
+      "project": "MI-22",
+      "proof_file": "projects/MI-22/NLA/MI22/PaperSolution.lean",
+      "lean_declarations": [
+        "NLA.MI22.Paper.paper_printed_inputs",
+        "NLA.MI22.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_conjecture_false"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "named",
+      "label": "lem:root-lipschitz",
+      "project": "MI-22",
+      "proof_file": "projects/MI-22/NLA/MI22/RootSolution.lean",
+      "lean_declarations": [
+        "NLA.MI22.Paper.paper_root_lipschitz"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mfu-prose-growth-sharpness",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/NLA/MF12/GrowthSharpnessSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_jordan_entry",
+        "NLA.MF12.Paper.paper_jordan_asymptotic",
+        "NLA.MF12.Paper.paper_jordan_radius",
+        "NLA.MF12.Paper.paper_growth_exponent_sharp"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mfu-prose-holder-sharpness",
+      "project": "MF-05",
+      "proof_file": "projects/MF-05/NLA/MF05/HolderSharpnessSolution.lean",
+      "lean_declarations": [
+        "NLA.MF05.Paper.Cyclic.paper_literal_perturbation",
+        "NLA.MF05.Paper.Cyclic.paper_nilpotent_shift",
+        "NLA.MF05.Paper.Cyclic.paper_shift_radius",
+        "NLA.MF05.Paper.Cyclic.paper_perturbation_radius",
+        "NLA.MF05.Paper.Cyclic.paper_hausdorff_distance",
+        "NLA.MF05.Paper.Cyclic.paper_perturbation_norm",
+        "NLA.MF05.Paper.Cyclic.paper_shift_norm",
+        "NLA.MF05.Paper.Cyclic.paper_characteristic_polynomial",
+        "NLA.MF05.Paper.Cyclic.paper_exponent_obstruction",
+        "NLA.MF05.Paper.Cyclic.paper_local_lipschitz_obstruction"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mfg-prose-explicit-upper",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/NLA/MF12/SharpUpperSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_sourceV_sharp_norm",
+        "NLA.MF12.Paper.paper_sourceU_sharp_norm",
+        "NLA.MF12.Paper.paper_parameter_power_sharp_norm",
+        "NLA.MF12.Paper.paper_compressed_sharp_norm",
+        "NLA.MF12.Paper.paper_parameter_reset_factorization",
+        "NLA.MF12.Paper.paper_parameter_all_word_sharp_upper",
+        "NLA.MF12.Paper.paper_parameter_family_sharp_upper"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mfg-prose-explicit-lower",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/NLA/MF12/SharpLowerSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_parameter_logarithmic_gap",
+        "NLA.MF12.Paper.paper_parameter_gain_div_loss",
+        "NLA.MF12.Paper.paper_sharp_loss_decay",
+        "NLA.MF12.Paper.paper_parameter_repeat_rayleigh",
+        "NLA.MF12.Paper.paper_parameter_repeat_word",
+        "NLA.MF12.Paper.paper_parameter_power_norm_ge_one",
+        "NLA.MF12.Paper.paper_parameter_family_sharp_lower"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "rows-prose-gaussian-closed-form",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/ClosedFormSolution.lean",
+      "lean_declarations": [
+        "NLA.IE21.Paper.paper_gaussian_truncated_formula",
+        "NLA.IE21.Paper.paper_gaussian_closed_form",
+        "NLA.IE21.Paper.paper_gaussian_truncated_moment"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "tr27-prose-eventual-savings",
+      "project": "TR-27",
+      "proof_file": "projects/TR-27/NLA/TR27/ArbitraryParametersSolution.lean",
+      "lean_declarations": [
+        "NLA.TR27.Paper.paper_parameter_difference_tensor_root_average",
+        "NLA.TR27.Paper.paper_parameter_tangent_power_upper",
+        "NLA.TR27.Paper.paper_parameter_tangent_power_rank_upper",
+        "NLA.TR27.Paper.paper_parameter_tangent_eventual_saving",
+        "NLA.TR27.Paper.paper_parameter_family_tensor_rank",
+        "NLA.TR27.Paper.paper_parameter_family_eventual_saving",
+        "NLA.TR27.Paper.paper_parameter_curve_injective",
+        "NLA.TR27.Paper.paper_parameter_curve_immersion"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "tr27-prose-twelve-coordinates",
+      "project": "TR-27",
+      "proof_file": "projects/TR-27/NLA/TR27/TwelveCoordinatesSolution.lean",
+      "lean_declarations": [
+        "NLA.TR27.Paper.paper_twelve_power_sum",
+        "NLA.TR27.Paper.paper_twelve_pivot",
+        "NLA.TR27.Paper.paper_twelve_projection",
+        "NLA.TR27.Paper.paper_twelve_retained_columns",
+        "NLA.TR27.Paper.paper_twelve_projection_quotient",
+        "NLA.TR27.Paper.paper_twelve_homogeneous",
+        "NLA.TR27.Paper.paper_twelve_no_basepoint_values",
+        "NLA.TR27.Paper.paper_twelve_tangent_entries",
+        "NLA.TR27.Paper.paper_twelve_three_terms",
+        "NLA.TR27.Paper.paper_twelve_tangent_derivative",
+        "NLA.TR27.Paper.paper_twelve_nine_terms"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "raf-prose-gaussian-trace-variance",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/NLA/RA09/GaussianTraceSolution.lean",
+      "lean_declarations": [
+        "NLA.RA09.Paper.paper_gaussian_trace_variance"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "raf-prose-complex-hermitian-extension",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/NLA/RA09/ComplexSolution.lean",
+      "lean_declarations": [
+        "NLA.RA09.ComplexPaper.paper_ordered_matrix_excess",
+        "NLA.RA09.ComplexPaper.paper_unordered_matrix_excess",
+        "NLA.RA09.ComplexPaper.paper_ordered_matrix_squared_relative",
+        "NLA.RA09.ComplexPaper.paper_unordered_matrix_squared_relative",
+        "NLA.RA09.ComplexPaper.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.ComplexPaper.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.ComplexPaper.paper_spectral_tail_zero_of_cutoff_zero",
+        "NLA.RA09.ComplexPaper.paper_spectral_tail_full",
+        "NLA.RA09.ComplexPaper.paper_zero_tail_residual_exact",
+        "NLA.RA09.ComplexPaper.paper_complex_ordered_data_exists",
+        "NLA.RA09.ComplexPaper.paper_complex_frobenius_semantics",
+        "NLA.RA09.ComplexPaper.paper_complex_selected_cfc",
+        "NLA.RA09.ComplexPaper.paper_complex_harmonic_matrix"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mfg-prose-general-parameter-radius",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/NLA/MF12/SharpGrowthSolution.lean",
+      "lean_declarations": [
+        "NLA.MF12.Paper.paper_parameter_sharp_growth"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "pf02-prose-symmetric-rank-bound",
+      "project": "PF-02",
+      "proof_file": "projects/PF-02/NLA/PF02/RankBoundSolution.lean",
+      "lean_declarations": [
+        "NLA.PF02.Paper.paper_trace_factor_rank_bound",
+        "NLA.PF02.Paper.paper_psd_factor_rank_bound"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "nm04-prose-arbitrary-positive-margins",
+      "project": "NM-04",
+      "proof_file": "projects/NM-04/NLA/NM04/PositiveMargins/Pencil.lean",
+      "lean_declarations": [
+        "NLA.NM04.PositiveMargins.Interface.schur_margins",
+        "NLA.NM04.PositiveMargins.Interface.schur_reconstruction",
+        "NLA.NM04.PositiveMargins.Interface.weighted_lower",
+        "NLA.NM04.PositiveMargins.Interface.weighted_column_sum",
+        "NLA.NM04.PositiveMargins.Interface.weighted_column",
+        "NLA.NM04.PositiveMargins.Interface.weighted_row",
+        "NLA.NM04.PositiveMargins.Interface.weighted_direction",
+        "NLA.NM04.PositiveMargins.Interface.lower_smul",
+        "NLA.NM04.PositiveMargins.Interface.column_smul",
+        "NLA.NM04.PositiveMargins.Interface.row_smul",
+        "NLA.NM04.PositiveMargins.Interface.action_smul",
+        "NLA.NM04.PositiveMargins.Interface.G_mulVec",
+        "NLA.NM04.PositiveMargins.Interface.actual_minor_relation",
+        "NLA.NM04.PositiveMargins.Interface.actual_balanced_kernel",
+        "NLA.NM04.PositiveMargins.Interface.actual_diagonal_covariance",
+        "NLA.NM04.PositiveMargins.Interface.actual_general_determinant",
+        "NLA.NM04.PositiveMargins.Interface.erased_ne_self",
+        "NLA.NM04.PositiveMargins.Interface.column_ne_self",
+        "NLA.NM04.PositiveMargins.Interface.row_ne_self",
+        "NLA.NM04.PositiveMargins.Interface.G_diagonal"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra08-prose-nystrom-range-basis-invariance",
+      "project": "RA-08",
+      "proof_file": "projects/RA-08/NLA/RA08/RangeBasis/Completion.lean",
+      "lean_declarations": [
+        "NLA.RA08.Paper.RangeBasis.Interface.gram_basis_change",
+        "NLA.RA08.Paper.RangeBasis.Interface.gram_basis_change_isUnit",
+        "NLA.RA08.Paper.RangeBasis.Interface.nystrom_basis_change",
+        "NLA.RA08.Paper.RangeBasis.Interface.same_range_change_of_basis",
+        "NLA.RA08.Paper.RangeBasis.Interface.nystrom_same_range",
+        "NLA.RA08.Paper.RangeBasis.Interface.fullColumns_of_orthonormal",
+        "NLA.RA08.Paper.RangeBasis.Interface.nystrom_orthonormal_range_basis",
+        "NLA.RA08.Paper.RangeBasis.Interface.exists_orthonormal_range_basis",
+        "NLA.RA08.Paper.RangeBasis.Interface.nystrom_has_orthonormal_sketch",
+        "NLA.RA08.Paper.RangeBasis.Interface.nystrom_has_invertible_orthonormal_sketch"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mi21-prose-general-two-by-two-mean-formula",
+      "project": "MI-21",
+      "proof_file": "projects/MI-21/NLA/MI21/GeneralMean/Formula.lean",
+      "lean_declarations": [
+        "NLA.MI21.GeneralMean.Interface.two_by_two_cayley_hamilton",
+        "NLA.MI21.GeneralMean.Interface.scaled_riccati_two_by_two",
+        "NLA.MI21.GeneralMean.Interface.pos_cast_re",
+        "NLA.MI21.GeneralMean.Interface.determinant_ratio_pos",
+        "NLA.MI21.GeneralMean.Interface.delta_pos",
+        "NLA.MI21.GeneralMean.Interface.delta_squared",
+        "NLA.MI21.GeneralMean.Interface.trace_inverse_mul_pos",
+        "NLA.MI21.GeneralMean.Interface.height_pos",
+        "NLA.MI21.GeneralMean.Interface.numerator_pos",
+        "NLA.MI21.GeneralMean.Interface.height_cast",
+        "NLA.MI21.GeneralMean.Interface.actual_scaled_riccati",
+        "NLA.MI21.GeneralMean.Interface.reciprocal_sqrt_squared",
+        "NLA.MI21.GeneralMean.Interface.actual_geometric_mean_two_by_two",
+        "NLA.MI21.GeneralMean.Interface.actual_geometric_mean_squared_two_by_two",
+        "NLA.MI21.GeneralMean.Interface.actual_congruence_square_root_two_by_two"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "is03-prose-seven-newton-moments",
+      "project": "IS-03",
+      "proof_file": "projects/IS-03/NLA/IS03/MomentProse/Proof.lean",
+      "lean_declarations": [
+        "NLA.IS03.MomentProse.Interface.root_power_moments",
+        "NLA.IS03.MomentProse.Interface.matrix_trace_moments",
+        "NLA.IS03.MomentProse.Interface.first_six_positive",
+        "NLA.IS03.MomentProse.Interface.seventh_negative",
+        "NLA.IS03.MomentProse.Interface.seven_times_sum",
+        "NLA.IS03.MomentProse.Interface.printed_numerator",
+        "NLA.IS03.MomentProse.Interface.printed_denominator"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-mgf-and-directional-tail",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/FiniteProse/Proof.lean",
+      "lean_declarations": [
+        "NLA.IE21.FiniteProse.Interface.actual_spherical_mgf",
+        "NLA.IE21.FiniteProse.Interface.actual_spherical_directional_tail"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-covariance-concentration",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/FiniteProse/Proof.lean",
+      "lean_declarations": [
+        "NLA.IE21.FiniteProse.Interface.actual_spherical_covariance_tail"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-aspect-parameter-schedule",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/FiniteProse/Proof.lean",
+      "lean_declarations": [
+        "NLA.IE21.FiniteProse.Interface.actual_aspect_parameter",
+        "NLA.IE21.FiniteProse.Interface.actual_aspect_schedule"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra08-prose-decreasing-triangular-singular-values",
+      "project": "RA-08",
+      "proof_file": "projects/RA-08/NLA/RA08/OrderedSingular/Proof.lean",
+      "lean_declarations": [
+        "NLA.RA08.Paper.OrderedSingular.Interface.actual_gram_posSemidef",
+        "NLA.RA08.Paper.OrderedSingular.Interface.actual_difference_eigenvalue_strictMono",
+        "NLA.RA08.Paper.OrderedSingular.Interface.actual_ordered_gram",
+        "NLA.RA08.Paper.OrderedSingular.Interface.actual_angle_half",
+        "NLA.RA08.Paper.OrderedSingular.Interface.actual_ordered_singular"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "is03-prose-general-newton-coefficient-identities",
+      "project": "IS-03",
+      "proof_file": "projects/IS-03/NLA/IS03/GeneralNewton/Proof.lean",
+      "lean_declarations": [
+        "NLA.IS03.GeneralNewton.Interface.monic_newton_first_case",
+        "NLA.IS03.GeneralNewton.Interface.monic_newton_second_case"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-literal-spherical-and-centered-moments",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/LiteralMoments/Proof.lean",
+      "lean_declarations": [
+        "NLA.IE21.LiteralMoments.Interface.actual_spherical_moment_formula",
+        "NLA.IE21.LiteralMoments.Interface.actual_spherical_moment_bound",
+        "NLA.IE21.LiteralMoments.Interface.actual_centered_moment_bound",
+        "NLA.IE21.LiteralMoments.Interface.actual_spherical_mean"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-explicit-asymptotic-row-error-rate",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/PrintedJointRate/Proof.lean",
+      "lean_declarations": [
+        "NLA.IE21.PrintedJointRate.Interface.actual_rate_formula",
+        "NLA.IE21.PrintedJointRate.Interface.actual_rate_constant_pos",
+        "NLA.IE21.PrintedJointRate.Interface.actual_finite_rate_error",
+        "NLA.IE21.PrintedJointRate.Interface.actual_rate_probability_limit",
+        "NLA.IE21.PrintedJointRate.Interface.actual_finite_normalized_rate_error",
+        "NLA.IE21.PrintedJointRate.Interface.actual_joint_rate_probability_limit"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-general-threshold-selector-duality",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/ThresholdSelectors/Duality.lean",
+      "lean_declarations": [
+        "NLA.IE21.ThresholdSelectors.Interface.exists_quantile_bracket",
+        "NLA.IE21.ThresholdSelectors.Interface.exists_feasible_threshold",
+        "NLA.IE21.ThresholdSelectors.Interface.threshold_optimal",
+        "NLA.IE21.ThresholdSelectors.Interface.exists_primal_minimizer",
+        "NLA.IE21.ThresholdSelectors.Interface.populationTrim_eq_threshold_cost",
+        "NLA.IE21.ThresholdSelectors.Interface.primalTrim_eq_populationTrim",
+        "NLA.IE21.ThresholdSelectors.Interface.populationTrim_nonneg"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra09-prose-literal-scalar-integral-normalization",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/NLA/RA09/LiteralIntegral/Proof.lean",
+      "lean_declarations": [
+        "NLA.RA09.LiteralIntegral.Interface.normalization_pos",
+        "NLA.RA09.LiteralIntegral.Interface.normalized_kernel_integral",
+        "NLA.RA09.LiteralIntegral.Interface.actual_scalar_integrable",
+        "NLA.RA09.LiteralIntegral.Interface.actual_literal_scalar_formula"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mi22-prose-literal-positive-derivative-integral",
+      "project": "MI-22",
+      "proof_file": "projects/MI-22/NLA/MI22/LiteralDerivative/Proof.lean",
+      "lean_declarations": [
+        "NLA.MI22.LiteralDerivative.Interface.actual_derivative_integrable",
+        "NLA.MI22.LiteralDerivative.Interface.actual_literal_derivative_formula"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-continuous-law-truncated-expectation",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/ContinuousTruncation/Proof.lean",
+      "lean_declarations": [
+        "NLA.IE21.ContinuousTruncation.Interface.lowerQuantile_open_mass_le",
+        "NLA.IE21.ContinuousTruncation.Interface.atomless_lowerQuantile_mass",
+        "NLA.IE21.ContinuousTruncation.Interface.continuous_law_truncated_expectation"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-general-coupling-trim-bound",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/GeneralCoupling/Proof.lean",
+      "lean_declarations": [
+        "NLA.IE21.GeneralCoupling.Interface.selectorCost_le_add_couplingDistance",
+        "NLA.IE21.GeneralCoupling.Interface.primalTrim_le_add_couplingDistance",
+        "NLA.IE21.GeneralCoupling.Interface.populationTrim_coupling_extended",
+        "NLA.IE21.GeneralCoupling.Interface.populationTrim_coupling_finite_distance"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mf12-prose-exact-tensor-norm-growth",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/NLA/MF12/ExactTensor/Growth.lean",
+      "lean_declarations": [
+        "NLA.MF12.ExactTensor.Interface.actual_tensor_norm",
+        "NLA.MF12.ExactTensor.Interface.actual_tensor_word_norm",
+        "NLA.MF12.ExactTensor.Interface.actual_tensor_pair_growth",
+        "NLA.MF12.ExactTensor.Interface.actual_lifted_growth"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra02-prose-cauchy-determinant-product",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/CauchyProduct/Product.lean",
+      "lean_declarations": [
+        "RootRA02CauchyProduct.Interface.actual_cauchy_determinant",
+        "RootRA02CauchyProduct.Interface.actual_cauchy_determinant_positive",
+        "RootRA02CauchyProduct.Interface.actual_cauchy_determinant_nonzero",
+        "RootRA02CauchyProduct.Interface.actual_empty_cauchy_determinant"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra08-prose-literal-contour-derivative-remainder",
+      "project": "RA-08",
+      "proof_file": "projects/RA-08/NLA/RA08/MatrixContour/GeneralRemainder.lean",
+      "lean_declarations": [
+        "NLA.RA08.Paper.MatrixContour.Interface.actual_matrix_contour_clipping",
+        "NLA.RA08.Paper.MatrixContour.Interface.actual_diagonal_contour_derivative",
+        "NLA.RA08.Paper.MatrixContour.Interface.scalar_divided_difference_circle",
+        "NLA.RA08.Paper.MatrixContour.Interface.exists_base_circle_control",
+        "NLA.RA08.Paper.MatrixContour.Interface.general_contour_remainder_all_dimensions",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_base_contour_formula",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_matrix_contour_formula",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_derivative_contour_formula",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_base_resolvent_control",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_perturbed_resolvent_control",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_actual_resolvent_expansion",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_actual_contour_integrability",
+        "NLA.RA08.Paper.MatrixContour.Interface.actual_witness_contour_remainder",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_contour_rayleigh_lower",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_contour_spectral_ratio_lower",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_contour_rayleigh_ratio_lower",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_second_eigenvalue_bound",
+        "NLA.RA08.Paper.MatrixContour.Interface.witness_unique_eigenvalue_above_one"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra08-prose-nuclear-block-distance-comparison",
+      "project": "RA-08",
+      "proof_file": "projects/RA-08/NLA/RA08/LiteralJoins/NuclearComparisons.lean",
+      "lean_declarations": [
+        "NLA.RA08.Paper.LiteralJoins.Interface.symmetricDilation_nuclearNorm",
+        "NLA.RA08.Paper.LiteralJoins.Interface.nuclearNorm_triangle",
+        "NLA.RA08.Paper.LiteralJoins.Interface.nuclearNorm_smul",
+        "NLA.RA08.Paper.LiteralJoins.Interface.actual_nuclear_off_diagonal_norm",
+        "NLA.RA08.Paper.LiteralJoins.Interface.actual_nuclear_derivative_kernel_bound",
+        "NLA.RA08.Paper.LiteralJoins.Interface.actual_nuclear_kernel_triangular_lower",
+        "NLA.RA08.Paper.LiteralJoins.Interface.actual_nuclear_kernel_triangular_ratio"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra08-prose-small-eigenvalue-schur-formula",
+      "project": "RA-08",
+      "proof_file": "projects/RA-08/NLA/RA08/LiteralContour/NuclearSchur.lean",
+      "lean_declarations": [
+        "NLA.RA08.Paper.LiteralContour.Interface.small_tail_block_lower",
+        "NLA.RA08.Paper.LiteralContour.Interface.small_tail_block_posDef",
+        "NLA.RA08.Paper.LiteralContour.Interface.actual_small_tail_schur",
+        "NLA.RA08.Paper.LiteralContour.Interface.actual_small_tail_inverse_bound"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra09-prose-matrix-power-integral-order",
+      "project": "MI-22",
+      "proof_file": "projects/MI-22/NLA/MI22/MatrixIntegral/MatrixStatements.lean",
+      "lean_declarations": [
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_power_integrable",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_power_integral",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_cfc_power_integral",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_multiplicative_resolvent_identity",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_multiplicative_resolvent_monotone",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_resolvent_difference",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_difference_integrable",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_difference_integral",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_difference_norm_integrable",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_integrand_norm_bound"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mi22-prose-matrix-resolvent-integral-bound",
+      "project": "MI-22",
+      "proof_file": "projects/MI-22/NLA/MI22/MatrixIntegral/MatrixStatements.lean",
+      "lean_declarations": [
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_power_integrable",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_power_integral",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_cfc_power_integral",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_multiplicative_resolvent_identity",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_multiplicative_resolvent_monotone",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_resolvent_difference",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_difference_integrable",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_difference_integral",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_difference_norm_integrable",
+        "NLA.MI22.MatrixIntegral.Interface.actual_matrix_integrand_norm_bound"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-spherical-directional-law",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/SphericalContinuity/Atomlessness.lean",
+      "lean_declarations": [
+        "NLA.IE21.SphericalContinuity.Interface.sphereLaw_isometry",
+        "NLA.IE21.SphericalContinuity.Interface.directionalEnergy_law_eq",
+        "NLA.IE21.SphericalContinuity.Interface.gaussian_diagonal_quadratic_zero",
+        "NLA.IE21.SphericalContinuity.Interface.directionalEnergy_atomless"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra09-prose-spectral-optimality-selected-rank",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/NLA/RA09/SpectralOptimality/Projectors.lean",
+      "lean_declarations": [
+        "RootRA09SpectralOptimality.Interface.actual_real_optimal_attainment",
+        "RootRA09SpectralOptimality.Interface.actual_real_orthogonal_projector",
+        "RootRA09SpectralOptimality.Interface.actual_real_selected_action",
+        "RootRA09SpectralOptimality.Interface.actual_real_nullspace_action",
+        "RootRA09SpectralOptimality.Interface.actual_complex_optimal_attainment",
+        "RootRA09SpectralOptimality.Interface.actual_complex_orthogonal_projector",
+        "RootRA09SpectralOptimality.Interface.actual_complex_selected_action",
+        "RootRA09SpectralOptimality.Interface.actual_complex_nullspace_action"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra09-prose-pseudoinverse-projector-congruence",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/NLA/RA09/PseudoinverseCongruence/RankOne.lean",
+      "lean_declarations": [
+        "RootRA09PseudoinverseCongruence.Interface.actual_real_square_root",
+        "RootRA09PseudoinverseCongruence.Interface.actual_real_support_projector",
+        "RootRA09PseudoinverseCongruence.Interface.actual_real_kernel_orthogonality",
+        "RootRA09PseudoinverseCongruence.Interface.actual_real_congruence",
+        "RootRA09PseudoinverseCongruence.Interface.actual_real_norm_identity",
+        "RootRA09PseudoinverseCongruence.Interface.actual_real_harmonic_via_congruence",
+        "RootRA09PseudoinverseCongruence.Interface.actual_real_rankOne_spectrum",
+        "RootRA09PseudoinverseCongruence.Interface.actual_complex_square_root",
+        "RootRA09PseudoinverseCongruence.Interface.actual_complex_support_projector",
+        "RootRA09PseudoinverseCongruence.Interface.actual_complex_kernel_orthogonality",
+        "RootRA09PseudoinverseCongruence.Interface.actual_complex_congruence",
+        "RootRA09PseudoinverseCongruence.Interface.actual_complex_norm_identity",
+        "RootRA09PseudoinverseCongruence.Interface.actual_complex_harmonic_via_congruence",
+        "RootRA09PseudoinverseCongruence.Interface.actual_complex_rankOne_spectrum"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra09-prose-threshold-monotonicity-projector-trace",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/NLA/RA09/ThresholdComplex/Trace.lean",
+      "lean_declarations": [
+        "RootRA09ThresholdTrace.Interface.actual_squared_difference",
+        "RootRA09ThresholdTrace.Interface.actual_threshold_scalar",
+        "RootRA09ThresholdTrace.Interface.actual_ordered_threshold_values",
+        "RootRA09ThresholdTrace.Interface.actual_projector_trace",
+        "RootRA09ThresholdTrace.Interface.actual_projector_trace_bound",
+        "RootRA09ThresholdTrace.Interface.actual_projector_average",
+        "RootRA09ThresholdTrace.Interface.actual_threshold_spectral_data",
+        "RootRA09ThresholdTrace.Interface.actual_projector_structure",
+        "RootRA09ThresholdComplex.Interface.actual_complex_projector_trace",
+        "RootRA09ThresholdComplex.Interface.actual_complex_projector_trace_bound",
+        "RootRA09ThresholdComplex.Interface.actual_complex_projector_average",
+        "RootRA09ThresholdComplex.Interface.actual_complex_threshold_spectral_data",
+        "RootRA09ThresholdComplex.Interface.actual_complex_projector_structure",
+        "RootRA09ThresholdComplex.Interface.actual_complex_quadratic"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra09-prose-literal-discriminant",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/NLA/RA09/SpectralOptimality/Examples.lean",
+      "lean_declarations": [
+        "RootRA09SpectralOptimality.Interface.actual_branch_discriminant",
+        "RootRA09SpectralOptimality.Interface.actual_other_branch_signs"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra09-prose-literal-two-dimensional-sharpness",
+      "project": "RA-09",
+      "proof_file": "projects/RA-09/NLA/RA09/SpectralOptimality/Examples.lean",
+      "lean_declarations": [
+        "RootRA09SpectralOptimality.Interface.actual_ordered_diagonal_sharpness"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-finite-threshold-slope",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/LiteralWrappers/Solution.lean",
+      "lean_declarations": [
+        "NLA.IE21.LiteralWrappers.Interface.trimDual_hasDerivAt",
+        "NLA.IE21.LiteralWrappers.Interface.trimDual_slope_signs"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie21-prose-literal-atomless-concentration",
+      "project": "IE-21",
+      "proof_file": "projects/IE-21/NLA/IE21/LiteralWrappers/Solution.lean",
+      "lean_declarations": [
+        "NLA.IE21.LiteralWrappers.Interface.actual_quantile_bounds",
+        "NLA.IE21.LiteralWrappers.Interface.mean_one_large_threshold_mass",
+        "NLA.IE21.LiteralWrappers.Interface.mean_one_trim_le_theta",
+        "NLA.IE21.LiteralWrappers.Interface.fixed_quantile_two_tails",
+        "NLA.IE21.LiteralWrappers.Interface.large_threshold_count_tail",
+        "NLA.IE21.LiteralWrappers.Interface.indicator_trim_replacement",
+        "NLA.IE21.LiteralWrappers.Interface.zero_retained_shortcut",
+        "NLA.IE21.LiteralWrappers.Interface.count_exponent_comparison",
+        "NLA.IE21.LiteralWrappers.Interface.spherical_literal_concentration"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ie22-prose-general-lipschitz-poincare",
+      "project": "IE-22",
+      "proof_file": "projects/IE-22/NLA/IE22/LipschitzPoincare/General.lean",
+      "lean_declarations": [
+        "NLA.IE22.LipschitzPoincare.Interface.scalar_gaussian_poincare",
+        "NLA.IE22.LipschitzPoincare.Interface.bounded_gaussian_poincare",
+        "NLA.IE22.LipschitzPoincare.Interface.gaussian_poincare_complete"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mi19-prose-literal-inversion-example",
+      "project": "MI-19",
+      "proof_file": "projects/MI-19/NLA/MI19/LiteralProse/Solution.lean",
+      "lean_declarations": [
+        "NLA.MI19.LiteralProse.Interface.full_polynomial",
+        "NLA.MI19.LiteralProse.Interface.restricted_polynomial",
+        "NLA.MI19.LiteralProse.Interface.factored_difference",
+        "NLA.MI19.LiteralProse.Interface.positive_definite_perturbations",
+        "NLA.MI19.LiteralProse.Interface.literal_inversion_example"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mi19-prose-full-polynomial-identities",
+      "project": "MI-19",
+      "proof_file": "projects/MI-19/NLA/MI19/LiteralProse/Solution.lean",
+      "lean_declarations": [
+        "NLA.MI19.LiteralProse.Interface.full_polynomial",
+        "NLA.MI19.LiteralProse.Interface.restricted_polynomial",
+        "NLA.MI19.LiteralProse.Interface.factored_difference",
+        "NLA.MI19.LiteralProse.Interface.positive_definite_perturbations",
+        "NLA.MI19.LiteralProse.Interface.literal_inversion_example"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mi19-prose-positive-definite-perturbation",
+      "project": "MI-19",
+      "proof_file": "projects/MI-19/NLA/MI19/LiteralProse/Solution.lean",
+      "lean_declarations": [
+        "NLA.MI19.LiteralProse.Interface.full_polynomial",
+        "NLA.MI19.LiteralProse.Interface.restricted_polynomial",
+        "NLA.MI19.LiteralProse.Interface.factored_difference",
+        "NLA.MI19.LiteralProse.Interface.positive_definite_perturbations",
+        "NLA.MI19.LiteralProse.Interface.literal_inversion_example"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mi22-prose-commuting-identity",
+      "project": "MI-22",
+      "proof_file": "projects/MI-22/NLA/MI22/Commuting/Solution.lean",
+      "lean_declarations": [
+        "NLA.MI22.Commuting.Interface.commuting_weighted_mean",
+        "NLA.MI22.Commuting.Interface.commuting_left_product",
+        "NLA.MI22.Commuting.Interface.literal_principal_minors",
+        "NLA.MI22.Commuting.Interface.literal_root_coefficient",
+        "NLA.MI22.Commuting.Interface.literal_error_constant",
+        "NLA.MI22.Commuting.Interface.literal_matrix_product"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mi22-prose-literal-numerical-identities",
+      "project": "MI-22",
+      "proof_file": "projects/MI-22/NLA/MI22/Commuting/Solution.lean",
+      "lean_declarations": [
+        "NLA.MI22.Commuting.Interface.commuting_weighted_mean",
+        "NLA.MI22.Commuting.Interface.commuting_left_product",
+        "NLA.MI22.Commuting.Interface.literal_principal_minors",
+        "NLA.MI22.Commuting.Interface.literal_root_coefficient",
+        "NLA.MI22.Commuting.Interface.literal_error_constant",
+        "NLA.MI22.Commuting.Interface.literal_matrix_product"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mf-prose-maximal-auerbach-unit-columns",
+      "project": "MF-05",
+      "proof_file": "projects/MF-05/NLA/FirstHalfBridges/Auerbach.lean",
+      "lean_declarations": [
+        "RootFirstHalfBridges.Interface.actual_complex_maximal_columns",
+        "RootFirstHalfBridges.Interface.actual_real_maximal_columns"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mf12-prose-reset-rank-nonorthogonality-invertibility",
+      "project": "MF-05",
+      "proof_file": "projects/MF-05/NLA/FirstHalfBridges/Reset.lean",
+      "lean_declarations": [
+        "RootFirstHalfBridges.Interface.actual_reset_geometry",
+        "RootFirstHalfBridges.Interface.actual_parameter_invertible"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mf12-prose-literal-dyadic-parameters",
+      "project": "MF-12",
+      "proof_file": "projects/MF-12/NLA/MF12/LiteralDyadic/Solution.lean",
+      "lean_declarations": [
+        "NLA.MF12.LiteralDyadic.Interface.actual_rational_parameters",
+        "NLA.MF12.LiteralDyadic.Interface.actual_literal_entries",
+        "NLA.MF12.LiteralDyadic.Interface.actual_literal_growth"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "ra02-prose-literal-cauchy-binet-expansion",
+      "project": "RA-02",
+      "proof_file": "projects/RA-02/NLA/RA02/LiteralCauchyBinet/Paper.lean",
+      "lean_declarations": [
+        "RootRA02CauchyBinet.Interface.actual_paper_cauchy_binet",
+        "RootRA02CauchyBinet.Interface.actual_ordered_paper_cauchy_binet",
+        "RootRA02CauchyBinet.Interface.actual_empty_minor",
+        "RootRA02CauchyBinet.Interface.actual_full_minor_expansion"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "md06-prose-geometric-root-bounds",
+      "project": "MD-06",
+      "proof_file": "projects/MD-06/NLA/MD06/GeometricBoundsSolution.lean",
+      "lean_declarations": [
+        "Reference.MD06CycleProfile.actual_arcsin_scale_le",
+        "Reference.MD06CycleProfile.actual_delta_geometric",
+        "Reference.MD06CycleProfile.actual_geometric_tail_lt",
+        "Reference.MD06CycleProfile.actual_balance_lt_five",
+        "Reference.MD06CycleProfile.actual_root_delta_geometric",
+        "Reference.MD06CycleProfile.actual_root_balance_lt_five",
+        "Reference.MD06CycleProfile.actual_root_delta_zero_gt"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "tr27-prose-arbitrary-parameter-geometry",
+      "project": "TR-27",
+      "proof_file": "projects/TR-27/NLA/TR27/ArbitraryGeometrySolution.lean",
+      "lean_declarations": [
+        "NLA.TR27.Paper.paper_parameter_closed_geometry",
+        "NLA.TR27.Paper.paper_parameter_smooth_geometry",
+        "NLA.TR27.Paper.paper_parameter_rational_recovery",
+        "NLA.TR27.Paper.paper_parameter_border_two",
+        "NLA.TR27.Paper.paper_parameter_birational_geometry"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "tr04-prose-per-order-sharpness",
+      "project": "TR-04",
+      "proof_file": "projects/TR-04/NLA/TR04/AllOrderSharp/Solution.lean",
+      "lean_declarations": [
+        "NLA.TR04.AllOrderSharp.Interface.fixed_order_strict",
+        "NLA.TR04.AllOrderSharp.Interface.fixed_order_sharp"
+      ],
+      "source_reachable": true,
+      "solution_reachable": false
+    },
+    {
+      "kind": "prose",
+      "label": "mi19-prose-eighteen-moving-terms",
+      "project": "MI-19",
+      "proof_file": "projects/MI-19/NLA/MI19/MovingTermsSolution.lean",
+      "lean_declarations": [
+        "NLA.MI19.MovingTerms.moving_permutations_card",
+        "NLA.MI19.MovingTerms.difference_is_moving_sum",
+        "NLA.MI19.MovingTerms.moving_sum_factored",
+        "NLA.MI19.MovingTerms.negative_terms_exactly_one_negative_entry"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    },
+    {
+      "kind": "prose",
+      "label": "mi19-prose-negative-entry-products",
+      "project": "MI-19",
+      "proof_file": "projects/MI-19/NLA/MI19/MovingTermsSolution.lean",
+      "lean_declarations": [
+        "NLA.MI19.MovingTerms.moving_permutations_card",
+        "NLA.MI19.MovingTerms.difference_is_moving_sum",
+        "NLA.MI19.MovingTerms.moving_sum_factored",
+        "NLA.MI19.MovingTerms.negative_terms_exactly_one_negative_entry"
+      ],
+      "source_reachable": true,
+      "solution_reachable": true
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,936 @@
+{
+  "schema_version": 2,
+  "checked_date": "2026-11-19",
+  "kind": "static-entry-surface-inventory; not a Lean or Comparator result",
+  "entries": [
+    {
+      "id": "IE-21",
+      "theorem_names": [
+        "NLA.IE21.Paper.paper_random_rows"
+      ],
+      "primary_theorem_names": [
+        "NLA.IE21.Paper.paper_random_rows"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 191,
+      "challenge_bytes": 7277,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.IE21.PaperSolution",
+        "NLA.IE21.ClosedFormSolution",
+        "NLA.IE21.FiniteProse.Proof",
+        "NLA.IE21.LiteralMoments.Proof",
+        "NLA.IE21.PrintedJointRate.Proof",
+        "NLA.IE21.ThresholdSelectors.Duality",
+        "NLA.IE21.ContinuousTruncation.Proof",
+        "NLA.IE21.GeneralCoupling.Proof",
+        "NLA.IE21.SphericalContinuity.Atomlessness",
+        "NLA.IE21.LiteralWrappers.Solution"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.IE21.PaperSolution",
+        "NLA.IE21.ClosedFormSolution",
+        "NLA.IE21.FiniteProse.Proof",
+        "NLA.IE21.LiteralMoments.Proof",
+        "NLA.IE21.PrintedJointRate.Proof",
+        "NLA.IE21.ThresholdSelectors.Duality",
+        "NLA.IE21.ContinuousTruncation.Proof",
+        "NLA.IE21.GeneralCoupling.Proof",
+        "NLA.IE21.SphericalContinuity.Atomlessness",
+        "NLA.IE21.LiteralWrappers.Solution"
+      ],
+      "outputs": [
+        {
+          "path": "projects/IE-21/Challenge.lean",
+          "sha256": "3f3750d840364d3aa75d72b94a2139abf8e334611270045943061631f423ecf5",
+          "bytes": 7277
+        },
+        {
+          "path": "projects/IE-21/Solution.lean",
+          "sha256": "12256de505473666edd220bd856645cee0e30727c46849855d808af5ed7ad6d2",
+          "bytes": 660
+        },
+        {
+          "path": "projects/IE-21/comparator.json",
+          "sha256": "93b85b29e86ec483b4b1a2ffadb7b75c72d0410b1f5f079f18841afa718b57aa",
+          "bytes": 272
+        }
+      ]
+    },
+    {
+      "id": "IE-22",
+      "theorem_names": [
+        "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+        "NLA.IE22.Paper.paper_universal_squared_rate"
+      ],
+      "primary_theorem_names": [
+        "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+        "NLA.IE22.Paper.paper_universal_squared_rate"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 277,
+      "challenge_bytes": 10742,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.IE22.PaperSolution",
+        "NLA.IE22.LipschitzPoincare.General"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.IE22.PaperSolution",
+        "NLA.IE22.LipschitzPoincare.General"
+      ],
+      "outputs": [
+        {
+          "path": "projects/IE-22/Challenge.lean",
+          "sha256": "1a391335e06a883d60cfa7858ae470717de2dcaaf7dcf5269b75d9e1cd9a25bd",
+          "bytes": 10742
+        },
+        {
+          "path": "projects/IE-22/Solution.lean",
+          "sha256": "4bb07b8d72d8f029fe9a66717ef576060f09c79a4d05f305464d9c856b54ad7e",
+          "bytes": 287
+        },
+        {
+          "path": "projects/IE-22/comparator.json",
+          "sha256": "0c6c291a55681a7fbaf44c8c259695092dae189cf8736d460ba2bed0f160800e",
+          "bytes": 338
+        }
+      ]
+    },
+    {
+      "id": "IS-03",
+      "theorem_names": [
+        "NLA.IS03.paper_counterexample"
+      ],
+      "primary_theorem_names": [
+        "NLA.IS03.paper_counterexample"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 99,
+      "challenge_bytes": 3160,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "PaperSolution",
+        "NLA.IS03.MomentProse.Proof",
+        "NLA.IS03.GeneralNewton.Proof"
+      ],
+      "independently_built_proof_roots": [
+        "PaperSolution",
+        "NLA.IS03.MomentProse.Proof",
+        "NLA.IS03.GeneralNewton.Proof"
+      ],
+      "outputs": [
+        {
+          "path": "projects/IS-03/Challenge.lean",
+          "sha256": "b3c67021c4979f6274c4815f244cb1dd2505a6fa17c5c2b2a652f460888b76a4",
+          "bytes": 3160
+        },
+        {
+          "path": "projects/IS-03/Solution.lean",
+          "sha256": "38e280b6619bd5e441720d4bd119c43a00ff0fbf44e1a149e6def9a1a0a9f2a6",
+          "bytes": 313
+        },
+        {
+          "path": "projects/IS-03/comparator.json",
+          "sha256": "908bdcb999207b501d97c8f86618fff7e55f0861ccbad70c06a2b5c0ea7e5581",
+          "bytes": 269
+        }
+      ]
+    },
+    {
+      "id": "IV-04",
+      "theorem_names": [
+        "IV04.Paper.Computational.actual_paper_iv_det",
+        "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+      ],
+      "primary_theorem_names": [
+        "IV04.Paper.Computational.actual_paper_iv_det",
+        "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 586,
+      "challenge_bytes": 25247,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.IV04.DeterminantHeadlineSolution",
+        "NLA.IV04.FullHullHardnessSolution"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.IV04.DeterminantHeadlineSolution",
+        "NLA.IV04.ReductionCoreSolution",
+        "NLA.IV04.PartitionSolution",
+        "NLA.IV04.ConstructedBoxSolution",
+        "NLA.IV04.BinarySolution",
+        "NLA.IV04.InputEncodingSolution",
+        "NLA.IV04.ComplexityFoundationSolution",
+        "NLA.IV04.RationalContinuantSolution",
+        "NLA.IV04.ContinuantGrowthSolution",
+        "NLA.IV04.BinaryArithmeticSolution",
+        "NLA.IV04.WordArithmeticSolution",
+        "NLA.IV04.CanonicalWordSolution",
+        "NLA.IV04.NaturalParserSolution",
+        "NLA.IV04.WordComparisonSolution",
+        "NLA.IV04.IntegerArithmeticSolution",
+        "NLA.IV04.RationalWordSolution",
+        "NLA.IV04.OrderLengthSolution",
+        "NLA.IV04.CountedParserSolution",
+        "NLA.IV04.WordListProductSolution",
+        "NLA.IV04.PositiveWeightSolution",
+        "NLA.IV04.WordListSumSolution",
+        "NLA.IV04.RationalListSolution",
+        "NLA.IV04.FractionListDenominatorsSolution",
+        "NLA.IV04.FractionCoefficientsSolution",
+        "NLA.IV04.IntegerContinuantMachineSolution",
+        "NLA.IV04.MatrixCoefficientInputSolution",
+        "NLA.IV04.VertexSelectionSolution",
+        "NLA.IV04.MatrixVertexSelectionSolution",
+        "NLA.IV04.PayloadReverseSolution",
+        "NLA.IV04.BudgetedPowerSolution",
+        "NLA.IV04.ScaledThresholdSolution",
+        "NLA.IV04.StrictCellSolution",
+        "NLA.IV04.DenseSupportSolution",
+        "NLA.IV04.MatrixDenseSupportSolution",
+        "NLA.IV04.PayloadLookupSolution",
+        "NLA.IV04.DenseContinuantSolution",
+        "NLA.IV04.MatrixVerifierNPSolution",
+        "NLA.IV04.ActualMatrixVertexSolution",
+        "NLA.IV04.MatrixVertexDecisionSolution",
+        "NLA.IV04.RealIntervalExtremaSolution",
+        "NLA.IV04.SATPartitionSolution",
+        "NLA.IV04.WordListHornerSolution",
+        "NLA.IV04.SubsetPartitionBuilderSolution",
+        "NLA.IV04.SATCNFParserSolution",
+        "NLA.IV04.SATMetadataSolution",
+        "NLA.IV04.SATClauseCoefficientsSolution",
+        "NLA.IV04.SATWeightProgramsSolution",
+        "NLA.IV04.SATWeightTableSolution",
+        "NLA.IV04.PartitionScalarSolution",
+        "NLA.IV04.PolyhedronSupportReplayR3.PolyhedronSupportSolution",
+        "NLA.IV04.InequalityVerifierSolution",
+        "NLA.IV04.SharpActiveCramerSolution",
+        "NLA.IV04.RationalRecessionReplayR3.RationalRecessionSolution",
+        "NLA.IV04.MatrixReductionSolution",
+        "NLA.IV04.InequalityFeasibilitySolution",
+        "NLA.IV04.HullReductionSolution",
+        "NLA.IV04.ExactOutputHardnessSolution",
+        "NLA.IV04.ConcreteOracleSearchSolution",
+        "NLA.IV04.FullHullHardnessSolution",
+        "PaperCornerSolution",
+        "NLA.IV04.ConstructedHullSolution"
+      ],
+      "outputs": [
+        {
+          "path": "projects/IV-04/Challenge.lean",
+          "sha256": "14db3be89365f4f19c490dc04f92cdb6b077f2622f3cba9d46b54ef23440fa44",
+          "bytes": 25247
+        },
+        {
+          "path": "projects/IV-04/Solution.lean",
+          "sha256": "53a0af88e85415bfbdc819192984178b03580e2517bb0d6d438d48c12f6c6adb",
+          "bytes": 367
+        },
+        {
+          "path": "projects/IV-04/comparator.json",
+          "sha256": "82d50330bba0daf4a45c4692ade0bf8eafc862584ff4bc355365109f65571c75",
+          "bytes": 346
+        }
+      ]
+    },
+    {
+      "id": "MD-06",
+      "theorem_names": [
+        "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+        "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty"
+      ],
+      "primary_theorem_names": [
+        "Reference.MD06MainAssembly.Interface.actual_paper_md_main"
+      ],
+      "supporting_theorem_names": [
+        "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty"
+      ],
+      "challenge_lines": 128,
+      "challenge_bytes": 3701,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.MD06.MainAssembly.Solution",
+        "NLA.MD06.GraphCriticalityHessianSolution",
+        "NLA.MD06.QuantitativeCorrectionSolution",
+        "NLA.MD06.LaplacianSpectralGapSolution",
+        "NLA.MD06.CycleProfileSolution",
+        "NLA.MD06.CleanCycleGraphSolution",
+        "NLA.MD06.RadiusInterfaceR2.Solution",
+        "NLA.MD06.GeometricBoundsSolution"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.MD06.MainAssembly.Solution",
+        "NLA.MD06.GraphCriticalityHessianSolution",
+        "NLA.MD06.QuantitativeCorrectionSolution",
+        "NLA.MD06.LaplacianSpectralGapSolution",
+        "NLA.MD06.CycleProfileSolution",
+        "NLA.MD06.CleanCycleGraphSolution",
+        "NLA.MD06.RadiusInterfaceR2.Solution",
+        "NLA.MD06.GeometricBoundsSolution"
+      ],
+      "outputs": [
+        {
+          "path": "projects/MD-06/Challenge.lean",
+          "sha256": "09f99e50eecd3e1db3ff6b5e2824fe4af5a656587f4ef8b6cb99362efcb087b5",
+          "bytes": 3701
+        },
+        {
+          "path": "projects/MD-06/Solution.lean",
+          "sha256": "4c9527c499b326645513458f37a9619c15cbc0c932ca822c7c4f312892d12f79",
+          "bytes": 598
+        },
+        {
+          "path": "projects/MD-06/comparator.json",
+          "sha256": "6fc4f0995d3e36bfb8f04cdd536d174e4db6a3eab710d81fa7e11bbcf3273af3",
+          "bytes": 365
+        }
+      ]
+    },
+    {
+      "id": "MF-05",
+      "theorem_names": [
+        "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_real_uniform_holder"
+      ],
+      "primary_theorem_names": [
+        "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+        "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+        "NLA.MF05.Paper.paper_real_uniform_holder"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 650,
+      "challenge_bytes": 27377,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.MF05.GrowthSolution",
+        "PaperSolution",
+        "NLA.MF05.RoundedSolution",
+        "NLA.MF05.AuxSolution",
+        "NLA.MF05.HolderSharpnessSolution",
+        "NLA.FirstHalfBridges.Auerbach",
+        "NLA.FirstHalfBridges.Reset"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.MF05.GrowthSolution",
+        "PaperSolution",
+        "NLA.MF05.RoundedSolution",
+        "NLA.MF05.AuxSolution",
+        "NLA.MF05.HolderSharpnessSolution",
+        "NLA.FirstHalfBridges.Auerbach",
+        "NLA.FirstHalfBridges.Reset"
+      ],
+      "outputs": [
+        {
+          "path": "projects/MF-05/Challenge.lean",
+          "sha256": "e3df6d82648bbeb6f676a873a834f024154ff906f91f6a86b506470062d2f3a3",
+          "bytes": 27377
+        },
+        {
+          "path": "projects/MF-05/Solution.lean",
+          "sha256": "e33cda65462bd698e1d34a62d1b0903652869c44f8b85d347208f13e199c7d21",
+          "bytes": 473
+        },
+        {
+          "path": "projects/MF-05/comparator.json",
+          "sha256": "ddd3330d7bcb78c442a778f44ad1f9b365925bab9cecd05c8150c2f610f66f0d",
+          "bytes": 407
+        }
+      ]
+    },
+    {
+      "id": "MF-12",
+      "theorem_names": [
+        "NLA.MF12.Paper.paper_main_realization",
+        "NLA.MF12.Paper.paper_rational_realization"
+      ],
+      "primary_theorem_names": [
+        "NLA.MF12.Paper.paper_main_realization",
+        "NLA.MF12.Paper.paper_rational_realization"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 233,
+      "challenge_bytes": 8023,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.MF12.RealizationSolution",
+        "PaperSolution",
+        "NLA.MF12.IrrationalSolution",
+        "NLA.MF12.GrowthSharpnessSolution",
+        "NLA.MF12.SharpUpperSolution",
+        "NLA.MF12.SharpLowerSolution",
+        "NLA.MF12.SharpGrowthSolution",
+        "NLA.MF12.ExactTensor.Growth",
+        "NLA.MF12.LiteralDyadic.Solution"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.MF12.RealizationSolution",
+        "PaperSolution",
+        "NLA.MF12.IrrationalSolution",
+        "NLA.MF12.GrowthSharpnessSolution",
+        "NLA.MF12.SharpUpperSolution",
+        "NLA.MF12.SharpLowerSolution",
+        "NLA.MF12.SharpGrowthSolution",
+        "NLA.MF12.ExactTensor.Growth",
+        "NLA.MF12.LiteralDyadic.Solution"
+      ],
+      "outputs": [
+        {
+          "path": "projects/MF-12/Challenge.lean",
+          "sha256": "40e667ce05b3302f03be7dd11f5786d136a1e528819ed1801c63acde21ca1e16",
+          "bytes": 8023
+        },
+        {
+          "path": "projects/MF-12/Solution.lean",
+          "sha256": "23067c7c3a23bb5583913661513564abd00813d83323b3e96c8c3c0d78c5f4b3",
+          "bytes": 576
+        },
+        {
+          "path": "projects/MF-12/comparator.json",
+          "sha256": "5bc9b344088481e20b434472cebe76e972e4643ba5bc2544f190a6fbb6fd9aa1",
+          "bytes": 326
+        }
+      ]
+    },
+    {
+      "id": "MI-19",
+      "theorem_names": [
+        "NLA.MI19.Paper.paper_counterexample"
+      ],
+      "primary_theorem_names": [
+        "NLA.MI19.Paper.paper_counterexample"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 128,
+      "challenge_bytes": 4464,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "PaperSolution",
+        "NLA.MI19.LiteralProse.Solution",
+        "NLA.MI19.MovingTermsSolution"
+      ],
+      "independently_built_proof_roots": [
+        "PaperSolution",
+        "NLA.MI19.LiteralProse.Solution",
+        "NLA.MI19.MovingTermsSolution"
+      ],
+      "outputs": [
+        {
+          "path": "projects/MI-19/Challenge.lean",
+          "sha256": "285b3b0b94700ad1b0b6b7bfe65b6ca945ce5ca60d25b407e94f9f84c919ecf7",
+          "bytes": 4464
+        },
+        {
+          "path": "projects/MI-19/Solution.lean",
+          "sha256": "a0210357361dd56ff836e49a6e83e4859ed444532795682f19dfd45718169028",
+          "bytes": 317
+        },
+        {
+          "path": "projects/MI-19/comparator.json",
+          "sha256": "f9dddbda7fcff635feb99839f2fc46182cf849920b3b9a83468fdc14755ec456",
+          "bytes": 275
+        }
+      ]
+    },
+    {
+      "id": "MI-21",
+      "theorem_names": [
+        "NLA.MI21.Paper.paper_counterexample"
+      ],
+      "primary_theorem_names": [
+        "NLA.MI21.Paper.paper_counterexample"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 145,
+      "challenge_bytes": 5923,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.MI21.PaperSolution",
+        "NLA.MI21.GeneralMean.Formula"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.MI21.PaperSolution",
+        "NLA.MI21.GeneralMean.Formula"
+      ],
+      "outputs": [
+        {
+          "path": "projects/MI-21/Challenge.lean",
+          "sha256": "438b918b1e706d28a88ccc6ef929d3250a8ef997d4b698875af7bd661b26a960",
+          "bytes": 5923
+        },
+        {
+          "path": "projects/MI-21/Solution.lean",
+          "sha256": "09f71c450e8bdec028849f0fdeeac329e9142e81e76359a7ecdd85d88224ff59",
+          "bytes": 281
+        },
+        {
+          "path": "projects/MI-21/comparator.json",
+          "sha256": "1810684c0ad78735bc5b9ac880e87c2032fbc2090d2fb6cb5dadb72af79dbb7d",
+          "bytes": 275
+        }
+      ]
+    },
+    {
+      "id": "MI-22",
+      "theorem_names": [
+        "NLA.MI22.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_conjecture_false"
+      ],
+      "primary_theorem_names": [
+        "NLA.MI22.Paper.paper_counterexample",
+        "NLA.MI22.Paper.paper_conjecture_false"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 195,
+      "challenge_bytes": 7579,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.MI22.PaperSolution",
+        "NLA.MI22.RootSolution",
+        "NLA.MI22.LiteralDerivative.Proof",
+        "NLA.MI22.MatrixIntegral.MatrixStatements",
+        "NLA.MI22.Commuting.Solution"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.MI22.PaperSolution",
+        "NLA.MI22.RootSolution",
+        "NLA.MI22.LiteralDerivative.Proof",
+        "NLA.MI22.MatrixIntegral.MatrixStatements",
+        "NLA.MI22.Commuting.Solution"
+      ],
+      "outputs": [
+        {
+          "path": "projects/MI-22/Challenge.lean",
+          "sha256": "d974a6cf9df8ae4640680712cd108099d936ede2542adccbcbbc5973dcde2f30",
+          "bytes": 7579
+        },
+        {
+          "path": "projects/MI-22/Solution.lean",
+          "sha256": "d3230b17b10b66375cf25f5f848738bcb92bf660c32b465865e6993440f3d583",
+          "bytes": 418
+        },
+        {
+          "path": "projects/MI-22/comparator.json",
+          "sha256": "5c74dcd6e59b416632a6ffe1072f015488a566666d875041143ea3ae44375a5d",
+          "bytes": 320
+        }
+      ]
+    },
+    {
+      "id": "NM-04",
+      "theorem_names": [
+        "NLA.NM04.Paper.paper_rowland_wu_identity"
+      ],
+      "primary_theorem_names": [
+        "NLA.NM04.Paper.paper_rowland_wu_identity"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 265,
+      "challenge_bytes": 11195,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.NM04.PaperSolution",
+        "NLA.NM04.PositiveMargins.Pencil"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.NM04.PaperSolution",
+        "NLA.NM04.PositiveMargins.Pencil"
+      ],
+      "outputs": [
+        {
+          "path": "projects/NM-04/Challenge.lean",
+          "sha256": "43e1fd72b8023cbbe3665afc5bd44b2c5428cbc67d3478b080763e8bb0da09ac",
+          "bytes": 11195
+        },
+        {
+          "path": "projects/NM-04/Solution.lean",
+          "sha256": "8cc411f51004ed720b4045b4d06ac355627b5dca4dbee5384cec6fcff0be4939",
+          "bytes": 284
+        },
+        {
+          "path": "projects/NM-04/comparator.json",
+          "sha256": "3dac5ea30776eb521a7e286f397c100c513735d534ce523955d052aef2556813",
+          "bytes": 280
+        }
+      ]
+    },
+    {
+      "id": "PF-02",
+      "theorem_names": [
+        "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness"
+      ],
+      "primary_theorem_names": [
+        "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 623,
+      "challenge_bytes": 22793,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.PF02.Proof",
+        "NLA.PF02.CongruenceSolution",
+        "NLA.PF02.PaperAllSizePSDSolution",
+        "NLA.PF02.SupportBridgeSolution",
+        "NLA.PF02.IntrinsicSupportSolution",
+        "NLA.PF02.NormalizationSolution",
+        "NLA.PF02.JointCompactnessSolution",
+        "NLA.PF02.PositiveBasisSolution",
+        "NLA.PF02.BlockConstructionSolution",
+        "NLA.PF02.BlockSupportRecoverySolution",
+        "NLA.PF02.GlobalOrientationSolution",
+        "NLA.PF02.RankBoundSolution"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.PF02.Proof",
+        "NLA.PF02.CongruenceSolution",
+        "NLA.PF02.PaperAllSizePSDSolution",
+        "NLA.PF02.SupportBridgeSolution",
+        "NLA.PF02.IntrinsicSupportSolution",
+        "NLA.PF02.NormalizationSolution",
+        "NLA.PF02.JointCompactnessSolution",
+        "NLA.PF02.PositiveBasisSolution",
+        "NLA.PF02.BlockConstructionSolution",
+        "NLA.PF02.BlockSupportRecoverySolution",
+        "NLA.PF02.GlobalOrientationSolution",
+        "NLA.PF02.RankBoundSolution"
+      ],
+      "outputs": [
+        {
+          "path": "projects/PF-02/Challenge.lean",
+          "sha256": "4ae4a5454cec3b43917ddba6680349e214e7ddfdca418a5b1f661ec8d320a153",
+          "bytes": 22793
+        },
+        {
+          "path": "projects/PF-02/Solution.lean",
+          "sha256": "57c76768f9275315c76a6a54a53b83bebe4786b79de69a12ca224f6e7b70de8a",
+          "bytes": 741
+        },
+        {
+          "path": "projects/PF-02/comparator.json",
+          "sha256": "07dae49650cc72b99a68f4bee0fdcb75d6a5c8ce90ba3e6e19670a374ba40435",
+          "bytes": 316
+        }
+      ]
+    },
+    {
+      "id": "RA-02",
+      "theorem_names": [
+        "NLA.RA02.Paper.paper_sup_worst_case_constants"
+      ],
+      "primary_theorem_names": [
+        "NLA.RA02.Paper.paper_sup_worst_case_constants"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 554,
+      "challenge_bytes": 21547,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.RA02.MainLimitsSolution",
+        "NLA.RA02.LUSupSolution",
+        "NLA.RA02.NegativeSolution",
+        "NLA.RA02.PrefixSolution",
+        "NLA.RA02.SpectralSolution",
+        "NLA.RA02.InterpolationSolution",
+        "NLA.RA02.NormalizerSolution",
+        "NLA.RA02.ComplexPathsSolution",
+        "NLA.RA02.CorrelationSupSolution",
+        "NLA.RA02.CauchyProduct.Product",
+        "NLA.RA02.LiteralCauchyBinet.Paper"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.RA02.MainLimitsSolution",
+        "NLA.RA02.LUSupSolution",
+        "NLA.RA02.NegativeSolution",
+        "NLA.RA02.PrefixSolution",
+        "NLA.RA02.SpectralSolution",
+        "NLA.RA02.InterpolationSolution",
+        "NLA.RA02.NormalizerSolution",
+        "NLA.RA02.ComplexPathsSolution",
+        "NLA.RA02.CorrelationSupSolution",
+        "NLA.RA02.CauchyProduct.Product",
+        "NLA.RA02.LiteralCauchyBinet.Paper"
+      ],
+      "outputs": [
+        {
+          "path": "projects/RA-02/Challenge.lean",
+          "sha256": "ca2dc43c6937e9e75acd43066255db2074c516dcd356c795e7fd21542df7e1c2",
+          "bytes": 21547
+        },
+        {
+          "path": "projects/RA-02/Solution.lean",
+          "sha256": "12b03cc0256661039fc89e868e80694e69c676573b5bf9ea3773b9bb9bde7a61",
+          "bytes": 668
+        },
+        {
+          "path": "projects/RA-02/comparator.json",
+          "sha256": "fe5f26a3c628a8bdc6f34e419fa01ecbc1345223b0d8d0abc15ba5e20d85d813",
+          "bytes": 285
+        }
+      ]
+    },
+    {
+      "id": "RA-08",
+      "theorem_names": [
+        "NLA.RA08.Paper.paper_spectral_failure",
+        "NLA.RA08.Paper.verified_paper_nuclear_counterexample"
+      ],
+      "primary_theorem_names": [
+        "NLA.RA08.Paper.paper_spectral_failure",
+        "NLA.RA08.Paper.verified_paper_nuclear_counterexample"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 464,
+      "challenge_bytes": 16490,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.RA08.DerivativeSolution",
+        "PaperSolution",
+        "NLA.RA08.NuclearCounterexampleSolution",
+        "NLA.RA08.NuclearDivergenceSolution",
+        "NLA.RA08.RangeBasis.Completion",
+        "NLA.RA08.OrderedSingular.Proof",
+        "NLA.RA08.MatrixContour.GeneralRemainder",
+        "NLA.RA08.LiteralJoins.NuclearComparisons",
+        "NLA.RA08.LiteralContour.NuclearSchur"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.RA08.DerivativeSolution",
+        "PaperSolution",
+        "NLA.RA08.NuclearCounterexampleSolution",
+        "NLA.RA08.NuclearDivergenceSolution",
+        "NLA.RA08.RangeBasis.Completion",
+        "NLA.RA08.OrderedSingular.Proof",
+        "NLA.RA08.MatrixContour.GeneralRemainder",
+        "NLA.RA08.LiteralJoins.NuclearComparisons",
+        "NLA.RA08.LiteralContour.NuclearSchur"
+      ],
+      "outputs": [
+        {
+          "path": "projects/RA-08/Challenge.lean",
+          "sha256": "a8058bb594c6f95ab4a0e53345e4865065e6a3832fa0b0453eaef010c25f8b80",
+          "bytes": 16490
+        },
+        {
+          "path": "projects/RA-08/Solution.lean",
+          "sha256": "fb507389ae46912f52b2f4345d76c3ea5105f0fd019348c60347a2d54a4a5f98",
+          "bytes": 623
+        },
+        {
+          "path": "projects/RA-08/comparator.json",
+          "sha256": "78646d64623997e7eadcc02d583a79902620edf191ec1c0e845e4eb112d678d6",
+          "bytes": 337
+        }
+      ]
+    },
+    {
+      "id": "RA-09",
+      "theorem_names": [
+        "NLA.RA09.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.paper_ordered_sharpness",
+        "NLA.RA09.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.paper_unordered_sharpness"
+      ],
+      "primary_theorem_names": [
+        "NLA.RA09.paper_ordered_matrix_norm_relative",
+        "NLA.RA09.paper_ordered_sharpness",
+        "NLA.RA09.paper_unordered_matrix_norm_relative",
+        "NLA.RA09.paper_unordered_sharpness"
+      ],
+      "supporting_theorem_names": [],
+      "challenge_lines": 240,
+      "challenge_bytes": 9668,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "PaperSolution",
+        "NLA.RA09.GaussianTraceSolution",
+        "NLA.RA09.ComplexSolution",
+        "NLA.RA09.LiteralIntegral.Proof",
+        "NLA.RA09.SpectralOptimality.Projectors",
+        "NLA.RA09.PseudoinverseCongruence.RankOne",
+        "NLA.RA09.ThresholdComplex.Trace",
+        "NLA.RA09.SpectralOptimality.Examples"
+      ],
+      "independently_built_proof_roots": [
+        "PaperSolution",
+        "NLA.RA09.GaussianTraceSolution",
+        "NLA.RA09.ComplexSolution",
+        "NLA.RA09.LiteralIntegral.Proof",
+        "NLA.RA09.SpectralOptimality.Projectors",
+        "NLA.RA09.PseudoinverseCongruence.RankOne",
+        "NLA.RA09.ThresholdComplex.Trace",
+        "NLA.RA09.SpectralOptimality.Examples"
+      ],
+      "outputs": [
+        {
+          "path": "projects/RA-09/Challenge.lean",
+          "sha256": "b4fb5e7228c0589728b8afbe058d841666564f85b620379cb0579e1bee312178",
+          "bytes": 9668
+        },
+        {
+          "path": "projects/RA-09/Solution.lean",
+          "sha256": "805ff0b401683f221f6ff269e24fed729d849d8517bcaff25f5ca2753527c919",
+          "bytes": 563
+        },
+        {
+          "path": "projects/RA-09/comparator.json",
+          "sha256": "f8162f9112f745d24ba205a2249950256ff4ee3d0c7b919e1761d812de400f2f",
+          "bytes": 418
+        }
+      ]
+    },
+    {
+      "id": "TR-04",
+      "theorem_names": [
+        "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+        "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+        "Reference.LexTensorCompletion.lexCard_eq_card"
+      ],
+      "primary_theorem_names": [
+        "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm"
+      ],
+      "supporting_theorem_names": [
+        "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+        "Reference.LexTensorCompletion.lexCard_eq_card"
+      ],
+      "challenge_lines": 739,
+      "challenge_bytes": 35386,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.TR04.LexicographicTensorSolutionR3"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.TR04.LexicographicTensorSolutionR3",
+        "NLA.TR04.RealBestRankSolution",
+        "NLA.TR04.ColumnCompressionSolution",
+        "NLA.TR04.TensorGroupingSolution",
+        "NLA.TR04.OptimalityEqualitySolution",
+        "NLA.TR04.ThreeModeCompletionSolution",
+        "NLA.TR04.RecursiveTensorCompletionSolution",
+        "NLA.TR04.CyclicBoundarySolution",
+        "NLA.TR04.TensorCandidateSelectionSolution",
+        "NLA.TR04.TensorOptimumAttainmentSolution",
+        "NLA.TR04.TensorArithmeticExecutionSolutionR3",
+        "NLA.TR04.OrderedTensorSolverSolution",
+        "NLA.TR04.OrderedTensorExecutionSolution",
+        "NLA.TR04.AllOrderSharp.Solution"
+      ],
+      "outputs": [
+        {
+          "path": "projects/TR-04/Challenge.lean",
+          "sha256": "9bde778343235df78dde6337767ce81214cd4503bbc4c7d3ffda5c483b1508fd",
+          "bytes": 35386
+        },
+        {
+          "path": "projects/TR-04/Solution.lean",
+          "sha256": "77a047f9b2e411ebf0e75ad60acff6ce69b76718fb7de1c9498d5c6fb8846143",
+          "bytes": 342
+        },
+        {
+          "path": "projects/TR-04/comparator.json",
+          "sha256": "91dae9a852ada29efca2af600810fef64a0954c776321870a1229c853df26550",
+          "bytes": 426
+        }
+      ]
+    },
+    {
+      "id": "TR-27",
+      "theorem_names": [
+        "NLA.TR27.Paper.paper_full_family",
+        "NLA.TR27.Paper.coordinateProjection_surjective",
+        "NLA.TR27.Paper.coordinateProjection_kernel",
+        "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+        "NLA.TR27.Paper.tensor_reps_nonzero"
+      ],
+      "primary_theorem_names": [
+        "NLA.TR27.Paper.paper_full_family"
+      ],
+      "supporting_theorem_names": [
+        "NLA.TR27.Paper.coordinateProjection_surjective",
+        "NLA.TR27.Paper.coordinateProjection_kernel",
+        "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+        "NLA.TR27.Paper.tensor_reps_nonzero"
+      ],
+      "challenge_lines": 548,
+      "challenge_bytes": 18942,
+      "challenge_imports": [
+        "Mathlib"
+      ],
+      "solution_import_roots": [
+        "NLA.TR27.FullFamilySolution",
+        "NLA.TR27.ProductSolution",
+        "NLA.TR27.TangentSolution",
+        "NLA.TR27.ArbitraryParametersSolution",
+        "NLA.TR27.EventualSavingsSolution",
+        "NLA.TR27.TwelveCoordinatesSolution",
+        "NLA.TR27.ArbitraryGeometrySolution"
+      ],
+      "independently_built_proof_roots": [
+        "NLA.TR27.FullFamilySolution",
+        "NLA.TR27.ProductSolution",
+        "NLA.TR27.TangentSolution",
+        "NLA.TR27.ArbitraryParametersSolution",
+        "NLA.TR27.EventualSavingsSolution",
+        "NLA.TR27.TwelveCoordinatesSolution",
+        "NLA.TR27.ArbitraryGeometrySolution"
+      ],
+      "outputs": [
+        {
+          "path": "projects/TR-27/Challenge.lean",
+          "sha256": "d4c021aa5f49c6c121d0006ed0fe704a06377590958fa0516bea08a8f68d1c8d",
+          "bytes": 18942
+        },
+        {
+          "path": "projects/TR-27/Solution.lean",
+          "sha256": "7f1c13ef04d675943eba7dcff19815e1cf04322443e9c3014487856beca03c80",
+          "bytes": 520
+        },
+        {
+          "path": "projects/TR-27/comparator.json",
+          "sha256": "1096efd3984490910f6c710d9e08f9d54a6686c788649936cc7f9eff5e1e1802",
+          "bytes": 472
+        }
+      ]
+    }
+  ],
+  "entry_count": 17,
+  "maximum_challenge_lines": 739,
+  "maximum_challenge_bytes": 35386,
+  "supporting_targets": 7,
+  "lean_build_run_by_this_helper": false,
+  "kernel_replay_run": false
+}

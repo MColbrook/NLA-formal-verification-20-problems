@@ -1,0 +1,33 @@
+module
+
+public import NLA.MD06.GraphCriticalityHessian.PositiveCosineMinimum
+public import NLA.MD06.GraphCriticalityHessian.Laplacian
+
+@[expose] public section
+#print axioms Reference.MD06Actual.real_energy_angle_lift
+#print axioms Reference.MD06Actual.line_energy_actual
+#print axioms Reference.MD06Actual.line_energy_hasDerivAt
+#print axioms Reference.MD06Actual.line_force_hasDerivAt
+#print axioms Reference.MD06Actual.line_curvature_actual_hessian
+#print axioms Reference.MD06Actual.energy_rotation_invariant
+#print axioms Reference.MD06Actual.gradient_rotation_invariant
+#print axioms Reference.MD06Actual.gradient_sum_zero
+#print axioms Reference.MD06Actual.synchronized_gradient_zero
+#print axioms Reference.MD06Actual.synchronized_hessian_laplacian
+#print axioms Reference.MD06Actual.hessian_lower_bound_from_actual_edge_cosines
+#print axioms Reference.MD06Actual.sum_ordered_pairs
+#print axioms Reference.MD06Actual.gradient_pairing_upper_edges
+#print axioms Reference.MD06Actual.line_force_zero_gradient_pairing
+#print axioms Reference.MD06Actual.actual_critical_iff_all_line_forces_zero
+#print axioms Reference.MD06Actual.actual_angle_local_min_line_force_zero
+#print axioms Reference.MD06Actual.actual_angle_local_min_gradient_zero
+#print axioms Reference.MD06Actual.adjacent_square_double_sum
+#print axioms Reference.MD06Actual.actual_laplacian_quadratic_identity
+#print axioms Reference.MD06Actual.hessian_lower_bound_actual_laplacian
+#print axioms Reference.MD06Actual.angle_coe_isOpenMap
+#print axioms Reference.MD06Actual.phase_lift_continuous
+#print axioms Reference.MD06Actual.phase_lift_isOpenMap
+#print axioms Reference.MD06Actual.actual_local_min_real_lift_iff
+#print axioms Reference.MD06Actual.nonnegative_second_derivative_minimum
+#print axioms Reference.MD06Actual.actual_positive_cosine_critical_real_minimum
+#print axioms Reference.MD06Actual.actual_positive_cosine_critical_angle_minimum

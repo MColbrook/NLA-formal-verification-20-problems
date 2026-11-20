@@ -1,0 +1,9 @@
+module
+
+import Solution
+
+#print axioms NLA.TR27.Paper.paper_full_family
+#print axioms NLA.TR27.Paper.coordinateProjection_surjective
+#print axioms NLA.TR27.Paper.coordinateProjection_kernel
+#print axioms NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff
+#print axioms NLA.TR27.Paper.tensor_reps_nonzero

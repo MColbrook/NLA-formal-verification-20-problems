@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "kind": "native-lake-module-resolution",
+  "status": "pass",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "checked_modules": 27,
+  "modules": [
+    {
+      "module": "Challenge",
+      "source": "Challenge.lean",
+      "status": "pass"
+    },
+    {
+      "module": "Solution",
+      "source": "Solution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.MF05.GrowthSolution",
+      "source": "NLA/MF05/GrowthSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.Collection.MF05PaperSolution",
+      "source": "NLA/Collection/MF05PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.MF12.RealizationSolution",
+      "source": "NLA/MF12/RealizationSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.RA02.LUSupSolution",
+      "source": "NLA/RA02/LUSupSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.Collection.RA08PaperSolution",
+      "source": "NLA/Collection/RA08PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.RA08.NuclearCounterexampleSolution",
+      "source": "NLA/RA08/NuclearCounterexampleSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.Collection.RA09PaperSolution",
+      "source": "NLA/Collection/RA09PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.IE21.PaperSolution",
+      "source": "NLA/IE21/PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.IE22.PaperSolution",
+      "source": "NLA/IE22/PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.TR04.LexicographicTensorSolutionR3",
+      "source": "NLA/TR04/LexicographicTensorSolutionR3.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.TR27.FullFamilySolution",
+      "source": "NLA/TR27/FullFamilySolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.Collection.IS03PaperSolution",
+      "source": "NLA/Collection/IS03PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.NM04.PaperSolution",
+      "source": "NLA/NM04/PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.PF02.PaperAllSizePSDSolution",
+      "source": "NLA/PF02/PaperAllSizePSDSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.MD06.MainAssembly.Solution",
+      "source": "NLA/MD06/MainAssembly/Solution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.IV04.DeterminantHeadlineSolution",
+      "source": "NLA/IV04/DeterminantHeadlineSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.IV04.FullHullHardnessSolution",
+      "source": "NLA/IV04/FullHullHardnessSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.Collection.MI19PaperSolution",
+      "source": "NLA/Collection/MI19PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.MI21.PaperSolution",
+      "source": "NLA/MI21/PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "NLA.MI22.PaperSolution",
+      "source": "NLA/MI22/PaperSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "PaperCompactFamily",
+      "source": "PaperCompactFamily.lean",
+      "status": "pass"
+    },
+    {
+      "module": "PaperCornerCofactor",
+      "source": "PaperCornerCofactor.lean",
+      "status": "pass"
+    },
+    {
+      "module": "PaperCornerSolution",
+      "source": "PaperCornerSolution.lean",
+      "status": "pass"
+    },
+    {
+      "module": "PaperDefinitions",
+      "source": "PaperDefinitions.lean",
+      "status": "pass"
+    },
+    {
+      "module": "PaperHullEndpoint",
+      "source": "PaperHullEndpoint.lean",
+      "status": "pass"
+    }
+  ],
+  "configuration_inputs": [
+    {
+      "path": "lakefile.toml",
+      "sha256": "45f2db7b33b63536a7aa2983700ac10c887c74e258aaacff4e3682cc7ad97557"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "972541e778b45106781e46966339cc4b7a35ca1220b87fd3db5450b6956e1ae6"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    },
+    {
+      "path": "Solution.lean",
+      "sha256": "111d724677c3a5fdd10ca731cedc2583e36b0ecc8a6bf22542aed832347273c7"
+    }
+  ],
+  "dependency_mode": "Temporary local path overrides to existing exact pinned dependency sources; committed Git manifest unchanged",
+  "proof_compilation_performed": false,
+  "kernel_replay_performed": false,
+  "network_used": false
+}

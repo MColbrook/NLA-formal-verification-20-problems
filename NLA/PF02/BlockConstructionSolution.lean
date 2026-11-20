@@ -1,0 +1,36 @@
+module
+
+public import NLA.PF02.BlockConstruction.MinimalRank
+
+@[expose] public section
+#print axioms Reference.PF02BlockConstruction.leading_embed_posSemidef
+#print axioms Reference.PF02BlockConstruction.trailing_embed_posSemidef
+#print axioms Reference.PF02BlockConstruction.off_diagonal_positive_posDef
+#print axioms Reference.PF02BlockConstruction.block_factor_posSemidef
+#print axioms Reference.PF02BlockConstruction.finite_block_factor_posSemidef
+#print axioms Reference.PF02BlockConstruction.block_factor_symmetric
+#print axioms Reference.PF02BlockConstruction.block_factors_linearIndependent
+#print axioms Reference.PF02BlockConstruction.finite_block_factors_linearIndependent
+#print axioms Reference.PF02BlockConstruction.block_index_card
+#print axioms Reference.PF02BlockConstruction.finite_block_gram_rank
+#print axioms Reference.PF02BlockConstruction.finite_block_gram_eq
+#print axioms Reference.PF02BlockConstruction.block_gram_leading
+#print axioms Reference.PF02BlockConstruction.block_gram_trailing
+#print axioms Reference.PF02BlockConstruction.block_gram_zero_cross
+#print axioms Reference.PF02BlockConstruction.finite_block_leading_submatrix
+#print axioms Reference.PF02BlockConstruction.finite_block_trailing_submatrix
+#print axioms Reference.PF02BlockConstruction.finite_block_leading_rank
+#print axioms Reference.PF02BlockConstruction.finite_block_trailing_rank
+#print axioms Reference.PF02BlockConstruction.block_factor_int_cast
+#print axioms Reference.PF02BlockConstruction.finite_block_factor_int_cast
+#print axioms Reference.PF02BlockConstruction.finite_block_gram_int_cast
+#print axioms Reference.PF02BlockConstruction.block_factor_entry_nonneg
+#print axioms Reference.PF02BlockConstruction.finite_block_gram_entry_nonneg
+#print axioms Reference.PF02BlockConstruction.finite_block_integer_entry_nonneg
+#print axioms Reference.PF02BlockConstruction.finite_block_integer_real_rank
+#print axioms Reference.PF02BlockConstruction.enumerated_integer_entry_nonneg
+#print axioms Reference.PF02BlockConstruction.enumerated_real_gram_eq
+#print axioms Reference.PF02BlockConstruction.enumerated_real_gram_rank
+#print axioms Reference.PF02BlockConstruction.enumerated_factorization
+#print axioms Reference.PF02BlockConstruction.enumerated_psd_rank
+#print axioms Reference.PF02BlockConstruction.all_size_integer_witness

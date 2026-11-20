@@ -1,0 +1,740 @@
+{
+  "schema_version": 1,
+  "id": "TR-04",
+  "status": "static-pruned; requires actual Lean elaboration and official comparison",
+  "primary_theorem_names": [
+    "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm"
+  ],
+  "supporting_theorem_names": [
+    "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+    "Reference.LexTensorCompletion.lexCard_eq_card"
+  ],
+  "challenge_lines": 739,
+  "challenge_bytes": 35386,
+  "selected_commands": 104,
+  "nonsemantic_blank_lines_removed": 269,
+  "ambiguous_identifier_resolutions": [],
+  "unresolved_project_identifiers": [],
+  "source_modules": [
+    {
+      "module": "NLA.TR04.RealSVD.Definitions",
+      "original_sha256": "f879d3440b67ffc019a40095da47a8b81d1baadfd708541d510eb9be365e70cc",
+      "declarations": [
+        {
+          "name": "Reference.RealSVDPackage.Rect",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "37cbe169aed96a4e8b9a9b9170dc30127a37adcf6357682702c0fd846a722a55",
+          "retained_type_or_body_sha256": "37cbe169aed96a4e8b9a9b9170dc30127a37adcf6357682702c0fd846a722a55"
+        },
+        {
+          "name": "Reference.RealSVDPackage.Square",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "09d6727c3e47d063d12c405e18f3b4704bc16cc5249ebd356a619467c2f3e6d1",
+          "retained_type_or_body_sha256": "09d6727c3e47d063d12c405e18f3b4704bc16cc5249ebd356a619467c2f3e6d1"
+        },
+        {
+          "name": "Reference.RealSVDPackage.EuclideanVector",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "eca454ac5d55c7f211e6022328bacd64f39a8081c7a813ac61b3a9b5beb1452e",
+          "retained_type_or_body_sha256": "eca454ac5d55c7f211e6022328bacd64f39a8081c7a813ac61b3a9b5beb1452e"
+        },
+        {
+          "name": "Reference.RealSVDPackage.euclideanLin",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "cb8a70a99fc6398ae1293575ebadd4a183319a1585c731bd235bfbe0985247f3",
+          "retained_type_or_body_sha256": "cb8a70a99fc6398ae1293575ebadd4a183319a1585c731bd235bfbe0985247f3"
+        },
+        {
+          "name": "Reference.RealSVDPackage.singularValue",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "1d498530363cffacecd3fc685228a9b74cf66cbd7710eec6589c19d2831d8ea7",
+          "retained_type_or_body_sha256": "1d498530363cffacecd3fc685228a9b74cf66cbd7710eec6589c19d2831d8ea7"
+        },
+        {
+          "name": "Reference.RealSVDPackage.basisMatrix",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "29ef2974f997bebcda8872951b7aa36c72b380cd2d371f0e277af9946d37020f",
+          "retained_type_or_body_sha256": "29ef2974f997bebcda8872951b7aa36c72b380cd2d371f0e277af9946d37020f"
+        }
+      ]
+    },
+    {
+      "module": "NLA.TR04.OptimalityEquality.Definitions",
+      "original_sha256": "f829b7c2adae77943b2a45e113c1c5c5c433f1cb2e6dfab43c60e630db160942",
+      "declarations": [
+        {
+          "name": "Reference.RealOptimalityEquality.leftBasis",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "8fd990aad9c48ba8ff3948d7d4e80d1d218a5c14d157d9db782da88b1e8473b8",
+          "retained_type_or_body_sha256": "8fd990aad9c48ba8ff3948d7d4e80d1d218a5c14d157d9db782da88b1e8473b8"
+        },
+        {
+          "name": "Reference.RealOptimalityEquality.leftVectorMatrix",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "5c4dbe039becfb25213700882ab9d496d048248e24ced65876d3a9ef5a4ffae7",
+          "retained_type_or_body_sha256": "5c4dbe039becfb25213700882ab9d496d048248e24ced65876d3a9ef5a4ffae7"
+        }
+      ]
+    },
+    {
+      "module": "NLA.TR04.RecursiveTensorCompletion.Definitions",
+      "original_sha256": "7eae7bf110328f4600e53d70409ce25bb7b384ca548bd90280f4f7a8b9a0dc22",
+      "declarations": [
+        {
+          "name": "Reference.RecursiveTensorCompletion.ModeIndex",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "f5299af9c5638e08401077182523d5154e0ee5f0104aea043a9445176edbe2f4",
+          "retained_type_or_body_sha256": "f5299af9c5638e08401077182523d5154e0ee5f0104aea043a9445176edbe2f4"
+        },
+        {
+          "name": "Reference.RecursiveTensorCompletion.modeIndexFintype",
+          "kind": "instance",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "7f3c1c5e2d0ec6a115ff0203d4ca2cd9dd3f761fc7dc13e2c100b1fda133bc55",
+          "retained_type_or_body_sha256": "7f3c1c5e2d0ec6a115ff0203d4ca2cd9dd3f761fc7dc13e2c100b1fda133bc55"
+        },
+        {
+          "name": "Reference.RecursiveTensorCompletion.modeIndexDecidableEq",
+          "kind": "instance",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "1e0e86aea4b2cafff3f4aaeaa1f8c64d3639fb68ae10e1ff422c476522da45c3",
+          "retained_type_or_body_sha256": "1e0e86aea4b2cafff3f4aaeaa1f8c64d3639fb68ae10e1ff422c476522da45c3"
+        },
+        {
+          "name": "Reference.RecursiveTensorCompletion.Tensor",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "234def61f01976a422e63662e36ecaeb57bfd90e4e81650c56705c53170cbd5f",
+          "retained_type_or_body_sha256": "234def61f01976a422e63662e36ecaeb57bfd90e4e81650c56705c53170cbd5f"
+        },
+        {
+          "name": "Reference.RecursiveTensorCompletion.tensorFrobeniusSq",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "0335bef06bc5b2e81276107c2ec615cf1ead1a933558ef77fbe42ac8fe6e0969",
+          "retained_type_or_body_sha256": "0335bef06bc5b2e81276107c2ec615cf1ead1a933558ef77fbe42ac8fe6e0969"
+        },
+        {
+          "name": "Reference.RecursiveTensorCompletion.rowCount",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "6c445d136279a416a635d7f561e3ddf90e64489c9cc162f407568455f4236525",
+          "retained_type_or_body_sha256": "6c445d136279a416a635d7f561e3ddf90e64489c9cc162f407568455f4236525"
+        },
+        {
+          "name": "Reference.RecursiveTensorCompletion.rowEquiv",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "1ad685a522c073c0d0c93731584b7380d0b078c0ca57c5321c651e1636d38a32",
+          "retained_type_or_body_sha256": "1ad685a522c073c0d0c93731584b7380d0b078c0ca57c5321c651e1636d38a32"
+        },
+        {
+          "name": "Reference.RecursiveTensorCompletion.merge",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "91cd8a39ac4abfc4e323c7e725c66a021504e7114e7c43b312ccbd086be5e95e",
+          "retained_type_or_body_sha256": "91cd8a39ac4abfc4e323c7e725c66a021504e7114e7c43b312ccbd086be5e95e"
+        },
+        {
+          "name": "Reference.RecursiveTensorCompletion.feasible",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "7726b07f9519b87234e00a0b66d0a5820efc969acfe60b2d84d997f0413e936f",
+          "retained_type_or_body_sha256": "7726b07f9519b87234e00a0b66d0a5820efc969acfe60b2d84d997f0413e936f"
+        }
+      ]
+    },
+    {
+      "module": "NLA.TR04.LexicographicFeasibilityBridge.Definitions",
+      "original_sha256": "be1d362f8321b783febda9d2430716ce896878e0d384ffb429d9b957e55b3a41",
+      "declarations": [
+        {
+          "name": "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+          "kind": "theorem",
+          "role": "supporting theorem: exact well-definedness or construction certificate required by a retained semantic definition/type",
+          "source_command_sha256": "d566821e3f1f154e849253b13c15b42add32ad11d0d7947b8bf008099d6ac7b1",
+          "retained_type_or_body_sha256": "81ad99531396e92b8d799246c4a4ee8ec27a0b2bb9d672e5021c6d9443b14dc2"
+        },
+        {
+          "name": "Reference.LexicographicFeasibilityBridge.rowEquivLex",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "1498c846006a15567687938b7e4fc41148296dd3d69798098ad23a900fb02ebe",
+          "retained_type_or_body_sha256": "1498c846006a15567687938b7e4fc41148296dd3d69798098ad23a900fb02ebe"
+        }
+      ]
+    },
+    {
+      "module": "NLA.TR04.TensorCandidateSelection.Definitions",
+      "original_sha256": "88b56d767158e7108319faa623c7071ac7be75fed98304f1b6021ace4ad6cf4d",
+      "declarations": [
+        {
+          "name": "Reference.TensorCandidateSelection.error",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "f0cbfe5402ef8c5f690bf361e8e95526fbe409ba66fe0c02108cf5c5d748513d",
+          "retained_type_or_body_sha256": "f0cbfe5402ef8c5f690bf361e8e95526fbe409ba66fe0c02108cf5c5d748513d"
+        }
+      ]
+    },
+    {
+      "module": "NLA.TR04.TensorOptimumAttainment.Definitions",
+      "original_sha256": "8e92dc8136dccadac789e8984fcfa5728e537fd74eb2331ffaa3571fd06a05ea",
+      "declarations": [
+        {
+          "name": "Reference.TensorOptimumAttainment.feasibleSet",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "f7b08742825858d6026f15446f0043890b4b1c4f756dca510ae7705b145abe71",
+          "retained_type_or_body_sha256": "f7b08742825858d6026f15446f0043890b4b1c4f756dca510ae7705b145abe71"
+        },
+        {
+          "name": "Reference.TensorOptimumAttainment.optimalError",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "05ec5748269b539ef31a23df7e1a9ca22ca241aa383820b073e153548de4953a",
+          "retained_type_or_body_sha256": "05ec5748269b539ef31a23df7e1a9ca22ca241aa383820b073e153548de4953a"
+        }
+      ]
+    },
+    {
+      "module": "NLA.TR04.LexicographicTensorReplayR3.PureDefinitions",
+      "original_sha256": "f1d7aede377a97c9610f7843c13bc6f2579faa640999a5453e53cc0b66defafb",
+      "declarations": [
+        {
+          "name": "Reference.LexTensorArithmeticExecution.Event",
+          "kind": "inductive",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "9627861157f5ed2fb029fce85d3e3d3f7564679d1dac0ae91679d468ad2e19be",
+          "retained_type_or_body_sha256": "9627861157f5ed2fb029fce85d3e3d3f7564679d1dac0ae91679d468ad2e19be"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.eventCharge",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "ee106d77cf9cf2ec2483bb8906302fec7679b43bbf9fca4867d0855f5e0d15d3",
+          "retained_type_or_body_sha256": "ee106d77cf9cf2ec2483bb8906302fec7679b43bbf9fca4867d0855f5e0d15d3"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.Run",
+          "kind": "structure",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "0849118455e4c030d61b83c7ae24968605c86a6aad80412ad13199d935843cc9",
+          "retained_type_or_body_sha256": "0849118455e4c030d61b83c7ae24968605c86a6aad80412ad13199d935843cc9"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.pureRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "b17a0dd8d3deba6e2be806f262b5482bb204f2b4ce0944882a0647eeae5e05af",
+          "retained_type_or_body_sha256": "b17a0dd8d3deba6e2be806f262b5482bb204f2b4ce0944882a0647eeae5e05af"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.bindRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "6b7ab029120fb13bff17a6b7da45b7dd1630a4789cabea05a853b6c4ef411e56",
+          "retained_type_or_body_sha256": "6b7ab029120fb13bff17a6b7da45b7dd1630a4789cabea05a853b6c4ef411e56"
+        },
+        {
+          "name": null,
+          "kind": "instance",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "56f684621fe84e62be7be406ebde64edf7bdb5954794c90cda2dd5075faee035",
+          "retained_type_or_body_sha256": "56f684621fe84e62be7be406ebde64edf7bdb5954794c90cda2dd5075faee035"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.readReal",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "9af017d9d30a803a72c76c4e9350e478c8c36bc50506b58ebb73edbd7e2f1b26",
+          "retained_type_or_body_sha256": "9af017d9d30a803a72c76c4e9350e478c8c36bc50506b58ebb73edbd7e2f1b26"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.zeroReal",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "d55dbd10083927e1877c17fc31b823d972a7163c73f0b31acaeabed2c242440d",
+          "retained_type_or_body_sha256": "d55dbd10083927e1877c17fc31b823d972a7163c73f0b31acaeabed2c242440d"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.addReal",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "dcc4093b0032a1ff5c08bb020a1a22e2007a5a0572ca065dc43afe24593e765b",
+          "retained_type_or_body_sha256": "dcc4093b0032a1ff5c08bb020a1a22e2007a5a0572ca065dc43afe24593e765b"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.subReal",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "4552a99a59126e8e1d8fe1d56c73014b58f5cc3c619ba0e114d6c2bb8e811b19",
+          "retained_type_or_body_sha256": "4552a99a59126e8e1d8fe1d56c73014b58f5cc3c619ba0e114d6c2bb8e811b19"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.mulReal",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "95fa12f75f07b74416456cd610fffbd3f6595a6a4674c39a807558fc94789abf",
+          "retained_type_or_body_sha256": "95fa12f75f07b74416456cd610fffbd3f6595a6a4674c39a807558fc94789abf"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.lessReal",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "59d0bed80b4f107592f089d47f2b57d8175772c375eceac5872a8567a16856c0",
+          "retained_type_or_body_sha256": "59d0bed80b4f107592f089d47f2b57d8175772c375eceac5872a8567a16856c0"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.leftSubspace",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "4c92360b93417703338d982486dfe2053c8b4d3c547531109b314feeff2a24e6",
+          "retained_type_or_body_sha256": "4c92360b93417703338d982486dfe2053c8b4d3c547531109b314feeff2a24e6"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.ModeIndex",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "43696b9f6c33ff7595f258aafadfcf4f66d8414e980aae3bbe45919e68cceb11",
+          "retained_type_or_body_sha256": "43696b9f6c33ff7595f258aafadfcf4f66d8414e980aae3bbe45919e68cceb11"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.Tensor",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "c4a2968e95e12a6fa9ba06fa4f990877a5bd339450cbed4c32a9ef46736f3385",
+          "retained_type_or_body_sha256": "c4a2968e95e12a6fa9ba06fa4f990877a5bd339450cbed4c32a9ef46736f3385"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.rowCount",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "338f4ff2fdb4c6275661ccb438380ad4ed5833765a31d4859cc1be930a089f7b",
+          "retained_type_or_body_sha256": "338f4ff2fdb4c6275661ccb438380ad4ed5833765a31d4859cc1be930a089f7b"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.rowEquiv",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "1b88ccf21af534506c242189980a73dad26cc0652f4173a7409db8c14cd111da",
+          "retained_type_or_body_sha256": "1b88ccf21af534506c242189980a73dad26cc0652f4173a7409db8c14cd111da"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.merge",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "14e6448768c53658667e49541a7e03d1842feef01ae392b84f234018871a45fc",
+          "retained_type_or_body_sha256": "14e6448768c53658667e49541a7e03d1842feef01ae392b84f234018871a45fc"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.unmerge",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "0cd8b5ed4c7b387a036db8a09172c8c7ed69d5c755a03c33d2badf8563fe14ce",
+          "retained_type_or_body_sha256": "0cd8b5ed4c7b387a036db8a09172c8c7ed69d5c755a03c33d2badf8563fe14ce"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.vectorRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "ca2346027da63b1a972b0fd1e003242bcad9fe87e9c198c39a6e446305e5f5a0",
+          "retained_type_or_body_sha256": "ca2346027da63b1a972b0fd1e003242bcad9fe87e9c198c39a6e446305e5f5a0"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.dotRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "0332c7f0aab1a716d0dbc1337835778e3e03b9095af8ca6291ff93ce13bc42d4",
+          "retained_type_or_body_sha256": "0332c7f0aab1a716d0dbc1337835778e3e03b9095af8ca6291ff93ce13bc42d4"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.matrixMulRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "d9c4fffe8c4f7cb2bec8026fc3372643315f5b3f7a1496e0bd508bacedd67a05",
+          "retained_type_or_body_sha256": "d9c4fffe8c4f7cb2bec8026fc3372643315f5b3f7a1496e0bd508bacedd67a05"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.lexCard",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "901e492fdc8cbf09cc2c210d02452b30b1a1d6ad208acf731fba9e9a59793030",
+          "retained_type_or_body_sha256": "901e492fdc8cbf09cc2c210d02452b30b1a1d6ad208acf731fba9e9a59793030"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.lexIndex",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "c5d75e81ab3f7e0177ac1406b9249f2c67229961dc596a4f6bfb979a2f10ddcb",
+          "retained_type_or_body_sha256": "c5d75e81ab3f7e0177ac1406b9249f2c67229961dc596a4f6bfb979a2f10ddcb"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.lexCard_eq_card",
+          "kind": "theorem",
+          "role": "supporting theorem: exact well-definedness or construction certificate required by a retained semantic definition/type",
+          "source_command_sha256": "739a47e07fc3faf44b645c1d6bbf3208a6022dc748b98422ba7bbf3837fe3ad6",
+          "retained_type_or_body_sha256": "d6a58c4017714df4b55623b909ad8b655e7f3bf7b8a4753668e9f224030b150a"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.concreteLayout",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "bf4def48ff55f3541ae7668b1c10bad957b9d9eff0f9229ed1963fad73da3fbf",
+          "retained_type_or_body_sha256": "bf4def48ff55f3541ae7668b1c10bad957b9d9eff0f9229ed1963fad73da3fbf"
+        },
+        {
+          "name": "Reference.LexOrderedCyclicBoundary.EIndex",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "8c5f98c5b754d8994e76638407c8c6e4fc610a71c15493ba3499116ed2a8d3dc",
+          "retained_type_or_body_sha256": "8c5f98c5b754d8994e76638407c8c6e4fc610a71c15493ba3499116ed2a8d3dc"
+        },
+        {
+          "name": "Reference.LexOrderedCyclicBoundary.HIndex",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "36398650d05a5f33cdc37f6f65e5ebede2efc6ab82896d84dd9a37e386033d1a",
+          "retained_type_or_body_sha256": "36398650d05a5f33cdc37f6f65e5ebede2efc6ab82896d84dd9a37e386033d1a"
+        },
+        {
+          "name": "Reference.LexOrderedCyclicBoundary.eFinite",
+          "kind": "instance",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "938006f946dfdf0a75e47a53e4ce04c24d5f43019541929924c54be4de377ef0",
+          "retained_type_or_body_sha256": "938006f946dfdf0a75e47a53e4ce04c24d5f43019541929924c54be4de377ef0"
+        },
+        {
+          "name": "Reference.LexOrderedCyclicBoundary.hFinite",
+          "kind": "instance",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "b68ba6c0eda5078e3858994c0303c526bd6f67cd4c9e74bf686ada3de5f1c4ef",
+          "retained_type_or_body_sha256": "b68ba6c0eda5078e3858994c0303c526bd6f67cd4c9e74bf686ada3de5f1c4ef"
+        },
+        {
+          "name": "Reference.LexTensorCompletion.denseTensor",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "6dd86fe97210e58b958380405c40e50bbffdd86d565bd384d1e5e5949f8cf113",
+          "retained_type_or_body_sha256": "6dd86fe97210e58b958380405c40e50bbffdd86d565bd384d1e5e5949f8cf113"
+        },
+        {
+          "name": "Reference.LexTensorExecution.Event",
+          "kind": "inductive",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "37dfa91609c1abe2f41b5eb19ec2ab51381b3c8e46951c92936e90cf06edcbb2",
+          "retained_type_or_body_sha256": "37dfa91609c1abe2f41b5eb19ec2ab51381b3c8e46951c92936e90cf06edcbb2"
+        },
+        {
+          "name": "Reference.LexTensorExecution.eventCharge",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "b23a36c56a6e7df283971323f73c0b8f4df81de0c3323701a51b53946d188c96",
+          "retained_type_or_body_sha256": "b23a36c56a6e7df283971323f73c0b8f4df81de0c3323701a51b53946d188c96"
+        },
+        {
+          "name": "Reference.LexTensorExecution.Run",
+          "kind": "structure",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "0849118455e4c030d61b83c7ae24968605c86a6aad80412ad13199d935843cc9",
+          "retained_type_or_body_sha256": "0849118455e4c030d61b83c7ae24968605c86a6aad80412ad13199d935843cc9"
+        },
+        {
+          "name": "Reference.LexTensorExecution.pureRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "b17a0dd8d3deba6e2be806f262b5482bb204f2b4ce0944882a0647eeae5e05af",
+          "retained_type_or_body_sha256": "b17a0dd8d3deba6e2be806f262b5482bb204f2b4ce0944882a0647eeae5e05af"
+        },
+        {
+          "name": "Reference.LexTensorExecution.bindRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "6b7ab029120fb13bff17a6b7da45b7dd1630a4789cabea05a853b6c4ef411e56",
+          "retained_type_or_body_sha256": "6b7ab029120fb13bff17a6b7da45b7dd1630a4789cabea05a853b6c4ef411e56"
+        },
+        {
+          "name": "Reference.LexTensorExecution.liftRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "03408d089b43d2551bdfca570c7a7ff8b8aed1ac62e4d419bf7512bfee100d0a",
+          "retained_type_or_body_sha256": "03408d089b43d2551bdfca570c7a7ff8b8aed1ac62e4d419bf7512bfee100d0a"
+        },
+        {
+          "name": "Reference.LexTensorExecution.spectralRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "1651efa88cd574d44a1f94a394ad70f64633e29a2467d114a92835bc001f6260",
+          "retained_type_or_body_sha256": "1651efa88cd574d44a1f94a394ad70f64633e29a2467d114a92835bc001f6260"
+        },
+        {
+          "name": "Reference.LexTensorExecution.equalRealRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "31b108cf713c00de891b5404fa68765ea75dd082eb6b3d54be7799e875d21261",
+          "retained_type_or_body_sha256": "31b108cf713c00de891b5404fa68765ea75dd082eb6b3d54be7799e875d21261"
+        },
+        {
+          "name": "Reference.LexTensorExecution.equalNatRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "40de1655b87825096860639378d41eac91e1712c5edee2f3f62ead3c9b050653",
+          "retained_type_or_body_sha256": "40de1655b87825096860639378d41eac91e1712c5edee2f3f62ead3c9b050653"
+        },
+        {
+          "name": "Reference.LexTensorExecution.lessNatRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "465ebc620699dab2d70fe6a00efacb3454ee1b40771f260ed8c7ad863b7a048a",
+          "retained_type_or_body_sha256": "465ebc620699dab2d70fe6a00efacb3454ee1b40771f260ed8c7ad863b7a048a"
+        },
+        {
+          "name": "Reference.LexTensorExecution.addNatRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "9a7d08ec5d6baff9c2cf53ded9f515db7412db2786401053007e64b063bb3481",
+          "retained_type_or_body_sha256": "9a7d08ec5d6baff9c2cf53ded9f515db7412db2786401053007e64b063bb3481"
+        },
+        {
+          "name": "Reference.LexTensorExecution.subNatRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "182f32c5e04f1354e90dd8107f06624ce704d4ccbf00cd964083d1181c90544f",
+          "retained_type_or_body_sha256": "182f32c5e04f1354e90dd8107f06624ce704d4ccbf00cd964083d1181c90544f"
+        },
+        {
+          "name": "Reference.LexTensorExecution.modNatRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "402ae7969198914e12ba03264b0bfadda8c091d5d2df09d01990a8ec470df884",
+          "retained_type_or_body_sha256": "402ae7969198914e12ba03264b0bfadda8c091d5d2df09d01990a8ec470df884"
+        },
+        {
+          "name": "Reference.LexTensorExecution.branchRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "b09df4fa94a605a193369bd9eb3bac012f2c15ee6e1c75e3ee86a94a859c4a4e",
+          "retained_type_or_body_sha256": "b09df4fa94a605a193369bd9eb3bac012f2c15ee6e1c75e3ee86a94a859c4a4e"
+        },
+        {
+          "name": "Reference.LexTensorExecution.charge",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "af556921049841d54d3089f710cce774f7d5a1bad85d3597536803295c4f35a6",
+          "retained_type_or_body_sha256": "af556921049841d54d3089f710cce774f7d5a1bad85d3597536803295c4f35a6"
+        },
+        {
+          "name": "Reference.LexTensorExecution.filterRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "adc0afcafe3648cde7832ca6b039ba0690f1c7306a35e7445d85a282f2004bde",
+          "retained_type_or_body_sha256": "adc0afcafe3648cde7832ca6b039ba0690f1c7306a35e7445d85a282f2004bde"
+        },
+        {
+          "name": "Reference.LexTensorExecution.ordinalRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "f40670e424ead2e053878a3ff565a65ba2caf31a8418617200e10d3959a396a3",
+          "retained_type_or_body_sha256": "f40670e424ead2e053878a3ff565a65ba2caf31a8418617200e10d3959a396a3"
+        },
+        {
+          "name": "Reference.LexTensorExecution.readRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "663d3ebcf09d4d1747c1683763685c002bb6a28e8890105c49b71a140cc8404b",
+          "retained_type_or_body_sha256": "663d3ebcf09d4d1747c1683763685c002bb6a28e8890105c49b71a140cc8404b"
+        },
+        {
+          "name": "Reference.LexTensorExecution.lessRealRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "95e3b6969c61d468b19f6b84eb94a4a188e2e471d06727e0d241198bad5bc144",
+          "retained_type_or_body_sha256": "95e3b6969c61d468b19f6b84eb94a4a188e2e471d06727e0d241198bad5bc144"
+        },
+        {
+          "name": "Reference.LexTensorExecution.equalScanRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "78d29b944f6725a765739ecb15e06bd94120ea013978fe021bb197e124a4c524",
+          "retained_type_or_body_sha256": "78d29b944f6725a765739ecb15e06bd94120ea013978fe021bb197e124a4c524"
+        },
+        {
+          "name": "Reference.LexTensorExecution.aboveScanRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "56d964e6abbdd4c1a893059ce1900a9bfd8cf340e61c8e08950a10d4bf0e8da6",
+          "retained_type_or_body_sha256": "56d964e6abbdd4c1a893059ce1900a9bfd8cf340e61c8e08950a10d4bf0e8da6"
+        },
+        {
+          "name": "Reference.LexTensorExecution.windowMaskRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "a558f7e9dc6e889225396feb96e10baf911d2c23b4fd14378536c892687e602e",
+          "retained_type_or_body_sha256": "a558f7e9dc6e889225396feb96e10baf911d2c23b4fd14378536c892687e602e"
+        },
+        {
+          "name": "Reference.LexTensorExecution.windowScanRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "838d0ad82cbe239828e16ef8b91ee8b5ff5fd595fef457b16902d06d9156ea4c",
+          "retained_type_or_body_sha256": "838d0ad82cbe239828e16ef8b91ee8b5ff5fd595fef457b16902d06d9156ea4c"
+        },
+        {
+          "name": "Reference.LexTensorExecution.frameFromListRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "2ad9aac140f2419d6be97ece8eab5b549f4c2e61295204601fd93b8d92e89af2",
+          "retained_type_or_body_sha256": "2ad9aac140f2419d6be97ece8eab5b549f4c2e61295204601fd93b8d92e89af2"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.rowErrorRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "d21e83d0e70b5908d3f7226c99abd68e88175e4111c2f57875368e0f61e74f4a",
+          "retained_type_or_body_sha256": "d21e83d0e70b5908d3f7226c99abd68e88175e4111c2f57875368e0f61e74f4a"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.matrixErrorRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "7cee2a03ab2a27dca7f365f72c633c4c3391a3e76f12c561a536f0fd74c30364",
+          "retained_type_or_body_sha256": "7cee2a03ab2a27dca7f365f72c633c4c3391a3e76f12c561a536f0fd74c30364"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.tensorErrorRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "342479d9affdf5764b5c743fec3f91c30b41e1870378093c4d367ac4a7cb3852",
+          "retained_type_or_body_sha256": "342479d9affdf5764b5c743fec3f91c30b41e1870378093c4d367ac4a7cb3852"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.minimumRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "95f5e6f2b7a54777a05e249e03dff2820b8154a109bd1a922c0a581ac626f306",
+          "retained_type_or_body_sha256": "95f5e6f2b7a54777a05e249e03dff2820b8154a109bd1a922c0a581ac626f306"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.copyMatrixRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "a53aed04e1c3ed4c160dea6e46ab3a0091c51893fa1be66de820957804ad7971",
+          "retained_type_or_body_sha256": "a53aed04e1c3ed4c160dea6e46ab3a0091c51893fa1be66de820957804ad7971"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.tensorCopyRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "ea1e3e0ab6da734476729ee1279639b95cfd376c0c966b2465e14d1503d0dd7f",
+          "retained_type_or_body_sha256": "ea1e3e0ab6da734476729ee1279639b95cfd376c0c966b2465e14d1503d0dd7f"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.tensorMulRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "45214919dfddcef8fb01d831d312801953a07d8922601084062cae31f550a3b5",
+          "retained_type_or_body_sha256": "45214919dfddcef8fb01d831d312801953a07d8922601084062cae31f550a3b5"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.frameRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "bc3c455121ff4b20f511e9d8361bffb7190724dd76c999755c19cb6d54111b41",
+          "retained_type_or_body_sha256": "bc3c455121ff4b20f511e9d8361bffb7190724dd76c999755c19cb6d54111b41"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.ttRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "640c28ab47ab344e284c8ff3de5a14f183db8030db805814ca32fb34ad11057f",
+          "retained_type_or_body_sha256": "640c28ab47ab344e284c8ff3de5a14f183db8030db805814ca32fb34ad11057f"
+        },
+        {
+          "name": "Reference.LexTensorArithmeticExecution.completionRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "36fbe1ac5e426998974c86c3271c1ad2158e6ed997e228d228ebdb4d78ef4c5d",
+          "retained_type_or_body_sha256": "36fbe1ac5e426998974c86c3271c1ad2158e6ed997e228d228ebdb4d78ef4c5d"
+        },
+        {
+          "name": "Reference.LexTensorExecution.cyclicExecutionRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "5e94858f3ebc7966e5aee1bbb0a104ae239f0303a0178d1fb0b3656bad56b3b4",
+          "retained_type_or_body_sha256": "5e94858f3ebc7966e5aee1bbb0a104ae239f0303a0178d1fb0b3656bad56b3b4"
+        },
+        {
+          "name": "Reference.LexTensorExecution.listMapRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "c0f0ddcf84d2d2972fd8ec2561d28413c7340e267bf0a0b74a07752fe5607d22",
+          "retained_type_or_body_sha256": "c0f0ddcf84d2d2972fd8ec2561d28413c7340e267bf0a0b74a07752fe5607d22"
+        },
+        {
+          "name": "Reference.LexTensorExecution.prefixFrameRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "91769314d0edf28a9d863c3c5b26f5e46a27aa4c55423e4330657ee235219044",
+          "retained_type_or_body_sha256": "91769314d0edf28a9d863c3c5b26f5e46a27aa4c55423e4330657ee235219044"
+        },
+        {
+          "name": "Reference.LexTensorExecution.prefixCompletionRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "c2a45c66188eea64b0f90761eb59a736a030b93b63458caaabcd79cdddf3c091",
+          "retained_type_or_body_sha256": "c2a45c66188eea64b0f90761eb59a736a030b93b63458caaabcd79cdddf3c091"
+        },
+        {
+          "name": "Reference.LexTensorExecution.sigmaAtRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "46557f30de4d743894f64e8fbc2cc60731600f4421506855ceb22a28adc326dc",
+          "retained_type_or_body_sha256": "46557f30de4d743894f64e8fbc2cc60731600f4421506855ceb22a28adc326dc"
+        },
+        {
+          "name": "Reference.LexTensorExecution.candidateDataRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "a9e4e5b48ee346e9bffcbadfb664d6e277a3b7e6054d2ef302d6e260a11d9bd7",
+          "retained_type_or_body_sha256": "a9e4e5b48ee346e9bffcbadfb664d6e277a3b7e6054d2ef302d6e260a11d9bd7"
+        },
+        {
+          "name": "Reference.LexTensorExecution.candidatesExecutionRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "92bec8c816e23f7c5520ecc7f3269fe2e2ba7b577e138beb6d44705a6b7cd23e",
+          "retained_type_or_body_sha256": "92bec8c816e23f7c5520ecc7f3269fe2e2ba7b577e138beb6d44705a6b7cd23e"
+        },
+        {
+          "name": "Reference.LexTensorExecution.solverExecutionRun",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "f15e2bd4395f2ee31a318d478a6e7fe94efab7c51373e30cd9faa410643589ed",
+          "retained_type_or_body_sha256": "f15e2bd4395f2ee31a318d478a6e7fe94efab7c51373e30cd9faa410643589ed"
+        }
+      ]
+    },
+    {
+      "module": "NLA.TR04.LexicographicTensorChallengeR3",
+      "original_sha256": "97a9888b34ec0243504ff374143bd2304d5b414755270740d516bb660d5ac1e6",
+      "declarations": [
+        {
+          "name": "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+          "kind": "theorem",
+          "role": "primary theorem",
+          "source_command_sha256": "67e1fdebfcb632397e3cf1c013b65435d3304dda2914f38c0ed21368bbc5c224",
+          "retained_type_or_body_sha256": "a407fe38777e065431f73aee87eb2e9773d56c40186038145921b153b31ff4a3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+module
+
+import Solution
+
+#print axioms NLA.MF12.Paper.paper_main_realization
+#print axioms NLA.MF12.Paper.paper_rational_realization

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "reason": "Preserve the uniform PMF when the former PMF.uniformOfFintype name becomes a Measure alias in canonical Mathlib.",
+  "records": [
+    {
+      "path": "Challenge.lean",
+      "edits": [
+        {
+          "old": "  PMF.uniformOfFintype _",
+          "new": "  PMF.ofFintype (fun _ => (Fintype.card (CubicSample k) : ENNReal)\u207b\u00b9) (by\n    simp only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul]\n    exact ENNReal.mul_inv_cancel\n      (by exact_mod_cast (Fintype.card_ne_zero : Fintype.card (CubicSample k) \u2260 0))\n      (by simp))",
+          "occurrences": 1,
+          "reason": "The constant PMF has the same inverse-cardinality point masses; normalization uses nonemptiness."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "status": "proof API replacement recorded; ordinary API probe passed",
+  "kind": "Lean 4.35 Mathlib compatibility repair",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "canonical_api": {
+    "source": "Mathlib/MeasureTheory/Measure/Typeclasses/Probability.lean",
+    "source_sha256": "f451172c111a35ed3d700d28b0eb7e2701f44e20becf888407966dd2b8b0c7ad",
+    "theorem": "MeasureTheory.Measure.isProbabilityMeasure_map_iff",
+    "replacement": "(Measure.isProbabilityMeasure_map_iff original_AEMeasurable_witness).mpr inferInstance",
+    "note": "Preserves every original measurability witness and uses the original source measure probability instance. No theorem statement changed."
+  },
+  "patched_calls": 20,
+  "changed_files": [
+    {
+      "path": "projects/IE-21/NLA/IE21/ContinuousTruncation/Proof.lean",
+      "old_calls": 1,
+      "before_sha256": "ecfa3feced536dfef3dd79ca1207dd0b33cb608798b5649b41ac33758e2470ac",
+      "sha256": "6036ee243c97fa1d9029f96f451341c61f13f95a35db9bf04daf3e983d6f47fa"
+    },
+    {
+      "path": "projects/IE-21/NLA/IE21/GaussianPolar.lean",
+      "old_calls": 3,
+      "before_sha256": "1c92db8731a9e846a685d5d16deb3de970a68f91ae2a2102d8b6e31be8a5aab8",
+      "sha256": "d936948d40667aa958d88dd78d29f907712b0d1cd0df1d87923aa7aae75feff6"
+    },
+    {
+      "path": "projects/IE-21/NLA/IE21/GaussianTrimming.lean",
+      "old_calls": 1,
+      "before_sha256": "015ab66525d703bfa5ae67313a0df630bfe041a04525242049f25863a3164273",
+      "sha256": "1f8770bfb69858be9e9eb6f166b6b84bfd21a2a8911ef8b58f19ee57678023ae"
+    },
+    {
+      "path": "projects/IE-21/NLA/IE21/LiteralWrappers/QuantileBounds.lean",
+      "old_calls": 1,
+      "before_sha256": "4bb8039dfb6fbff4e932fea7a399616f5f3eab7e93442e2f40706cdd4db1cdcb",
+      "sha256": "e52a2f8064bce89f3e2eefe9625db6c2c1409b1471df0fd0bdac25a4857b85a4"
+    },
+    {
+      "path": "projects/IE-21/NLA/IE21/QuantileIntegral/InverseCDF.lean",
+      "old_calls": 1,
+      "before_sha256": "4af3b4542183d22a518b33f4677338d4390af1182fbaffb937b759e29b2d4e2e",
+      "sha256": "4ec094114cf53af6748dd41eb39ea3b25d78d05c0f214cdb8a81b94e0c2a91f9"
+    },
+    {
+      "path": "projects/IE-21/NLA/IE21/QuantileIntegral/Representation.lean",
+      "old_calls": 1,
+      "before_sha256": "a710b98e0dd4d56ea85f93dc3c96c1eff9a96c5632262d417a05e6fc24f7c883",
+      "sha256": "09440158b5fa50ec667f2261a5d2783658a12f665f7c18037566909c3fb48d9e"
+    },
+    {
+      "path": "projects/IE-21/NLA/IE21/QuantileTrimming.lean",
+      "old_calls": 1,
+      "before_sha256": "d4630afcb18fdc817914ba682c0e8e08ebff6eb38771167689586effc0078ae1",
+      "sha256": "339e1b889a0fec164e44de64923e47a7884687cbea9da462f72c025ff42088b2"
+    },
+    {
+      "path": "projects/IE-21/NLA/IE21/RowLaw.lean",
+      "old_calls": 1,
+      "before_sha256": "03e472cd9be13acea8060d322104d9ef040f34c009e95b6abf93372380b4a050",
+      "sha256": "d5deebc46e81683440de2c946276056699d78240c2a9878d91a243fc5b02cafe"
+    },
+    {
+      "path": "projects/IE-21/NLA/IE21/SphericalLaw.lean",
+      "old_calls": 1,
+      "before_sha256": "ad3b33e2ebbbff1723f97995e2c5060280f333d92fcdf38a25fd494637816f6a",
+      "sha256": "7c8dc71b0822feff9765df92f4151dc3fd4f3eff5b630cf204943e62f649da16"
+    },
+    {
+      "path": "projects/IE-21/NLA/IE21/ThresholdSelectors/Feasibility.lean",
+      "old_calls": 1,
+      "before_sha256": "bbeb9caa0801ebf83e718f95bc1728a42988af15af0f0761672e1ac407014271",
+      "sha256": "80167c9ad29dbd1ac5e59a79b9eafeaceb1fb2f9bdb7960a049b932f3834fd30"
+    },
+    {
+      "path": "projects/IE-22/NLA/IE21/GaussianPolar.lean",
+      "old_calls": 3,
+      "before_sha256": "1c92db8731a9e846a685d5d16deb3de970a68f91ae2a2102d8b6e31be8a5aab8",
+      "sha256": "d936948d40667aa958d88dd78d29f907712b0d1cd0df1d87923aa7aae75feff6"
+    },
+    {
+      "path": "projects/IE-22/NLA/IE21/GaussianTrimming.lean",
+      "old_calls": 1,
+      "before_sha256": "015ab66525d703bfa5ae67313a0df630bfe041a04525242049f25863a3164273",
+      "sha256": "1f8770bfb69858be9e9eb6f166b6b84bfd21a2a8911ef8b58f19ee57678023ae"
+    },
+    {
+      "path": "projects/IE-22/NLA/IE21/QuantileTrimming.lean",
+      "old_calls": 1,
+      "before_sha256": "d4630afcb18fdc817914ba682c0e8e08ebff6eb38771167689586effc0078ae1",
+      "sha256": "339e1b889a0fec164e44de64923e47a7884687cbea9da462f72c025ff42088b2"
+    },
+    {
+      "path": "projects/IE-22/NLA/IE21/RowLaw.lean",
+      "old_calls": 1,
+      "before_sha256": "03e472cd9be13acea8060d322104d9ef040f34c009e95b6abf93372380b4a050",
+      "sha256": "d5deebc46e81683440de2c946276056699d78240c2a9878d91a243fc5b02cafe"
+    },
+    {
+      "path": "projects/IE-22/NLA/IE21/SphericalLaw.lean",
+      "old_calls": 1,
+      "before_sha256": "ad3b33e2ebbbff1723f97995e2c5060280f333d92fcdf38a25fd494637816f6a",
+      "sha256": "7c8dc71b0822feff9765df92f4151dc3fd4f3eff5b630cf204943e62f649da16"
+    },
+    {
+      "path": "projects/IE-22/NLA/IE22/LipschitzPoincare/Resampling.lean",
+      "old_calls": 1,
+      "before_sha256": "d5dc0ed89925a11f1bdba0f3f246fccb425490d69ad0ac42b28b24d480cd7267",
+      "sha256": "86c9d8488fab2d651d199554767556f67e2ebf7f6a5e64d47d156202360a1686"
+    }
+  ],
+  "patch": "patches/compatibility/zz0001-ie21-ie22-measure-map.json",
+  "ordinary_compilation_probe": {
+    "source": "module\npublic import Mathlib.MeasureTheory.Measure.Typeclasses.Probability\n@[expose] public section\nopen MeasureTheory\nexample {α β : Type*} [MeasurableSpace α] [MeasurableSpace β]\n    {μ : Measure α} [IsProbabilityMeasure μ] {f : α → β}\n    (hf : AEMeasurable f μ) : IsProbabilityMeasure (μ.map f) :=\n  (Measure.isProbabilityMeasure_map_iff hf).mpr inferInstance\nexample {α β : Type*} [MeasurableSpace α] [MeasurableSpace β]\n    {μ : Measure α} [IsProbabilityMeasure μ] {f : α → β}\n    (hf : Measurable f) : IsProbabilityMeasure (μ.map f) := by\n  have hp := (Measure.isProbabilityMeasure_map_iff (μ := μ) hf.aemeasurable).mpr inferInstance\n  exact hp\n",
+    "source_sha256": "2b1fae16ffd4eeb71f1bd13c9acd2ce2ec5ae1b5673adb3a5b8ae13be189b2a9",
+    "compiler": "leanprover/lean4:v4.35.0",
+    "exit_code": 0,
+    "scope": "Two isolated examples of the canonical replacement, not the complete IE projects"
+  },
+  "kernel_replay_performed": false,
+  "global_source_stage_verification": "passed after source staging; static_checks_passed=true; 2270 staged sources"
+}

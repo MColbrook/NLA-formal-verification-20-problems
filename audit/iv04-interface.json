@@ -1,0 +1,926 @@
+{
+  "id": "IV-04",
+  "status": "generated-static; ordinary Lean build and official Palomar verification remain outstanding",
+  "mode": "original-module-visible identifier, constructor, notation and instance closure; semantic command bodies and headline theorem types copied unchanged",
+  "challenge_lines": 586,
+  "challenge_bytes": 25247,
+  "challenge_direct_imports": [
+    "Mathlib"
+  ],
+  "theorem_names": [
+    "IV04.Paper.Computational.actual_paper_iv_det",
+    "Reference.IV04FullHullHardness.iv_hull_literal_np_hard"
+  ],
+  "solution_proof_roots": [
+    "NLA.IV04.DeterminantHeadlineSolution",
+    "NLA.IV04.ReductionCoreSolution",
+    "NLA.IV04.PartitionSolution",
+    "NLA.IV04.ConstructedBoxSolution",
+    "NLA.IV04.BinarySolution",
+    "NLA.IV04.InputEncodingSolution",
+    "NLA.IV04.ComplexityFoundationSolution",
+    "NLA.IV04.RationalContinuantSolution",
+    "NLA.IV04.ContinuantGrowthSolution",
+    "NLA.IV04.BinaryArithmeticSolution",
+    "NLA.IV04.WordArithmeticSolution",
+    "NLA.IV04.CanonicalWordSolution",
+    "NLA.IV04.NaturalParserSolution",
+    "NLA.IV04.WordComparisonSolution",
+    "NLA.IV04.IntegerArithmeticSolution",
+    "NLA.IV04.RationalWordSolution",
+    "NLA.IV04.OrderLengthSolution",
+    "NLA.IV04.CountedParserSolution",
+    "NLA.IV04.WordListProductSolution",
+    "NLA.IV04.PositiveWeightSolution",
+    "NLA.IV04.WordListSumSolution",
+    "NLA.IV04.RationalListSolution",
+    "NLA.IV04.FractionListDenominatorsSolution",
+    "NLA.IV04.FractionCoefficientsSolution",
+    "NLA.IV04.IntegerContinuantMachineSolution",
+    "NLA.IV04.MatrixCoefficientInputSolution",
+    "NLA.IV04.VertexSelectionSolution",
+    "NLA.IV04.MatrixVertexSelectionSolution",
+    "NLA.IV04.PayloadReverseSolution",
+    "NLA.IV04.BudgetedPowerSolution",
+    "NLA.IV04.ScaledThresholdSolution",
+    "NLA.IV04.StrictCellSolution",
+    "NLA.IV04.DenseSupportSolution",
+    "NLA.IV04.MatrixDenseSupportSolution",
+    "NLA.IV04.PayloadLookupSolution",
+    "NLA.IV04.DenseContinuantSolution",
+    "NLA.IV04.MatrixVerifierNPSolution",
+    "NLA.IV04.ActualMatrixVertexSolution",
+    "NLA.IV04.MatrixVertexDecisionSolution",
+    "NLA.IV04.RealIntervalExtremaSolution",
+    "NLA.IV04.SATPartitionSolution",
+    "NLA.IV04.WordListHornerSolution",
+    "NLA.IV04.SubsetPartitionBuilderSolution",
+    "NLA.IV04.SATCNFParserSolution",
+    "NLA.IV04.SATMetadataSolution",
+    "NLA.IV04.SATClauseCoefficientsSolution",
+    "NLA.IV04.SATWeightProgramsSolution",
+    "NLA.IV04.SATWeightTableSolution",
+    "NLA.IV04.PartitionScalarSolution",
+    "NLA.IV04.PolyhedronSupportReplayR3.PolyhedronSupportSolution",
+    "NLA.IV04.InequalityVerifierSolution",
+    "NLA.IV04.SharpActiveCramerSolution",
+    "NLA.IV04.RationalRecessionReplayR3.RationalRecessionSolution",
+    "NLA.IV04.MatrixReductionSolution",
+    "NLA.IV04.InequalityFeasibilitySolution",
+    "NLA.IV04.HullReductionSolution",
+    "NLA.IV04.ExactOutputHardnessSolution",
+    "NLA.IV04.ConcreteOracleSearchSolution",
+    "NLA.IV04.FullHullHardnessSolution",
+    "PaperCornerSolution",
+    "NLA.IV04.ConstructedHullSolution"
+  ],
+  "solution_import_roots": [
+    "NLA.IV04.DeterminantHeadlineSolution",
+    "NLA.IV04.FullHullHardnessSolution"
+  ],
+  "independently_built_proof_roots": [
+    "NLA.IV04.DeterminantHeadlineSolution",
+    "NLA.IV04.ReductionCoreSolution",
+    "NLA.IV04.PartitionSolution",
+    "NLA.IV04.ConstructedBoxSolution",
+    "NLA.IV04.BinarySolution",
+    "NLA.IV04.InputEncodingSolution",
+    "NLA.IV04.ComplexityFoundationSolution",
+    "NLA.IV04.RationalContinuantSolution",
+    "NLA.IV04.ContinuantGrowthSolution",
+    "NLA.IV04.BinaryArithmeticSolution",
+    "NLA.IV04.WordArithmeticSolution",
+    "NLA.IV04.CanonicalWordSolution",
+    "NLA.IV04.NaturalParserSolution",
+    "NLA.IV04.WordComparisonSolution",
+    "NLA.IV04.IntegerArithmeticSolution",
+    "NLA.IV04.RationalWordSolution",
+    "NLA.IV04.OrderLengthSolution",
+    "NLA.IV04.CountedParserSolution",
+    "NLA.IV04.WordListProductSolution",
+    "NLA.IV04.PositiveWeightSolution",
+    "NLA.IV04.WordListSumSolution",
+    "NLA.IV04.RationalListSolution",
+    "NLA.IV04.FractionListDenominatorsSolution",
+    "NLA.IV04.FractionCoefficientsSolution",
+    "NLA.IV04.IntegerContinuantMachineSolution",
+    "NLA.IV04.MatrixCoefficientInputSolution",
+    "NLA.IV04.VertexSelectionSolution",
+    "NLA.IV04.MatrixVertexSelectionSolution",
+    "NLA.IV04.PayloadReverseSolution",
+    "NLA.IV04.BudgetedPowerSolution",
+    "NLA.IV04.ScaledThresholdSolution",
+    "NLA.IV04.StrictCellSolution",
+    "NLA.IV04.DenseSupportSolution",
+    "NLA.IV04.MatrixDenseSupportSolution",
+    "NLA.IV04.PayloadLookupSolution",
+    "NLA.IV04.DenseContinuantSolution",
+    "NLA.IV04.MatrixVerifierNPSolution",
+    "NLA.IV04.ActualMatrixVertexSolution",
+    "NLA.IV04.MatrixVertexDecisionSolution",
+    "NLA.IV04.RealIntervalExtremaSolution",
+    "NLA.IV04.SATPartitionSolution",
+    "NLA.IV04.WordListHornerSolution",
+    "NLA.IV04.SubsetPartitionBuilderSolution",
+    "NLA.IV04.SATCNFParserSolution",
+    "NLA.IV04.SATMetadataSolution",
+    "NLA.IV04.SATClauseCoefficientsSolution",
+    "NLA.IV04.SATWeightProgramsSolution",
+    "NLA.IV04.SATWeightTableSolution",
+    "NLA.IV04.PartitionScalarSolution",
+    "NLA.IV04.PolyhedronSupportReplayR3.PolyhedronSupportSolution",
+    "NLA.IV04.InequalityVerifierSolution",
+    "NLA.IV04.SharpActiveCramerSolution",
+    "NLA.IV04.RationalRecessionReplayR3.RationalRecessionSolution",
+    "NLA.IV04.MatrixReductionSolution",
+    "NLA.IV04.InequalityFeasibilitySolution",
+    "NLA.IV04.HullReductionSolution",
+    "NLA.IV04.ExactOutputHardnessSolution",
+    "NLA.IV04.ConcreteOracleSearchSolution",
+    "NLA.IV04.FullHullHardnessSolution",
+    "PaperCornerSolution",
+    "NLA.IV04.ConstructedHullSolution"
+  ],
+  "retained_command_count": 71,
+  "mathematical_command_source_identity": "pass; every retained type/body/notation command reparsed and text-identical after removing comments and blank lines",
+  "source_modules": [
+    {
+      "module": "NLA.IV04.Complexitylib.Encoding.Delimit",
+      "original_path": "projects/IV-04/NLA/IV04/Complexitylib/Encoding/Delimit.lean",
+      "original_sha256": "b4cad2002e89972486baee676e794fc6a0dcf20929855c0202de2db05f644b06"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Encoding.Pairing",
+      "original_path": "projects/IV-04/NLA/IV04/Complexitylib/Encoding/Pairing.lean",
+      "original_sha256": "730714c9f7887fe2101e16d113f8fa279c35afadc62ba57b706637ea4ff30520"
+    },
+    {
+      "module": "NLA.IV04.PaperWordAdderDefinitions",
+      "original_path": "projects/IV-04/NLA/IV04/PaperWordAdderDefinitions.lean",
+      "original_sha256": "6fb597cc17a4fcc04c120e2a9addbf2793ba89a93c5c52780ea6ba4f72cf564b"
+    },
+    {
+      "module": "PaperDefinitions",
+      "original_path": "projects/IV-04/PaperDefinitions.lean",
+      "original_sha256": "0e2eb1afb9d3b919af55ea3d39f20a60dddf7babb6d9fef8f7d07cc1ff9154eb"
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "original_path": "projects/IV-04/NLA/IV04/PaperEncodingDefinitions.lean",
+      "original_sha256": "4ec5b4b07d9a671d512c2dccbc97d75714e92d152bd1fa5225c9387ec69f72f4"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "original_path": "projects/IV-04/NLA/IV04/Complexitylib/Models/TuringMachine.lean",
+      "original_sha256": "6a3976d328c0c866523c9aaf8cd831ee89de5569bacbda6897b2c1b46615a32e"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Asymptotics",
+      "original_path": "projects/IV-04/NLA/IV04/Complexitylib/Asymptotics.lean",
+      "original_sha256": "96f318f2e1eafb083ccb851cc095da8bdc15910715a4b4742c8c99d0da7f9aa7"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.Time",
+      "original_path": "projects/IV-04/NLA/IV04/Complexitylib/Classes/Time.lean",
+      "original_sha256": "099fcdfea006a52313c291653bf412d04d463f45f5806f3b4af8085cd63c2c36"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP",
+      "original_path": "projects/IV-04/NLA/IV04/Complexitylib/Classes/NP.lean",
+      "original_sha256": "139c7c3d1211def52a030016637bde04f94601893ae60b861d8b8f7d5ec76d5b"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.P.Defs",
+      "original_path": "projects/IV-04/NLA/IV04/Complexitylib/Classes/P/Defs.lean",
+      "original_sha256": "7f59a92e2f9c6619770524f977009f5e828521e03bc84d01943ca9a5d57c0015"
+    },
+    {
+      "module": "NLA.IV04.PaperRationalListParserDefinitions",
+      "original_path": "projects/IV-04/NLA/IV04/PaperRationalListParserDefinitions.lean",
+      "original_sha256": "9ab2a8a17ad1417c3d6d998958f05b05abba5c9e518612a4838dbec4fb42390e"
+    },
+    {
+      "module": "NLA.IV04.PaperMatrixCoefficientInputDefinitions",
+      "original_path": "projects/IV-04/NLA/IV04/PaperMatrixCoefficientInputDefinitions.lean",
+      "original_sha256": "76f0f28aac349fed2a21722f327c295c10c1f0c990cd582a97b11292d46c620a"
+    },
+    {
+      "module": "NLA.IV04.PaperMatrixDenseSupportReference",
+      "original_path": "projects/IV-04/NLA/IV04/PaperMatrixDenseSupportReference.lean",
+      "original_sha256": "fa0545f779a69d480092cc3b671e890f69842d43e034143c31f7b0a975862fcc"
+    },
+    {
+      "module": "NLA.IV04.PaperRealIntervalVertexDefinitions",
+      "original_path": "projects/IV-04/NLA/IV04/PaperRealIntervalVertexDefinitions.lean",
+      "original_sha256": "8eaa74db70b9f3d53ccb4584aad709b0a483882d311c4d0a5286e7fcdca51bf1"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP.Reduction",
+      "original_path": "projects/IV-04/NLA/IV04/Complexitylib/Classes/NP/Reduction.lean",
+      "original_sha256": "5155fd97f3843cc3f1792198b5b9b7251e98d0e8956bdc27c588d1977cf1ced4"
+    },
+    {
+      "module": "NLA.IV04.PaperConstructedHullDefinitions",
+      "original_path": "projects/IV-04/NLA/IV04/PaperConstructedHullDefinitions.lean",
+      "original_sha256": "6abdb345c1c243113bba5552aed640727020674f5978e542e446abda20e236dd"
+    },
+    {
+      "module": "NLA.IV04.PaperExactOutputHardnessDefinitions",
+      "original_path": "projects/IV-04/NLA/IV04/PaperExactOutputHardnessDefinitions.lean",
+      "original_sha256": "c3aca604c4ec1db0f4c58f8a1cc9f623c6e163861bdb092adc75be7c37e8d49f"
+    },
+    {
+      "module": "NLA.IV04.PaperFullHullProjectionDefinitions",
+      "original_path": "projects/IV-04/NLA/IV04/PaperFullHullProjectionDefinitions.lean",
+      "original_sha256": "6300d328ec2c5c41cbca89bdbad4791f9107b0d114a18c248415a2202d29542b"
+    },
+    {
+      "module": "NLA.IV04.PaperDeterminantHeadlineDefinitions",
+      "original_path": "projects/IV-04/NLA/IV04/PaperDeterminantHeadlineDefinitions.lean",
+      "original_sha256": "5f8748011bc5ea64f7b9eb0d60b3d711e95107ba73bd01cc4acf8b7560a8d99c"
+    },
+    {
+      "module": "NLA.IV04.DeterminantHeadlineChallenge",
+      "original_path": "projects/IV-04/NLA/IV04/DeterminantHeadlineChallenge.lean",
+      "original_sha256": "6773d387891917529f0277ec8a17f9e71619181a97ac7778de042cc18eb22ce8"
+    },
+    {
+      "module": "NLA.IV04.FullHullHardnessChallenge",
+      "original_path": "projects/IV-04/NLA/IV04/FullHullHardnessChallenge.lean",
+      "original_sha256": "38b9d3be139e08c46253823b389a862e3685c436112cbb1c8be307fee136471f"
+    }
+  ],
+  "retained_commands": [
+    {
+      "module": "NLA.IV04.Complexitylib.Encoding.Delimit",
+      "kind": "def",
+      "name": "Complexity.delimit",
+      "source_command_sha256": "ba081ea9cc6792298929cdd7f21eee41b90174e40dfdaa3da1ccc86ff3462e11",
+      "source_doc_sha256": "4511005ec000184ffaee64822778ba090ee68849ac8f700eb8696a1d42ead89c",
+      "added_docstring": null,
+      "copied_code_sha256": "8548f9df00e9346d181ea585b59063f0dd5f314c05cd38c6a66149c25d02e4de"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Encoding.Pairing",
+      "kind": "def",
+      "name": "Complexity.pair",
+      "source_command_sha256": "fe03428656a5d7a821ad640473ef311b7aadb19ebed1a20fcbe395ee976c9fe4",
+      "source_doc_sha256": "b133cf9f2b3e7cbd04329258803582502b44d1f62a8b193f00b53755786a0d29",
+      "added_docstring": null,
+      "copied_code_sha256": "4a3c6f5a262f9d43f8895836c39dc4e39d6c1838e68ba33831a6d48e7bc6b763"
+    },
+    {
+      "module": "NLA.IV04.PaperWordAdderDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.firstBit",
+      "source_command_sha256": "726342e9738df3f6c0dff21c824fc528b33194759fdb1486ea859419c09ddcbd",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "The first output bit, with false for an empty word.",
+      "copied_code_sha256": "82cef3a0fd1f47f77eb78fe35cbe4b2a89390d2244dde0fd977101f5681f0fe4"
+    },
+    {
+      "module": "PaperDefinitions",
+      "kind": "abbrev",
+      "name": "IV04.Paper.Mat",
+      "source_command_sha256": "f96b185dd7cfbf2d85c46b0d0612846674a06bf07a16c7111ea3d2a39fdcbd61",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "Real square matrices of order n.",
+      "copied_code_sha256": "16ddece407b1633167daaeefb1743512c88baf564c4f72b003a8aa96c7d81c36"
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.naturalCode",
+      "source_command_sha256": "d2945ba5c749035c52b666df4a74be2bb38c5ae07a66147fae412765a97e745d",
+      "source_doc_sha256": "7752539caacd81ca74113fe6deacd6bc2e3801a31c05023290b926d664d520e6",
+      "added_docstring": null,
+      "copied_code_sha256": "3d48feb893e61cc427f64bb23024f440827e340b9f082f73f7889c7aeddbc1d3"
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.readUnary",
+      "source_command_sha256": "2f4bf12b0e9c54983fb64e248478f8d021213579770c7a6129b40f5ecb57d95f",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "Read true bits up to a false terminator, returning their count and the unused suffix.",
+      "copied_code_sha256": "533cc6d54a9cac42650f91af2fc001d225e1b52f84e3199caa6681e6694d59e2"
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.readNatural",
+      "source_command_sha256": "b9cb8a3b935f242d4a31b279b25ba65324277819f8d336bfae098c145149f5e9",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "Read a unary payload length and that many least-significant-first binary digits.",
+      "copied_code_sha256": "ea337dbfd3748ec2667566341267d5fb1fb6780dd88700c072db13e25ea81b31"
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.rationalCode",
+      "source_command_sha256": "a3cab2ecc9aeb7c55bbca7c505c4703c04b530e4cb8eb62e4b0fcb89f9a03581",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "Encode a rational by its sign, absolute numerator and positive denominator.",
+      "copied_code_sha256": "670cc0a08a844400aa98e97ef7880b29a4935dd70062650cc467082c4556a020"
+    },
+    {
+      "module": "NLA.IV04.PaperEncodingDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.readRational",
+      "source_command_sha256": "50a329a715da7e065eaa7763286d6e29f20106f6b95f01a341b788ca3dc99496",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "Read sign, numerator and denominator fields using rational division, with the unused suffix.",
+      "copied_code_sha256": "92d1da7e202f78e35365169b9e438480bd772d5b4d40400d9b2e90fafb059186"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "inductive",
+      "name": "Complexity.Γ",
+      "source_command_sha256": "417c5d2cba8522f803fdad32bd8346f0993d667e2a84589bda58b75041ed6a90",
+      "source_doc_sha256": "7759e7b8f1d0073da2e38b6c1144002896817d609142de16788cd87c17d50a62",
+      "added_docstring": null,
+      "copied_code_sha256": "10c5e634debfcc9a34ecbe62a89a4af044a11270114fdba94b37b06f8fba2596"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "source_command_sha256": "e5af9ce8dbfc3957ccb0cd2a2a2f71d91bbe7ca66316737c0aae53919b28296c",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "aad1ecef165e1a828fc9a130b0c6eeebdb09e97e609a57cfc300c0559f42b5b6"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "source_command_sha256": "7497ec3017c43ae87672e9dd1dc237d7c12c0e992ccfa77a01290aec4f8deba9",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "ecf91255442f91ad391ebb13257e577d84d704e41a2b7ccf6a5bedb661bc89f6"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "inductive",
+      "name": "Complexity.Γw",
+      "source_command_sha256": "9d380bb41dbb13efc097acba3d7fc8cc880fee7e39ad88d25e5d4957049e9f6e",
+      "source_doc_sha256": "c83ec0404f43ac364f9506ce08849253c109453df5553dcdee6fb9e474ac08e1",
+      "added_docstring": null,
+      "copied_code_sha256": "41dc57bf694305fa6981e705dc670b788d7271c24438e5be235b3f337ef967c8"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "source_command_sha256": "2778eeed34f7d7068cea7a5a85a9bbff4587026677f29a7c93157fa559ba1b0a",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "6c9fc8594cd8b1225e5c3c7a09f4e4ef083d1bee3578c90b39dea7dc840dff61"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Γw.toΓ",
+      "source_command_sha256": "85902ce4c74536ed3677b64a61f7c54776f02eeb1040fe16684650fcd47a509c",
+      "source_doc_sha256": "3eb7b1513087ba7de62e1b05190b8055b5769b1a1d64a78f9658a3a4f14662f3",
+      "added_docstring": null,
+      "copied_code_sha256": "5ce2f90f49c413479a6ff740c5a28694c1e0a19c749e43bd515f7107152d63d4"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "source_command_sha256": "0d39c75bd5c391bdf05e30453e7ea73810f988606c9a9946dcc880933616e914",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "7b02e6f8c16e76a3180cbd6d27458f1e3d4e0868d37e737dbde6feb453311190"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Γ.ofBool",
+      "source_command_sha256": "e531e426d33961546bf556ab16958f7581eb7fce246c91fba482ad4a2357698a",
+      "source_doc_sha256": "6fcc4aa675daef04f518a79b3799ee937b6c862e50acff8951e932fb79a6f0af",
+      "added_docstring": null,
+      "copied_code_sha256": "b24efc0be0c8a28ffe51efd13e2a402a0d35636e772d31105d48b748e3490c5f"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "inductive",
+      "name": "Complexity.Dir3",
+      "source_command_sha256": "b51b88868b753f12dc2fe33ff27d6155ad67731e4282ad2df5e75d0d04dbc621",
+      "source_doc_sha256": "99e4c1208107995a5222f6c9fda0699bd682afa4a59ab0cf6b93967dd12237fb",
+      "added_docstring": null,
+      "copied_code_sha256": "b3ca8d2fb5acb2f3226259563bd8c19fe7e36da9c1f61873b3d59bf4d0b9ec7c"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.:",
+      "source_command_sha256": "dbb75efab765954bf7b624a5cbd8811fbdf1cdfb5461057fc107ce5160a5ff42",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "743f68421d50391e9fe98ce8fe5882c6471673ac4056c54ee17fd76281a329db"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "structure",
+      "name": "Complexity.Tape",
+      "source_command_sha256": "d2796e76c4ca20224ea06166b365655f3ec19abb625c8bd0b51543096b1c62f4",
+      "source_doc_sha256": "fc961f8bd6b77579632786277eea9186c8c69530ba0aefae5117a84ad191d516",
+      "added_docstring": null,
+      "copied_code_sha256": "26ac508fba9594d47b844b200e90b2fc6a4581a708fb54eac03f5cc32326d520"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.read",
+      "source_command_sha256": "9217a3b36a991314d812ddf7ba4960fba77a45d1156abddfa2135c7781324451",
+      "source_doc_sha256": "0f9d416956f61bc75e5f8a5b9e9eaea6da08f57fdaaf32072c9e17b04505d19b",
+      "added_docstring": null,
+      "copied_code_sha256": "f69ed0b5ec1ce4292a373802aec83063c824f84c0408d7de827fd7ed7a694324"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.write",
+      "source_command_sha256": "daa168ac8436a2b8f54cb1beac452880ba9f0e57abd5ccb58cd736168761aab1",
+      "source_doc_sha256": "a97dd2d6de22a0801893e904d5e89db9e37e28f64062211d87ff4c826802a7b1",
+      "added_docstring": null,
+      "copied_code_sha256": "7d7624a703ce6c8751f62eebb67de58507f19f9118bb73ee6839fcb43fb89921"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.move",
+      "source_command_sha256": "d093ebf7fbdf18d776fba658bc4d5e657a44b6bb2cecf157ffc0b5885a4c3fa3",
+      "source_doc_sha256": "46d4d3a607302095d05a2882309c685b2857f876493c189b4adae9a6cf400b76",
+      "added_docstring": null,
+      "copied_code_sha256": "1546e37d2a2d82401a36a024fb98195722a53aad77d8f395b23c3142e6cc99ab"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.HasOutput",
+      "source_command_sha256": "415088f0a1abc0c6ab721b7aea45c3cc45bf8e3075454eef39d6201a087cfec4",
+      "source_doc_sha256": "519ad35253e35766febf04185218b69480b94ca62b1adbfabc6a0396d844995d",
+      "added_docstring": null,
+      "copied_code_sha256": "d19d1906a00ae417d72532a01aef940893116a0e6c25bcc98582c4912f567636"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "instance",
+      "name": "Complexity.Tape.decidableHasOutput",
+      "source_command_sha256": "2e742a5071c030ba6d252acdd3baa28e95c6077150eeaabe69794300ded944d0",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "047d7ee6de7eb385b3fae471d287e0b2383659dbf355480de429152dbcb438e4"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.Tape.writeAndMove",
+      "source_command_sha256": "b974a087281a1110367e33dd0803309290182c13a5ed9b48e360b4632740903e",
+      "source_doc_sha256": "d8fbc8e2ce46786645fa948a4b9580cc1f8280732b536423070a43ba4c8380f9",
+      "added_docstring": null,
+      "copied_code_sha256": "31f8a61cb8a02b0016721d844e1de055b16dfd5d56257a1e2cb433102eb6c318"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.Tape.init",
+      "source_command_sha256": "04e2e5f821d275516dfd605c31964e06321900cab5b893e922f20242a01f9af6",
+      "source_doc_sha256": "59195ca7982206d8ec913a97ebf0c464d0aab2de10049e508684bbca2135da93",
+      "added_docstring": null,
+      "copied_code_sha256": "3615ec31f279f9c54d842d9555e46f713822588f0aa4633c1e4a06ef754985ef"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.Language",
+      "source_command_sha256": "cefec41c741e9ff123369b67469b16db85b7869425283b9eb565d8538054f181",
+      "source_doc_sha256": "28c043e928614ced31c25292a23e565f6d57d1014dfbb1026a6a5d64cc368a65",
+      "added_docstring": null,
+      "copied_code_sha256": "3a893bc04b6997857bc51244a526095bc2ae167fc0674e3d6d565024b1f65d22"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "structure",
+      "name": "Complexity.Cfg",
+      "source_command_sha256": "b77888c72893122beccae35c1b66d9331d6b024a48f6c925675e6f23017119c5",
+      "source_doc_sha256": "c9fd21911ab1afa8cc7696b4d56ee90d5018d82298fb6ff62051794c3f644947",
+      "added_docstring": null,
+      "copied_code_sha256": "4e7e238717f3518261bab0ffa5dcf3dfa7b05d69315103b08bd9fb2b8f298cc6"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.Cfg.init",
+      "source_command_sha256": "4fb9e0399acab47a25eda35c5509fa8e8eba0a9c0b11e203b8ea6cc7410d9c00",
+      "source_doc_sha256": "badcdc6282d9441afa48d15668486cde9b7931346af059fc7c2961d370d8a9ae",
+      "added_docstring": null,
+      "copied_code_sha256": "8e26ecfc4b02820f088675d7cf5638fe18a5b4f2889411cfb3cc22fe65c424dc"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.Cfg.isHalted",
+      "source_command_sha256": "231f18d8e38ccae574b5a0d6982b5b0d95df5829df5b2537a6c0cea8b9631cf0",
+      "source_doc_sha256": "61328856eb48250e7cf119994c89538dfa7524b78600df3b8f3c5c9fcddc7df3",
+      "added_docstring": null,
+      "copied_code_sha256": "687b9a319a9684109d474f8ad98710ea7e68632859b05ae37c62dccc4b7415ee"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "structure",
+      "name": "Complexity.TM",
+      "source_command_sha256": "3ba2b702b3020ae1370c9747fd00733f29cfdd65be8d9d20d769314c011a504a",
+      "source_doc_sha256": "db54e2806e635063cf68f596ad40c747367609a16d60f9bbe27ab39cdd2a222d",
+      "added_docstring": null,
+      "copied_code_sha256": "0ddaa46d3db7a06dfe92adf488a46947363a71b9c5dcac90a9c063e4cc330361"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "structure",
+      "name": "Complexity.NTM",
+      "source_command_sha256": "592e53cb65146cf35d15d4e2890272c5f859be85b74f18f900f810ce3a35e987",
+      "source_doc_sha256": "74b5e6cd6abc4968d752f296bb224c102c2546078daf52ce04cf79f53675d4c0",
+      "added_docstring": null,
+      "copied_code_sha256": "ae6945a7198e1f899d2598723048db94a4a499e01f882b102b8886d4e9267e75"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.TM.step",
+      "source_command_sha256": "584b153ee3c4ebdbb60e455c79a04028f051330d2ca0fb5934d1f14a161fa3a3",
+      "source_doc_sha256": "1191b859473f814d291fc13bae547d16886e0f1f248ebdba5608c783c8398ce3",
+      "added_docstring": null,
+      "copied_code_sha256": "ba146090d6f40318e8528e31a342ccaf2c4098dbeb4131fc9169884149ccb85b"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.TM.initCfg",
+      "source_command_sha256": "c5182b7a07124d46e8f75e81dc344dae28cfbaed0f80333494510196a3f69d17",
+      "source_doc_sha256": "f577eb6589ed99429ab38775c6269fe9e9dc3ac8b16bddc02dc14754c5f9b0d3",
+      "added_docstring": null,
+      "copied_code_sha256": "be7f49dc7b3e529176a42e3cb2f47b92494938121e2caf83e4ae7f0a38510175"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.TM.halted",
+      "source_command_sha256": "6a49e89c59d7dcabed6693d55fcc8ba1e331e6f11f861d7a2c2a1e5848182875",
+      "source_doc_sha256": "4d3d596a3355bc08cf1f94bdf2f298866eef319257346d67717ed8f068e6520b",
+      "added_docstring": null,
+      "copied_code_sha256": "d675876f5603927d8baced6efb54338340c0e237feacaa4841b4070e50336bc5"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "inductive",
+      "name": "Complexity.TM.reachesIn",
+      "source_command_sha256": "0db210a4334bbb2cc2f3a35033102cdc402815007f267fc529898e466ae508f7",
+      "source_doc_sha256": "c803833411736fb2250dde569aefe1624a6fb16c775d50dd2e561a80861f3639",
+      "added_docstring": null,
+      "copied_code_sha256": "a0f6cb24e2e3b8e6cb0821ba0102be436dc9ec29dc1c9bb9f2cf89d339ebf39e"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.TM.ComputesInTime",
+      "source_command_sha256": "e0f8a235de9ee1b6fdc4d23f9f973b91d8e0e280eab00da214eccf42dea80d52",
+      "source_doc_sha256": "e98fd2fae0efe20a019edcfd1975a41728c9ccfc06c26252e367c015b1b706df",
+      "added_docstring": null,
+      "copied_code_sha256": "2c974d1c10f15c0fd44bae5cf39c384788bbad6d5bf413cb67700d9108c195de"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.NTM.trace",
+      "source_command_sha256": "9b9fd4ed4c38071ed4409076a5670f344d1f9ba8c5eb2956f5b93aadb775addc",
+      "source_doc_sha256": "0b0fb04d2387a793262790490546599b6d9c7e23b0a1e4697d3e3fe478000a22",
+      "added_docstring": null,
+      "copied_code_sha256": "c12cffffc076e4b66c3a92dc2040906285d399f30a5885c4856a681415037cb7"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.NTM.initCfg",
+      "source_command_sha256": "85bc3af8f01cd2e351fd039a0ff95ae23cba435397094008ff421c10dd6da48c",
+      "source_doc_sha256": "f577eb6589ed99429ab38775c6269fe9e9dc3ac8b16bddc02dc14754c5f9b0d3",
+      "added_docstring": null,
+      "copied_code_sha256": "4254f5e38626e1eb61a56c5fb75a3b5fb1a5da86975d3f8008ae57d4131501b4"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "abbrev",
+      "name": "Complexity.NTM.halted",
+      "source_command_sha256": "bb9154733b190c107f788ba18ed94f1f984585510a9bded9af3f7badd7981dcb",
+      "source_doc_sha256": "4d3d596a3355bc08cf1f94bdf2f298866eef319257346d67717ed8f068e6520b",
+      "added_docstring": null,
+      "copied_code_sha256": "06c8b242c1394a45c82c7eaa241d6a561f4d10c3b67072a4b8babd4c24841c86"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.NTM.AcceptsInTime",
+      "source_command_sha256": "d8d3015735e1a27a9c6ecb146e12823221bad1bdd386c3af035784b6b497801b",
+      "source_doc_sha256": "ad2acc8697c69fa3f84b3ea0d68fe95c72c681529b53dbc8867f0930fda53b22",
+      "added_docstring": null,
+      "copied_code_sha256": "2326f226f938be7c4fd67f68ec9c15fc42590570a82ba716a7e16ffd1c231fcd"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.NTM.AllPathsHaltIn",
+      "source_command_sha256": "5b513a3f6e8f097e9dac265a769cbc9e9cebaf68367dc449e978d78626e2acb6",
+      "source_doc_sha256": "71315c1a3a277c94573c32ccb0aae0d1bc233cd9587f8e8f51e23c80ebae7da5",
+      "added_docstring": null,
+      "copied_code_sha256": "d61f712888ff9c6be611a9153cb0c5af7090ca08dfa7080e6d30b102ccb5c26c"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Models.TuringMachine",
+      "kind": "def",
+      "name": "Complexity.NTM.DecidesInTime",
+      "source_command_sha256": "3216bb09dd08a9d9d93c2241e96abcd54b86b48a9eb9d273fd113eb51da0541d",
+      "source_doc_sha256": "d7ef02b70f09ef9b0d25f17a76c9416b8f9df0538e8afc2b38c0735060f596ad",
+      "added_docstring": null,
+      "copied_code_sha256": "a542c125afc6cc6b80d347589c603d381367ae04b168c894955f37dddfeb9741"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Asymptotics",
+      "kind": "def",
+      "name": "Complexity.BigO",
+      "source_command_sha256": "49d930ab7b11911738f929bcc803dd7d1b4330f9c25311cc6dadbfafd94bf5fb",
+      "source_doc_sha256": "c14df4558a52c785c572572561ec640a94aae71de8e6faf721064365524405b4",
+      "added_docstring": null,
+      "copied_code_sha256": "aa73716642ac1553f80af4198e86be35c5544f0387264a22417ab776acc50bac"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Asymptotics",
+      "kind": "infixl",
+      "name": "Complexity.:50",
+      "source_command_sha256": "ac83ff8a8e3658186d002fa5025d2c33067e4947cd233db93358e8a21ecedb06",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "57a71cb735e307fbb1cf281061866a307dc283f5dfce9292ab206f1c38899a51"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.Time",
+      "kind": "def",
+      "name": "Complexity.NTIME",
+      "source_command_sha256": "a1cfed4f2ab17e3b299e3dd58816c5e2500166275a3c45de7883d07f5c582b58",
+      "source_doc_sha256": "c893f0c7bb6458b59bb8e9b929ed2a433b880a9d17d6ccdfaf5aae424718991b",
+      "added_docstring": null,
+      "copied_code_sha256": "41ae301974bbbcc0dd000b7eae051db2dcc59c865faa713455fc16685321648a"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP",
+      "kind": "def",
+      "name": "Complexity.NP",
+      "source_command_sha256": "3433ab7ddb6c76f49d29ca61027a0bac676d7d7a1081c0c58ae282113e385999",
+      "source_doc_sha256": "656d268b75ce21b0f7e3f944bc86d3305c86b0bf80a29430f121761daebd6aa3",
+      "added_docstring": null,
+      "copied_code_sha256": "ce6536fd1ad1d8e8ffbcbf6f5663d6d960c4ba5cc592c4a8a87798f22c716aa9"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.P.Defs",
+      "kind": "def",
+      "name": "Complexity.FP",
+      "source_command_sha256": "da62c12a63d150f3bf907a812eaa448deb17735c7c5e638b45ffb101ff867aeb",
+      "source_doc_sha256": "912e6e3ee36d84589d31dd1835c9771437630898974165b848f1e72e4acdcedf",
+      "added_docstring": null,
+      "copied_code_sha256": "e819a4984cdbb5949d0c29508a231a42c1e9c3c2d254777039589c62b6344def"
+    },
+    {
+      "module": "NLA.IV04.PaperRationalListParserDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.readRationals",
+      "source_command_sha256": "4a845720c1992f142d32bd53fd2ea038184635b2d5841de1d269cfd6326f9933",
+      "source_doc_sha256": "4ac1680e08dea2f9c5cd80b725c33d6aa5f2dd38fdefb27669c46e0d197d1f20",
+      "added_docstring": null,
+      "copied_code_sha256": "0b293c9388905491f981da2c67ffa03122940e529a9143555444904e4028395e"
+    },
+    {
+      "module": "NLA.IV04.PaperMatrixCoefficientInputDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.readMatrixRationals",
+      "source_command_sha256": "c40282de55d7f24f5c69c9c389af3627371ce3fc032aa53c95236606b05fb6f5",
+      "source_doc_sha256": "ac68c6169c72913132c31a064655c9613ab5f3afaf2a20a5d2162f39e8155e4c",
+      "added_docstring": null,
+      "copied_code_sha256": "233836bc353c9b1e5be70a8b208374a0aab8565e62dbaae80257d524fd52523f"
+    },
+    {
+      "module": "NLA.IV04.PaperMatrixDenseSupportReference",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.rationalDenseEndpointAll",
+      "source_command_sha256": "a43fc97c7100af2e9341558ce7e69825b11be7b0ea414ee389564071bf43f05d",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "Check that both row-major endpoint tables vanish outside the three central diagonals.",
+      "copied_code_sha256": "822f62fea015311724f4c82af3e6e34257fa21b3633145f62ae12504f7e8acde"
+    },
+    {
+      "module": "NLA.IV04.PaperRealIntervalVertexDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.boxLowerReal",
+      "source_command_sha256": "b8c4c169fcd52573d3685e784231a9f6407079166d3b2a300eff739e51c04d72",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "The real lower endpoint at row-major index i*n+j, using zero as the list default.",
+      "copied_code_sha256": "b146827f06294d49ab854375f3ae41a75930c8ece2d439ccaa8e3e3e0ebde29b"
+    },
+    {
+      "module": "NLA.IV04.PaperRealIntervalVertexDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.boxUpperReal",
+      "source_command_sha256": "6aa31cf87503873e8f1036f594aabe1f7bf9ba3446c4a48338ad16a6ea1f27f2",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "The real upper endpoint at row-major index i*n+j, using zero as the list default.",
+      "copied_code_sha256": "cc243fe86d33564e3697e4db3c25aaffc39ffbe29742b2b7160e5a97f32f653d"
+    },
+    {
+      "module": "NLA.IV04.PaperRealIntervalVertexDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.realDenseIntervalBox",
+      "source_command_sha256": "2a6de1aad0ed7fa2b7ec91f6964efc2375b9cce9207a39aa6b6543bad489f55e",
+      "source_doc_sha256": "8d93ac3e61e35b4b2783bb29046455c09931e3bdae6a2d8eb21f53e6137a179e",
+      "added_docstring": null,
+      "copied_code_sha256": "c1969447e033537b5a137a1daf5c9ac71a44a2526bfee3cd71512f86d2d91ed4"
+    },
+    {
+      "module": "NLA.IV04.PaperRealIntervalVertexDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.rationalMatrixDeterminantDecisionLanguage",
+      "source_command_sha256": "1e729ffd836ca010f2deb7515f2ad64a2183d49eb3e57f5f3980274434802bf0",
+      "source_doc_sha256": "4f1d104a8759efc371daffec42fe8f5cb9e566e6eca44c9576a16710548853b5",
+      "added_docstring": null,
+      "copied_code_sha256": "7cc8189385acc41bea68e449271ccbb0f643609606244443fcf219ebf359d7da"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP.Reduction",
+      "kind": "def",
+      "name": "Complexity.MapReducesPoly",
+      "source_command_sha256": "805b5b001e90c79f1c36d08f6073033c60843ab62f9548dfba7d89d8caf5d086",
+      "source_doc_sha256": "ef8d0df79192369b1e47893e9a61fc9e4d0ad3aa5afe35f413664f881e156784",
+      "added_docstring": null,
+      "copied_code_sha256": "348c300e63378028a6c7d4522548c8a253a9fc4f69651f1748c65fee0099db79"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP.Reduction",
+      "kind": "infix",
+      "name": "Complexity.:50",
+      "source_command_sha256": "bcbcaf398b1e1faf0ae26abae2897f050a463c9e446739c3db9078abc196640a",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "8a64bfe41b691ff626667d91a558570a645d7b7fd9b07f587ca981805ca2ad9d"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP.Reduction",
+      "kind": "def",
+      "name": "Complexity.NPHard",
+      "source_command_sha256": "622f58b6635e7ce4b5f20feda45b521a6a8fa18c9f4e746997b40dcd63217b64",
+      "source_doc_sha256": "1b2d0d7d4abb510febc66c8aaa8a443f973296e1fb384b82127c6f3fbbe302ce",
+      "added_docstring": null,
+      "copied_code_sha256": "03a4b015053f7d37148289e296edaec7f13bae3df6b9c74286fb33800896f72a"
+    },
+    {
+      "module": "NLA.IV04.Complexitylib.Classes.NP.Reduction",
+      "kind": "def",
+      "name": "Complexity.NPComplete",
+      "source_command_sha256": "28c81d35ad11ddd0f8b9b6ec8ad47cefb09dc3294956be33e3cc4a886dd19b7c",
+      "source_doc_sha256": "e26148fc251c6777124f08f7d34c56ce528fb3c5551a189fe98bff10c4a172d2",
+      "added_docstring": null,
+      "copied_code_sha256": "b5c036936db7a212da7bb543eb30e70652b646fe0ba402dd90790c3964142252"
+    },
+    {
+      "module": "NLA.IV04.PaperConstructedHullDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.positiveCornerRhs",
+      "source_command_sha256": "bde0dddd3729c938ae91bca7182edde04ed25344da192cae638c142e7c8235e3",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "The fixed right-hand side minus the last coordinate vector.",
+      "copied_code_sha256": "bde0dddd3729c938ae91bca7182edde04ed25344da192cae638c142e7c8235e3"
+    },
+    {
+      "module": "NLA.IV04.PaperConstructedHullDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.positiveSolutions",
+      "source_command_sha256": "9ebaccc8eaf95d990986ad40bc85f68eaa2cc3e9e9074d11e47d6fe4c2450700",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "The union of solution sets A*x = -e_last over matrices A in S.",
+      "copied_code_sha256": "9ebaccc8eaf95d990986ad40bc85f68eaa2cc3e9e9074d11e47d6fe4c2450700"
+    },
+    {
+      "module": "NLA.IV04.PaperExactOutputHardnessDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.PolynomialOneQueryReduction",
+      "source_command_sha256": "a40767c1aae129e7fe5a7dd9fe27011c7b56fb081b25a7fdda8328662fdcf17c",
+      "source_doc_sha256": "5899498d8125280f0cf3b83fcd19780ec00beb44e902800956ba033c52b880be",
+      "added_docstring": null,
+      "copied_code_sha256": "26462e5b8ac19965882a618e1dbd3b86be0155d9e4951ab2a92897b0ff4067d0"
+    },
+    {
+      "module": "NLA.IV04.PaperExactOutputHardnessDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.NPHardOutputTask",
+      "source_command_sha256": "3fb7a744046078fee1a2d9bd8f90b9f5597c83cf2bcfa09767e415f7891f1840",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "Every NP language has a polynomial-time one-query reduction to this exact output relation.",
+      "copied_code_sha256": "3d491d7b2b377e039f17377af091e0d697ad612994f64d0608df821d9021c3be"
+    },
+    {
+      "module": "NLA.IV04.PaperExactOutputHardnessDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.ExactDeterminantRangeOutput",
+      "source_command_sha256": "24aa622a8511c16c3ec745e5c0500ad7acda761cee13de1759b75dada5b16f4e",
+      "source_doc_sha256": "9d68629f9d48602ba9a2850a8218c1ea174a81dada48e12bcbdb1a9f25ea8441",
+      "added_docstring": null,
+      "copied_code_sha256": "c5c2e45284b8591758fcef5bf5a663390a702f0fccb6758f8ae21f7e091ae7fc"
+    },
+    {
+      "module": "NLA.IV04.PaperFullHullProjectionDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.ExactFullHullOutput",
+      "source_command_sha256": "58ef9713e7db57c267736517fd5a606e0018fb54ddd6f85a7935c89c929c5946",
+      "source_doc_sha256": "c68c53cf6499d5598fac4c44793474df83e91a529b9aeb82d9fc10945928cc3f",
+      "added_docstring": null,
+      "copied_code_sha256": "58ef9713e7db57c267736517fd5a606e0018fb54ddd6f85a7935c89c929c5946"
+    },
+    {
+      "module": "NLA.IV04.PaperDeterminantHeadlineDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.RegularUnitMatrixPacket",
+      "source_command_sha256": "1a2da8d112b9105538477c420ee90d37842470ec5cd8ad441b96356015cf5fe3",
+      "source_doc_sha256": "62a6021044778c3371463ec17690b337c044681cf5dd7e5ceb94ccf6163b4a71",
+      "added_docstring": null,
+      "copied_code_sha256": "a38995268985aae8ee366d30ea44d7b900a5de1c71a345c2cd128494ed807c5a"
+    },
+    {
+      "module": "NLA.IV04.PaperDeterminantHeadlineDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.regularUnitMatrixDeterminantDecisionLanguage",
+      "source_command_sha256": "62f2c81851bdbf04f96f14f7243ee6798566b7a648fa3669637b9d87295da1d3",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "The determinant threshold language restricted to the regular unit-superdiagonal promise.",
+      "copied_code_sha256": "56857c79be051a8abd7889e37a7f09c9588f923a6eb3af6aefcb5ee5f486bb06"
+    },
+    {
+      "module": "NLA.IV04.PaperDeterminantHeadlineDefinitions",
+      "kind": "def",
+      "name": "IV04.Paper.Computational.RegularUnitDeterminantRangeOutput",
+      "source_command_sha256": "33fa80ad8f4c6e4e98861de538eeddf12deee5f3f041f72eb8570cc89fa4c689",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": "Exact determinant-range output on a matrix satisfying the regular unit-superdiagonal promise.",
+      "copied_code_sha256": "33fa80ad8f4c6e4e98861de538eeddf12deee5f3f041f72eb8570cc89fa4c689"
+    },
+    {
+      "module": "NLA.IV04.DeterminantHeadlineChallenge",
+      "kind": "theorem",
+      "name": "IV04.Paper.Computational.actual_paper_iv_det",
+      "source_command_sha256": "e8f45c1ce1f5e013aa06195696b930a91390b13f3e0c9702242d19cfb3c7efcd",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "e8f45c1ce1f5e013aa06195696b930a91390b13f3e0c9702242d19cfb3c7efcd"
+    },
+    {
+      "module": "NLA.IV04.FullHullHardnessChallenge",
+      "kind": "theorem",
+      "name": "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+      "source_command_sha256": "c33d3644724d43e51470a12530f17b4967d4bebe679270a1c3c3a6f2c904a7c8",
+      "source_doc_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "added_docstring": null,
+      "copied_code_sha256": "c4783a1b3844855c266fb9acb75db865f422d40f7abf635da0d2ddcb6b7815d0"
+    }
+  ],
+  "omitted_implementation_namespace_opens": [
+    {
+      "module": "NLA.IV04.DeterminantHeadlineChallenge",
+      "original": "open Complexity SATReduction",
+      "reason": "No retained statement or semantic declaration uses the SAT-reduction implementation namespace."
+    },
+    {
+      "module": "NLA.IV04.FullHullHardnessChallenge",
+      "original": "open IV04.Paper.Computational.SATReduction",
+      "reason": "No retained statement or semantic declaration uses the SAT-reduction implementation namespace."
+    }
+  ],
+  "unresolved_name_ambiguities": [],
+  "private_retained_declarations": [],
+  "outputs": [
+    {
+      "path": "projects/IV-04/Challenge.lean",
+      "sha256": "14db3be89365f4f19c490dc04f92cdb6b077f2622f3cba9d46b54ef23440fa44",
+      "bytes": 25247
+    },
+    {
+      "path": "projects/IV-04/Solution.lean",
+      "sha256": "53a0af88e85415bfbdc819192984178b03580e2517bb0d6d438d48c12f6c6adb",
+      "bytes": 367
+    },
+    {
+      "path": "projects/IV-04/comparator.json",
+      "sha256": "82d50330bba0daf4a45c4692ade0bf8eafc862584ff4bc355365109f65571c75",
+      "bytes": 346
+    }
+  ],
+  "generator_sha256": "595b3eb102ed9395c21fb4996233531c5b5277950d2b473039c722d35d971051"
+}

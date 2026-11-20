@@ -1,0 +1,2 @@
+'IV04.Paper.Computational.actual_paper_iv_det' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Reference.IV04FullHullHardness.iv_hull_literal_np_hard' depends on axioms: [propext, Classical.choice, Quot.sound]

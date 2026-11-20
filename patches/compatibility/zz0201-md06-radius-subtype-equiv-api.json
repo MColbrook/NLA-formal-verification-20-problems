@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "md06-radius-subtype-equiv-api",
+  "purpose": "Use Set.equivOfEq for the same equality-induced subtype equivalence after Equiv.setCongr was reassigned to set-image transport; mathematical statements and induced graph map unchanged.",
+  "source": "Hand-reviewed edits recorded from current proof-source copies; this helper does not infer mathematical equivalence",
+  "mathematical_statement_changes": false,
+  "proof_or_api_change_description": "Use Set.equivOfEq for the same equality-induced subtype equivalence after Equiv.setCongr was reassigned to set-image transport; mathematical statements and induced graph map unchanged.",
+  "records": [
+    {
+      "path": "projects/MD-06/NLA/MD06/CleanRadiusProbability/FinsetBridge.lean",
+      "before_sha256": "6d34f0ee34cdfba123df6fa7d7eb06e2183390780d14035894b4574f21037c61",
+      "after_sha256": "060af0cafddea0be1c6995c6eea9a856c8025d6a44ad1cae4a27fb7e1edd4fa4",
+      "edits": [
+        {
+          "old": "module\n\npublic import NLA.MD06.CleanRadiusProbability.Definitions\npublic import NLA.MD06.CleanRadiusCardinality.Excess\n\n@[expose] public section\n\nset_option autoImplicit false\nnoncomputable section\nnamespace Reference.MD06CleanRadiusProbability\nopen Reference.MD06RadiusEmbedding Reference.MD06CleanRadiusCardinality\nattribute [local instance] Classical.propDecidable\n\ntheorem actual_radius_finset_excess {n : ℕ} {G : SimpleGraph (Fin n)}\n    {v : Fin n} (c : G.Walk v v) (hc : c.IsCycle) (R : ℕ)\n    (hunclean : ¬CleanRadius G c R) :\n    (CycleRadius G c R).toFinset.card+1 ≤\n      (G.induce ((CycleRadius G c R).toFinset : Set (Fin n))).edgeFinset.card := by\n  have hset : ((CycleRadius G c R).toFinset : Set (Fin n))=CycleRadius G c R := by\n    ext x\n    exact Set.mem_toFinset\n  let iso : G.induce ((CycleRadius G c R).toFinset : Set (Fin n)) ≃g\n      G.induce (CycleRadius G c R) :=\n    { toEquiv := Equiv.setCongr hset\n      map_rel_iff' := by intro x y; rfl }\n  have hcard := iso.card_edgeFinset_eq\n  rw [Set.toFinset_card,hcard]\n  exact actual_unclean_radius_excess_edges c hc R hunclean\n\n#print axioms actual_radius_finset_excess\nend Reference.MD06CleanRadiusProbability\n",
+          "new": "module\r\n\r\npublic import NLA.MD06.CleanRadiusProbability.Definitions\r\npublic import NLA.MD06.CleanRadiusCardinality.Excess\r\n\r\n@[expose] public section\r\n\r\nset_option autoImplicit false\r\nnoncomputable section\r\nnamespace Reference.MD06CleanRadiusProbability\r\nopen Reference.MD06RadiusEmbedding Reference.MD06CleanRadiusCardinality\r\nattribute [local instance] Classical.propDecidable\r\n\r\ntheorem actual_radius_finset_excess {n : ℕ} {G : SimpleGraph (Fin n)}\r\n    {v : Fin n} (c : G.Walk v v) (hc : c.IsCycle) (R : ℕ)\r\n    (hunclean : ¬CleanRadius G c R) :\r\n    (CycleRadius G c R).toFinset.card+1 ≤\r\n      (G.induce ((CycleRadius G c R).toFinset : Set (Fin n))).edgeFinset.card := by\r\n  have hset : ((CycleRadius G c R).toFinset : Set (Fin n))=CycleRadius G c R := by\r\n    ext x\r\n    exact Set.mem_toFinset\r\n  let iso : G.induce ((CycleRadius G c R).toFinset : Set (Fin n)) ≃g\r\n      G.induce (CycleRadius G c R) :=\r\n    { toEquiv := Set.equivOfEq hset\r\n      map_rel_iff' := by intro x y; rfl }\r\n  have hcard := iso.card_edgeFinset_eq\r\n  rw [Set.toFinset_card,hcard]\r\n  exact actual_unclean_radius_excess_edges c hc R hunclean\r\n\r\n#print axioms actual_radius_finset_excess\r\nend Reference.MD06CleanRadiusProbability\r\n",
+          "occurrences": 1,
+          "reason": "Use Set.equivOfEq for the same equality-induced subtype equivalence after Equiv.setCongr was reassigned to set-image transport; mathematical statements and induced graph map unchanged."
+        }
+      ]
+    }
+  ]
+}

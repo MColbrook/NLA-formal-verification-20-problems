@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "kind": "lean-bundled-comparator-core",
+  "status": "pass",
+  "comparison_passed": true,
+  "selected_declarations_are_theorems": true,
+  "source_inventory_sha256": "133d0bd119a4a7922ac91684e5775bca03939b2b783e56105f5e061b0665dea6",
+  "source_stable": true,
+  "compiled_artifacts_stable": true,
+  "driver_stable": true,
+  "query_stable": true,
+  "compiler_stable": true,
+  "lake_library_path": "C:\\Users\\MatthewColbrook\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\lib\\lean\\libLake.a",
+  "lake_library_sha256": "8944b68fa139a7b5f167511a911fa0ed4f66003460daa0d89941ea02bfe51b37",
+  "lake_library_stable": true,
+  "native_toolchain_inputs": {
+    "leanc": {
+      "path": "C:\\Users\\MatthewColbrook\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\leanc.exe",
+      "sha256": "de687735b986be0fa041d9bd51feab737544027ea3ff92587e13f68c1c86f16d"
+    },
+    "clang": {
+      "path": "C:\\Users\\MatthewColbrook\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\clang.exe",
+      "sha256": "c8a5ddb837555782c0f47768255ea044412afa73e58e1f66a74e5c40e5145e31"
+    },
+    "lake_static_library": {
+      "path": "C:\\Users\\MatthewColbrook\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\lib\\lean\\libLake.a",
+      "sha256": "8944b68fa139a7b5f167511a911fa0ed4f66003460daa0d89941ea02bfe51b37"
+    },
+    "export_static_library": {
+      "path": "C:\\Users\\MatthewColbrook\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\lib\\lean\\libLeanExport.a",
+      "sha256": "32e8f50f8f7320787a72a1d59a64f10616616964e2a735c3b0c9c6052473b820"
+    },
+    "clang_shared_library": {
+      "path": "C:\\Users\\MatthewColbrook\\.elan\\toolchains\\leanprover--lean4---v4.35.0\\bin\\libclang-cpp.dll",
+      "sha256": "5c775e6e1d3f9ebdf729ce9b6c896e4517209a48fb57b7711c52ee11c4c4421f"
+    }
+  },
+  "native_toolchain_inputs_stable": true,
+  "native_executable_sha256": "18d44b2c1ee3e2f2225cd59effa5e718e6ebc99ffee76a2438c6800d479411a0",
+  "native_executable_stable": true,
+  "generated_c_sha256": "f998c37e3527d98bb19107e26b87c6dec3c021bbc9e77048f8e6abfafdd01bc9",
+  "generated_c_stable": true,
+  "native_compile_steps": [
+    {
+      "stage": "emit-c",
+      "exit_code": 0
+    },
+    {
+      "stage": "link-native",
+      "exit_code": 0
+    }
+  ],
+  "statement_materializations": [
+    {
+      "module": "Challenge",
+      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-final-correspondence-4.35.0\\challenge.constants",
+      "sha256": "7e734748f3bb9ecbc4fd77e4687cc207deffb259596fb5551a09b7fb41430212",
+      "bytes": 166568896
+    },
+    {
+      "module": "Solution",
+      "path": "C:\\Users\\MatthewColbrook\\AppData\\Local\\Temp\\nla-palomar-final-correspondence-4.35.0\\solution.constants",
+      "sha256": "2dd54a9feb60b7f7f913827f91dd709a1a0b168f3323fd0c10843dae402c1971",
+      "bytes": 166577528
+    }
+  ],
+  "statement_materializations_stable": true,
+  "comparator_config_sha256": "b854e1b51fa92fb1fd7e5691ea1febbcb293f709d7798b8621926ab8b3272f0f",
+  "compiler_version": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "compiler_sha256": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "NLA.MF05.Paper.paper_real_bounded_positive_radius_growth",
+    "NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent",
+    "NLA.MF05.Paper.paper_real_uniform_holder",
+    "NLA.MF12.Paper.paper_main_realization",
+    "NLA.MF12.Paper.paper_rational_realization",
+    "NLA.RA02.Paper.paper_sup_worst_case_constants",
+    "NLA.RA08.Paper.paper_spectral_failure",
+    "NLA.RA08.Paper.verified_paper_nuclear_counterexample",
+    "NLA.RA09.paper_ordered_matrix_norm_relative",
+    "NLA.RA09.paper_ordered_sharpness",
+    "NLA.RA09.paper_unordered_matrix_norm_relative",
+    "NLA.RA09.paper_unordered_sharpness",
+    "NLA.IE21.Paper.paper_random_rows",
+    "NLA.IE22.Paper.paper_high_aspect_supremum_limit",
+    "NLA.IE22.Paper.paper_universal_squared_rate",
+    "Reference.LexTensorExecution.actual_lexicographic_paper_algorithm",
+    "Reference.LexicographicFeasibilityBridge.product_eq_rowCount",
+    "Reference.LexTensorCompletion.lexCard_eq_card",
+    "NLA.TR27.Paper.paper_full_family",
+    "NLA.TR27.Paper.coordinateProjection_surjective",
+    "NLA.TR27.Paper.coordinateProjection_kernel",
+    "NLA.TR27.Paper.imageHomogeneousMap_eq_zero_iff",
+    "NLA.TR27.Paper.tensor_reps_nonzero",
+    "NLA.IS03.paper_counterexample",
+    "NLA.NM04.Paper.paper_rowland_wu_identity",
+    "Reference.PF02UniformPositiveOrientation.paper_all_size_disconnected_witness",
+    "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+    "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty",
+    "IV04.Paper.Computational.actual_paper_iv_det",
+    "Reference.IV04FullHullHardness.iv_hull_literal_np_hard",
+    "NLA.MI19.Paper.paper_counterexample",
+    "NLA.MI21.Paper.paper_counterexample",
+    "NLA.MI22.Paper.paper_counterexample",
+    "NLA.MI22.Paper.paper_conjecture_false",
+    "NLA.MI22.singularValue._proof_1",
+    "Complexity.NTM.trace._proof_6",
+    "NLA.TR27.Paper.pivotIndex._proof_2",
+    "NLA.TR27.Paper.recoveryIndex._proof_2",
+    "NLA.TR27.Paper.recoveryOpenPoints._proof_2",
+    "Reference.LexTensorCompletion.lexIndex._proof_5",
+    "Reference.LexTensorCompletion.lexIndex._proof_2",
+    "NLA.IE21.matrixMap._proof_6",
+    "NLA.IE21.matrixMap._proof_4"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "comparator_core": "Lake.Check.compareAt from pinned Lean 4.35.0",
+  "scope": "Local exact type/ordinary-body comparison using bundled compareAt. Temporary object compaction is distinct from standalone lean4export proof export, kernel replay or Palomar verification.",
+  "comparison_input": "independent compiled type/ordinary-value closures materialized as self-contained Lean CompactedRegions; selected theorem proof values omitted; exact exporter mdata/let-hint normalization; actual compareAt unchanged; native compilation changes execution only",
+  "details": {
+    "challenge_closure_constants": 42519,
+    "challenge_materialized_bytes": 166568896,
+    "compared_theorems": 43,
+    "definition_body_negative_control": true,
+    "selected_declarations_are_theorems": true,
+    "solution_closure_constants": 42519,
+    "solution_materialized_bytes": 166577528,
+    "status": "pass",
+    "type_negative_control": true
+  },
+  "exit_code": 0,
+  "challenge_artifacts": [
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean",
+      "sha256": "da470c288c3c9d0351c5c44e4d86c524e97a28daffa060ad8a17a22650c898c7",
+      "bytes": 2199368
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean.private",
+      "sha256": "9e9d65baaf952d238d2c8aa305eae6b7ed33dd23cf39af7faa55fd667395f5d0",
+      "bytes": 1798808
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.olean.server",
+      "sha256": "17db30a44b561c193621483f77b3d1e8a5f80a3d1d2016bffbf35e2022f9a7ed",
+      "bytes": 125032
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.ir",
+      "sha256": "ac8fd2ddb20e063265138cc7881e26d8a4f90551d7fb1992092ab8cfdca41d30",
+      "bytes": 415208
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Challenge.ir.sig",
+      "sha256": "4d58d19313d9b9f9c39bbcf076e6686823655301adb49087748b374bc0983725",
+      "bytes": 176
+    }
+  ],
+  "solution_artifacts": [
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.olean",
+      "sha256": "9c0543ac10db57c47e8bd8435bbcbb8c1e8db01babbb1bee595b596e1aea5be4",
+      "bytes": 4448
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.olean.private",
+      "sha256": "d34a3570f464321fb18b9626f444e5dd6bd3176fa00a34d0e8ec2aa1e22def10",
+      "bytes": 96
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.olean.server",
+      "sha256": "536b71c9b484974f4191c455fd03d8f434bcf9e3ed54114d09e5ba66a04234ab",
+      "bytes": 96
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.ir",
+      "sha256": "8527e6c5df175644abdebf325217af41c03c7b3881808401df0ac19a2bb7960b",
+      "bytes": 4600
+    },
+    {
+      "path": "C:\\Users\\MatthewColbrook\\Documents\\git_repos\\NLA-formal-verification-20-problems\\.lake\\build\\lib\\lean\\Solution.ir.sig",
+      "sha256": "c692d7aa4f9a2277067390249364637a7032f4acf25d03b5121590ebaf154d3b",
+      "bytes": 176
+    }
+  ],
+  "phase_exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "expression_normalization": [
+    "erase_expr_mdata",
+    "normalize_let_nondep_false"
+  ],
+  "normalization_source": "LeanExport.Basic.removeMData in pinned Lean 4.35.0",
+  "statement_materialization_performed": true,
+  "selected_proof_values_omitted": true,
+  "proof_export_performed": false,
+  "kernel_replay_performed": false,
+  "nanoda_replay_performed": false,
+  "official_palomar_verification": false,
+  "driver_path": "scripts/check_combined_correspondence.py",
+  "driver_sha256": "e8142322e3a0286bb9c49d22e7c1cfd7693ea40e6637fbedfa4b5460a701025d",
+  "query_path": "verification/correspondence/query.txt",
+  "query_sha256": "cc4202cbbb2d83db017693f7c01c55a2887e3c9cc59eeb3147d61febde57a3a5",
+  "stdout_path": "verification/correspondence/stdout.txt",
+  "stdout_sha256": "8c8ad3c50dd7a8fe469cd72e9fb276f06414a7f83a0d2ee129f8240d06095f7c",
+  "stderr_path": "verification/correspondence/stderr.txt",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

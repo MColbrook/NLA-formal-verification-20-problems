@@ -1,0 +1,3 @@
+'NLA.MF05.Paper.paper_real_bounded_positive_radius_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF05.Paper.paper_real_bounded_zero_radius_nilpotent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NLA.MF05.Paper.paper_real_uniform_holder' depends on axioms: [propext, Classical.choice, Quot.sound]

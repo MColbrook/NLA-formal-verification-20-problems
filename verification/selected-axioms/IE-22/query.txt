@@ -1,0 +1,6 @@
+module
+
+import Solution
+
+#print axioms NLA.IE22.Paper.paper_high_aspect_supremum_limit
+#print axioms NLA.IE22.Paper.paper_universal_squared_rate

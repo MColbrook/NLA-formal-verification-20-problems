@@ -1,0 +1,5 @@
+module
+
+import Solution
+
+#print axioms NLA.NM04.Paper.paper_rowland_wu_identity

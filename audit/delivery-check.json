@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "project_count": 17,
+  "selected_theorems": 34,
+  "ordinary_compilation_pass": true,
+  "selected_axiom_checks_pass": true,
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "raw_native_receipt_archive": "verification/archive/native-build-5304cc244cfcf230.tar.gz",
+  "raw_native_receipt_sha256": "8923d0927d6583fe8fc0a7db2a9d4209cd0e9441b23562be684077139681922d",
+  "temporary_logs_excluded": true,
+  "kernel_replay_performed": false,
+  "github_upload_performed": false,
+  "palomar_submission_performed": false,
+  "palomar_verified": false,
+  "project_lean_modules": 2304,
+  "vendored_validator_lean_helpers": 1
+}

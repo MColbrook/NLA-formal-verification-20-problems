@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "id": "MD-06",
+  "status": "static-pruned; requires actual Lean elaboration and official comparison",
+  "primary_theorem_names": [
+    "Reference.MD06MainAssembly.Interface.actual_paper_md_main"
+  ],
+  "supporting_theorem_names": [
+    "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty"
+  ],
+  "challenge_lines": 124,
+  "challenge_bytes": 3448,
+  "selected_commands": 15,
+  "nonsemantic_blank_lines_removed": 0,
+  "ambiguous_identifier_resolutions": [],
+  "unresolved_project_identifiers": [],
+  "source_modules": [
+    {
+      "module": "NLA.MD06.GraphCriticalityHessian.Definitions",
+      "original_sha256": "5c222be7888bc4bc3dccc00662b746c36fa88ee652bbec0493764365c541909f",
+      "declarations": [
+        {
+          "name": "Reference.MD06Actual.Phase",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "e038d0b220ffd68a7d82d1b559ad36744f06203c887c3584b216fbcd8441a131",
+          "retained_type_or_body_sha256": "e038d0b220ffd68a7d82d1b559ad36744f06203c887c3584b216fbcd8441a131"
+        },
+        {
+          "name": "Reference.MD06Actual.Energy",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "4ec5d0bce80d37ee88d68ff1629090b3cacd5e983e722be9dd72da4b879de7b0",
+          "retained_type_or_body_sha256": "4ec5d0bce80d37ee88d68ff1629090b3cacd5e983e722be9dd72da4b879de7b0"
+        },
+        {
+          "name": "Reference.MD06Actual.Synchronized",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "ed2dd267c1134a17021afc9dd3a551cd890025790a6c9e94e4ba00eacf82e805",
+          "retained_type_or_body_sha256": "ed2dd267c1134a17021afc9dd3a551cd890025790a6c9e94e4ba00eacf82e805"
+        },
+        {
+          "name": "Reference.MD06Actual.Gradient",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "5ff477328d1fdc3ecc1aa3d57b0183ca7096882d44235a2b7e73ff3b3e8c0717",
+          "retained_type_or_body_sha256": "5ff477328d1fdc3ecc1aa3d57b0183ca7096882d44235a2b7e73ff3b3e8c0717"
+        },
+        {
+          "name": "Reference.MD06Actual.HessianQuadratic",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "101096ca9c9aabb93813379b8e2abce694f70ee0d8d0cf5249964413514d763f",
+          "retained_type_or_body_sha256": "101096ca9c9aabb93813379b8e2abce694f70ee0d8d0cf5249964413514d763f"
+        }
+      ]
+    },
+    {
+      "module": "NLA.MD06.FiniteProbability.Definitions",
+      "original_sha256": "3893771d6f25fbbb36f2f41fb7cd87df2bb709d62564d090f85cb723d4768876",
+      "declarations": [
+        {
+          "name": "Reference.MD06FiniteProbability.Size",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "b688d0344d114f8cb78941fe260bc0f4ec7568bc7b928594006c7f1605302b03",
+          "retained_type_or_body_sha256": "b688d0344d114f8cb78941fe260bc0f4ec7568bc7b928594006c7f1605302b03"
+        },
+        {
+          "name": "Reference.MD06FiniteProbability.CubicSample",
+          "kind": "abbrev",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "a521be5200754c941ca9b730c018376a8caacc75bb3fe05abf83b9c771d1a7fb",
+          "retained_type_or_body_sha256": "a521be5200754c941ca9b730c018376a8caacc75bb3fe05abf83b9c771d1a7fb"
+        },
+        {
+          "name": "Reference.MD06FiniteProbability.sampleFintype",
+          "kind": "instance",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "448becd18858bed2f8d8ef7f18a6bd3de60d38451470eccead856abd33f64f2d",
+          "retained_type_or_body_sha256": "448becd18858bed2f8d8ef7f18a6bd3de60d38451470eccead856abd33f64f2d"
+        }
+      ]
+    },
+    {
+      "module": "NLA.MD06.FiniteProbability.Nonempty",
+      "original_sha256": "ece5f88d383ac23f1f239374442357f87aaf4ca5b3a65502a37fe514296c520a",
+      "declarations": [
+        {
+          "name": "Reference.MD06FiniteProbability.actual_cubic_sample_nonempty",
+          "kind": "theorem",
+          "role": "supporting theorem: exact well-definedness or construction certificate required by a retained semantic definition/type",
+          "source_command_sha256": "ce5c0c1a4682bd30a3b10b12a30157e5e430d410d1a47724253c763937c55bb4",
+          "retained_type_or_body_sha256": "f9a98ba2a9083ba8d40c9875f19b26b4b277432985a0f14ea8a1645e8f6db136"
+        },
+        {
+          "name": "Reference.MD06FiniteProbability.sampleNonempty",
+          "kind": "instance",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "8d3d1f8251faa736ef8893aae8469335fea5fe6dd09966f971558f981732be8e",
+          "retained_type_or_body_sha256": "8d3d1f8251faa736ef8893aae8469335fea5fe6dd09966f971558f981732be8e"
+        },
+        {
+          "name": "Reference.MD06FiniteProbability.UniformCubic",
+          "kind": "def",
+          "role": "exact semantic declaration",
+          "source_command_sha256": "0187b68093e1cd524c0921554e0732f2cc25aa8c955a315721c5cb5834ac4b9a",
+          "retained_type_or_body_sha256": "0187b68093e1cd524c0921554e0732f2cc25aa8c955a315721c5cb5834ac4b9a"
+        }
+      ]
+    },
+    {
+      "module": "NLA.MD06.MainAssembly.Challenge",
+      "original_sha256": "0c44a8c8c1cb90967209cfff63e8f1496ca64e4e65ba6cd42bc829e9979b2988",
+      "declarations": [
+        {
+          "name": "Reference.MD06MainAssembly.Interface.actual_paper_md_main",
+          "kind": "theorem",
+          "role": "primary theorem",
+          "source_command_sha256": "470c183d8de3907d9e668cb5548e3e876a94eef593e313badae06a9ce4166d36",
+          "retained_type_or_body_sha256": "26c8d18c38b288f10dbf4252bf6e46238803bdccbd7416f900d427e196235279"
+        }
+      ]
+    }
+  ]
+}

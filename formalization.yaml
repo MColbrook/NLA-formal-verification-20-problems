@@ -1,0 +1,252 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+project:
+  name: "Numerical Linear Algebra, Explained: Twenty Problem Resolutions"
+  description: >-
+    Lean formalizations accompanying twenty numerical linear algebra problem
+    resolutions. They give uniform matrix-product growth and local
+    1/d-Hölder continuity of the joint spectral radius; two real generators
+    with any prescribed nonnegative polynomial growth exponent; and sharp
+    losses 2^r and 4^r for randomly pivoted Cholesky and LU. They show that
+    concave matrix functions can destroy spectral approximation guarantees
+    and amplify nuclear-norm excess without bound, and give sharp Frobenius
+    transfer bounds with and without semidefinite order. Further results are
+    the random-row adversarial deletion limit and sharp universal deletion
+    constant, a pointwise strict tensor-train bound with unchanged worst-case
+    supremum, and curves with rank savings delayed through any prescribed
+    finite range of tensor powers. Counterexamples concern derivative roots
+    of nonnegative characteristic polynomials, a q-permanent subset inequality,
+    a geometric-mean norm inequality, and weighted log-majorisation. The
+    development also proves the rectangular Rowland-Wu Sinkhorn identity,
+    disconnected quotients of minimal positive semidefinite factors, stable
+    nonsynchronised equilibria on random cubic graphs with high probability,
+    and NP-hardness of exact determinant ranges and solution hulls for regular
+    tridiagonal interval matrices. This repository prepares the proofs for
+    Palomar through a single repository-root Challenge/Solution interface
+    selecting all twenty problem resolutions. Seventeen component environments
+    have recorded Lean 4.35.0 compilation and selected-axiom checks; the combined
+    environment has separate current evidence. Official Palomar and independent
+    NanoDa verification remain pending submission.
+  authors:
+    - "Matthew J. Colbrook"
+    - "George Stepaniants"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Matthew J. Colbrook"
+    - "George Stepaniants"
+
+classification:
+  arxiv: [math.NA, math.FA, math.PR, math.AG, cs.CC]
+  msc2020: [15A18, 15A23, 15A45, 15A60, 15A69, 65F10, 65F55, 68Q25]
+
+sources:
+  - title: "Numerical Linear Algebra, Explained: Twenty Problem Resolutions"
+    authors:
+      - "Matthew J. Colbrook"
+      - "George Stepaniants"
+    id: "urn:sha256:b66976c1efa4f625f3b380fef6e945ddf4d7beea6e1b264e2f87d6790548bba5"
+    type: paper
+    relationship: formalizes
+    location: "Author-provided unpublished manuscript main.tex, sections 2-17"
+    note: >-
+      The source manuscript is identified by its exact SHA-256, without
+      reproducing its text in this repository. The authors provided it for
+      the formalization; this preparation does not claim a publicly
+      independently accessible paper identifier, a new literature search,
+      or novelty beyond the identified sources. The statement and prose
+      coverage ledgers distinguish paper-owned results from attributed
+      external background. The component accounts and repository-root
+      Challenge govern the single collection submission.
+  - title: "Open Problems in Numerical Linear Algebra"
+    contributors:
+      - name: "Alex Townsend"
+        role: "Initiator of the problem collection"
+    id: "https://github.com/ajt60gaibb/OpenProblemsInNLA"
+    type: "web discussion"
+    relationship: background
+    note: >-
+      Source problem identifiers and literature accounts. The problem
+      collection, mathematical solution sources, and prior Lean code are
+      distinct contributions. Specific original proof attributions are
+      retained in source headers and provenance records.
+
+related_formalizations:
+  - id: "https://github.com/ajt60gaibb/OpenProblemsInNLA/tree/0689db001ddc4c54f2652ed4b13b753637fef700"
+    relationship: builds-on
+    note: >-
+      Fourteen original proof projects were imported from this exact
+      snapshot; later refreshes, dedicated IE-21/IE-22 proof commits and
+      subsequent attributed imports are recorded in the source provenance
+      ledgers. Original formalization credit, including George Stepaniants,
+      and all component notices are preserved.
+  - id: "https://github.com/MColbrook/big_NLA/tree/f8bc15a38bc4893753ab9c076cef2b02375e122f/lean"
+    relationship: builds-on
+    note: >-
+      Previous committed paper verification package. Later local extensions
+      repaired current-paper coverage before this new repository was
+      prepared. This identifier is historical, not a claim that the pinned
+      commit contains the later uncommitted repairs. The new repository
+      carries the substantive proof development rather than a thin wrapper.
+
+status:
+  scope: >-
+    One repository-root Palomar entry covers all twenty headline problem
+    resolutions and all 34 component headline and supporting declarations,
+    together with explicitly documented auxiliary proof targets required for
+    exact comparison of the fixed mathematical definitions.
+    Seventeen component proof projects retain the original mathematical
+    accounts, auxiliary proofs, provenance, and independent compilation
+    receipts. Historical source coverage records 53 named statements and
+    57 prose claim groups for the identified manuscript. Alternative
+    auxiliary tensor and interval environments remain independent component
+    compilation roots; the combined Solution imports the primary proof
+    environments needed for the selected statements. Its fresh compilation
+    and axiom evidence are recorded in verification/combined-build-status.json.
+    Component receipts alone do not establish the combined interface.
+    Official Palomar and independent NanoDa verification remain pending.
+  axioms: [propext, Classical.choice, Quot.sound]
+
+# This repository contains the substantive development. No thin-wrapper
+# repository.substantive_formalization declaration applies.
+automation:
+  methods:
+    - method: agent
+      models: []
+      framework: "OpenAI Codex"
+      tool_setup: >-
+        Substantial AI assistance in proof implementation, source-to-statement
+        correspondence audits, independent agent reviews, packaging and
+        module-system migration. Historical proofs used Lean 4.33.1, Mathlib
+        and LeanCert; their archived provenance is retained. The new Lean
+        4.35.0 port uses canonical Mathlib and its pinned dependencies without
+        LeanCert. Seven numerical certificate statements are unchanged while
+        their proofs are ported to Mathlib norm_num arithmetic and explicit
+        exponential bounds. The seventh is MI-19 strict_scalar_gap, formerly
+        proved with LeanCert kernel trust and now with norm_num. The port
+        also includes explicitly logged probability-map, finite-PMF,
+        visibility and other API compatibility proof edits, preserving all
+        mathematical statements. Ordinary full-source compilation and compiled
+        selected-axiom queries passed for this port. Exact historical model
+        identifiers were not consistently recorded and are
+        not reconstructed.
+      cost:
+        wall_time: "not tracked as a complete aggregate"
+        spend_usd: "not tracked"
+        hardware: >-
+          Local workstations and approved remote Linux verification;
+          complete aggregate hardware accounting was not recorded.
+      prompting_notes: >-
+        Develop and audit the mathematical statements separately from proofs,
+        retain Challenge/Solution boundaries and original attribution, check
+        source correspondence, and reject proof dependencies beyond the three
+        permitted foundational axioms. Initial packaging was authorized without
+        a new kernel replay, GitHub upload or Palomar submission. GitHub
+        publication was subsequently authorized on 20 November 2026; Palomar
+        submission remains a separate step.
+  spend_usd: "not tracked"
+  notes: >-
+    Human authors retain responsibility for the content. AI systems are
+    credited here, not listed as human authors or responsible maintainers.
+    The source manuscript itself contains an AI declaration. Distinct agent
+    roles and their limits are preserved in dated evidence records; no
+    independent human refereeing or upstream author endorsement is inferred.
+
+fidelity:
+  divergences: >-
+    The mathematical claims and their assumptions follow the recorded
+    manuscript snapshot; numerical certificates, exact arithmetic/SVD cost
+    models, finite-input complexity conventions, and external background
+    attributions have explicit scope in the coverage ledgers. The repository
+    contains the compatibility and interface changes required by the current
+    Palomar contract. Ordinary full-source compilation and compiled
+    selected-axiom queries passed on the new source snapshot; official
+    comparison and NanoDa verification remain pending. Historical receipt
+    acceptance is not used to certify the port. No bit-complexity or finite-precision guarantee is asserted for the
+    tensor-train exact arithmetic/SVD model.
+
+review:
+  status: "agent-reviewed"
+  reviewers:
+    - "OpenAI Codex agents; dated source and correspondence review records"
+  notes: >-
+    Historical mathematical correspondence and proof-scope reviews were AI
+    reviews. The prior unchanged package audit reported complete coverage;
+    five repaired interfaces had accepted component replays. The earlier
+    combined replay accepted a previous 333-interface source selection.
+    A fresh combined replay of the later 338-interface selection was cancelled
+    by the user before launch and remains cancelled. The new Lean 4.35.0
+    snapshot separately passed ordinary full-source compilation and
+    read-only compiled selected-axiom queries. These are mechanical checks,
+    not independent human review, Comparator or NanoDa verification, official
+    Palomar review or registry acceptance.
+    The single-entry interface has separate source-bound records in
+    verification/combined-build-status.json and
+    verification/combined-correspondence.json. The latter invokes the bundled
+    Comparator comparison core on compiled statement and ordinary-definition
+    closures, without full proof export or kernel replay. These local checks remain
+    distinct from official Palomar and NanoDa verification.
+    The combined Challenge resets only the nonpersistent compiler auxiliary-lemma
+    and matcher caches between original source units, preserving original
+    generated proof and matcher references when those units are combined. The operation changes only cache
+    state and introduces no mathematical assumptions or axioms; all material
+    definition bodies remain subject to comparison.
+
+licensing:
+  release_authorization: >-
+    On 19 November 2026 the repository owner expressly authorized release
+    under Apache-2.0 with existing third-party notices preserved and confirmed
+    the named human formalization authors and responsible maintainers. This
+    is a new release decision; older no-grant metadata remains historical
+    provenance and is not represented as an earlier blanket licence.
+  notices: "NOTICE.md; LICENSES/; docs/LICENSING-AND-PROVENANCE.md"
+
+dependency_provenance:
+  current_port:
+    toolchain: "leanprover/lean4:v4.35.0"
+    mathlib_revision: "56a005855ea17e0b0958f73ec801ae140b0a1679"
+    dependency_scope: "Canonical Mathlib and the exact dependencies in its manifest; no LeanCert dependency"
+  historical_archives:
+    toolchain: "leanprover/lean4:v4.33.1"
+    note: "Original sources and receipts preserve historical LeanCert assistance and dependency terms"
+  numerical_certificate_migration:
+    statements: "The seven inherited numerical certificate statements are unchanged"
+    proof_methods: "Mathlib norm_num arithmetic and explicit exponential bounds"
+    additional_certificate: "NLA.MI19.strict_scalar_gap: the same closed rational inequality, with historical LeanCert kernel-trust proof replaced by Mathlib norm_num"
+    axiom_policy: "No implicit axioms or native-execution trust introduced; only the recorded three foundational axioms are permitted"
+    status: "Compatibility proof edits recorded; full-source Lean 4.35.0 compilation and compiled selected-axiom queries passed; official verification pending"
+  logged_api_port:
+    records: "patches/compatibility/"
+    scope: "Probability-map and finite-PMF constructions, visibility and other current API proof edits; mathematical statements preserved"
+  independent_module_compilation:
+    scope: "Every retained local module is compiled independently, including alternative tensor-arithmetic proof environments"
+    tr04_solution: "Imports the primary algorithm proof root only; auxiliary modules are separate compilation roots"
+    iv04_solution: "Imports the two primary determinant/hull proof roots; auxiliary alternative environments are separate compilation roots"
+    other_solutions: "The other fifteen Solutions retain all their mapped proof roots"
+    mathematical_changes: "No weakened statements or theorem renames"
+
+paper_verification:
+  manuscript_sha256: "b66976c1efa4f625f3b380fef6e945ddf4d7beea6e1b264e2f87d6790548bba5"
+  headline_results: 20
+  contained_proof_projects: 17
+  palomar_submission_count: 1
+  combined_build_receipt: "verification/combined-build-status.json"
+  historical_named_statements: 53
+  historical_prose_claim_groups: 57
+  current_port_status: "Component compilation and axiom queries passed; combined interface evidence is recorded separately; official Palomar verification pending"
+  compiled_local_modules: 2304
+  component_selected_declarations_checked: 34
+  combined_selected_declarations_checked: 43
+  ordinary_build_receipt: "verification/build-status.json"
+  selected_axiom_reports: "verification/selected-axioms/"
+  submission_status: "Palomar submission pending"
+
+acknowledgements: >-
+  Original mathematical sources and problem proposers retain the attributions
+  recorded for each problem. Prior Lean formalizations retain George
+  Stepaniants's notices. Reused Complexitylib includes Samuel Schlesinger,
+  Bolton Bailey and Christian Reitwiessner; a Mathlib-derived file retains
+  Jon Bannon's notice. The new port uses Lean and canonical Mathlib with its
+  pinned dependencies. Historical archives preserve the earlier LeanCert
+  usage and dependency notices; all retain their own authors and licences.
+  The verification-tool provenance credits
+  Forsythe, Lean FRO Comparator and lean4export, and Landrun where applicable.

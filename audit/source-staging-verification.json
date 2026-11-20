@@ -1,0 +1,102 @@
+{
+  "schema_version": 3,
+  "checked_date": "2026-11-19",
+  "static_checks_passed": true,
+  "scope": "Exact byte/directive/provenance verification of the current staged source manifest at this recorded snapshot; compilation evidence is separate.",
+  "source_port_manifest_sha256": "204389402dc68467928fc0d9dfa8aaddef8d83fc0dc4a707f9b554e654573b0b",
+  "source_count": 2270,
+  "archive_sha256": "2cc227f311ce50440d1932f7cab9cac1e2944e760d0ac3ab0e33e61ae093cf36",
+  "module_headers_added": 2035,
+  "imports_made_public": 5072,
+  "exposed_public_sections_added": 2135,
+  "changed_source_count": 2150,
+  "maximum_source_lines": 5370,
+  "staged_bytes": 10982243,
+  "compatibility_patches": [
+    {
+      "path": "patches/compatibility/lean435-canonical-mathlib-only.json",
+      "sha256": "d3d6035df347fbbd740c84e09b0ef49084b79d4c45a50784aab2d0e7a2b09686"
+    },
+    {
+      "path": "patches/compatibility/zz0001-ie21-ie22-measure-map.json",
+      "sha256": "29ab0ad500209ba1eed2c2b0c40924d294a2168951424cd3b6c8816a79232921"
+    },
+    {
+      "path": "patches/compatibility/zz0002-is03-fitting-ie-trimming.json",
+      "sha256": "1c579305ad97121f645a3f0bf2912f499c2c2bdc04de187d87d605570176ff3c"
+    },
+    {
+      "path": "patches/compatibility/zz0100-iv04-proof-api.json",
+      "sha256": "793eb4c4585a241734387ef52a96ed6750e636570c02ad444ec81d445aeac19e"
+    },
+    {
+      "path": "patches/compatibility/zz0101-mi22-visibility-cstar-matrix-api.json",
+      "sha256": "a3088796baee23487b9cad8fa28f4086db0ce9921a23dc7aa031271ab65cafe8"
+    },
+    {
+      "path": "patches/compatibility/zz0102-md06-uniform-pmf-current-api.json",
+      "sha256": "29cc1ae5815e380eada9bce5a3dba158b5f729af03feefdae62a15419161ce16"
+    },
+    {
+      "path": "patches/compatibility/zz0103-md06-proof-apis-pairing-pmf.json",
+      "sha256": "87a2d51149ec129b6ce77892a6334cdf791a6eb6e451a028b03103808d67f857"
+    },
+    {
+      "path": "patches/compatibility/zz0104-compact-lean435-api-repairs.json",
+      "sha256": "8c0a8a3c38d4a8680d0726624ba975f0c18d0dd1460ff5e7f9f9fb1d263ac2a9"
+    },
+    {
+      "path": "patches/compatibility/zz0105-pf02-fullrank-implicit-argument.json",
+      "sha256": "f1c28fff4f3e50aefa02ab44f4e6751414bfbe7f7f866462cc8895ed160ee8ea"
+    },
+    {
+      "path": "patches/compatibility/zz0106-md06-excess-graph-connected-api.json",
+      "sha256": "48e56f3fd653108b8d70981685bee8d3fff3d7a83afa561ed1ba9e37bc94d1b2"
+    },
+    {
+      "path": "patches/compatibility/zz0107-ie-product-measurability-api.json",
+      "sha256": "a080bb1a3dbeb3c6b3fb0df551f8ca2d367ea0c81b0cf7b114b48525e64b31d2"
+    },
+    {
+      "path": "patches/compatibility/zz0108-md06-uniform-event-set-membership.json",
+      "sha256": "28655073af509a84aaa606c3f262b595d3ffdcf1aae44854b13bf6b960f00e7e"
+    },
+    {
+      "path": "patches/compatibility/zz0109-ra02-optional-division-normalization.json",
+      "sha256": "9106a34792fb2d5303c43a6315a0df328d70fd2d0f57e7b9ca649a968b04970e"
+    },
+    {
+      "path": "patches/compatibility/zz0110-tr27-arbitrary-integral-algebra-visibility.json",
+      "sha256": "a10f3b0aee0788a3e1315814f2129e967c2a6e27ecacc2f011c455b8754ef5cd"
+    },
+    {
+      "path": "patches/compatibility/zz0111-ie-real-product-comparison-api.json",
+      "sha256": "6443d1d1292166237a834236aa4e347ee042324dd847379889dd3e51d8d5d406"
+    },
+    {
+      "path": "patches/compatibility/zz0200-iv04-indexed-list-api.json",
+      "sha256": "fa2eb31a2439aff4cc2b984108d1912b8d854f06b6eef3b6ca6d8e45d1c9545b"
+    },
+    {
+      "path": "patches/compatibility/zz0201-md06-radius-subtype-equiv-api.json",
+      "sha256": "4600512b2099859a1536c194a64b309b0cec06e91fa9d0fe0da6bed955ec415b"
+    },
+    {
+      "path": "patches/compatibility/zz0202-ie-measurable-absolute-value-api.json",
+      "sha256": "34d869b7cd3d19ac9ca9af614c30e262429e4bd44717051e11fd8dacbd294bec"
+    },
+    {
+      "path": "patches/compatibility/zz0203-ie22-pilp-single-apply-api.json",
+      "sha256": "65366665f1090d0fffa6e480f248a4e483701a08f010a665600f4f1824ac4d54"
+    }
+  ],
+  "mathematical_equivalence_inferred_by_this_check": false,
+  "ordinary_definition_body_changes": "See literal compatibility records; the MD-06 PMF API port includes definition-body changes.",
+  "lean_build_run": false,
+  "kernel_replay_run": false,
+  "command": "python scripts/stage_sources.py verify",
+  "stager_sha256": "191c45fff403c4a2905c54165ff811741e054824c2ca640eae27f4fd3dc1fceb",
+  "recorded_patch_file_identities_checked": true,
+  "visibility_promoted_hashes_checked": true,
+  "transformation_action_records_checked": true
+}
