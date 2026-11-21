@@ -163,6 +163,12 @@ fidelity:
     comparison and NanoDa verification remain pending. Historical receipt
     acceptance is not used to certify the port. No bit-complexity or finite-precision guarantee is asserted for the
     tensor-train exact arithmetic/SVD model.
+    For RA-08, the selected spectral theorem records fixed-pair error-transfer
+    inequalities for supplied ordered spectral data. Its Nyström realization,
+    sketch/positivity/order facts and scalar admissibility are separately proved,
+    unselected support. The selected nuclear theorem itself contains the
+    Nyström construction. The per-declaration account in README.md distinguishes
+    these scopes.
 
 review:
   status: "agent-reviewed"

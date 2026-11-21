@@ -383,15 +383,15 @@
     "base_compared_declarations": 34,
     "technical_supporting_theorems": 9,
     "compared_declarations": 43,
-    "sha256": "05199fe2306f4913627e2e417d1c159f3392721c2d519802a95faa3baedd4a92",
-    "bytes": 48303
+    "sha256": "ff8a7f8f65f510a4882c96d9ba54f3e8a41408930677568cae50bbb0b9328128",
+    "bytes": 49392
   },
   "metadata_validation": [
     {
       "path": "formalization.yaml",
       "status": "pass",
-      "sha256": "5031e9e874817627b5bc56dc6b14beae5eb113515921052999e88f7f6cc4705a",
-      "bytes": 15446
+      "sha256": "6a1c84fa436505b7bf879ceacfabbb94657cdf29bc63b98d7062b09bbc249648",
+      "bytes": 15859
     },
     {
       "path": "projects/MF-05/formalization.yaml",
@@ -414,8 +414,8 @@
     {
       "path": "projects/RA-08/formalization.yaml",
       "status": "pass",
-      "sha256": "004bff72ff84c932f80131aac5b2a18dc3dc825147a3f6117336ac21f134c3b7",
-      "bytes": 14438
+      "sha256": "b6fe78cea85e4290486eb1eaceae941e56c405c946f2d681d07aeaef0c9437db",
+      "bytes": 17147
     },
     {
       "path": "projects/RA-09/formalization.yaml",

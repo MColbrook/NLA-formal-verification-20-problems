@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at_utc": "2026-11-20T22:24:12.817500+00:00",
+  "checked_at_utc": "2026-11-21T00:31:06.048550+00:00",
   "kind": "offline_static_submission_contract",
   "palomar_submission_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
   "static_contract_pass": true,
@@ -239,7 +239,7 @@
     "maximum_lines": 10000,
     "files_checked": 4498
   },
-  "intended_source_bytes": 40930817,
+  "intended_source_bytes": 40939058,
   "license": {
     "path": "LICENSE",
     "spdx": "Apache-2.0",

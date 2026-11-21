@@ -172,22 +172,22 @@ This grouped component covers RA-02 and RA-03. Unit-diagonal restrictions and fi
 
 ### RA-08: Counterexamples to concave matrix-function transfer
 
-Exact Nyström examples disprove concave matrix-function transfer in spectral norm and show arbitrarily large nuclear-norm amplification of arbitrarily small positive input excess.
+The selected results give spectral error-transfer failure for a fixed six-dimensional matrix pair and exact Nyström nuclear-norm examples with arbitrarily large amplification of arbitrarily small positive input excess.
 
 Research audience: Researchers using low-rank approximations of matrix functions and randomized sketching.
 
 Assumptions and conventions:
 
-- The matrices are real positive definite, the sketches have full column rank, and the approximations use the actual inverse-based Nyström formula with positive-semidefinite order.
-- The transformed errors use genuine spectral functional calculus and optimal rank truncations. The counterexample function is the nonnegative nondecreasing concave kink f(x)=min(x,1).
-- The nuclear statement quantifies every proposed finite amplification factor C at least zero and every positive bound on the input excess.
+- The spectral statement takes any real C and ordered spectral data dA for the fixed six-dimensional witnessMatrix, and compares the fixed second matrix witnessApproximation with the three-term spectral truncation.
+- The nuclear statement requires a real positive-definite input, an injective sketch and the actual inverse-based Nyström formula. It quantifies every nonnegative real C and every positive bound epsilon_0 on the input excess.
+- Both selected statements use spectral functional calculus, the fixed kink f(x)=min(x,1), and ordered spectral truncations. Admissibility of the scalar function is proved separately in the unselected theorem paper_scalar_function.
 
 Selected headline statements:
 
-- **rac-thm:spectral** — The explicit six-dimensional Nyström witness has zero spectral input excess and strictly positive transformed excess, disproving even an exact-input spectral transfer guarantee. Lean declaration: `NLA.RA08.Paper.paper_spectral_failure`.
-- **rac-thm:nuclear** — For every finite C and every epsilon_0 greater than zero, constructs an exact Nyström example with positive input excess below epsilon_0 and transformed nuclear excess exceeding C times that excess. Lean declaration: `NLA.RA08.Paper.verified_paper_nuclear_counterexample`.
+- **rac-thm:spectral** — For the fixed six-dimensional pair witnessMatrix and witnessApproximation, every real C and ordered spectral data dA of witnessMatrix satisfy the input spectral error bound at epsilon=0, while the transformed spectral error exceeds the corresponding three-term function-truncation error. This selected declaration is a fixed-pair error-transfer failure. Lean declaration: `NLA.RA08.Paper.paper_spectral_failure`.
+- **rac-thm:nuclear** — For every nonnegative real C and every epsilon_0 greater than zero, constructs an exact Nyström example with positive input excess below epsilon_0 and transformed nuclear excess exceeding C times that excess. Lean declaration: `NLA.RA08.Paper.verified_paper_nuclear_counterexample`.
 
-The selected examples concern a guarantee for every admissible approximation, not their probability under a particular sketch distribution. A strictly increasing function variant is auxiliary material and is not selected here.
+The selected spectral conclusion consists of the fixed-pair error inequalities. The separate, unselected [paper_spectral_witness](projects/RA-08/PaperSolution.lean#L14) supplies existence of ordered spectral data, positive-definite input, positive-semidefinite approximation and order, an injective fixed sketch paperOmega, an invertible Gram determinant, and nystrom witnessMatrix paperOmega = witnessApproximation. The Nyström realization is supporting context from that companion theorem, rather than a conclusion of the compared paper_spectral_failure. Scalar admissibility is likewise supplied by the unselected [paper_scalar_function](projects/RA-08/PaperSolution.lean#L52). The selected nuclear theorem directly includes its Nyström sketch and construction. These selected statements do not assert probabilities under any sketch distribution. A strictly increasing function variant is unselected auxiliary material.
 
 ### RA-09: Sharp Frobenius transfer bounds
 
